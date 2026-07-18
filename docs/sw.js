@@ -1,6 +1,6 @@
 /* 飘投资研究库 service worker — 离线缓存
    CACHE 版本号由 build.py 自动更新；版本变化触发客户端重新缓存全部资源 */
-const CACHE = 'pi-20260719020649';
+const CACHE = 'pi-20260719023105';
 const SHELL = [
   './',
   'index.html',
