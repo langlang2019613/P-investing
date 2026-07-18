@@ -8,12 +8,12 @@ source: gmail-draft
 
 # All-In Podcast 详细总结
 
-视频：https://www.youtube.com/watch?v=PHL1j2ti420  
-标题：OpenAI vs Anthropic IPOs, Anthropic $3T, Zuck's Price War, China Ends Open Source?, Trump Accounts  
-频道：All-In Podcast  
-发布时间：2026-07-11  
-时长：1:42:05  
-说明：以下基于 YouTube 自动英文字幕整理，节目中部分数字是嘉宾引用的传闻、估算或市场讨论，未逐条外部核验。
+视频： 
+标题：OpenAI vs Anthropic IPOs, Anthropic $3T, Zuck's Price War, China Ends Open Source?, Trump Accounts 
+频道：All-In Podcast 
+发布时间：2026-07-11 
+时长：1:42:05 
+说明：以下基于 自动英文字幕整理，节目中部分数字是嘉宾引用的传闻、估算或市场讨论，未逐条外部核验。
 
 ## 一、核心结论
 

@@ -1,18 +1,18 @@
 ---
-title: B站视频总结｜从MLCC到铟，Serenity在看AI硬件上游材料链
+title: 视频总结｜从MLCC到铟，Serenity在看AI硬件上游材料链
 category: industries
 date: 2026-06-28
 tags: 邮件存档
 source: gmail-draft
 ---
 
-# B站视频总结｜从 MLCC 到铟：Serenity 在看 AI 硬件上游材料链
+# 视频总结｜从 MLCC 到铟：Serenity 在看 AI 硬件上游材料链
 
 视频：从MLCC到铟，Serenity在看AI硬件上游材料链
 
 UP 主：X信息差
 
-来源：https://www.bilibili.com/video/BV1aL7W6wEpQ/
+来源：
 
 时长：约 4 分 16 秒
 

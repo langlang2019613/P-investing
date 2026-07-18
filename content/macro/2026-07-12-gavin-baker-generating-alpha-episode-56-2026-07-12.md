@@ -8,12 +8,12 @@ source: gmail-draft
 
 # Gavin Baker 访谈详细总结
 
-视频来源：https://www.youtube.com/watch?v=FmLGYLQ6DFY  
-标题：Episode 56: Gavin Baker - Managing Partner of Atreides Management  
-频道：Generating Alpha Podcast  
-发布时间：2026-07-08  
-时长：1:15:04  
-说明：本总结基于 YouTube 自动英文字幕整理，个别专有名词可能存在自动转写误差。
+视频来源： 
+标题：Episode 56: Gavin Baker - Managing Partner of Atreides Management 
+频道：Generating Alpha Podcast 
+发布时间：2026-07-08 
+时长：1:15:04 
+说明：本总结基于 自动英文字幕整理，个别专有名词可能存在自动转写误差。
 
 ## 一、核心结论
 
