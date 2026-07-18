@@ -6,7 +6,7 @@ tags: 邮件存档
 source: gmail-draft
 ---
 
-我按 B 站 8P 顺序整理。公开视频对应 MIT OCW《Poker Theory and Analytics》，我用官方 transcript + 讲义核对，不只按 B 站字幕猜。核心先说：这门课不是“教赌”，而是把扑克拆成 EV、赔率、范围、对手模型、GTO、ICM、资金管理，这些思想也可以迁移到投资、交易、创业决策里。
+我按 B 站 8P 顺序整理。公开对应 MIT OCW《Poker Theory and Analytics》，我用官方 transcript + 讲义核对，不只按 B 站字幕猜。核心先说：这门课不是“教赌”，而是把扑克拆成 EV、赔率、范围、对手模型、GTO、ICM、资金管理，这些思想也可以迁移到投资、交易、创业决策里。
 
 第 1 讲：扑克理论导论
 
@@ -87,5 +87,5 @@ Bubble 阶段通常在离钱圈约 10%-20% 人数时出现，ICM 开始主导。
 这 8 讲合起来是一套决策系统：第 1 讲定义长期胜利和 M；第 2 讲教你用数据复盘具体决策点；第 3 讲给 EV、pot odds、implied odds、fold equity；第 4 讲把短码翻前变成范围和 Nash/push-fold 表；第 5 讲把单手思维升级成分布思维；第 6 讲把扑克映射到信用、市场和量化金融；第 7 讲解释 GTO/CFR/计算机求解；第 8 讲把所有东西放进锦标赛、ICM 和资金管理。真正的精髓是：不要问“我这手牌强不强”，要问“在这个结构下，我的范围、赔率、对手范围、未来风险和资金约束合起来，哪个动作长期期望最高”。
 
 来源：
-B 站视频：
+B 站：
 MIT OCW 官方课程资料与 transcript：https://ocw.mit.edu/courses/15-s50-poker-theory-and-analytics-january-iap-2015/resources/lecture-videos/

@@ -20,7 +20,7 @@ ROOT = Path(__file__).parent
 CONTENT = ROOT / "content"
 DOCS = ROOT / "docs"
 
-CATEGORIES = ["companies", "industries", "options", "macro", "history"]
+CATEGORIES = ["companies", "industries", "options", "macro", "reports", "history"]
 
 FM_RE = re.compile(r"^---\s*\n(.*?)\n---\s*\n?", re.DOTALL)
 

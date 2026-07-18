@@ -7,6 +7,7 @@
     industries: '行业研究',
     options: '期权研究',
     macro: '宏观经济',
+    reports: '研报分析',
     history: '经济历史',
   };
 
