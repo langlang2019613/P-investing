@@ -1,6 +1,6 @@
 ---
 title: 《技术革命与金融资本》（卡洛塔·佩雷斯）深度总结 — AI周期的历史透镜
-category: history
+category: books
 date: 2026-05-05
 tags: 经济思想, 技术革命, 金融资本, 泡沫, AI
 source: gmail

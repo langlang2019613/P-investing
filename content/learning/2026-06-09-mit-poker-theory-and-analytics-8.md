@@ -1,6 +1,6 @@
 ---
 title: MIT《Poker Theory and Analytics》全8讲详细总结
-category: history
+category: learning
 date: 2026-06-09
 tags: 邮件存档
 source: gmail-draft

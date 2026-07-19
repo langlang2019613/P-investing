@@ -8,6 +8,8 @@
     options: '期权研究',
     macro: '宏观经济',
     reports: '研报分析',
+    learning: '学习',
+    books: '书刊笔记',
     history: '经济历史',
   };
 

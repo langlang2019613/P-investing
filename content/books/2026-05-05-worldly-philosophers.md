@@ -1,6 +1,6 @@
 ---
 title: 《世俗哲学家》（海尔布罗纳）深度总结 — 从亚当·斯密到凯恩斯
-category: history
+category: books
 date: 2026-05-05
 tags: 经济思想史, 凯恩斯, 亚当斯密, 熊彼特
 source: gmail
