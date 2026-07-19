@@ -210,7 +210,7 @@ Corvex（+90%）、Peter Thiel（+68%）、XN LP（+53%）
 
 
 
-备选（差一口气但值得跟踪）：LRCX/ASML/AMAT（Coatue+XN的半导体
+备选（差但值得跟踪）：LRCX/ASML/AMAT（Coatue+XN的半导体
 
 设备集群）、EQIX（Coatue $10.7亿数据中心REIT）、MOD（数据中心
 
