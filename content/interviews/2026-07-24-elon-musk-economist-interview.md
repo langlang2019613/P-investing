@@ -186,3 +186,5 @@ source: codex
 
 - [《经济学人》节目介绍与访谈音频](https://shows.acast.com/theintelligencepodcast/episodes/an-interview-with-elon-musk)
 - [完整英文逐字稿](https://elonmuskarchive.org/video/economist-elon-musk-2026-07-23)
+- [用户提供的完整访谈](https://www.bilibili.com/video/BV1Rcgh6uE4V)
+- [同一访谈的合集版本](https://www.bilibili.com/video/BV1vwgh6BEBk)
