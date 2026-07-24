@@ -1,7 +1,7 @@
 {
   "name": "飘投资 · P-Investing 研究库",
   "short_name": "飘投资",
-  "description": "个人投资研究永久知识库：公司、行业、期权、宏观、经济历史",
+  "description": "个人投资研究永久知识库：公司、行业、期权、宏观、研报、访谈与经济历史",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
