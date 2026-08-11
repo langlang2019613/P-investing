@@ -4,11 +4,11 @@
     {
       "date": "2026-08-12",
       "week": "2026-W33",
-      "generated_at": "2026-08-12 01:28 SGT",
+      "generated_at": "2026-08-12 01:31 SGT",
       "errors": [
-        "TSMC官网自动访问失败（HTTPError）；使用截至2026-07-31的官方已核验回退值",
-        "github: HTTPError: HTTP Error 403: rate limit exceeded"
+        "TSMC官网自动访问失败（HTTPError）；使用截至2026-07-31的官方已核验回退值"
       ],
+      "carried_forward": [],
       "gpu": {
         "captured_at": "2026-08-11",
         "provider_count": 9,
@@ -132,104 +132,169 @@
           }
         ]
       },
-      "github": [],
+      "github": [
+        {
+          "repo": "huggingface/transformers",
+          "stars": 163698,
+          "forks": 34195,
+          "open_issues": null,
+          "pushed_at": null,
+          "source": "public_html_fallback"
+        },
+        {
+          "repo": "ollama/ollama",
+          "stars": 178274,
+          "forks": 17354,
+          "open_issues": null,
+          "pushed_at": null,
+          "source": "public_html_fallback"
+        },
+        {
+          "repo": "vllm-project/vllm",
+          "stars": 88783,
+          "forks": 20544,
+          "open_issues": null,
+          "pushed_at": null,
+          "source": "public_html_fallback"
+        },
+        {
+          "repo": "ggml-org/llama.cpp",
+          "stars": 123468,
+          "forks": 21569,
+          "open_issues": null,
+          "pushed_at": null,
+          "source": "public_html_fallback"
+        },
+        {
+          "repo": "langchain-ai/langchain",
+          "stars": 143985,
+          "forks": 23985,
+          "open_issues": null,
+          "pushed_at": null,
+          "source": "public_html_fallback"
+        },
+        {
+          "repo": "open-webui/open-webui",
+          "stars": 148490,
+          "forks": 21618,
+          "open_issues": null,
+          "pushed_at": null,
+          "source": "public_html_fallback"
+        },
+        {
+          "repo": "NVIDIA/TensorRT-LLM",
+          "stars": 14359,
+          "forks": 2652,
+          "open_issues": null,
+          "pushed_at": null,
+          "source": "public_html_fallback"
+        },
+        {
+          "repo": "modelcontextprotocol/servers",
+          "stars": 89442,
+          "forks": 11429,
+          "open_issues": null,
+          "pushed_at": null,
+          "source": "public_html_fallback"
+        }
+      ],
       "market": [
         {
           "symbol": "SMH",
-          "close": 570.4299926757812,
-          "week_change": -0.9171334691696176,
-          "month_change": -2.59383261638233,
+          "close": 569.9500122070312,
+          "week_change": -1.0005053839237443,
+          "month_change": -2.6757936957088613,
           "currency": "USD"
         },
         {
           "symbol": "SOXX",
-          "close": 530.9500122070312,
-          "week_change": -2.07668787173263,
-          "month_change": -4.093129413144769,
+          "close": 530.2750244140625,
+          "week_change": -2.201176126396942,
+          "month_change": -4.215054199696466,
           "currency": "USD"
         },
         {
           "symbol": "CHAT",
-          "close": 87.87000274658203,
-          "week_change": -2.453373711756268,
-          "month_change": 0.2738850857999964,
+          "close": 87.93499755859375,
+          "week_change": -2.381221390829791,
+          "month_change": 0.34805467846101834,
           "currency": "USD"
         },
         {
           "symbol": "BOTZ",
-          "close": 37.485198974609375,
-          "week_change": 1.0655131312904853,
-          "month_change": 4.502927490440656,
+          "close": 37.4900016784668,
+          "week_change": 1.0784619148916263,
+          "month_change": 4.516316684754673,
           "currency": "USD"
         },
         {
           "symbol": "NVDA",
-          "close": 217.30999755859375,
-          "week_change": 2.5337336299560143,
-          "month_change": 6.770500104134314,
+          "close": 217.1750030517578,
+          "week_change": 2.4700389497253283,
+          "month_change": 6.704173514616518,
           "currency": "USD"
         },
         {
           "symbol": "MSFT",
-          "close": 502.4529113769531,
-          "week_change": 1.9567204127616922,
-          "month_change": 28.50787077074859,
+          "close": 502.6050109863281,
+          "week_change": 1.9875841554066298,
+          "month_change": 28.546771922484936,
           "currency": "USD"
         },
         {
           "symbol": "AMZN",
-          "close": 271.7699890136719,
-          "week_change": -2.0366318724637678,
-          "month_change": 9.890417571688737,
+          "close": 272.0,
+          "week_change": -1.9537211323602754,
+          "month_change": 9.983422702333966,
           "currency": "USD"
         },
         {
           "symbol": "GOOGL",
-          "close": 346.9649963378906,
-          "week_change": -8.125247730575802,
-          "month_change": -1.5730087867351972,
+          "close": 347.0712890625,
+          "week_change": -8.097101900752612,
+          "month_change": -1.5428556785496816,
           "currency": "USD"
         },
         {
           "symbol": "META",
-          "close": 603.9749755859375,
-          "week_change": 2.7273145351475403,
-          "month_change": -8.032982573013935,
+          "close": 604.7100219726562,
+          "week_change": 2.852335180734933,
+          "month_change": -7.921057366524331,
           "currency": "USD"
         },
         {
           "symbol": "TSM",
-          "close": 420.989990234375,
-          "week_change": 0.9156882526750287,
-          "month_change": -0.1399488487790146,
+          "close": 420.6400146484375,
+          "week_change": 0.8317954572504727,
+          "month_change": -0.22296407651386518,
           "currency": "USD"
         },
         {
           "symbol": "MU",
-          "close": 850.9500122070312,
-          "week_change": -4.673616398203007,
-          "month_change": -9.183563264991324,
+          "close": 851.8095092773438,
+          "week_change": -4.577332543389101,
+          "month_change": -9.0918346555663,
           "currency": "USD"
         },
         {
           "symbol": "VRT",
-          "close": 279.0050048828125,
-          "week_change": 3.3619873497834796,
-          "month_change": -8.783140112871235,
+          "close": 278.6300048828125,
+          "week_change": 3.223062439556701,
+          "month_change": -8.90574121987303,
           "currency": "USD"
         },
         {
           "symbol": "MRVL",
-          "close": 208.75999450683594,
-          "week_change": -4.497004435582552,
-          "month_change": -4.0316298081529816,
+          "close": 208.50750732421875,
+          "week_change": -4.612511634835581,
+          "month_change": -4.147699860115495,
           "currency": "USD"
         },
         {
           "symbol": "CEG",
-          "close": 277.3316955566406,
-          "week_change": 3.772383744299579,
-          "month_change": 7.672356124735691,
+          "close": 277.2799987792969,
+          "week_change": 3.7530397677443927,
+          "month_change": 7.652285163104411,
           "currency": "USD"
         }
       ],
@@ -377,7 +442,7 @@
         "硬件与基础设施": 92.6,
         "应用与变现": 83.5,
         "模型与开发生态": 78.0,
-        "融资、估值与风险": 46.8,
+        "融资、估值与风险": 46.7,
         "综合": 78.9
       }
     }

@@ -30,6 +30,8 @@ jobs:
 
       - name: Generate weekly AI monitor
         run: python tools/ai_weekly_tracker.py
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
 
       - name: Rebuild website index
         run: python build.py

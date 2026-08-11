@@ -11,6 +11,7 @@ from __future__ import annotations
 
 import json
 import math
+import os
 import re
 import statistics
 import sys
@@ -31,17 +32,24 @@ USER_AGENT = "P-investing-ai-weekly/1.0 research@pickalphas.com"
 TIMEOUT = 35
 
 
-def fetch(url: str, *, accept: str = "application/json,text/html") -> tuple[bytes, dict[str, str]]:
+def fetch(
+    url: str,
+    *,
+    accept: str = "application/json,text/html",
+    extra_headers: dict[str, str] | None = None,
+) -> tuple[bytes, dict[str, str]]:
+    headers = {"User-Agent": USER_AGENT, "Accept": accept, "Cache-Control": "no-cache"}
+    headers.update(extra_headers or {})
     req = urllib.request.Request(
         url,
-        headers={"User-Agent": USER_AGENT, "Accept": accept, "Cache-Control": "no-cache"},
+        headers=headers,
     )
     with urllib.request.urlopen(req, timeout=TIMEOUT) as resp:
         return resp.read(), dict(resp.headers.items())
 
 
-def fetch_json(url: str) -> Any:
-    raw, _ = fetch(url)
+def fetch_json(url: str, *, extra_headers: dict[str, str] | None = None) -> Any:
+    raw, _ = fetch(url, extra_headers=extra_headers)
     return json.loads(raw.decode("utf-8"))
 
 
@@ -400,8 +408,31 @@ def collect_huggingface(config: dict[str, Any]) -> dict[str, Any]:
 
 def collect_github(config: dict[str, Any]) -> list[dict[str, Any]]:
     rows = []
+    token = os.environ.get("GITHUB_TOKEN")
+    headers = {"X-GitHub-Api-Version": "2022-11-28"}
+    if token:
+        headers["Authorization"] = f"Bearer {token}"
     for repo in config["github_repositories"]:
-        data = fetch_json(f"https://api.github.com/repos/{repo}")
+        source = "api"
+        try:
+            data = fetch_json(f"https://api.github.com/repos/{repo}", extra_headers=headers)
+        except urllib.error.HTTPError as exc:
+            if exc.code != 403:
+                raise
+            raw, _ = fetch(f"https://github.com/{repo}", accept="text/html")
+            page = raw.decode("utf-8", errors="replace")
+            stars_match = re.search(r'"stargazerCount":(\d+)', page)
+            forks_match = re.search(r'"forksCount":(\d+)', page)
+            pushed_match = re.search(r'"committedDate":"([^"]+)"', page)
+            if not stars_match:
+                raise ValueError(f"GitHub HTML fallback could not parse {repo}") from exc
+            data = {
+                "stargazers_count": int(stars_match.group(1)),
+                "forks_count": int(forks_match.group(1)) if forks_match else None,
+                "open_issues_count": None,
+                "pushed_at": pushed_match.group(1) if pushed_match else None,
+            }
+            source = "public_html_fallback"
         rows.append(
             {
                 "repo": repo,
@@ -409,6 +440,7 @@ def collect_github(config: dict[str, Any]) -> list[dict[str, Any]]:
                 "forks": data.get("forks_count"),
                 "open_issues": data.get("open_issues_count"),
                 "pushed_at": data.get("pushed_at"),
+                "source": source,
             }
         )
     return rows
@@ -610,7 +642,14 @@ def build_article(snapshot: dict[str, Any], history: list[dict[str, Any]], confi
     for row in snapshot.get("github", []):
         old = github_previous.get(row["repo"], {}).get("stars")
         delta = row["stars"] - old if isinstance(old, int) and isinstance(row.get("stars"), int) else None
-        github_rows.append([row["repo"], f"{row['stars']:,}", f"+{delta:,}" if delta is not None and delta >= 0 else (str(delta) if delta is not None else "基线"), str(row.get("pushed_at", ""))[:10]])
+        github_rows.append(
+            [
+                row["repo"],
+                f"{row['stars']:,}",
+                f"+{delta:,}" if delta is not None and delta >= 0 else (str(delta) if delta is not None else "基线"),
+                str(row.get("pushed_at") or "—")[:10],
+            ]
+        )
 
     hf = snapshot.get("huggingface", {})
     openrouter = snapshot.get("openrouter", {})
@@ -762,7 +801,16 @@ def main() -> int:
         "week": f"{local_now.isocalendar().year}-W{local_now.isocalendar().week:02d}",
         "generated_at": local_now.strftime("%Y-%m-%d %H:%M %Z"),
         "errors": [],
+        "carried_forward": [],
     }
+    history = load_history()
+
+    def last_good_source(name: str) -> tuple[Any, str] | None:
+        for old in reversed(history):
+            value = old.get(name)
+            if value:
+                return value, str(old.get("date") or "未知日期")
+        return None
 
     collectors = [
         ("gpu", lambda: collect_gpu(config)),
@@ -778,18 +826,39 @@ def main() -> int:
             if name == "tsmc" and snapshot[name].get("warning"):
                 snapshot["errors"].append(snapshot[name]["warning"])
         except Exception as exc:  # source failures belong in the generated report
-            snapshot[name] = [] if name in {"github", "market"} else {}
-            snapshot["errors"].append(f"{name}: {type(exc).__name__}: {exc}")
+            prior = last_good_source(name)
+            if prior:
+                snapshot[name] = prior[0]
+                snapshot["carried_forward"].append({"source": name, "from_date": prior[1]})
+                snapshot["errors"].append(
+                    f"{name}: {type(exc).__name__}: {exc}；沿用{prior[1]}有效快照"
+                )
+            else:
+                snapshot[name] = [] if name in {"github", "market"} else {}
+                snapshot["errors"].append(f"{name}: {type(exc).__name__}: {exc}")
 
     sec_rows = []
+    old_sec: dict[str, dict[str, Any]] = {}
+    for old in reversed(history):
+        for item in old.get("sec", []):
+            old_sec.setdefault(item.get("ticker", ""), item)
     for company in config["sec_companies"]:
         try:
             sec_rows.append(collect_sec_company(company))
         except Exception as exc:
-            snapshot["errors"].append(f"SEC {company['ticker']}: {type(exc).__name__}: {exc}")
+            prior = old_sec.get(company["ticker"])
+            if prior:
+                sec_rows.append(prior)
+                snapshot["carried_forward"].append(
+                    {"source": f"SEC {company['ticker']}", "from_date": prior.get("revenue_end") or "上一期"}
+                )
+                snapshot["errors"].append(
+                    f"SEC {company['ticker']}: {type(exc).__name__}: {exc}；沿用上一期有效快照"
+                )
+            else:
+                snapshot["errors"].append(f"SEC {company['ticker']}: {type(exc).__name__}: {exc}")
     snapshot["sec"] = sec_rows
 
-    history = load_history()
     history_without_today = [x for x in history if x.get("date") != report_date]
     snapshot["scores"] = score_snapshot(snapshot, history_without_today, config)
     article = build_article(snapshot, history_without_today, config)
