@@ -1,0 +1,151 @@
+{
+  "timezone": "Asia/Singapore",
+  "schedule_description": "每周一 07:15（新加坡时间）",
+  "gpu": {
+    "current_url": "https://gpucloudcompare.com/data/current.json",
+    "history_url": "https://gpucloudcompare.com/data/history-daily.json",
+    "attribution": "GPU Cloud Price Index — gpucloudcompare.com（CC-BY 4.0）"
+  },
+  "tsmc_monthly_url": "https://investor.tsmc.com/schinese/monthly-revenue/{year}",
+  "tsmc_official_fallback": {
+    "as_of": "2026-07-31",
+    "month": "Jul.",
+    "month_no": 7,
+    "revenue_twd_m": 467580,
+    "yoy": 44.7,
+    "source_url": "https://investor.tsmc.com/schinese/monthly-revenue/2026"
+  },
+  "openrouter_models_url": "https://openrouter.ai/api/v1/models",
+  "huggingface_models_url": "https://huggingface.co/api/models?sort=downloads&limit=100&full=true",
+  "source_registry": [
+    ["算力公开报价", "GPU Cloud Price Index、Google Cloud、AWS Capacity Blocks、RunPod、Vast.ai", "每日/每周", "自动抓取聚合数据；云厂商官网抽样复核", "B"],
+    ["大集群成交价与可得性", "SemiAnalysis、CoreWeave、Lambda、云厂商询价", "月度/事件", "人工复核，区分标价、长约成交价和可租卡数", "B/C"],
+    ["云CapEx、RPO与AI收入", "SEC Companyfacts、MSFT/GOOGL/AMZN/META IR", "季度", "SEC自动抓取；电话会指标人工锚定", "A"],
+    ["先进制程与封装", "TSMC月营收/季报、TrendForce、DigiTimes Research", "月度/季度", "TSMC自动或官方回退；产业调查人工复核", "A/B"],
+    ["HBM供需", "Micron、SK hynix、Samsung财报；TrendForce DRAMeXchange", "季度/月度", "长约、价格、良率与客户认证人工复核", "A/B"],
+    ["网络、电力与散热", "Marvell、Vertiv、IEA、EIA、LBNL Queues、CBRE", "季度/年度", "财报与官方能源数据优先", "A/B"],
+    ["模型价格与调用生态", "OpenRouter API、官方模型API价目表", "每周", "自动抓取目录价格；调用量需另行复核", "B"],
+    ["开源开发者生态", "Hugging Face API、GitHub API", "每周", "自动保存下载量、项目Star与推送时间", "B"],
+    ["消费/企业应用", "公司披露、Similarweb、Sensor Tower、data.ai、a16z Top 100", "月度/季度", "付费席位和ARR优先，流量只作代理", "A/B/C"],
+    ["一级市场融资", "公司公告、PitchBook、Crunchbase、CB Insights", "月度/事件", "拆分到账现金、分期承诺与战略投资", "A/B"],
+    ["二级市场风险偏好", "ETF.com、基金公告、非官方行情接口", "每周", "自动低权重跟踪SMH/SOXX/CHAT/BOTZ等", "B/C"]
+  ],
+  "market_symbols": [
+    "SMH",
+    "SOXX",
+    "CHAT",
+    "BOTZ",
+    "NVDA",
+    "MSFT",
+    "AMZN",
+    "GOOGL",
+    "META",
+    "TSM",
+    "MU",
+    "VRT",
+    "MRVL",
+    "CEG"
+  ],
+  "github_repositories": [
+    "huggingface/transformers",
+    "ollama/ollama",
+    "vllm-project/vllm",
+    "ggml-org/llama.cpp",
+    "langchain-ai/langchain",
+    "open-webui/open-webui",
+    "NVIDIA/TensorRT-LLM",
+    "modelcontextprotocol/servers"
+  ],
+  "sec_companies": [
+    {"ticker": "MSFT", "name": "Microsoft", "cik": "0000789019"},
+    {"ticker": "GOOGL", "name": "Alphabet", "cik": "0001652044"},
+    {"ticker": "AMZN", "name": "Amazon", "cik": "0001018724"},
+    {"ticker": "META", "name": "Meta", "cik": "0001326801"},
+    {"ticker": "NVDA", "name": "NVIDIA", "cik": "0001045810"},
+    {"ticker": "MU", "name": "Micron", "cik": "0000723125"},
+    {"ticker": "VRT", "name": "Vertiv", "cik": "0001674101"},
+    {"ticker": "MRVL", "name": "Marvell", "cik": "0001835632"}
+  ],
+  "quarterly_anchors": [
+    {
+      "company": "Microsoft",
+      "period": "FY2026 Q4",
+      "metrics": "Azure +43%；季度 CapEx 410 亿美元；商业 RPO 6,780 亿美元；M365 Copilot 付费席位超过 3,000 万",
+      "signal": "需求超过可用容量，但云毛利率受基础设施投资压制",
+      "score": 86,
+      "date": "2026-07-29",
+      "url": "https://www.microsoft.com/en-us/Investor/events/FY-2026/earnings-fy-2026-q4"
+    },
+    {
+      "company": "Alphabet",
+      "period": "2026 Q2",
+      "metrics": "Google Cloud +82% 至 247.68 亿美元；Cloud 营业利润 88.14 亿美元；Gemini 9.5 亿 MAU；API 220 亿 Token/分钟",
+      "signal": "应用与云收入强劲，但季度 CapEx 449.24 亿美元使自由现金流转为 -58.55 亿美元",
+      "score": 88,
+      "date": "2026-07-22",
+      "url": "https://abc.xyz/investor/news/news-details/2026/Alphabet-Announces-Second-Quarter-2026-Results-2026-Y3uQ6H4ZJa/default.aspx"
+    },
+    {
+      "company": "Amazon",
+      "period": "2026 Q2",
+      "metrics": "AWS +36.7%；AWS AI 业务年化收入超过 250 亿美元；AWS 营业利润 166 亿美元",
+      "signal": "云需求加速，资本开支与自由现金流压力仍需同步观察",
+      "score": 84,
+      "date": "2026-07-30",
+      "url": "https://www.aboutamazon.com/news/company-news/amazon-earnings-q2-2026-report"
+    },
+    {
+      "company": "Meta",
+      "period": "2026 Q2",
+      "metrics": "收入 +28%；2026 CapEx 指引 1,300—1,450 亿美元；季度购买物业设备及融资租赁本金约 310.78 亿美元",
+      "signal": "广告变现支持投入，但季度自由现金流仅 7.84 亿美元",
+      "score": 71,
+      "date": "2026-07-29",
+      "url": "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Second-Quarter-2026-Results/default.aspx"
+    },
+    {
+      "company": "NVIDIA",
+      "period": "FY2027 Q1",
+      "metrics": "数据中心收入 752 亿美元，同比 +92%；总收入 816 亿美元，同比 +85%；毛利率 74.9%",
+      "signal": "加速器需求强，但库存环比增加约 20.5%，需要与下一季收入和应收同步验证",
+      "score": 92,
+      "date": "2026-05-20",
+      "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-First-Quarter-Fiscal-2027/default.aspx"
+    },
+    {
+      "company": "TSMC",
+      "period": "2026 Q2",
+      "metrics": "HPC 收入占比 66%，环比 +20%；Q2 收入 402 亿美元；2026 CapEx 指引上调至 600—640 亿美元",
+      "signal": "先进制程和 AI 需求极强，库存天数因 N2 爬坡升至 87 天",
+      "score": 94,
+      "date": "2026-07-16",
+      "url": "https://investor.tsmc.com/english/quarterly-results/2026/q2"
+    },
+    {
+      "company": "Vertiv",
+      "period": "2026 Q2",
+      "metrics": "收入 +24%；全年有机增长指引 30%—32%；调整后营业利润率 22.6%",
+      "signal": "电力和散热基础设施强劲，但库存较年初增幅高，需要关注项目交付节奏",
+      "score": 86,
+      "date": "2026-07-29",
+      "url": "https://investors.vertiv.com/news/news-details/2026/Vertiv-Reports-Strong-Second-Quarter-2026-with-Diluted-EPS-Growth-of-53-Adjusted-Diluted-EPS-Growth-of-60-Raises-Full-Year-2026-Guidance-Across-All-Key-Metrics/default.aspx"
+    },
+    {
+      "company": "Anthropic",
+      "period": "2026-05",
+      "metrics": "年化收入超过 470 亿美元；Series H 融资 650 亿美元，投后估值 9,650 亿美元",
+      "signal": "商业化增长极快，同时融资规模和估值集中度处于极端水平",
+      "score": 76,
+      "date": "2026-05-28",
+      "url": "https://www.anthropic.com/news/series-h"
+    }
+  ],
+  "manual_review": [
+    "四大云厂商 CapEx 指引、短寿命设备占比、融资租赁和 RPO 合同期限",
+    "HBM3E/HBM4 长约覆盖、预付款、良率和客户认证变化",
+    "CoreWeave、Lambda 等大集群真实可得性、长期成交价和取消率",
+    "AI 产品付费席位、活跃席位、ARR、NRR、推理毛利和客户集中度",
+    "PPA 从签约到并网、实际通电 MW、负载率及每 MW 收入",
+    "VC 融资中的分期承诺、战略投资和供应商融资，避免把名义融资额当作已到账现金"
+  ]
+}

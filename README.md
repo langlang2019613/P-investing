@@ -53,3 +53,16 @@ build.py          content → docs/data.json，并更新离线缓存版本
 record.py         构建 + git 提交 + 推送（= 发布）
 docs/             网站本体（GitHub Pages 从这里发布）
 ```
+
+## AI 行业景气度每周监测
+
+网站会在每周一 07:15（新加坡时间）自动生成一期 AI 行业景气度周报，保留历史快照，并重建 GitHub Pages 数据。自动化入口是 `.github/workflows/ai-weekly.yml`，核心口径和数据源位于 `tools/ai_weekly_sources.json`。
+
+本地可用以下命令复现：
+
+```
+python tools/ai_weekly_tracker.py
+python build.py
+```
+
+自动抓取包括 GPU 云报价、SEC 财务数据、OpenRouter 模型目录、Hugging Face 下载量、GitHub 开源项目和市场风险指标。电话会中的 CapEx 指引、RPO、付费席位、HBM 长约、大集群真实成交价和通电 MW 保留为人工复核项；来源失效时会在周报中明确标记，不静默填充未知数据。
