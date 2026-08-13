@@ -16,7 +16,7 @@ concurrency:
 jobs:
   update:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 45
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
@@ -29,7 +29,7 @@ jobs:
           python-version: "3.12"
 
       - name: Generate momentum dashboard
-        run: python tools/momentum_tracker.py --max-symbols 500 --workers 12
+        run: python tools/momentum_tracker.py --max-symbols 0 --workers 24
 
       - name: Validate generated data
         run: |
@@ -37,6 +37,7 @@ jobs:
           python -m json.tool docs/momentum.json >/dev/null
           python -m json.tool data/momentum/history.json >/dev/null
           python -m json.tool tools/momentum_schema.json >/dev/null
+          python -c "import json; d=json.load(open('docs/momentum.json')); assert len(d['rows']) == 2345"
 
       - name: Commit and publish when data changed
         run: |

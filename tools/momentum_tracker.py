@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
 """Build the public-data momentum dashboard used by the static site.
 
-The job is dependency-free so it can run on GitHub Actions.  It screens a
-liquid large-cap US equity universe from Nasdaq, obtains adjusted price
-history and reported fundamentals from Yahoo Finance's public JSON endpoints,
-and writes a compact dashboard payload.  No PickAlphas credentials, sessions,
-attachments, or proprietary report text are used.
+The job is dependency-free so it can run on GitHub Actions.  It starts from the
+audited full 10x symbol baseline, enriches names and classifications from the
+public Nasdaq screener, obtains adjusted price history and reported
+fundamentals from Yahoo Finance's public JSON endpoints, and writes a compact
+dashboard payload.  No credentials, sessions, attachments, report text, or
+licensed scores are stored.
 """
 
 from __future__ import annotations
@@ -32,6 +33,7 @@ ROOT = Path(__file__).resolve().parents[1]
 OUTPUT_PATH = ROOT / "docs" / "momentum.json"
 HISTORY_PATH = ROOT / "data" / "momentum" / "history.json"
 SCHEMA_PATH = ROOT / "tools" / "momentum_schema.json"
+UNIVERSE_PATH = ROOT / "tools" / "tenx_universe.txt"
 NASDAQ_URL = (
     "https://api.nasdaq.com/api/screener/stocks"
     "?tableonly=true&limit=10000&offset=0&download=true"
@@ -46,8 +48,8 @@ USER_AGENT = (
     "P-investing-momentum/1.0"
 )
 TIMEOUT = 45
-DEFAULT_SYMBOLS = 500
-DEFAULT_WORKERS = 12
+DEFAULT_SYMBOLS = 0  # 0 means every symbol in tenx_universe.txt
+DEFAULT_WORKERS = 24
 BENCHMARK = "SPY"
 PINNED = {
     "AAPL", "AMD", "AMZN", "ARM", "ASML", "AVGO", "BABA", "GOOG", "GOOGL",
@@ -155,15 +157,32 @@ def yahoo_symbol(symbol: str) -> str:
     return symbol.replace(".", "-")
 
 
+def baseline_symbols() -> list[str]:
+    if not UNIVERSE_PATH.exists():
+        return []
+    symbols: list[str] = []
+    for raw in UNIVERSE_PATH.read_text(encoding="utf-8").splitlines():
+        symbol = raw.strip().upper()
+        if not symbol or symbol.startswith("#"):
+            continue
+        if re.fullmatch(r"[A-Z][A-Z0-9.-]{0,10}", symbol) and symbol not in symbols:
+            symbols.append(symbol)
+    return symbols
+
+
 def load_universe(limit: int) -> list[dict[str, Any]]:
-    payload = fetch_json(
-        NASDAQ_URL,
-        headers={
-            "Origin": "https://www.nasdaq.com",
-            "Referer": "https://www.nasdaq.com/market-activity/stocks/screener",
-        },
-    )
-    rows = (((payload or {}).get("data") or {}).get("rows") or [])
+    try:
+        payload = fetch_json(
+            NASDAQ_URL,
+            headers={
+                "Origin": "https://www.nasdaq.com",
+                "Referer": "https://www.nasdaq.com/market-activity/stocks/screener",
+            },
+        )
+        rows = (((payload or {}).get("data") or {}).get("rows") or [])
+    except Exception as exc:
+        print(f"Nasdaq metadata unavailable: {type(exc).__name__}; using symbol placeholders", flush=True)
+        rows = []
     exclusions = re.compile(r"\b(etf|warrant|rights?|units?|closed[- ]end fund)\b", re.I)
     cleaned: list[dict[str, Any]] = []
     by_symbol: dict[str, dict[str, Any]] = {}
@@ -173,7 +192,7 @@ def load_universe(limit: int) -> list[dict[str, Any]]:
         market_cap = number(raw.get("marketCap"))
         if not re.fullmatch(r"[A-Z][A-Z0-9.-]{0,8}", symbol):
             continue
-        if market_cap is None or market_cap < 500_000_000 or exclusions.search(name):
+        if exclusions.search(name):
             continue
         item = {
             "symbol": symbol,
@@ -182,10 +201,27 @@ def load_universe(limit: int) -> list[dict[str, Any]]:
             "industry": str(raw.get("industry") or "未分类").strip() or "未分类",
             "marketCap": market_cap,
         }
-        cleaned.append(item)
         by_symbol[symbol] = item
+        if market_cap is not None and market_cap >= 500_000_000:
+            cleaned.append(item)
+
+    seed = baseline_symbols()
+    if seed:
+        selected = [
+            by_symbol.get(symbol, {
+                "symbol": symbol,
+                "name": symbol,
+                "sector": "未分类",
+                "industry": "未分类",
+                "marketCap": None,
+            })
+            for symbol in seed
+        ]
+        return selected[:limit] if limit > 0 else selected
+
     cleaned.sort(key=lambda item: item["marketCap"], reverse=True)
-    selected = cleaned[:limit]
+    fallback_limit = limit if limit > 0 else 500
+    selected = cleaned[:fallback_limit]
     selected_symbols = {item["symbol"] for item in selected}
     for symbol in sorted(PINNED):
         if symbol in by_symbol and symbol not in selected_symbols:
@@ -413,6 +449,8 @@ def collect(item: dict[str, Any]) -> tuple[dict[str, Any], list[str]]:
         row.update(fundamental_data(item["symbol"]))
     except Exception as exc:
         errors.append(f"{item['symbol']} fundamentals: {type(exc).__name__}")
+    if row.get("marketCap") is None and row.get("reportedMarketCap") is not None:
+        row["marketCap"] = row["reportedMarketCap"]
     return row, errors
 
 
@@ -800,8 +838,8 @@ def main() -> int:
     parser.add_argument("--max-symbols", type=int, default=int(os.getenv("MOMENTUM_MAX_SYMBOLS", DEFAULT_SYMBOLS)))
     parser.add_argument("--workers", type=int, default=int(os.getenv("MOMENTUM_WORKERS", DEFAULT_WORKERS)))
     args = parser.parse_args()
-    if args.max_symbols < 20 or args.max_symbols > 500:
-        parser.error("--max-symbols must be between 20 and 500")
+    if args.max_symbols < 0 or args.max_symbols > 5000:
+        parser.error("--max-symbols must be 0 (all) or between 1 and 5000")
 
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
     generated = datetime.now(timezone.utc)
@@ -816,8 +854,7 @@ def main() -> int:
             symbol = futures[future]
             try:
                 row, row_errors = future.result()
-                if row.get("price") is not None:
-                    rows.append(row)
+                rows.append(row)
                 errors.extend(row_errors)
             except Exception as exc:
                 errors.append(f"{symbol}: {type(exc).__name__}")
@@ -837,6 +874,7 @@ def main() -> int:
     add_tracking_fields(rows, as_of)
     ensure_schema_fields(rows, schema)
     clean_internal_fields(rows)
+    price_covered = sum(1 for row in rows if row.get("price") is not None)
     fundamentals_covered = sum(1 for row in rows if row.get("fundamentalScore") is not None)
     payload = {
         "version": generated.strftime("%Y%m%d%H%M%S"),
@@ -845,8 +883,8 @@ def main() -> int:
         "universe": {
             "requested": len(universe),
             "screened": len(rows),
-            "minimumMarketCap": 500_000_000,
-            "description": "Nasdaq 股票筛选器中按市值排序的大盘及高流动性美股，并补充重点观察标的",
+            "minimumMarketCap": 300_000_000,
+            "description": "10倍股全量基准股票池（2,345只）；代码完整保留，名称与行业由公开 Nasdaq 数据补充",
         },
         "benchmark": {
             "symbol": BENCHMARK,
@@ -854,7 +892,7 @@ def main() -> int:
             "ret60": benchmark.get("ret60"),
         },
         "coverage": {
-            "price": len(rows),
+            "price": price_covered,
             "fundamentals": fundamentals_covered,
             "warnings": len(errors),
         },
@@ -879,7 +917,8 @@ def main() -> int:
         f"OK: {len(rows)} equities, {fundamentals_covered} fundamental profiles -> {OUTPUT_PATH} "
         f"(as of {as_of}, {len(errors)} warnings)"
     )
-    return 0 if len(rows) >= min(20, args.max_symbols) else 1
+    expected = len(universe) if args.max_symbols == 0 else min(len(universe), args.max_symbols)
+    return 0 if len(rows) == expected and len(rows) >= 20 else 1
 
 
 if __name__ == "__main__":

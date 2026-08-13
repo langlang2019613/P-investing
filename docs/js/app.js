@@ -460,7 +460,7 @@
         <div class="momentum-asof"><span>公开数据日期</span><strong>${esc(MOMENTUM.asOf || '—')}</strong><small>${esc(formatGeneratedAt(MOMENTUM.generatedAt))}</small></div>
       </section>
       <div class="momentum-kpis">
-        <div><span>已筛选</span><strong>${MOMENTUM.universe.screened}</strong><small>只股票</small></div>
+        <div><span>${isTenx ? '全量股票池' : '已筛选'}</span><strong>${MOMENTUM.universe.screened}</strong><small>${isTenx ? '全部代码均保留' : '只股票'}</small></div>
         <div><span>${isTenx ? '优先研究' : '偏强及以上'}</span><strong>${strongCount}</strong><small>${isTenx ? '当前状态 = 重点研究' : '动量分 ≥ 65'}</small></div>
         <div><span>本表指标</span><strong>${columns.length}</strong><small>${computedCount} 自动 · ${licensedCount} 待授权</small></div>
         <div><span>SPY 20 日</span><strong class="${valueClass(benchmark.ret20)}">${fmtPct(benchmark.ret20)}</strong><small>相对强弱基准</small></div>
@@ -482,6 +482,7 @@
       <div class="field-coverage-note">
         <span><i class="source-dot computed"></i>公开数据自动计算 ${computedCount} 项</span>
         <span><i class="source-dot licensed"></i>待合规授权数据源 ${licensedCount} 项</span>
+        <span>行情覆盖 ${MOMENTUM.coverage.price} / ${allRows.length} · 基本面覆盖 ${MOMENTUM.coverage.fundamentals} / ${allRows.length} · 取数失败仍保留代码</span>
         <span>字段核对 ${esc(MOMENTUM.schemas.auditedAt)} · 参考版本 ${esc(schema.referenceVersion)}</span>
       </div>
       <div class="momentum-resultbar">
