@@ -2,209 +2,3169 @@
   "snapshots": [
     {
       "date": "2026-08-13",
-      "generatedAt": "2026-08-13T15:43:44+00:00",
+      "generatedAt": "2026-08-13T16:33:06+00:00",
       "topMomentum": [
         {
-          "symbol": "DELL",
+          "symbol": "HPE",
           "rank": 1,
-          "score": 99.2
+          "score": 98.9
         },
         {
-          "symbol": "NBIS",
+          "symbol": "DELL",
           "rank": 2,
+          "score": 98.7
+        },
+        {
+          "symbol": "P",
+          "rank": 3,
+          "score": 96.6
+        },
+        {
+          "symbol": "NTAP",
+          "rank": 4,
           "score": 95.8
         },
         {
-          "symbol": "SNOW",
-          "rank": 3,
-          "score": 92.5
+          "symbol": "CRDO",
+          "rank": 5,
+          "score": 95.5
         },
         {
-          "symbol": "MU",
-          "rank": 4,
-          "score": 91.6
+          "symbol": "NBIS",
+          "rank": 6,
+          "score": 95.4
+        },
+        {
+          "symbol": "MDB",
+          "rank": 7,
+          "score": 94.7
         },
         {
           "symbol": "NET",
-          "rank": 5,
-          "score": 91.5
+          "rank": 8,
+          "score": 93.1
         },
         {
-          "symbol": "MPC",
-          "rank": 6,
-          "score": 91.1
+          "symbol": "ATI",
+          "rank": 9,
+          "score": 92.8
+        },
+        {
+          "symbol": "SNOW",
+          "rank": 10,
+          "score": 92.8
         },
         {
           "symbol": "MRVL",
-          "rank": 7,
-          "score": 90.5
+          "rank": 11,
+          "score": 91.7
+        },
+        {
+          "symbol": "TWLO",
+          "rank": 12,
+          "score": 91.7
+        },
+        {
+          "symbol": "MU",
+          "rank": 13,
+          "score": 91.7
         },
         {
           "symbol": "STX",
-          "rank": 8,
-          "score": 90.3
+          "rank": 14,
+          "score": 91.6
+        },
+        {
+          "symbol": "MPC",
+          "rank": 15,
+          "score": 91.5
         },
         {
           "symbol": "ANET",
-          "rank": 9,
-          "score": 90.2
+          "rank": 16,
+          "score": 91.1
         },
         {
-          "symbol": "PANW",
-          "rank": 10,
-          "score": 89.8
+          "symbol": "NTRA",
+          "rank": 17,
+          "score": 91.0
         },
         {
           "symbol": "ABNB",
-          "rank": 11,
-          "score": 88.5
-        },
-        {
-          "symbol": "CRWD",
-          "rank": 12,
-          "score": 87.1
-        },
-        {
-          "symbol": "BBVA",
-          "rank": 13,
-          "score": 84.9
-        },
-        {
-          "symbol": "ARM",
-          "rank": 14,
-          "score": 80.5
-        },
-        {
-          "symbol": "PLTR",
-          "rank": 15,
-          "score": 78.0
-        },
-        {
-          "symbol": "SNDK",
-          "rank": 16,
-          "score": 77.2
-        },
-        {
-          "symbol": "ING",
-          "rank": 17,
-          "score": 76.6
-        },
-        {
-          "symbol": "MFG",
           "rank": 18,
-          "score": 76.3
+          "score": 90.6
         },
         {
-          "symbol": "SAN",
+          "symbol": "TER",
           "rank": 19,
-          "score": 75.9
+          "score": 89.0
         },
         {
-          "symbol": "BKNG",
+          "symbol": "RVMD",
           "rank": 20,
-          "score": 75.5
+          "score": 88.6
         }
       ],
       "topFundamental": [
         {
-          "symbol": "NVDA",
+          "symbol": "ANET",
           "rank": 1,
-          "score": 91.9
+          "score": 91.7
+        },
+        {
+          "symbol": "NVDA",
+          "rank": 2,
+          "score": 90.2
+        },
+        {
+          "symbol": "CRDO",
+          "rank": 3,
+          "score": 86.4
         },
         {
           "symbol": "APP",
-          "rank": 2,
-          "score": 87.7
+          "rank": 4,
+          "score": 85.4
+        },
+        {
+          "symbol": "MNST",
+          "rank": 5,
+          "score": 85.3
+        },
+        {
+          "symbol": "FIX",
+          "rank": 6,
+          "score": 85.2
         },
         {
           "symbol": "PLTR",
-          "rank": 3,
-          "score": 86.7
-        },
-        {
-          "symbol": "NEM",
-          "rank": 4,
-          "score": 85.8
-        },
-        {
-          "symbol": "ANET",
-          "rank": 5,
-          "score": 82.5
-        },
-        {
-          "symbol": "TSM",
-          "rank": 6,
-          "score": 80.3
-        },
-        {
-          "symbol": "AVGO",
           "rank": 7,
-          "score": 79.9
+          "score": 84.8
         },
         {
-          "symbol": "STX",
+          "symbol": "GRMN",
           "rank": 8,
-          "score": 78.8
+          "score": 83.4
         },
         {
-          "symbol": "LLY",
+          "symbol": "AU",
           "rank": 9,
-          "score": 77.7
+          "score": 83.3
         },
         {
-          "symbol": "MSFT",
+          "symbol": "GFI",
           "rank": 10,
-          "score": 75.8
-        },
-        {
-          "symbol": "MU",
-          "rank": 11,
-          "score": 75.4
+          "score": 82.9
         },
         {
           "symbol": "MA",
+          "rank": 11,
+          "score": 81.7
+        },
+        {
+          "symbol": "CNQ",
           "rank": 12,
-          "score": 73.9
+          "score": 80.1
         },
         {
-          "symbol": "ADBE",
+          "symbol": "RDDT",
           "rank": 13,
-          "score": 73.8
+          "score": 79.0
         },
         {
-          "symbol": "SCHW",
+          "symbol": "LLY",
           "rank": 14,
-          "score": 73.7
+          "score": 78.7
         },
         {
-          "symbol": "ASML",
+          "symbol": "ARGX",
           "rank": 15,
-          "score": 73.2
-        },
-        {
-          "symbol": "LRCX",
-          "rank": 16,
-          "score": 73.1
-        },
-        {
-          "symbol": "SCCO",
-          "rank": 17,
-          "score": 72.8
-        },
-        {
-          "symbol": "VRT",
-          "rank": 18,
-          "score": 72.6
-        },
-        {
-          "symbol": "PGR",
-          "rank": 19,
-          "score": 70.8
+          "score": 77.7
         },
         {
           "symbol": "NFLX",
+          "rank": 16,
+          "score": 77.6
+        },
+        {
+          "symbol": "PAYX",
+          "rank": 17,
+          "score": 77.4
+        },
+        {
+          "symbol": "TDG",
+          "rank": 18,
+          "score": 77.3
+        },
+        {
+          "symbol": "DXCM",
+          "rank": 19,
+          "score": 77.1
+        },
+        {
+          "symbol": "HWM",
           "rank": 20,
-          "score": 69.8
+          "score": 76.9
+        }
+      ],
+      "members": [
+        {
+          "symbol": "ANET",
+          "rank": 16,
+          "score": 91.1,
+          "signal": "强势"
+        },
+        {
+          "symbol": "CRDO",
+          "rank": 5,
+          "score": 95.5,
+          "signal": "强势"
+        },
+        {
+          "symbol": "GRMN",
+          "rank": 28,
+          "score": 84.5,
+          "signal": "强势"
+        },
+        {
+          "symbol": "DXCM",
+          "rank": 32,
+          "score": 82.3,
+          "signal": "强势"
+        },
+        {
+          "symbol": "STX",
+          "rank": 14,
+          "score": 91.6,
+          "signal": "强势"
+        },
+        {
+          "symbol": "MU",
+          "rank": 13,
+          "score": 91.7,
+          "signal": "强势"
+        },
+        {
+          "symbol": "NVDA",
+          "rank": 138,
+          "score": 63.9,
+          "signal": "中性"
+        },
+        {
+          "symbol": "PLTR",
+          "rank": 45,
+          "score": 78.4,
+          "signal": "偏强"
+        },
+        {
+          "symbol": "ABNB",
+          "rank": 18,
+          "score": 90.6,
+          "signal": "强势"
+        },
+        {
+          "symbol": "NWG",
+          "rank": 53,
+          "score": 76.8,
+          "signal": "偏强"
+        },
+        {
+          "symbol": "LRCX",
+          "rank": 41,
+          "score": 79.0,
+          "signal": "偏强"
+        },
+        {
+          "symbol": "VIK",
+          "rank": 44,
+          "score": 78.6,
+          "signal": "偏强"
+        },
+        {
+          "symbol": "MRVL",
+          "rank": 11,
+          "score": 91.7,
+          "signal": "强势"
+        },
+        {
+          "symbol": "APH",
+          "rank": 47,
+          "score": 78.0,
+          "signal": "偏强"
+        },
+        {
+          "symbol": "AU",
+          "rank": 152,
+          "score": 62.4,
+          "signal": "中性"
+        },
+        {
+          "symbol": "VEEV",
+          "rank": 50,
+          "score": 77.8,
+          "signal": "偏强"
+        },
+        {
+          "symbol": "KEYS",
+          "rank": 52,
+          "score": 76.8,
+          "signal": "偏强"
+        },
+        {
+          "symbol": "ASML",
+          "rank": 58,
+          "score": 75.9,
+          "signal": "偏强"
+        },
+        {
+          "symbol": "LLY",
+          "rank": 79,
+          "score": 71.9,
+          "signal": "偏强"
+        },
+        {
+          "symbol": "CNQ",
+          "rank": 134,
+          "score": 64.4,
+          "signal": "中性"
+        },
+        {
+          "symbol": "BKNG",
+          "rank": 63,
+          "score": 75.1,
+          "signal": "偏强"
+        },
+        {
+          "symbol": "PAYX",
+          "rank": 107,
+          "score": 68.3,
+          "signal": "偏强"
+        },
+        {
+          "symbol": "CLS",
+          "rank": 46,
+          "score": 78.2,
+          "signal": "偏强"
+        },
+        {
+          "symbol": "AVGO",
+          "rank": 100,
+          "score": 68.9,
+          "signal": "偏强"
+        },
+        {
+          "symbol": "MDB",
+          "rank": 7,
+          "score": 94.7,
+          "signal": "强势"
+        },
+        {
+          "symbol": "AMGN",
+          "rank": 56,
+          "score": 76.3,
+          "signal": "偏强"
+        },
+        {
+          "symbol": "HEI",
+          "rank": 114,
+          "score": 67.2,
+          "signal": "偏强"
+        },
+        {
+          "symbol": "TSM",
+          "rank": 115,
+          "score": 67.2,
+          "signal": "偏强"
+        },
+        {
+          "symbol": "SNDK",
+          "rank": 35,
+          "score": 81.8,
+          "signal": "强势"
+        },
+        {
+          "symbol": "DELL",
+          "rank": 2,
+          "score": 98.7,
+          "signal": "强势"
+        },
+        {
+          "symbol": "SNOW",
+          "rank": 10,
+          "score": 92.8,
+          "signal": "强势"
+        },
+        {
+          "symbol": "SCHW",
+          "rank": 139,
+          "score": 63.8,
+          "signal": "中性"
+        },
+        {
+          "symbol": "VRTX",
+          "rank": 108,
+          "score": 68.0,
+          "signal": "偏强"
+        },
+        {
+          "symbol": "SE",
+          "rank": 112,
+          "score": 67.8,
+          "signal": "偏强"
+        },
+        {
+          "symbol": "ATI",
+          "rank": 9,
+          "score": 92.8,
+          "signal": "强势"
+        },
+        {
+          "symbol": "EXPE",
+          "rank": 22,
+          "score": 88.0,
+          "signal": "强势"
+        },
+        {
+          "symbol": "NTRA",
+          "rank": 17,
+          "score": 91.0,
+          "signal": "强势"
+        },
+        {
+          "symbol": "TER",
+          "rank": 19,
+          "score": 89.0,
+          "signal": "强势"
+        },
+        {
+          "symbol": "A",
+          "rank": 62,
+          "score": 75.2,
+          "signal": "偏强"
+        },
+        {
+          "symbol": "NBIS",
+          "rank": 6,
+          "score": 95.4,
+          "signal": "强势"
+        },
+        {
+          "symbol": "MPC",
+          "rank": 15,
+          "score": 91.5,
+          "signal": "强势"
+        },
+        {
+          "symbol": "RACE",
+          "rank": 121,
+          "score": 66.4,
+          "signal": "偏强"
+        },
+        {
+          "symbol": "TRV",
+          "rank": 61,
+          "score": 75.2,
+          "signal": "偏强"
+        },
+        {
+          "symbol": "ARM",
+          "rank": 33,
+          "score": 82.3,
+          "signal": "强势"
+        },
+        {
+          "symbol": "NTAP",
+          "rank": 4,
+          "score": 95.8,
+          "signal": "强势"
+        },
+        {
+          "symbol": "MFG",
+          "rank": 49,
+          "score": 77.9,
+          "signal": "偏强"
+        },
+        {
+          "symbol": "FTI",
+          "rank": 144,
+          "score": 63.4,
+          "signal": "中性"
+        },
+        {
+          "symbol": "MSFT",
+          "rank": 85,
+          "score": 71.2,
+          "signal": "偏强"
+        },
+        {
+          "symbol": "NET",
+          "rank": 8,
+          "score": 93.1,
+          "signal": "强势"
+        },
+        {
+          "symbol": "PYPL",
+          "rank": 135,
+          "score": 64.3,
+          "signal": "中性"
+        },
+        {
+          "symbol": "ONC",
+          "rank": 133,
+          "score": 64.4,
+          "signal": "中性"
+        },
+        {
+          "symbol": "TWLO",
+          "rank": 12,
+          "score": 91.7,
+          "signal": "强势"
+        },
+        {
+          "symbol": "FTNT",
+          "rank": 71,
+          "score": 73.1,
+          "signal": "偏强"
+        },
+        {
+          "symbol": "TEAM",
+          "rank": 31,
+          "score": 82.5,
+          "signal": "强势"
+        },
+        {
+          "symbol": "FIX",
+          "rank": 250,
+          "score": 51.4,
+          "signal": "中性"
+        },
+        {
+          "symbol": "NEM",
+          "rank": 126,
+          "score": 65.7,
+          "signal": "偏强"
+        },
+        {
+          "symbol": "BBVA",
+          "rank": 26,
+          "score": 85.2,
+          "signal": "强势"
+        },
+        {
+          "symbol": "AME",
+          "rank": 127,
+          "score": 65.5,
+          "signal": "偏强"
+        },
+        {
+          "symbol": "BX",
+          "rank": 94,
+          "score": 70.2,
+          "signal": "偏强"
+        },
+        {
+          "symbol": "GD",
+          "rank": 157,
+          "score": 61.8,
+          "signal": "中性"
+        },
+        {
+          "symbol": "DAL",
+          "rank": 54,
+          "score": 76.5,
+          "signal": "偏强"
+        },
+        {
+          "symbol": "GFI",
+          "rank": 243,
+          "score": 52.4,
+          "signal": "中性"
+        },
+        {
+          "symbol": "NOW",
+          "rank": 119,
+          "score": 66.7,
+          "signal": "偏强"
+        },
+        {
+          "symbol": "RTX",
+          "rank": 64,
+          "score": 74.6,
+          "signal": "偏强"
+        },
+        {
+          "symbol": "SU",
+          "rank": 161,
+          "score": 61.0,
+          "signal": "中性"
+        },
+        {
+          "symbol": "ALAB",
+          "rank": 66,
+          "score": 74.4,
+          "signal": "偏强"
+        },
+        {
+          "symbol": "ALL",
+          "rank": 105,
+          "score": 68.6,
+          "signal": "偏强"
+        },
+        {
+          "symbol": "TECK",
+          "rank": 70,
+          "score": 73.3,
+          "signal": "偏强"
+        },
+        {
+          "symbol": "FAST",
+          "rank": 116,
+          "score": 67.0,
+          "signal": "偏强"
+        },
+        {
+          "symbol": "WAB",
+          "rank": 93,
+          "score": 70.4,
+          "signal": "偏强"
+        },
+        {
+          "symbol": "MA",
+          "rank": 266,
+          "score": 49.5,
+          "signal": "中性"
+        },
+        {
+          "symbol": "COP",
+          "rank": 140,
+          "score": 63.7,
+          "signal": "中性"
+        },
+        {
+          "symbol": "IX",
+          "rank": 179,
+          "score": 60.0,
+          "signal": "中性"
+        },
+        {
+          "symbol": "WDC",
+          "rank": 90,
+          "score": 71.1,
+          "signal": "偏强"
+        },
+        {
+          "symbol": "JNJ",
+          "rank": 147,
+          "score": 62.9,
+          "signal": "中性"
+        },
+        {
+          "symbol": "P",
+          "rank": 3,
+          "score": 96.6,
+          "signal": "强势"
+        },
+        {
+          "symbol": "CRWD",
+          "rank": 25,
+          "score": 86.6,
+          "signal": "强势"
+        },
+        {
+          "symbol": "ZM",
+          "rank": 72,
+          "score": 72.9,
+          "signal": "偏强"
+        },
+        {
+          "symbol": "SHOP",
+          "rank": 55,
+          "score": 76.3,
+          "signal": "偏强"
+        },
+        {
+          "symbol": "BHP",
+          "rank": 87,
+          "score": 71.2,
+          "signal": "偏强"
+        },
+        {
+          "symbol": "PSX",
+          "rank": 24,
+          "score": 87.2,
+          "signal": "强势"
+        },
+        {
+          "symbol": "HWM",
+          "rank": 188,
+          "score": 59.2,
+          "signal": "中性"
+        },
+        {
+          "symbol": "DB",
+          "rank": 124,
+          "score": 65.9,
+          "signal": "偏强"
+        },
+        {
+          "symbol": "BCS",
+          "rank": 169,
+          "score": 60.7,
+          "signal": "中性"
+        },
+        {
+          "symbol": "PH",
+          "rank": 95,
+          "score": 69.6,
+          "signal": "偏强"
+        },
+        {
+          "symbol": "APO",
+          "rank": 173,
+          "score": 60.3,
+          "signal": "中性"
+        },
+        {
+          "symbol": "GE",
+          "rank": 131,
+          "score": 64.6,
+          "signal": "中性"
+        },
+        {
+          "symbol": "ARGX",
+          "rank": 293,
+          "score": 46.4,
+          "signal": "中性"
+        },
+        {
+          "symbol": "KGC",
+          "rank": 252,
+          "score": 51.3,
+          "signal": "中性"
+        },
+        {
+          "symbol": "SAP",
+          "rank": 156,
+          "score": 61.8,
+          "signal": "中性"
+        },
+        {
+          "symbol": "AMP",
+          "rank": 128,
+          "score": 65.5,
+          "signal": "偏强"
+        },
+        {
+          "symbol": "HPE",
+          "rank": 1,
+          "score": 98.9,
+          "signal": "强势"
+        },
+        {
+          "symbol": "CIEN",
+          "rank": 77,
+          "score": 71.9,
+          "signal": "偏强"
+        },
+        {
+          "symbol": "CM",
+          "rank": 154,
+          "score": 62.0,
+          "signal": "中性"
+        },
+        {
+          "symbol": "BMO",
+          "rank": 109,
+          "score": 68.0,
+          "signal": "偏强"
+        },
+        {
+          "symbol": "MNST",
+          "rank": 490,
+          "score": 8.4,
+          "signal": "弱势"
+        },
+        {
+          "symbol": "ZS",
+          "rank": 171,
+          "score": 60.5,
+          "signal": "中性"
+        },
+        {
+          "symbol": "WDAY",
+          "rank": 80,
+          "score": 71.7,
+          "signal": "偏强"
+        },
+        {
+          "symbol": "APP",
+          "rank": 492,
+          "score": 6.0,
+          "signal": "弱势"
+        },
+        {
+          "symbol": "IBKR",
+          "rank": 240,
+          "score": 53.2,
+          "signal": "中性"
+        },
+        {
+          "symbol": "EME",
+          "rank": 238,
+          "score": 53.5,
+          "signal": "中性"
+        },
+        {
+          "symbol": "AEM",
+          "rank": 210,
+          "score": 56.8,
+          "signal": "中性"
+        },
+        {
+          "symbol": "DASH",
+          "rank": 86,
+          "score": 71.2,
+          "signal": "偏强"
+        },
+        {
+          "symbol": "ROST",
+          "rank": 98,
+          "score": 69.3,
+          "signal": "偏强"
+        },
+        {
+          "symbol": "NFLX",
+          "rank": 399,
+          "score": 31.5,
+          "signal": "转弱"
+        },
+        {
+          "symbol": "TDG",
+          "rank": 390,
+          "score": 32.7,
+          "signal": "转弱"
+        },
+        {
+          "symbol": "AGNCZ",
+          "rank": 267,
+          "score": 49.4,
+          "signal": "中性"
+        },
+        {
+          "symbol": "TSEM",
+          "rank": 40,
+          "score": 79.0,
+          "signal": "偏强"
+        },
+        {
+          "symbol": "AGNCO",
+          "rank": 276,
+          "score": 48.6,
+          "signal": "中性"
+        },
+        {
+          "symbol": "REGN",
+          "rank": 65,
+          "score": 74.5,
+          "signal": "偏强"
+        },
+        {
+          "symbol": "AGNCP",
+          "rank": 280,
+          "score": 48.2,
+          "signal": "中性"
+        },
+        {
+          "symbol": "UI",
+          "rank": 342,
+          "score": 38.2,
+          "signal": "转弱"
+        },
+        {
+          "symbol": "HSBC",
+          "rank": 99,
+          "score": 69.1,
+          "signal": "偏强"
+        },
+        {
+          "symbol": "AGNCN",
+          "rank": 300,
+          "score": 45.5,
+          "signal": "中性"
+        },
+        {
+          "symbol": "EQNR",
+          "rank": 67,
+          "score": 74.2,
+          "signal": "偏强"
+        },
+        {
+          "symbol": "AGNCL",
+          "rank": 305,
+          "score": 43.9,
+          "signal": "转弱"
+        },
+        {
+          "symbol": "PGR",
+          "rank": 335,
+          "score": 39.5,
+          "signal": "转弱"
+        },
+        {
+          "symbol": "BAM",
+          "rank": 194,
+          "score": 58.6,
+          "signal": "中性"
+        },
+        {
+          "symbol": "AGNCM",
+          "rank": 301,
+          "score": 44.9,
+          "signal": "转弱"
+        },
+        {
+          "symbol": "RMD",
+          "rank": 273,
+          "score": 48.6,
+          "signal": "中性"
+        },
+        {
+          "symbol": "EW",
+          "rank": 176,
+          "score": 60.1,
+          "signal": "中性"
+        },
+        {
+          "symbol": "ROP",
+          "rank": 212,
+          "score": 56.3,
+          "signal": "中性"
+        },
+        {
+          "symbol": "SPOT",
+          "rank": 309,
+          "score": 43.6,
+          "signal": "转弱"
+        },
+        {
+          "symbol": "NU",
+          "rank": 355,
+          "score": 36.8,
+          "signal": "转弱"
+        },
+        {
+          "symbol": "RDDT",
+          "rank": 477,
+          "score": 14.8,
+          "signal": "弱势"
+        },
+        {
+          "symbol": "OKE",
+          "rank": 263,
+          "score": 50.3,
+          "signal": "中性"
+        },
+        {
+          "symbol": "XOM",
+          "rank": 172,
+          "score": 60.4,
+          "signal": "中性"
+        },
+        {
+          "symbol": "SHG",
+          "rank": 132,
+          "score": 64.6,
+          "signal": "中性"
+        },
+        {
+          "symbol": "USB",
+          "rank": 145,
+          "score": 63.4,
+          "signal": "中性"
+        },
+        {
+          "symbol": "KO",
+          "rank": 217,
+          "score": 55.7,
+          "signal": "中性"
+        },
+        {
+          "symbol": "BNY",
+          "rank": 130,
+          "score": 65.1,
+          "signal": "偏强"
+        },
+        {
+          "symbol": "LYG",
+          "rank": 118,
+          "score": 66.9,
+          "signal": "偏强"
+        },
+        {
+          "symbol": "EQT",
+          "rank": 326,
+          "score": 41.0,
+          "signal": "转弱"
+        },
+        {
+          "symbol": "PBR",
+          "rank": 271,
+          "score": 48.7,
+          "signal": "中性"
+        },
+        {
+          "symbol": "BAP",
+          "rank": 233,
+          "score": 53.9,
+          "signal": "中性"
+        },
+        {
+          "symbol": "V",
+          "rank": 315,
+          "score": 42.9,
+          "signal": "转弱"
+        },
+        {
+          "symbol": "AXON",
+          "rank": 59,
+          "score": 75.8,
+          "signal": "偏强"
+        },
+        {
+          "symbol": "CSCO",
+          "rank": 226,
+          "score": 54.9,
+          "signal": "中性"
+        },
+        {
+          "symbol": "RPRX",
+          "rank": 151,
+          "score": 62.5,
+          "signal": "中性"
+        },
+        {
+          "symbol": "MSCI",
+          "rank": 450,
+          "score": 22.2,
+          "signal": "弱势"
+        },
+        {
+          "symbol": "CBOE",
+          "rank": 349,
+          "score": 37.6,
+          "signal": "转弱"
+        },
+        {
+          "symbol": "ADP",
+          "rank": 146,
+          "score": 63.1,
+          "signal": "中性"
+        },
+        {
+          "symbol": "PM",
+          "rank": 340,
+          "score": 38.5,
+          "signal": "转弱"
+        },
+        {
+          "symbol": "WSM",
+          "rank": 89,
+          "score": 71.1,
+          "signal": "偏强"
+        },
+        {
+          "symbol": "ISRG",
+          "rank": 466,
+          "score": 19.2,
+          "signal": "弱势"
+        },
+        {
+          "symbol": "TMO",
+          "rank": 78,
+          "score": 71.9,
+          "signal": "偏强"
+        },
+        {
+          "symbol": "TT",
+          "rank": 304,
+          "score": 44.0,
+          "signal": "转弱"
+        },
+        {
+          "symbol": "EOG",
+          "rank": 246,
+          "score": 52.0,
+          "signal": "中性"
+        },
+        {
+          "symbol": "AMD",
+          "rank": 149,
+          "score": 62.6,
+          "signal": "中性"
+        },
+        {
+          "symbol": "CVE",
+          "rank": 84,
+          "score": 71.4,
+          "signal": "偏强"
+        },
+        {
+          "symbol": "MFC",
+          "rank": 177,
+          "score": 60.1,
+          "signal": "中性"
+        },
+        {
+          "symbol": "VRT",
+          "rank": 327,
+          "score": 41.0,
+          "signal": "转弱"
+        },
+        {
+          "symbol": "CNC",
+          "rank": 91,
+          "score": 71.1,
+          "signal": "偏强"
+        },
+        {
+          "symbol": "ESLT",
+          "rank": 205,
+          "score": 57.3,
+          "signal": "中性"
+        },
+        {
+          "symbol": "PANW",
+          "rank": 21,
+          "score": 88.6,
+          "signal": "强势"
+        },
+        {
+          "symbol": "COF",
+          "rank": 225,
+          "score": 54.9,
+          "signal": "中性"
+        },
+        {
+          "symbol": "ETN",
+          "rank": 51,
+          "score": 77.4,
+          "signal": "偏强"
+        },
+        {
+          "symbol": "SYF",
+          "rank": 158,
+          "score": 61.7,
+          "signal": "中性"
+        },
+        {
+          "symbol": "SMFG",
+          "rank": 123,
+          "score": 66.0,
+          "signal": "偏强"
+        },
+        {
+          "symbol": "CBRS",
+          "rank": 162,
+          "score": 60.9,
+          "signal": "中性"
+        },
+        {
+          "symbol": "IMO",
+          "rank": 166,
+          "score": 60.7,
+          "signal": "中性"
+        },
+        {
+          "symbol": "CTAS",
+          "rank": 347,
+          "score": 37.7,
+          "signal": "转弱"
+        },
+        {
+          "symbol": "JCI",
+          "rank": 136,
+          "score": 64.2,
+          "signal": "中性"
+        },
+        {
+          "symbol": "ADBE",
+          "rank": 312,
+          "score": 43.3,
+          "signal": "转弱"
+        },
+        {
+          "symbol": "URI",
+          "rank": 110,
+          "score": 67.9,
+          "signal": "偏强"
+        },
+        {
+          "symbol": "UBER",
+          "rank": 389,
+          "score": 32.7,
+          "signal": "转弱"
+        },
+        {
+          "symbol": "DVN",
+          "rank": 323,
+          "score": 42.1,
+          "signal": "转弱"
+        },
+        {
+          "symbol": "YUM",
+          "rank": 379,
+          "score": 33.7,
+          "signal": "转弱"
+        },
+        {
+          "symbol": "WPM",
+          "rank": 181,
+          "score": 59.8,
+          "signal": "中性"
+        },
+        {
+          "symbol": "PUK",
+          "rank": 451,
+          "score": 22.0,
+          "signal": "弱势"
+        },
+        {
+          "symbol": "CCEP",
+          "rank": 245,
+          "score": 52.1,
+          "signal": "中性"
+        },
+        {
+          "symbol": "PDD",
+          "rank": 469,
+          "score": 18.3,
+          "signal": "弱势"
+        },
+        {
+          "symbol": "KDP",
+          "rank": 331,
+          "score": 40.2,
+          "signal": "转弱"
+        },
+        {
+          "symbol": "AMAT",
+          "rank": 111,
+          "score": 67.9,
+          "signal": "偏强"
+        },
+        {
+          "symbol": "RKLB",
+          "rank": 143,
+          "score": 63.5,
+          "signal": "中性"
+        },
+        {
+          "symbol": "MCK",
+          "rank": 285,
+          "score": 47.4,
+          "signal": "中性"
+        },
+        {
+          "symbol": "ACGL",
+          "rank": 415,
+          "score": 29.1,
+          "signal": "弱势"
+        },
+        {
+          "symbol": "GLW",
+          "rank": 241,
+          "score": 53.1,
+          "signal": "中性"
+        },
+        {
+          "symbol": "B",
+          "rank": 185,
+          "score": 59.5,
+          "signal": "中性"
+        },
+        {
+          "symbol": "INTU",
+          "rank": 333,
+          "score": 39.7,
+          "signal": "转弱"
+        },
+        {
+          "symbol": "BSX",
+          "rank": 338,
+          "score": 39.0,
+          "signal": "转弱"
+        },
+        {
+          "symbol": "IDXX",
+          "rank": 436,
+          "score": 25.3,
+          "signal": "弱势"
+        },
+        {
+          "symbol": "LNG",
+          "rank": 196,
+          "score": 58.4,
+          "signal": "中性"
+        },
+        {
+          "symbol": "UAL",
+          "rank": 74,
+          "score": 72.1,
+          "signal": "偏强"
+        },
+        {
+          "symbol": "HOOD",
+          "rank": 291,
+          "score": 46.9,
+          "signal": "中性"
+        },
+        {
+          "symbol": "MELI",
+          "rank": 378,
+          "score": 34.0,
+          "signal": "转弱"
+        },
+        {
+          "symbol": "CFG",
+          "rank": 165,
+          "score": 60.8,
+          "signal": "中性"
+        },
+        {
+          "symbol": "BMY",
+          "rank": 113,
+          "score": 67.2,
+          "signal": "偏强"
+        },
+        {
+          "symbol": "PEG",
+          "rank": 470,
+          "score": 17.8,
+          "signal": "弱势"
+        },
+        {
+          "symbol": "PWR",
+          "rank": 182,
+          "score": 59.7,
+          "signal": "中性"
+        },
+        {
+          "symbol": "EMR",
+          "rank": 60,
+          "score": 75.5,
+          "signal": "偏强"
+        },
+        {
+          "symbol": "NUE",
+          "rank": 27,
+          "score": 84.7,
+          "signal": "强势"
+        },
+        {
+          "symbol": "MUFG",
+          "rank": 92,
+          "score": 70.6,
+          "signal": "偏强"
+        },
+        {
+          "symbol": "BE",
+          "rank": 76,
+          "score": 71.9,
+          "signal": "偏强"
+        },
+        {
+          "symbol": "ALNY",
+          "rank": 493,
+          "score": 3.1,
+          "signal": "弱势"
+        },
+        {
+          "symbol": "ADSK",
+          "rank": 247,
+          "score": 51.9,
+          "signal": "中性"
+        },
+        {
+          "symbol": "CP",
+          "rank": 249,
+          "score": 51.5,
+          "signal": "中性"
+        },
+        {
+          "symbol": "STT",
+          "rank": 83,
+          "score": 71.6,
+          "signal": "偏强"
+        },
+        {
+          "symbol": "ARES",
+          "rank": 104,
+          "score": 68.7,
+          "signal": "偏强"
+        },
+        {
+          "symbol": "RJF",
+          "rank": 160,
+          "score": 61.3,
+          "signal": "中性"
+        },
+        {
+          "symbol": "LMT",
+          "rank": 148,
+          "score": 62.6,
+          "signal": "中性"
+        },
+        {
+          "symbol": "GEV",
+          "rank": 222,
+          "score": 55.3,
+          "signal": "中性"
+        },
+        {
+          "symbol": "SONY",
+          "rank": 258,
+          "score": 50.7,
+          "signal": "中性"
+        },
+        {
+          "symbol": "IQV",
+          "rank": 34,
+          "score": 82.2,
+          "signal": "强势"
+        },
+        {
+          "symbol": "MCO",
+          "rank": 392,
+          "score": 32.3,
+          "signal": "转弱"
+        },
+        {
+          "symbol": "LITE",
+          "rank": 30,
+          "score": 82.9,
+          "signal": "强势"
+        },
+        {
+          "symbol": "RYAAY",
+          "rank": 457,
+          "score": 21.0,
+          "signal": "弱势"
+        },
+        {
+          "symbol": "NVS",
+          "rank": 341,
+          "score": 38.4,
+          "signal": "转弱"
+        },
+        {
+          "symbol": "SUNB",
+          "rank": 141,
+          "score": 63.7,
+          "signal": "中性"
+        },
+        {
+          "symbol": "FDX",
+          "rank": 137,
+          "score": 64.1,
+          "signal": "中性"
+        },
+        {
+          "symbol": "PNC",
+          "rank": 197,
+          "score": 58.4,
+          "signal": "中性"
+        },
+        {
+          "symbol": "WCN",
+          "rank": 430,
+          "score": 27.1,
+          "signal": "弱势"
+        },
+        {
+          "symbol": "KLAC",
+          "rank": 198,
+          "score": 58.2,
+          "signal": "中性"
+        },
+        {
+          "symbol": "TDY",
+          "rank": 221,
+          "score": 55.4,
+          "signal": "中性"
+        },
+        {
+          "symbol": "FANG",
+          "rank": 242,
+          "score": 52.9,
+          "signal": "中性"
+        },
+        {
+          "symbol": "LPLA",
+          "rank": 97,
+          "score": 69.3,
+          "signal": "偏强"
+        },
+        {
+          "symbol": "KMI",
+          "rank": 387,
+          "score": 33.1,
+          "signal": "转弱"
+        },
+        {
+          "symbol": "RY",
+          "rank": 184,
+          "score": 59.7,
+          "signal": "中性"
+        },
+        {
+          "symbol": "ORLY",
+          "rank": 321,
+          "score": 42.3,
+          "signal": "转弱"
+        },
+        {
+          "symbol": "MPWR",
+          "rank": 186,
+          "score": 59.5,
+          "signal": "中性"
+        },
+        {
+          "symbol": "HUM",
+          "rank": 142,
+          "score": 63.7,
+          "signal": "中性"
+        },
+        {
+          "symbol": "TFC",
+          "rank": 281,
+          "score": 47.9,
+          "signal": "中性"
+        },
+        {
+          "symbol": "EC",
+          "rank": 37,
+          "score": 80.6,
+          "signal": "强势"
+        },
+        {
+          "symbol": "BNS",
+          "rank": 170,
+          "score": 60.6,
+          "signal": "中性"
+        },
+        {
+          "symbol": "CVNA",
+          "rank": 237,
+          "score": 53.6,
+          "signal": "中性"
+        },
+        {
+          "symbol": "CCL",
+          "rank": 253,
+          "score": 51.0,
+          "signal": "中性"
+        },
+        {
+          "symbol": "VLO",
+          "rank": 23,
+          "score": 87.4,
+          "signal": "强势"
+        },
+        {
+          "symbol": "VG",
+          "rank": 187,
+          "score": 59.4,
+          "signal": "中性"
+        },
+        {
+          "symbol": "GOOGL",
+          "rank": 359,
+          "score": 36.6,
+          "signal": "转弱"
+        },
+        {
+          "symbol": "GOOG",
+          "rank": 360,
+          "score": 36.6,
+          "signal": "转弱"
+        },
+        {
+          "symbol": "STLD",
+          "rank": 39,
+          "score": 79.5,
+          "signal": "偏强"
+        },
+        {
+          "symbol": "ABEV",
+          "rank": 459,
+          "score": 20.5,
+          "signal": "弱势"
+        },
+        {
+          "symbol": "BKR",
+          "rank": 178,
+          "score": 60.0,
+          "signal": "中性"
+        },
+        {
+          "symbol": "BDX",
+          "rank": 73,
+          "score": 72.4,
+          "signal": "偏强"
+        },
+        {
+          "symbol": "NVO",
+          "rank": 429,
+          "score": 27.2,
+          "signal": "弱势"
+        },
+        {
+          "symbol": "NDAQ",
+          "rank": 298,
+          "score": 45.8,
+          "signal": "中性"
+        },
+        {
+          "symbol": "T",
+          "rank": 318,
+          "score": 42.4,
+          "signal": "转弱"
+        },
+        {
+          "symbol": "CNI",
+          "rank": 232,
+          "score": 54.5,
+          "signal": "中性"
+        },
+        {
+          "symbol": "CME",
+          "rank": 361,
+          "score": 36.4,
+          "signal": "转弱"
+        },
+        {
+          "symbol": "MMM",
+          "rank": 106,
+          "score": 68.5,
+          "signal": "偏强"
+        },
+        {
+          "symbol": "UNP",
+          "rank": 257,
+          "score": 50.8,
+          "signal": "中性"
+        },
+        {
+          "symbol": "SLB",
+          "rank": 224,
+          "score": 54.9,
+          "signal": "中性"
+        },
+        {
+          "symbol": "AON",
+          "rank": 380,
+          "score": 33.6,
+          "signal": "转弱"
+        },
+        {
+          "symbol": "PRU",
+          "rank": 125,
+          "score": 65.9,
+          "signal": "偏强"
+        },
+        {
+          "symbol": "CRM",
+          "rank": 231,
+          "score": 54.5,
+          "signal": "中性"
+        },
+        {
+          "symbol": "WM",
+          "rank": 441,
+          "score": 24.3,
+          "signal": "弱势"
+        },
+        {
+          "symbol": "MS",
+          "rank": 174,
+          "score": 60.3,
+          "signal": "中性"
+        },
+        {
+          "symbol": "SCCO",
+          "rank": 236,
+          "score": 53.7,
+          "signal": "中性"
+        },
+        {
+          "symbol": "HLT",
+          "rank": 369,
+          "score": 35.7,
+          "signal": "转弱"
+        },
+        {
+          "symbol": "SYK",
+          "rank": 332,
+          "score": 39.9,
+          "signal": "转弱"
+        },
+        {
+          "symbol": "ACN",
+          "rank": 284,
+          "score": 47.5,
+          "signal": "中性"
+        },
+        {
+          "symbol": "UBS",
+          "rank": 159,
+          "score": 61.5,
+          "signal": "中性"
+        },
+        {
+          "symbol": "JPM",
+          "rank": 101,
+          "score": 68.9,
+          "signal": "偏强"
+        },
+        {
+          "symbol": "SLF",
+          "rank": 251,
+          "score": 51.4,
+          "signal": "中性"
+        },
+        {
+          "symbol": "AMZN",
+          "rank": 183,
+          "score": 59.7,
+          "signal": "中性"
+        },
+        {
+          "symbol": "LVS",
+          "rank": 467,
+          "score": 18.5,
+          "signal": "弱势"
+        },
+        {
+          "symbol": "IBN",
+          "rank": 325,
+          "score": 41.1,
+          "signal": "转弱"
+        },
+        {
+          "symbol": "MCD",
+          "rank": 433,
+          "score": 25.5,
+          "signal": "弱势"
+        },
+        {
+          "symbol": "FMX",
+          "rank": 412,
+          "score": 29.4,
+          "signal": "弱势"
+        },
+        {
+          "symbol": "Q",
+          "rank": 155,
+          "score": 61.9,
+          "signal": "中性"
+        },
+        {
+          "symbol": "HSY",
+          "rank": 351,
+          "score": 37.3,
+          "signal": "转弱"
+        },
+        {
+          "symbol": "SPGI",
+          "rank": 417,
+          "score": 29.1,
+          "signal": "弱势"
+        },
+        {
+          "symbol": "NTES",
+          "rank": 382,
+          "score": 33.6,
+          "signal": "转弱"
+        },
+        {
+          "symbol": "ADI",
+          "rank": 310,
+          "score": 43.6,
+          "signal": "转弱"
+        },
+        {
+          "symbol": "RCL",
+          "rank": 208,
+          "score": 57.0,
+          "signal": "中性"
+        },
+        {
+          "symbol": "HIG",
+          "rank": 371,
+          "score": 35.3,
+          "signal": "转弱"
+        },
+        {
+          "symbol": "CRWV",
+          "rank": 120,
+          "score": 66.6,
+          "signal": "偏强"
+        },
+        {
+          "symbol": "DLR",
+          "rank": 122,
+          "score": 66.3,
+          "signal": "偏强"
+        },
+        {
+          "symbol": "O",
+          "rank": 372,
+          "score": 35.2,
+          "signal": "转弱"
+        },
+        {
+          "symbol": "EBAY",
+          "rank": 419,
+          "score": 28.6,
+          "signal": "弱势"
+        },
+        {
+          "symbol": "TKO",
+          "rank": 313,
+          "score": 43.3,
+          "signal": "转弱"
+        },
+        {
+          "symbol": "TRP",
+          "rank": 446,
+          "score": 23.2,
+          "signal": "弱势"
+        },
+        {
+          "symbol": "JBL",
+          "rank": 36,
+          "score": 80.6,
+          "signal": "强势"
+        },
+        {
+          "symbol": "MTB",
+          "rank": 203,
+          "score": 57.5,
+          "signal": "中性"
+        },
+        {
+          "symbol": "RSG",
+          "rank": 407,
+          "score": 30.0,
+          "signal": "弱势"
+        },
+        {
+          "symbol": "KKR",
+          "rank": 163,
+          "score": 60.9,
+          "signal": "中性"
+        },
+        {
+          "symbol": "MET",
+          "rank": 129,
+          "score": 65.2,
+          "signal": "偏强"
+        },
+        {
+          "symbol": "BLK",
+          "rank": 209,
+          "score": 56.9,
+          "signal": "中性"
+        },
+        {
+          "symbol": "CHT",
+          "rank": 377,
+          "score": 34.3,
+          "signal": "转弱"
+        },
+        {
+          "symbol": "HCA",
+          "rank": 363,
+          "score": 36.3,
+          "signal": "转弱"
+        },
+        {
+          "symbol": "GILD",
+          "rank": 345,
+          "score": 37.9,
+          "signal": "转弱"
+        },
+        {
+          "symbol": "WTW",
+          "rank": 102,
+          "score": 68.8,
+          "signal": "偏强"
+        },
+        {
+          "symbol": "HMC",
+          "rank": 175,
+          "score": 60.2,
+          "signal": "中性"
+        },
+        {
+          "symbol": "MDLZ",
+          "rank": 270,
+          "score": 48.8,
+          "signal": "中性"
+        },
+        {
+          "symbol": "MDT",
+          "rank": 219,
+          "score": 55.5,
+          "signal": "中性"
+        },
+        {
+          "symbol": "CI",
+          "rank": 435,
+          "score": 25.3,
+          "signal": "弱势"
+        },
+        {
+          "symbol": "SHEL",
+          "rank": 214,
+          "score": 56.2,
+          "signal": "中性"
+        },
+        {
+          "symbol": "VOD",
+          "rank": 191,
+          "score": 59.0,
+          "signal": "中性"
+        },
+        {
+          "symbol": "VICI",
+          "rank": 478,
+          "score": 14.6,
+          "signal": "弱势"
+        },
+        {
+          "symbol": "CB",
+          "rank": 307,
+          "score": 43.9,
+          "signal": "转弱"
+        },
+        {
+          "symbol": "ICE",
+          "rank": 334,
+          "score": 39.5,
+          "signal": "转弱"
+        },
+        {
+          "symbol": "TJX",
+          "rank": 395,
+          "score": 32.0,
+          "signal": "转弱"
+        },
+        {
+          "symbol": "META",
+          "rank": 487,
+          "score": 12.1,
+          "signal": "弱势"
+        },
+        {
+          "symbol": "CASY",
+          "rank": 206,
+          "score": 57.3,
+          "signal": "中性"
+        },
+        {
+          "symbol": "BUD",
+          "rank": 358,
+          "score": 36.6,
+          "signal": "转弱"
+        },
+        {
+          "symbol": "CMG",
+          "rank": 461,
+          "score": 20.3,
+          "signal": "弱势"
+        },
+        {
+          "symbol": "ITW",
+          "rank": 259,
+          "score": 50.5,
+          "signal": "中性"
+        },
+        {
+          "symbol": "MAR",
+          "rank": 406,
+          "score": 30.4,
+          "signal": "转弱"
+        },
+        {
+          "symbol": "AAPL",
+          "rank": 357,
+          "score": 36.7,
+          "signal": "转弱"
+        },
+        {
+          "symbol": "EXR",
+          "rank": 337,
+          "score": 39.2,
+          "signal": "转弱"
+        },
+        {
+          "symbol": "TMUS",
+          "rank": 483,
+          "score": 13.7,
+          "signal": "弱势"
+        },
+        {
+          "symbol": "VMC",
+          "rank": 449,
+          "score": 22.4,
+          "signal": "弱势"
+        },
+        {
+          "symbol": "NEE",
+          "rank": 427,
+          "score": 27.6,
+          "signal": "弱势"
+        },
+        {
+          "symbol": "CEG",
+          "rank": 274,
+          "score": 48.6,
+          "signal": "中性"
+        },
+        {
+          "symbol": "MRK",
+          "rank": 88,
+          "score": 71.2,
+          "signal": "偏强"
+        },
+        {
+          "symbol": "SPG",
+          "rank": 282,
+          "score": 47.7,
+          "signal": "中性"
+        },
+        {
+          "symbol": "CDNS",
+          "rank": 445,
+          "score": 23.4,
+          "signal": "弱势"
+        },
+        {
+          "symbol": "HBANL",
+          "rank": 314,
+          "score": 43.2,
+          "signal": "转弱"
+        },
+        {
+          "symbol": "ELV",
+          "rank": 167,
+          "score": 60.7,
+          "signal": "中性"
+        },
+        {
+          "symbol": "WMB",
+          "rank": 396,
+          "score": 31.9,
+          "signal": "转弱"
+        },
+        {
+          "symbol": "CVX",
+          "rank": 190,
+          "score": 59.0,
+          "signal": "中性"
+        },
+        {
+          "symbol": "AZN",
+          "rank": 484,
+          "score": 13.7,
+          "signal": "弱势"
+        },
+        {
+          "symbol": "HON",
+          "rank": 339,
+          "score": 38.6,
+          "signal": "转弱"
+        },
+        {
+          "symbol": "ABBV",
+          "rank": 230,
+          "score": 54.6,
+          "signal": "中性"
+        },
+        {
+          "symbol": "HBAN",
+          "rank": 320,
+          "score": 42.4,
+          "signal": "转弱"
+        },
+        {
+          "symbol": "PEP",
+          "rank": 431,
+          "score": 26.8,
+          "signal": "弱势"
+        },
+        {
+          "symbol": "CMCSA",
+          "rank": 319,
+          "score": 42.4,
+          "signal": "转弱"
+        },
+        {
+          "symbol": "GSK",
+          "rank": 428,
+          "score": 27.6,
+          "signal": "弱势"
+        },
+        {
+          "symbol": "MRSH",
+          "rank": 262,
+          "score": 50.3,
+          "signal": "中性"
+        },
+        {
+          "symbol": "GWW",
+          "rank": 353,
+          "score": 37.3,
+          "signal": "转弱"
+        },
+        {
+          "symbol": "NMR",
+          "rank": 168,
+          "score": 60.7,
+          "signal": "中性"
+        },
+        {
+          "symbol": "PLD",
+          "rank": 400,
+          "score": 31.3,
+          "signal": "转弱"
+        },
+        {
+          "symbol": "MT",
+          "rank": 38,
+          "score": 79.8,
+          "signal": "偏强"
+        },
+        {
+          "symbol": "NOC",
+          "rank": 302,
+          "score": 44.8,
+          "signal": "转弱"
+        },
+        {
+          "symbol": "OXY",
+          "rank": 201,
+          "score": 58.0,
+          "signal": "中性"
+        },
+        {
+          "symbol": "IBM",
+          "rank": 292,
+          "score": 46.7,
+          "signal": "中性"
+        },
+        {
+          "symbol": "COHR",
+          "rank": 81,
+          "score": 71.6,
+          "signal": "偏强"
+        },
+        {
+          "symbol": "HBANZ",
+          "rank": 398,
+          "score": 31.6,
+          "signal": "转弱"
+        },
+        {
+          "symbol": "ENB",
+          "rank": 443,
+          "score": 23.8,
+          "signal": "弱势"
+        },
+        {
+          "symbol": "TRI",
+          "rank": 255,
+          "score": 50.9,
+          "signal": "中性"
+        },
+        {
+          "symbol": "AJG",
+          "rank": 287,
+          "score": 47.2,
+          "signal": "中性"
+        },
+        {
+          "symbol": "INFY",
+          "rank": 370,
+          "score": 35.6,
+          "signal": "转弱"
+        },
+        {
+          "symbol": "KB",
+          "rank": 277,
+          "score": 48.5,
+          "signal": "中性"
+        },
+        {
+          "symbol": "HBANM",
+          "rank": 421,
+          "score": 28.3,
+          "signal": "弱势"
+        },
+        {
+          "symbol": "MSI",
+          "rank": 193,
+          "score": 58.6,
+          "signal": "中性"
+        },
+        {
+          "symbol": "PSA",
+          "rank": 264,
+          "score": 50.3,
+          "signal": "中性"
+        },
+        {
+          "symbol": "QCOM",
+          "rank": 404,
+          "score": 30.7,
+          "signal": "转弱"
+        },
+        {
+          "symbol": "ZTS",
+          "rank": 482,
+          "score": 13.8,
+          "signal": "弱势"
+        },
+        {
+          "symbol": "AEE",
+          "rank": 386,
+          "score": 33.2,
+          "signal": "转弱"
+        },
+        {
+          "symbol": "CAH",
+          "rank": 192,
+          "score": 58.9,
+          "signal": "中性"
+        },
+        {
+          "symbol": "CAT",
+          "rank": 308,
+          "score": 43.9,
+          "signal": "转弱"
+        },
+        {
+          "symbol": "HDB",
+          "rank": 491,
+          "score": 6.2,
+          "signal": "弱势"
+        },
+        {
+          "symbol": "TXN",
+          "rank": 344,
+          "score": 38.2,
+          "signal": "转弱"
+        },
+        {
+          "symbol": "COST",
+          "rank": 426,
+          "score": 27.6,
+          "signal": "弱势"
+        },
+        {
+          "symbol": "IR",
+          "rank": 368,
+          "score": 35.9,
+          "signal": "转弱"
+        },
+        {
+          "symbol": "BBDO",
+          "rank": 413,
+          "score": 29.2,
+          "signal": "弱势"
+        },
+        {
+          "symbol": "ODFL",
+          "rank": 366,
+          "score": 36.0,
+          "signal": "转弱"
+        },
+        {
+          "symbol": "C",
+          "rank": 117,
+          "score": 66.9,
+          "signal": "偏强"
+        },
+        {
+          "symbol": "NSC",
+          "rank": 289,
+          "score": 47.1,
+          "signal": "中性"
+        },
+        {
+          "symbol": "CBRE",
+          "rank": 290,
+          "score": 47.0,
+          "signal": "中性"
+        },
+        {
+          "symbol": "UNH",
+          "rank": 299,
+          "score": 45.6,
+          "signal": "中性"
+        },
+        {
+          "symbol": "DEO",
+          "rank": 227,
+          "score": 54.8,
+          "signal": "中性"
+        },
+        {
+          "symbol": "PG",
+          "rank": 440,
+          "score": 24.6,
+          "signal": "弱势"
+        },
+        {
+          "symbol": "TTE",
+          "rank": 164,
+          "score": 60.8,
+          "signal": "中性"
+        },
+        {
+          "symbol": "HBANP",
+          "rank": 447,
+          "score": 23.0,
+          "signal": "弱势"
+        },
+        {
+          "symbol": "QSR",
+          "rank": 296,
+          "score": 46.1,
+          "signal": "中性"
+        },
+        {
+          "symbol": "AXP",
+          "rank": 375,
+          "score": 34.6,
+          "signal": "转弱"
+        },
+        {
+          "symbol": "UL",
+          "rank": 374,
+          "score": 35.0,
+          "signal": "转弱"
+        },
+        {
+          "symbol": "BTI",
+          "rank": 465,
+          "score": 19.6,
+          "signal": "弱势"
+        },
+        {
+          "symbol": "MO",
+          "rank": 456,
+          "score": 21.0,
+          "signal": "弱势"
+        },
+        {
+          "symbol": "ERIC",
+          "rank": 373,
+          "score": 35.1,
+          "signal": "转弱"
+        },
+        {
+          "symbol": "CSX",
+          "rank": 244,
+          "score": 52.3,
+          "signal": "中性"
+        },
+        {
+          "symbol": "FNV",
+          "rank": 200,
+          "score": 58.0,
+          "signal": "中性"
+        },
+        {
+          "symbol": "ASX",
+          "rank": 69,
+          "score": 73.7,
+          "signal": "偏强"
+        },
+        {
+          "symbol": "FERG",
+          "rank": 278,
+          "score": 48.3,
+          "signal": "中性"
+        },
+        {
+          "symbol": "E",
+          "rank": 96,
+          "score": 69.5,
+          "signal": "偏强"
+        },
+        {
+          "symbol": "WAT",
+          "rank": 42,
+          "score": 78.6,
+          "signal": "偏强"
+        },
+        {
+          "symbol": "DHR",
+          "rank": 329,
+          "score": 40.3,
+          "signal": "转弱"
+        },
+        {
+          "symbol": "D",
+          "rank": 385,
+          "score": 33.4,
+          "signal": "转弱"
+        },
+        {
+          "symbol": "DIS",
+          "rank": 336,
+          "score": 39.4,
+          "signal": "转弱"
+        },
+        {
+          "symbol": "NTR",
+          "rank": 403,
+          "score": 30.7,
+          "signal": "转弱"
+        },
+        {
+          "symbol": "FER",
+          "rank": 367,
+          "score": 35.9,
+          "signal": "转弱"
+        },
+        {
+          "symbol": "LHX",
+          "rank": 439,
+          "score": 25.0,
+          "signal": "弱势"
+        },
+        {
+          "symbol": "BBD",
+          "rank": 472,
+          "score": 16.9,
+          "signal": "弱势"
+        },
+        {
+          "symbol": "ROK",
+          "rank": 362,
+          "score": 36.4,
+          "signal": "转弱"
+        },
+        {
+          "symbol": "SHW",
+          "rank": 220,
+          "score": 55.5,
+          "signal": "中性"
+        },
+        {
+          "symbol": "SNY",
+          "rank": 405,
+          "score": 30.6,
+          "signal": "转弱"
+        },
+        {
+          "symbol": "WFC",
+          "rank": 265,
+          "score": 49.8,
+          "signal": "中性"
+        },
+        {
+          "symbol": "ITUB",
+          "rank": 468,
+          "score": 18.5,
+          "signal": "弱势"
+        },
+        {
+          "symbol": "GEHC",
+          "rank": 239,
+          "score": 53.3,
+          "signal": "中性"
+        },
+        {
+          "symbol": "TEL",
+          "rank": 297,
+          "score": 45.9,
+          "signal": "中性"
+        },
+        {
+          "symbol": "RELX",
+          "rank": 346,
+          "score": 37.8,
+          "signal": "转弱"
+        },
+        {
+          "symbol": "FITB",
+          "rank": 235,
+          "score": 53.8,
+          "signal": "中性"
+        },
+        {
+          "symbol": "SNPS",
+          "rank": 454,
+          "score": 21.2,
+          "signal": "弱势"
+        },
+        {
+          "symbol": "DDOG",
+          "rank": 223,
+          "score": 55.2,
+          "signal": "中性"
+        },
+        {
+          "symbol": "INTC",
+          "rank": 103,
+          "score": 68.8,
+          "signal": "偏强"
+        },
+        {
+          "symbol": "CVS",
+          "rank": 348,
+          "score": 37.7,
+          "signal": "转弱"
+        },
+        {
+          "symbol": "CRH",
+          "rank": 481,
+          "score": 14.1,
+          "signal": "弱势"
+        },
+        {
+          "symbol": "TBB",
+          "rank": 471,
+          "score": 17.7,
+          "signal": "弱势"
+        },
+        {
+          "symbol": "MLM",
+          "rank": 475,
+          "score": 15.2,
+          "signal": "弱势"
+        },
+        {
+          "symbol": "ABT",
+          "rank": 189,
+          "score": 59.1,
+          "signal": "中性"
+        },
+        {
+          "symbol": "KVUE",
+          "rank": 272,
+          "score": 48.7,
+          "signal": "中性"
+        },
+        {
+          "symbol": "AEP",
+          "rank": 444,
+          "score": 23.5,
+          "signal": "弱势"
+        },
+        {
+          "symbol": "UMC",
+          "rank": 256,
+          "score": 50.9,
+          "signal": "中性"
+        },
+        {
+          "symbol": "AZO",
+          "rank": 458,
+          "score": 20.7,
+          "signal": "弱势"
+        },
+        {
+          "symbol": "EPD",
+          "rank": 286,
+          "score": 47.4,
+          "signal": "中性"
+        },
+        {
+          "symbol": "BAC",
+          "rank": 75,
+          "score": 72.0,
+          "signal": "偏强"
+        },
+        {
+          "symbol": "TRGP",
+          "rank": 324,
+          "score": 41.4,
+          "signal": "转弱"
+        },
+        {
+          "symbol": "WDS",
+          "rank": 153,
+          "score": 62.4,
+          "signal": "中性"
+        },
+        {
+          "symbol": "BP",
+          "rank": 254,
+          "score": 51.0,
+          "signal": "中性"
+        },
+        {
+          "symbol": "HLN",
+          "rank": 416,
+          "score": 29.1,
+          "signal": "弱势"
+        },
+        {
+          "symbol": "ED",
+          "rank": 424,
+          "score": 27.9,
+          "signal": "弱势"
+        },
+        {
+          "symbol": "CMI",
+          "rank": 376,
+          "score": 34.5,
+          "signal": "转弱"
+        },
+        {
+          "symbol": "CCJ",
+          "rank": 303,
+          "score": 44.6,
+          "signal": "转弱"
+        },
+        {
+          "symbol": "FCX",
+          "rank": 68,
+          "score": 74.0,
+          "signal": "偏强"
+        },
+        {
+          "symbol": "FLEX",
+          "rank": 195,
+          "score": 58.4,
+          "signal": "中性"
+        },
+        {
+          "symbol": "COR",
+          "rank": 288,
+          "score": 47.1,
+          "signal": "中性"
+        },
+        {
+          "symbol": "WMT",
+          "rank": 422,
+          "score": 28.2,
+          "signal": "弱势"
+        },
+        {
+          "symbol": "SBUX",
+          "rank": 248,
+          "score": 51.6,
+          "signal": "中性"
+        },
+        {
+          "symbol": "TEVA",
+          "rank": 57,
+          "score": 76.2,
+          "signal": "偏强"
+        },
+        {
+          "symbol": "CTVA",
+          "rank": 474,
+          "score": 16.4,
+          "signal": "弱势"
+        },
+        {
+          "symbol": "NTRS",
+          "rank": 150,
+          "score": 62.5,
+          "signal": "中性"
+        },
+        {
+          "symbol": "RIO",
+          "rank": 207,
+          "score": 57.1,
+          "signal": "中性"
+        },
+        {
+          "symbol": "TD",
+          "rank": 180,
+          "score": 59.9,
+          "signal": "中性"
+        },
+        {
+          "symbol": "BIIB",
+          "rank": 202,
+          "score": 58.0,
+          "signal": "中性"
+        },
+        {
+          "symbol": "LOW",
+          "rank": 418,
+          "score": 28.8,
+          "signal": "弱势"
+        },
+        {
+          "symbol": "TTWO",
+          "rank": 306,
+          "score": 43.9,
+          "signal": "转弱"
+        },
+        {
+          "symbol": "WEC",
+          "rank": 425,
+          "score": 27.7,
+          "signal": "弱势"
+        },
+        {
+          "symbol": "ALC",
+          "rank": 328,
+          "score": 40.7,
+          "signal": "转弱"
+        },
+        {
+          "symbol": "ECL",
+          "rank": 343,
+          "score": 38.2,
+          "signal": "转弱"
+        },
+        {
+          "symbol": "TGT",
+          "rank": 29,
+          "score": 83.4,
+          "signal": "强势"
+        },
+        {
+          "symbol": "VZ",
+          "rank": 215,
+          "score": 55.9,
+          "signal": "中性"
+        },
+        {
+          "symbol": "JD",
+          "rank": 408,
+          "score": 29.8,
+          "signal": "弱势"
+        },
+        {
+          "symbol": "EXC",
+          "rank": 420,
+          "score": 28.5,
+          "signal": "弱势"
+        },
+        {
+          "symbol": "BRKRP",
+          "rank": 218,
+          "score": 55.7,
+          "signal": "中性"
+        },
+        {
+          "symbol": "CCI",
+          "rank": 488,
+          "score": 9.8,
+          "signal": "弱势"
+        },
+        {
+          "symbol": "CPNG",
+          "rank": 453,
+          "score": 21.4,
+          "signal": "弱势"
+        },
+        {
+          "symbol": "VTR",
+          "rank": 365,
+          "score": 36.0,
+          "signal": "转弱"
+        },
+        {
+          "symbol": "ORCL",
+          "rank": 269,
+          "score": 48.8,
+          "signal": "中性"
+        },
+        {
+          "symbol": "WELL",
+          "rank": 260,
+          "score": 50.5,
+          "signal": "中性"
+        },
+        {
+          "symbol": "COIN",
+          "rank": 489,
+          "score": 9.3,
+          "signal": "弱势"
+        },
+        {
+          "symbol": "DUK",
+          "rank": 411,
+          "score": 29.4,
+          "signal": "弱势"
+        },
+        {
+          "symbol": "MDLN",
+          "rank": 476,
+          "score": 14.8,
+          "signal": "弱势"
+        },
+        {
+          "symbol": "WBD",
+          "rank": 261,
+          "score": 50.4,
+          "signal": "中性"
+        },
+        {
+          "symbol": "EQIX",
+          "rank": 204,
+          "score": 57.3,
+          "signal": "中性"
+        },
+        {
+          "symbol": "BA",
+          "rank": 275,
+          "score": 48.6,
+          "signal": "中性"
+        },
+        {
+          "symbol": "ETR",
+          "rank": 434,
+          "score": 25.4,
+          "signal": "弱势"
+        },
+        {
+          "symbol": "IRM",
+          "rank": 229,
+          "score": 54.6,
+          "signal": "中性"
+        },
+        {
+          "symbol": "RKT",
+          "rank": 384,
+          "score": 33.4,
+          "signal": "转弱"
+        },
+        {
+          "symbol": "CL",
+          "rank": 352,
+          "score": 37.3,
+          "signal": "转弱"
+        },
+        {
+          "symbol": "PCAR",
+          "rank": 213,
+          "score": 56.3,
+          "signal": "中性"
+        },
+        {
+          "symbol": "PFE",
+          "rank": 199,
+          "score": 58.1,
+          "signal": "中性"
+        },
+        {
+          "symbol": "TM",
+          "rank": 364,
+          "score": 36.0,
+          "signal": "转弱"
+        },
+        {
+          "symbol": "SO",
+          "rank": 437,
+          "score": 25.3,
+          "signal": "弱势"
+        },
+        {
+          "symbol": "UPS",
+          "rank": 409,
+          "score": 29.7,
+          "signal": "弱势"
+        },
+        {
+          "symbol": "GM",
+          "rank": 82,
+          "score": 71.6,
+          "signal": "偏强"
+        },
+        {
+          "symbol": "VST",
+          "rank": 460,
+          "score": 20.4,
+          "signal": "弱势"
+        },
+        {
+          "symbol": "AFL",
+          "rank": 354,
+          "score": 37.2,
+          "signal": "转弱"
+        },
+        {
+          "symbol": "AMT",
+          "rank": 393,
+          "score": 32.0,
+          "signal": "转弱"
+        },
+        {
+          "symbol": "DTE",
+          "rank": 442,
+          "score": 23.8,
+          "signal": "弱势"
+        },
+        {
+          "symbol": "GS",
+          "rank": 294,
+          "score": 46.4,
+          "signal": "中性"
+        },
+        {
+          "symbol": "DE",
+          "rank": 295,
+          "score": 46.2,
+          "signal": "中性"
+        },
+        {
+          "symbol": "LYV",
+          "rank": 211,
+          "score": 56.5,
+          "signal": "中性"
+        },
+        {
+          "symbol": "DHI",
+          "rank": 414,
+          "score": 29.2,
+          "signal": "弱势"
+        },
+        {
+          "symbol": "FTS",
+          "rank": 410,
+          "score": 29.5,
+          "signal": "弱势"
+        },
+        {
+          "symbol": "NOK",
+          "rank": 234,
+          "score": 53.8,
+          "signal": "中性"
+        },
+        {
+          "symbol": "MCHPP",
+          "rank": 438,
+          "score": 25.1,
+          "signal": "弱势"
+        },
+        {
+          "symbol": "NXPI",
+          "rank": 473,
+          "score": 16.9,
+          "signal": "弱势"
+        },
+        {
+          "symbol": "SYY",
+          "rank": 279,
+          "score": 48.2,
+          "signal": "中性"
+        },
+        {
+          "symbol": "NGG",
+          "rank": 401,
+          "score": 31.0,
+          "signal": "转弱"
+        },
+        {
+          "symbol": "KHC",
+          "rank": 356,
+          "score": 36.8,
+          "signal": "转弱"
+        },
+        {
+          "symbol": "TAK",
+          "rank": 283,
+          "score": 47.6,
+          "signal": "中性"
+        },
+        {
+          "symbol": "GFS",
+          "rank": 402,
+          "score": 30.8,
+          "signal": "转弱"
+        },
+        {
+          "symbol": "HD",
+          "rank": 391,
+          "score": 32.4,
+          "signal": "转弱"
+        },
+        {
+          "symbol": "PCG",
+          "rank": 322,
+          "score": 42.2,
+          "signal": "转弱"
+        },
+        {
+          "symbol": "ING",
+          "rank": 43,
+          "score": 78.6,
+          "signal": "偏强"
+        },
+        {
+          "symbol": "KMB",
+          "rank": 311,
+          "score": 43.4,
+          "signal": "转弱"
+        },
+        {
+          "symbol": "ADM",
+          "rank": 316,
+          "score": 42.9,
+          "signal": "转弱"
+        },
+        {
+          "symbol": "NKE",
+          "rank": 486,
+          "score": 12.5,
+          "signal": "弱势"
+        },
+        {
+          "symbol": "LIN",
+          "rank": 462,
+          "score": 20.2,
+          "signal": "弱势"
+        },
+        {
+          "symbol": "CARR",
+          "rank": 463,
+          "score": 19.9,
+          "signal": "弱势"
+        },
+        {
+          "symbol": "ON",
+          "rank": 381,
+          "score": 33.6,
+          "signal": "转弱"
+        },
+        {
+          "symbol": "XEL",
+          "rank": 394,
+          "score": 32.0,
+          "signal": "转弱"
+        },
+        {
+          "symbol": "SAN",
+          "rank": 48,
+          "score": 77.9,
+          "signal": "偏强"
+        },
+        {
+          "symbol": "AIG",
+          "rank": 448,
+          "score": 22.5,
+          "signal": "弱势"
+        },
+        {
+          "symbol": "XYZ",
+          "rank": 216,
+          "score": 55.8,
+          "signal": "中性"
+        },
+        {
+          "symbol": "BABA",
+          "rank": 388,
+          "score": 32.8,
+          "signal": "转弱"
+        },
+        {
+          "symbol": "F",
+          "rank": 330,
+          "score": 40.3,
+          "signal": "转弱"
+        },
+        {
+          "symbol": "RVMD",
+          "rank": 20,
+          "score": 88.6,
+          "signal": "强势"
+        },
+        {
+          "symbol": "EL",
+          "rank": 317,
+          "score": 42.8,
+          "signal": "转弱"
+        },
+        {
+          "symbol": "MCHP",
+          "rank": 423,
+          "score": 27.9,
+          "signal": "弱势"
+        },
+        {
+          "symbol": "VALE",
+          "rank": 432,
+          "score": 26.1,
+          "signal": "弱势"
+        },
+        {
+          "symbol": "STRC",
+          "rank": 228,
+          "score": 54.6,
+          "signal": "中性"
+        },
+        {
+          "symbol": "SRE",
+          "rank": 464,
+          "score": 19.7,
+          "signal": "弱势"
+        },
+        {
+          "symbol": "BN",
+          "rank": 383,
+          "score": 33.5,
+          "signal": "转弱"
+        },
+        {
+          "symbol": "KR",
+          "rank": 480,
+          "score": 14.3,
+          "signal": "弱势"
+        },
+        {
+          "symbol": "MSTR",
+          "rank": 455,
+          "score": 21.0,
+          "signal": "弱势"
+        },
+        {
+          "symbol": "STRF",
+          "rank": 397,
+          "score": 31.6,
+          "signal": "转弱"
+        },
+        {
+          "symbol": "APD",
+          "rank": 268,
+          "score": 48.9,
+          "signal": "中性"
+        },
+        {
+          "symbol": "TSLA",
+          "rank": 485,
+          "score": 12.7,
+          "signal": "弱势"
+        },
+        {
+          "symbol": "STM",
+          "rank": 350,
+          "score": 37.4,
+          "signal": "转弱"
+        },
+        {
+          "symbol": "BIDU",
+          "rank": 479,
+          "score": 14.4,
+          "signal": "弱势"
+        },
+        {
+          "symbol": "CCZ",
+          "rank": 452,
+          "score": 21.6,
+          "signal": "弱势"
         }
       ]
     }

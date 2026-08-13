@@ -173,6 +173,10 @@ mark { background: rgba(212, 175, 55, .3); color: var(--gold); border-radius: 3p
 
 .momentum-resultbar { display: flex; justify-content: space-between; gap: 14px; margin: 16px 2px 8px; color: var(--muted); font-size: 12px; }
 .momentum-resultbar strong { color: var(--gold); }
+.field-coverage-note { display: flex; flex-wrap: wrap; gap: 8px 18px; margin: 12px 2px 0; color: var(--muted); font-size: 11px; }
+.source-dot { width: 6px; height: 6px; display: inline-block; margin-right: 5px; border-radius: 50%; vertical-align: middle; }
+.source-dot.computed { background: #5fa4f5; box-shadow: 0 0 0 2px rgba(95, 164, 245, .12); }
+.source-dot.licensed { background: #e1b943; box-shadow: 0 0 0 2px rgba(225, 185, 67, .12); }
 .momentum-table-wrap { overflow: auto; max-height: min(72vh, 800px); border: 1px solid var(--line); border-radius: 9px; background: var(--panel); }
 .momentum-table { width: 100%; min-width: 1260px; border-collapse: separate; border-spacing: 0; font-size: 12px; }
 .momentum-table th {
@@ -181,6 +185,10 @@ mark { background: rgba(212, 175, 55, .3); color: var(--gold); border-radius: 3p
 }
 .momentum-table th:nth-child(2), .momentum-table th:nth-child(3), .momentum-table th:nth-child(4) { text-align: left; }
 .momentum-table th.sorted { color: var(--gold); }
+.momentum-table .indicator-groups th { top: 0; height: 28px; padding: 5px 10px; cursor: default; background: #0e1219; color: #788295; border-right: 1px solid #293040; text-align: center !important; font-size: 10px; letter-spacing: 1px; }
+.momentum-table .indicator-groups + tr th { top: 28px; }
+.momentum-table.full-schema th:nth-child(n), .momentum-table.full-schema td:nth-child(n) { text-align: right; }
+.momentum-table.full-schema th[data-sort="symbol"], .momentum-table.full-schema th[data-sort="name"], .momentum-table.full-schema th[data-sort="industry"], .momentum-table.full-schema td.long-cell { text-align: left; }
 .momentum-table td { padding: 9px 10px; border-bottom: 1px solid #202633; text-align: right; white-space: nowrap; }
 .momentum-table td:nth-child(2), .momentum-table td:nth-child(3), .momentum-table td:nth-child(4), .momentum-table td:last-child { text-align: left; }
 .momentum-data-row { cursor: pointer; transition: background .12s; }
@@ -197,6 +205,8 @@ mark { background: rgba(212, 175, 55, .3); color: var(--gold); border-radius: 3p
 .score-pill.low { color: #ef8888; background: rgba(239, 68, 68, .1); }
 .signal { display: inline-block; padding: 2px 8px; border: 1px solid currentColor; border-radius: 11px; font-size: 10px; }
 .signal.neutral { color: #a8b0bf; }
+.pending-source span { display: inline-block; padding: 1px 6px; border: 1px dashed #7e6a2d; border-radius: 8px; color: #bda251; font-size: 9px; }
+.long-cell { max-width: 260px; overflow: hidden; text-overflow: ellipsis; color: #a7afbd; }
 .empty-cell { padding: 40px !important; text-align: center !important; color: var(--muted); }
 .momentum-detail-row td { padding: 0; text-align: left !important; white-space: normal; background: #0e121a; }
 .momentum-detail { display: grid; grid-template-columns: 270px minmax(360px, .9fr) minmax(320px, 1.1fr); gap: 20px; padding: 18px 24px; border-bottom: 1px solid #30384a; }
@@ -216,6 +226,18 @@ mark { background: rgba(212, 175, 55, .3); color: var(--gold); border-radius: 3p
 .momentum-method summary { color: #c5cad3; cursor: pointer; }
 .momentum-method p { margin-top: 8px; }
 .momentum-method a { color: #70aaf8; }
+.methodology-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin: 12px 0; }
+.methodology-grid section { padding: 10px 12px; border: 1px solid #293141; border-radius: 7px; background: #0f141c; }
+.methodology-grid h3 { color: #e3ca74; font-size: 12px; }
+.methodology-grid p { line-height: 1.65; }
+.methodology-grid code { color: #8ebaf8; }
+.indicator-inventory { margin: 12px 0 35px; padding: 13px 16px; background: #0e1219; border: 1px solid var(--line); border-radius: 8px; color: var(--muted); font-size: 12px; }
+.indicator-inventory summary { cursor: pointer; color: #c9ced7; }
+.inventory-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 10px; margin-top: 12px; }
+.inventory-grid section { padding: 12px; border: 1px solid #252c39; border-radius: 7px; background: #121720; }
+.inventory-grid h3 { margin-bottom: 8px; color: var(--gold); font-size: 13px; }
+.inventory-grid section div { display: flex; flex-wrap: wrap; gap: 5px; }
+.inventory-grid section span { padding: 2px 6px; border: 1px solid #293141; border-radius: 9px; font-size: 10px; }
 
 /* ── 文章页 ── */
 .back { display: inline-block; margin-bottom: 14px; color: var(--muted); font-size: 14px; cursor: pointer; }
@@ -274,10 +296,12 @@ mark { background: rgba(212, 175, 55, .3); color: var(--gold); border-radius: 3p
   .momentum-query { flex-basis: 100% !important; }
   .momentum-resultbar span:last-child { display: none; }
   .momentum-detail { grid-template-columns: 1fr; }
+  .methodology-grid { grid-template-columns: 1fr; }
 }
 
 @media (min-width: 641px) and (max-width: 1050px) {
   .momentum-filter-grid { grid-template-columns: repeat(3, 1fr); }
   .momentum-detail { grid-template-columns: 240px 1fr; }
   .momentum-detail p { grid-column: 1 / -1; }
+  .methodology-grid { grid-template-columns: 1fr 1fr; }
 }

@@ -69,9 +69,9 @@ python build.py
 
 ## 动量追踪每日更新
 
-网站导航中的“动量追踪”提供两套可切换榜单：量价动量雷达与基本面动量榜。页面支持代码/公司搜索、行业与信号筛选、分数/市值/估值/增速阈值、字段排序、分页、行级明细和 CSV 导出。
+网站导航提供两个独立入口：“10倍股雷达”和“动量移动追踪”。前者完整呈现 33 项增长、质量、估值、催化和结论指标，后者完整呈现 51 项现货、期权、期限、Gamma、波动和结论指标。页面支持代码/公司搜索、行业与信号筛选、分数/市值/估值/增速阈值、全字段排序、分页、行级明细和全字段 CSV 导出。
 
-`.github/workflows/momentum-daily.yml` 会在每个美股交易日收盘后自动运行。数据由 `tools/momentum_tracker.py` 从公开的 Nasdaq 股票筛选器和 Yahoo Finance JSON 数据计算，不使用或保存任何第三方订阅账号、会话或付费附件。可在本地复现：
+`.github/workflows/momentum-daily.yml` 会在每个美股交易日收盘后自动运行。数据由 `tools/momentum_tracker.py` 从公开的 Nasdaq 股票筛选器和 Yahoo Finance JSON 数据计算，不使用或保存任何第三方订阅账号、会话或付费附件。需要完整期权链、Gamma、Reddit 或分析师预期历史的指标会保留列位并显示“待授权源”，不会生成猜测值。可在本地复现：
 
 ```
 python tools/momentum_tracker.py

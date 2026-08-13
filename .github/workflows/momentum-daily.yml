@@ -29,13 +29,14 @@ jobs:
           python-version: "3.12"
 
       - name: Generate momentum dashboard
-        run: python tools/momentum_tracker.py --max-symbols 180 --workers 10
+        run: python tools/momentum_tracker.py --max-symbols 500 --workers 12
 
       - name: Validate generated data
         run: |
           git diff --check
           python -m json.tool docs/momentum.json >/dev/null
           python -m json.tool data/momentum/history.json >/dev/null
+          python -m json.tool tools/momentum_schema.json >/dev/null
 
       - name: Commit and publish when data changed
         run: |

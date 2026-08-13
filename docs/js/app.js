@@ -26,7 +26,7 @@
   let momentumPromise = null;
   let momentumInputTimer = null;
   const momentumState = {
-    mode: 'market',
+    mode: 'tenx',
     query: '',
     sector: '',
     signal: '',
@@ -36,7 +36,7 @@
     maxPe: '',
     minRevenueGrowth: '',
     minRet20: '',
-    sort: 'momentumRank',
+    sort: 'researchPriorityRank',
     order: 'asc',
     page: 1,
     perPage: 50,
@@ -70,7 +70,9 @@
     const mArticle = h.match(/^#\/a\/(.+)$/);
     const mCat = h.match(/^#\/c\/(\w+)$/);
     const mSearch = h.match(/^#\/s\/(.*)$/);
-    if (h === '#/momentum') return renderMomentum();
+    const mMomentum = h.match(/^#\/momentum\/(tenx|movement)$/);
+    if (mMomentum) return renderMomentum(mMomentum[1]);
+    if (h === '#/momentum') { location.hash = '#/momentum/tenx'; return; }
     $main.classList.remove('wide');
     if (mArticle) return renderArticle(mArticle[1]);
     if (mCat && CATS[mCat[1]]) return renderCategory(mCat[1]);
@@ -195,14 +197,15 @@
     return momentumPromise;
   }
 
-  function renderMomentum() {
-    setTab('momentum');
+  function renderMomentum(mode) {
+    if (mode) momentumState.mode = mode;
+    setTab(momentumState.mode);
     $main.classList.add('wide');
     if (!MOMENTUM) {
       $main.innerHTML = '<div class="loading">正在加载动量数据…</div>';
       loadMomentum()
         .then(() => {
-          if (decodeURIComponent(location.hash) === '#/momentum') renderMomentum();
+          if (decodeURIComponent(location.hash).startsWith('#/momentum/')) renderMomentum();
         })
         .catch(() => {
           $main.innerHTML = '<div class="empty">动量数据加载失败，请稍后刷新重试。</div>';
@@ -216,17 +219,21 @@
     const start = (momentumState.page - 1) * momentumState.perPage;
     const visible = rows.slice(start, start + momentumState.perPage);
     const sectors = [...new Set(MOMENTUM.rows.map((row) => row.sector).filter(Boolean))].sort();
-    const isMarket = momentumState.mode === 'market';
-    const scoreField = isMarket ? 'momentumScore' : 'fundamentalScore';
-    const strongCount = MOMENTUM.rows.filter((row) => (row[scoreField] || 0) >= (isMarket ? 65 : 60)).length;
+    const isTenx = momentumState.mode === 'tenx';
+    const schema = momentumSchema();
+    const columns = schema.columns || [];
+    const computedCount = columns.filter((column) => column.source !== 'licensed').length;
+    const licensedCount = columns.length - computedCount;
+    const scoreField = isTenx ? 'researchPriorityScore' : 'momentumScore';
+    const strongCount = MOMENTUM.rows.filter((row) => (row[scoreField] || 0) >= (isTenx ? 3.5 : 65)).length;
     const benchmark = MOMENTUM.benchmark || {};
     const filterFields = `
       <label>行业<select data-filter="sector"><option value="">全部行业</option>${sectors.map((sector) => `<option value="${esc(sector)}" ${momentumState.sector === sector ? 'selected' : ''}>${esc(sector)}</option>`).join('')}</select></label>
-      <label>${isMarket ? '信号' : '状态'}<select data-filter="signal"><option value="">全部</option>${momentumLabels(isMarket).map((label) => `<option value="${esc(label)}" ${momentumState.signal === label ? 'selected' : ''}>${esc(label)}</option>`).join('')}</select></label>
-      ${isMarket ? `<label>阶段<select data-filter="stage"><option value="">全部</option>${['主升', '上升', '整理', '下行'].map((label) => `<option value="${label}" ${momentumState.stage === label ? 'selected' : ''}>${label}</option>`).join('')}</select></label>` : ''}
-      <label>最低综合分<input data-filter="minScore" type="number" min="0" max="100" step="1" value="${esc(momentumState.minScore)}" placeholder="0–100"></label>
+      <label>${isTenx ? '当前状态' : '动量信号'}<select data-filter="signal"><option value="">全部</option>${momentumLabels(isTenx).map((label) => `<option value="${esc(label)}" ${momentumState.signal === label ? 'selected' : ''}>${esc(label)}</option>`).join('')}</select></label>
+      ${!isTenx ? `<label>阶段<select data-filter="stage"><option value="">全部</option>${['主升', '上升', '整理', '下行'].map((label) => `<option value="${label}" ${momentumState.stage === label ? 'selected' : ''}>${label}</option>`).join('')}</select></label>` : ''}
+      <label>最低综合分<input data-filter="minScore" type="number" min="0" max="${isTenx ? 5 : 100}" step="${isTenx ? .1 : 1}" value="${esc(momentumState.minScore)}" placeholder="${isTenx ? '0–5' : '0–100'}"></label>
       <label>最低市值（十亿美元）<input data-filter="minMarketCap" type="number" min="0" step="1" value="${esc(momentumState.minMarketCap)}" placeholder="例如 10"></label>
-      ${isMarket ? `<label>最低 20 日涨幅（%）<input data-filter="minRet20" type="number" step="1" value="${esc(momentumState.minRet20)}" placeholder="例如 0"></label>` : `<label>最低收入增速（%）<input data-filter="minRevenueGrowth" type="number" step="1" value="${esc(momentumState.minRevenueGrowth)}" placeholder="例如 10"></label><label>最高 P/E<input data-filter="maxPe" type="number" min="0" step="1" value="${esc(momentumState.maxPe)}" placeholder="例如 40"></label>`}
+      ${isTenx ? `<label>最低收入增速（%）<input data-filter="minRevenueGrowth" type="number" step="1" value="${esc(momentumState.minRevenueGrowth)}" placeholder="例如 10"></label><label>最高 TTM P/E<input data-filter="maxPe" type="number" min="0" step="1" value="${esc(momentumState.maxPe)}" placeholder="例如 40"></label>` : `<label>最低 20 日涨幅（%）<input data-filter="minRet20" type="number" step="1" value="${esc(momentumState.minRet20)}" placeholder="例如 0"></label>`}
     `;
 
     $main.innerHTML = `
@@ -234,36 +241,41 @@
         <div>
           <p class="eyebrow">PUBLIC-DATA SIGNAL LAB</p>
           <h1>动量追踪</h1>
-          <p>量价趋势与已报告基本面的交叉筛选器。每日自动刷新，点击任意股票查看完整指标。</p>
+          <p>拆分为 10 倍股研究优先级与每日动量移动追踪；两个主表完整保留核对版 Excel 的全部 84 项指标。</p>
         </div>
-        <div class="momentum-asof"><span>数据日期</span><strong>${esc(MOMENTUM.asOf || '—')}</strong><small>${esc(formatGeneratedAt(MOMENTUM.generatedAt))}</small></div>
+        <div class="momentum-asof"><span>公开数据日期</span><strong>${esc(MOMENTUM.asOf || '—')}</strong><small>${esc(formatGeneratedAt(MOMENTUM.generatedAt))}</small></div>
       </section>
       <div class="momentum-kpis">
         <div><span>已筛选</span><strong>${MOMENTUM.universe.screened}</strong><small>只股票</small></div>
-        <div><span>${isMarket ? '偏强及以上' : '稳健及以上'}</span><strong>${strongCount}</strong><small>${isMarket ? '分数 ≥ 65' : '分数 ≥ 60'}</small></div>
+        <div><span>${isTenx ? '优先研究' : '偏强及以上'}</span><strong>${strongCount}</strong><small>${isTenx ? '优先级分 ≥ 3.5' : '动量分 ≥ 65'}</small></div>
+        <div><span>本表指标</span><strong>${columns.length}</strong><small>${computedCount} 自动 · ${licensedCount} 待授权</small></div>
         <div><span>SPY 20 日</span><strong class="${valueClass(benchmark.ret20)}">${fmtPct(benchmark.ret20)}</strong><small>相对强弱基准</small></div>
-        <div><span>财务覆盖</span><strong>${MOMENTUM.coverage.fundamentals}</strong><small>/ ${MOMENTUM.coverage.price}</small></div>
       </div>
       <div class="momentum-tabs" role="tablist">
-        <button data-mode="market" class="${isMarket ? 'active' : ''}">量价动量雷达<small>趋势 · 相对强弱 · 量能</small></button>
-        <button data-mode="fundamental" class="${!isMarket ? 'active' : ''}">基本面动量榜<small>增长 · 质量 · 估值</small></button>
+        <button data-mode="tenx" class="${isTenx ? 'active' : ''}">10倍股雷达<small>33项 · 增长 · 质量 · 估值 · 催化</small></button>
+        <button data-mode="movement" class="${!isTenx ? 'active' : ''}">动量移动追踪<small>51项 · 现货 · 期权 · Gamma · 波动</small></button>
       </div>
       <section class="momentum-controls">
         <div class="momentum-search-row">
           <label class="momentum-query">搜索<input data-filter="query" type="search" value="${esc(momentumState.query)}" placeholder="代码、公司、行业"></label>
           <button id="momentum-reset" type="button">重置筛选</button>
-          <button id="momentum-export" type="button">导出 CSV</button>
+          <button id="momentum-export" type="button">导出全部指标 CSV</button>
         </div>
         <div class="momentum-filter-grid">${filterFields}</div>
       </section>
+      <div class="field-coverage-note">
+        <span><i class="source-dot computed"></i>公开数据自动计算 ${computedCount} 项</span>
+        <span><i class="source-dot licensed"></i>待合规授权数据源 ${licensedCount} 项</span>
+        <span>字段核对 ${esc(MOMENTUM.schemas.auditedAt)} · 参考版本 ${esc(schema.referenceVersion)}</span>
+      </div>
       <div class="momentum-resultbar">
-        <span>显示 <strong>${rows.length}</strong> / ${MOMENTUM.rows.length} 只</span>
-        <span>点击表头排序 · 点击股票展开明细</span>
+        <span>显示 <strong>${rows.length}</strong> / ${MOMENTUM.rows.length} 只 · 完整 ${columns.length} 列</span>
+        <span>横向滚动查看全部指标 · 点击表头排序 · 点击股票展开明细</span>
       </div>
       <div class="momentum-table-wrap">
-        <table class="momentum-table">
-          ${momentumTableHead(isMarket)}
-          <tbody>${visible.map((row) => momentumRow(row, isMarket)).join('') || '<tr><td colspan="15" class="empty-cell">没有符合当前条件的股票</td></tr>'}</tbody>
+        <table class="momentum-table full-schema" style="min-width:${Math.max(1500, columns.length * 128)}px">
+          ${momentumTableHead(columns)}
+          <tbody>${visible.map((row) => momentumRow(row, columns)).join('') || `<tr><td colspan="${columns.length}" class="empty-cell">没有符合当前条件的股票</td></tr>`}</tbody>
         </table>
       </div>
       <div class="momentum-pagination">
@@ -272,20 +284,26 @@
         <button data-page="next" ${momentumState.page >= pageCount ? 'disabled' : ''}>下一页</button>
         <select id="momentum-per-page" aria-label="每页行数">${[25, 50, 100].map((size) => `<option value="${size}" ${momentumState.perPage === size ? 'selected' : ''}>每页 ${size}</option>`).join('')}</select>
       </div>
-      <details class="momentum-method">
-        <summary>数据来源、计算口径与风险提示</summary>
-        <p><strong>量价动量：</strong>${esc(MOMENTUM.methodology.momentum)}</p>
-        <p><strong>基本面动量：</strong>${esc(MOMENTUM.methodology.fundamental)}</p>
+      <details class="momentum-method" open>
+        <summary>${esc(schema.title)}方法论与数据边界</summary>
+        <p>${esc(isTenx ? MOMENTUM.methodology.tenx : MOMENTUM.methodology.movement)}</p>
+        ${methodologyDetails(isTenx)}
         <p>${esc(MOMENTUM.methodology.notice)}</p>
-        <p>来源：${(MOMENTUM.sources || []).map((source) => `<a href="${esc(source.url)}" target="_blank" rel="noopener">${esc(source.name)}</a>`).join(' · ')}</p>
-      </details>`;
+        <p><strong>完整性说明：</strong>所有 Excel 主表字段均已呈现。期权链、Gamma、Reddit 和分析师预期等不能由当前公开源可靠生成的字段显示“待授权源”，避免用猜测值冒充真实指标。</p>
+        <p>公开来源：${(MOMENTUM.sources || []).map((source) => `<a href="${esc(source.url)}" target="_blank" rel="noopener">${esc(source.name)}</a>`).join(' · ')}</p>
+      </details>
+      ${referenceInventory(schema)}`;
     bindMomentumEvents(rows);
   }
 
+  function momentumSchema() {
+    return MOMENTUM.schemas[momentumState.mode] || { columns: [], sheets: [] };
+  }
+
   function filteredMomentumRows() {
-    const isMarket = momentumState.mode === 'market';
-    const scoreField = isMarket ? 'momentumScore' : 'fundamentalScore';
-    const statusField = isMarket ? 'signal' : 'fundamentalStatus';
+    const isTenx = momentumState.mode === 'tenx';
+    const scoreField = isTenx ? 'researchPriorityScore' : 'momentumScore';
+    const statusField = isTenx ? 'currentStatus' : 'signal';
     const query = momentumState.query.trim().toLowerCase();
     const minScore = nullableNumber(momentumState.minScore);
     const minMarketCap = nullableNumber(momentumState.minMarketCap);
@@ -297,7 +315,7 @@
       if (query && !haystack.includes(query)) return false;
       if (momentumState.sector && row.sector !== momentumState.sector) return false;
       if (momentumState.signal && row[statusField] !== momentumState.signal) return false;
-      if (isMarket && momentumState.stage && row.stage !== momentumState.stage) return false;
+      if (!isTenx && momentumState.stage && row.stage !== momentumState.stage) return false;
       if (minScore !== null && (row[scoreField] === null || row[scoreField] < minScore)) return false;
       if (minMarketCap !== null && (row.marketCap === null || row.marketCap < minMarketCap * 1e9)) return false;
       if (maxPe !== null && (row.pe === null || row.pe > maxPe || row.pe <= 0)) return false;
@@ -308,34 +326,25 @@
     return rows.sort((a, b) => compareMomentum(a, b, momentumState.sort, momentumState.order));
   }
 
-  function momentumLabels(isMarket) {
-    return isMarket ? ['强势', '偏强', '中性', '转弱', '弱势', '数据不足'] : ['高质量扩张', '稳健增长', '中性观察', '基本面承压', '数据不足'];
+  function momentumLabels(isTenx) {
+    return isTenx ? ['重点研究', '继续跟踪', '观察'] : ['强势', '偏强', '中性', '转弱', '弱势', '数据不足'];
   }
 
-  function momentumTableHead(isMarket) {
-    const columns = isMarket
-      ? [['momentumRank', '#'], ['symbol', '代码'], ['name', '公司'], ['sector', '行业'], ['price', '价格'], ['ret1', '1日'], ['ret20', '20日'], ['ret60', '60日'], ['ret120', '120日'], ['relative20', '相对SPY'], ['volumeRatio', '量比'], ['distMa200', '距MA200'], ['momentumScore', '综合分'], ['signal', '信号']]
-      : [['fundamentalRank', '#'], ['symbol', '代码'], ['name', '公司'], ['sector', '行业'], ['marketCap', '市值'], ['revenueGrowth', '收入增速'], ['revenueCagr3', '3年CAGR'], ['epsGrowth', 'EPS增速'], ['netMargin', '净利率'], ['fcfMargin', 'FCF率'], ['roic', 'ROIC'], ['debtEquity', '负债/权益'], ['pe', 'P/E'], ['fundamentalScore', '综合分'], ['fundamentalStatus', '状态']];
-    return `<thead><tr>${columns.map(([field, label]) => `<th data-sort="${field}" class="${momentumState.sort === field ? 'sorted' : ''}">${label}${momentumState.sort === field ? (momentumState.order === 'asc' ? ' ↑' : ' ↓') : ''}</th>`).join('')}</tr></thead>`;
+  function momentumTableHead(columns) {
+    const groups = [];
+    columns.forEach((column) => {
+      const last = groups[groups.length - 1];
+      if (last && last.name === column.group) last.count += 1;
+      else groups.push({ name: column.group, count: 1 });
+    });
+    const groupRow = `<tr class="indicator-groups">${groups.map((group) => `<th colspan="${group.count}">${esc(group.name)}</th>`).join('')}</tr>`;
+    const labelRow = `<tr>${columns.map((column) => `<th data-sort="${column.key}" class="${momentumState.sort === column.key ? 'sorted' : ''}" title="${column.source === 'licensed' ? '字段已保留，当前待合规授权数据源' : '公开数据或独立计算'}"><i class="source-dot ${column.source === 'licensed' ? 'licensed' : 'computed'}"></i>${esc(column.label)}${momentumState.sort === column.key ? (momentumState.order === 'asc' ? ' ↑' : ' ↓') : ''}</th>`).join('')}</tr>`;
+    return `<thead>${groupRow}${labelRow}</thead>`;
   }
 
-  function momentumRow(row, isMarket) {
-    const rank = isMarket ? row.momentumRank : row.fundamentalRank;
-    const rankChange = isMarket ? row.momentumRankChange : row.fundamentalRankChange;
-    const cells = isMarket
-      ? [
-          rankCell(rank, rankChange), symbolCell(row), nameCell(row), `<td>${esc(row.sector)}</td>`, `<td>${fmtMoney(row.price, row.currency)}</td>`,
-          metricCell(row.ret1, 'pct'), metricCell(row.ret20, 'pct'), metricCell(row.ret60, 'pct'), metricCell(row.ret120, 'pct'),
-          metricCell(row.relative20, 'pct'), metricCell(row.volumeRatio, 'ratio'), metricCell(row.distMa200, 'pct'),
-          scoreCell(row.momentumScore), signalCell(row.signal),
-        ]
-      : [
-          rankCell(rank, rankChange), symbolCell(row), nameCell(row), `<td>${esc(row.sector)}</td>`, `<td>${fmtMarketCap(row.marketCap)}</td>`,
-          metricCell(row.revenueGrowth, 'pct'), metricCell(row.revenueCagr3, 'pct'), metricCell(row.epsGrowth, 'pct'),
-          metricCell(row.netMargin, 'pct'), metricCell(row.fcfMargin, 'pct'), metricCell(row.roic, 'pct'),
-          metricCell(row.debtEquity, 'ratio'), metricCell(row.pe, 'multiple'), scoreCell(row.fundamentalScore), signalCell(row.fundamentalStatus),
-        ];
-    return `<tr class="momentum-data-row" data-symbol="${esc(row.symbol)}" tabindex="0">${cells.join('')}</tr><tr class="momentum-detail-row" data-detail="${esc(row.symbol)}" hidden><td colspan="15">${momentumDetail(row)}</td></tr>`;
+  function momentumRow(row, columns) {
+    const cells = columns.map((column) => indicatorCell(row, column));
+    return `<tr class="momentum-data-row" data-symbol="${esc(row.symbol)}" tabindex="0">${cells.join('')}</tr><tr class="momentum-detail-row" data-detail="${esc(row.symbol)}" hidden><td colspan="${columns.length}">${momentumDetail(row)}</td></tr>`;
   }
 
   function momentumDetail(row) {
@@ -358,10 +367,10 @@
       momentumState.mode = button.dataset.mode;
       momentumState.signal = '';
       momentumState.stage = '';
-      momentumState.sort = momentumState.mode === 'market' ? 'momentumRank' : 'fundamentalRank';
+      momentumState.sort = momentumState.mode === 'tenx' ? 'researchPriorityRank' : 'momentumRank';
       momentumState.order = 'asc';
       momentumState.page = 1;
-      renderMomentum();
+      location.hash = `#/momentum/${momentumState.mode}`;
     }));
     $main.querySelectorAll('[data-filter]').forEach((control) => {
       const event = control.tagName === 'SELECT' ? 'change' : 'input';
@@ -377,7 +386,8 @@
       if (momentumState.sort === field) momentumState.order = momentumState.order === 'asc' ? 'desc' : 'asc';
       else {
         momentumState.sort = field;
-        momentumState.order = ['symbol', 'name', 'sector', 'signal', 'fundamentalStatus'].includes(field) ? 'asc' : 'desc';
+        const column = momentumSchema().columns.find((item) => item.key === field);
+        momentumState.order = column && ['text', 'symbol', 'company', 'status', 'date'].includes(column.format) ? 'asc' : 'desc';
       }
       momentumState.page = 1;
       renderMomentum();
@@ -404,7 +414,7 @@
       Object.assign(momentumState, {
         query: '', sector: '', signal: '', stage: '', minScore: '', minMarketCap: '', maxPe: '',
         minRevenueGrowth: '', minRet20: '', page: 1,
-        sort: momentumState.mode === 'market' ? 'momentumRank' : 'fundamentalRank', order: 'asc',
+        sort: momentumState.mode === 'tenx' ? 'researchPriorityRank' : 'momentumRank', order: 'asc',
       });
       renderMomentum();
     });
@@ -423,10 +433,8 @@
   }
 
   function exportMomentumCsv(rows) {
-    const fields = momentumState.mode === 'market'
-      ? ['momentumRank', 'symbol', 'name', 'sector', 'industry', 'price', 'ret1', 'ret5', 'ret20', 'ret60', 'ret120', 'ret252', 'relative20', 'volumeRatio', 'volatility20', 'distMa20', 'distMa50', 'distMa200', 'fromHigh52', 'momentumScore', 'signal', 'stage']
-      : ['fundamentalRank', 'symbol', 'name', 'sector', 'industry', 'marketCap', 'revenueGrowth', 'revenueCagr3', 'epsGrowth', 'netMargin', 'operatingMargin', 'fcfMargin', 'roic', 'debtEquity', 'pe', 'ps', 'fundamentalScore', 'fundamentalStatus'];
-    const csv = [fields.join(','), ...rows.map((row) => fields.map((field) => csvCell(row[field])).join(','))].join('\r\n');
+    const columns = momentumSchema().columns;
+    const csv = [columns.map((column) => csvCell(column.label)).join(','), ...rows.map((row) => columns.map((column) => csvCell(row[column.key])).join(','))].join('\r\n');
     const blob = new Blob(['\ufeff' + csv], { type: 'text/csv;charset=utf-8' });
     const link = document.createElement('a');
     link.href = URL.createObjectURL(blob);
@@ -451,12 +459,57 @@
   function nameCell(row) { return `<td class="company-cell"><strong>${esc(row.name)}</strong><small>${esc(row.industry)}</small></td>`; }
   function scoreCell(value) { return `<td><strong class="score-pill ${scoreClass(value)}">${fmtNumber(value, 1)}</strong></td>`; }
   function signalCell(label) { return `<td><span class="signal ${signalClass(label)}">${esc(label || '—')}</span></td>`; }
-  function metricCell(value, type) {
-    let display = fmtNumber(value);
-    if (type === 'pct') display = fmtPct(value);
-    if (type === 'ratio') display = value === null || value === undefined ? '—' : `${fmtNumber(value)}x`;
-    if (type === 'multiple') display = fmtMultiple(value);
-    return `<td class="${type === 'pct' ? valueClass(value) : ''}">${display}</td>`;
+  function indicatorCell(row, column) {
+    const value = row[column.key];
+    if ((value === null || value === undefined || value === '') && column.source === 'licensed') {
+      return '<td class="pending-source"><span>待授权源</span></td>';
+    }
+    if (column.format === 'symbol') return symbolCell(row);
+    if (column.format === 'company') return nameCell(row);
+    if (column.format === 'rank') return `<td class="rank-cell"><strong>${fmtNumber(value, 0)}</strong></td>`;
+    if (column.format === 'rankChange') {
+      const display = value === null || value === undefined ? 'NEW' : value === 0 ? '—' : `${value > 0 ? '↑' : '↓'}${Math.abs(value)}`;
+      return `<td class="rank-cell"><small class="${valueClass(value)}">${display}</small></td>`;
+    }
+    if (column.format === 'marketCap') return `<td>${fmtMarketCap(value)}</td>`;
+    if (column.format === 'price') return `<td>${fmtMoney(value, row.currency)}</td>`;
+    if (column.format === 'pct') return `<td class="${valueClass(value)}">${fmtPct(value)}</td>`;
+    if (column.format === 'ratio') return `<td>${value === null || value === undefined ? '—' : `${fmtNumber(value)}x`}</td>`;
+    if (column.format === 'multiple') return `<td>${fmtMultiple(value)}</td>`;
+    if (column.format === 'score100') return scoreCell(value);
+    if (column.format === 'score5') return `<td><strong class="score-pill ${scoreClass5(value)}">${fmtNumber(value, 1)}</strong></td>`;
+    if (column.format === 'status') return signalCell(value);
+    if (column.format === 'days') return `<td>${value === null || value === undefined ? '—' : `${fmtNumber(value, 0)}天`}</td>`;
+    if (column.format === 'number') return `<td>${fmtNumber(value)}</td>`;
+    if (column.format === 'longText') {
+      const text = value === null || value === undefined ? '—' : String(value);
+      return `<td class="long-cell" title="${esc(text)}">${esc(text)}</td>`;
+    }
+    return `<td>${esc(value === null || value === undefined ? '—' : value)}</td>`;
+  }
+  function referenceInventory(schema) {
+    const sheets = schema.sheets || [];
+    return `<details class="indicator-inventory"><summary>Excel 工作表与全部字段核对清单</summary><div class="inventory-grid">${sheets.map((sheet) => `<section><h3>${esc(sheet.name)}${sheet.count ? ` · ${sheet.count}项` : ''}</h3>${sheet.type === 'methodology' ? '<p>方法论/使用说明页</p>' : sheet.fields ? `<div>${sheet.fields.map((field) => `<span>${esc(field)}</span>`).join('')}</div>` : `<div>${(schema.columns || []).map((field) => `<span>${esc(field.label)}</span>`).join('')}</div>`}</section>`).join('')}</div></details>`;
+  }
+  function methodologyDetails(isTenx) {
+    if (isTenx) return `
+      <div class="methodology-grid">
+        <section><h3>研究优先级</h3><p><code>60% 当前基本面与趋势基础项 + 25% Alpha 催化 + 15% 连续市场动量 − 风险扣分</code>。回答“现在先研究谁”，不是十倍收益预测。</p></section>
+        <section><h3>经营质量</h3><p>参考权重为成长质量 25%、业务质量 45%、财务强度 10%、资本配置 10%、数据置信度 10%；在公开版中以收入增长、利润率、FCF、ROIC 与杠杆做代理。</p></section>
+        <section><h3>季度验证</h3><p>使用最近季度收入同比/环比、营业利润率与自由现金流，分为加速增长、平稳、增速放缓、趋势恶化及未覆盖。</p></section>
+        <section><h3>Alpha 催化</h3><p>要求市场动量与至少两项经营恢复信号共同出现。分析师周度预期需要授权快照，因此 FY1 增速、FY2 Forward P/E 与预期变化列保留但不填猜测值。</p></section>
+        <section><h3>五个核心维度</h3><p>成长空间、商业质量、资本配置、估值与安全边际、季度经营趋势验证。投资画像用于选择适合的研究路径，不等于交易评级。</p></section>
+        <section><h3>主要边界</h3><p>TAM、技术壁垒、竞争格局、管理层、资源储量与资产 NAV 仍需定性研究；极端估值、高杠杆、负 FCF 与接近高点会触发复核提醒。</p></section>
+      </div>`;
+    return `
+      <div class="methodology-grid">
+        <section><h3>排名含义</h3><p>综合分衡量当日异常强度，不是上涨概率。公开版目前以 20/60/120/252 日相对强弱、量能、均线与波动状态形成现货动量分。</p></section>
+        <section><h3>现货模块</h3><p><code>RS%=个股20日收益−SPY 20日收益</code>；<code>放量比=5日均量÷20日均量</code>；连续放量用于区分单日脉冲和持续参与。</p></section>
+        <section><h3>波动模块</h3><p>布林压缩按当前20日带宽相对近120日历史分位识别；波动率状态比较10日与60日实现波动，区分扩张、正常和压缩。</p></section>
+        <section><h3>期权模块</h3><p>P/C、ATM IV、IV/HV、Delta方向、期限结构、Vol/OI、Call OI占比与期权分需要完整期权链授权数据。字段均在主表，未授权时明确显示待授权源。</p></section>
+        <section><h3>Gamma 模块</h3><p>γ Wall、Call Wall、GEX净值、局部GEX环境、Zero Gamma及数据质量必须由同一完整链按一致到期桶计算，不可从股价反推。</p></section>
+        <section><h3>信号跟踪</h3><p>每日快照记录排名、分数、首次捕捉与信号天龄。共振只有在现货和期权方向均可验证时才成立；当前仅标记“现货确认·待期权”。</p></section>
+      </div>`;
   }
   function nullableNumber(value) { const parsed = Number(value); return value === '' || !Number.isFinite(parsed) ? null : parsed; }
   function fmtNumber(value, digits = 2) { return value === null || value === undefined || !Number.isFinite(Number(value)) ? '—' : Number(value).toLocaleString('zh-CN', { maximumFractionDigits: digits }); }
@@ -466,7 +519,8 @@
   function fmtMarketCap(value) { if (value === null || value === undefined) return '—'; return value >= 1e12 ? `$${fmtNumber(value / 1e12, 1)}T` : `$${fmtNumber(value / 1e9, 1)}B`; }
   function valueClass(value) { return Number(value) > 0 ? 'positive' : Number(value) < 0 ? 'negative' : '' ; }
   function scoreClass(value) { return Number(value) >= 75 ? 'high' : Number(value) >= 50 ? 'mid' : 'low'; }
-  function signalClass(label) { return /强势|偏强|高质量|稳健/.test(label || '') ? 'positive' : /转弱|弱势|承压/.test(label || '') ? 'negative' : 'neutral'; }
+  function scoreClass5(value) { return Number(value) >= 3.75 ? 'high' : Number(value) >= 2.5 ? 'mid' : 'low'; }
+  function signalClass(label) { return /强势|偏强|高质量|稳健|重点|确认|加速|是/.test(label || '') ? 'positive' : /转弱|弱势|承压|恶化|暂缓|否/.test(label || '') ? 'negative' : 'neutral'; }
   function formatGeneratedAt(value) { if (!value) return ''; const date = new Date(value); return Number.isNaN(date.getTime()) ? '' : `生成于 ${date.toLocaleString('zh-CN', { hour12: false })}`; }
   function csvCell(value) { const text = value === null || value === undefined ? '' : String(value); return /[",\r\n]/.test(text) ? `"${text.replace(/"/g, '""')}"` : text; }
   function cssEsc(value) { return window.CSS && CSS.escape ? CSS.escape(value) : String(value).replace(/[^a-zA-Z0-9_-]/g, '\\$&'); }
