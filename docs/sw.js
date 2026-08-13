@@ -14,7 +14,7 @@
    - 导航请求（用户直接访问/刷新任意路径）离线且未命中缓存时，兜底返回
      缓存的 index.html——因为这是纯前端 hash 路由单页应用，任何路径都
      能由 index.html + app.js 正确渲染。 */
-const CACHE = 'pi-20260814005430';
+const CACHE = 'pi-20260814010813';
 const SHELL = [
   './',
   'index.html',
@@ -56,6 +56,22 @@ self.addEventListener('fetch', (e) => {
 
   // 动态 JSON: 网络优先（拿最新内容），成功则更新缓存；失败回退缓存（离线可用）
   if (url.pathname.endsWith('/data.json') || url.pathname.endsWith('/momentum.json')) {
+    e.respondWith(
+      fetch(e.request)
+        .then((res) => {
+          if (res && res.ok) {
+            const copy = res.clone();
+            caches.open(CACHE).then((c) => c.put(e.request, copy)).catch(() => {});
+          }
+          return res;
+        })
+        .catch(() => caches.match(e.request))
+    );
+    return;
+  }
+
+  // 关键界面资源网络优先，避免已安装 PWA 长时间停留在旧版评分界面。
+  if (url.pathname.endsWith('/js/app.js') || url.pathname.endsWith('/css/app.css')) {
     e.respondWith(
       fetch(e.request)
         .then((res) => {

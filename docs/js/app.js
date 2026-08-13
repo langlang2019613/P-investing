@@ -465,6 +465,7 @@
         <div><span>本表指标</span><strong>${columns.length}</strong><small>${computedCount} 自动 · ${licensedCount} 待授权</small></div>
         <div><span>SPY 20 日</span><strong class="${valueClass(benchmark.ret20)}">${fmtPct(benchmark.ret20)}</strong><small>相对强弱基准</small></div>
       </div>
+      ${isTenx ? `<button type="button" id="tenx-weight-jump" class="tenx-weight-entry"><span><strong>⚙ 调整评分权重</strong><small>3项研究优先级 + 5项经营质量 + 3项风险扣分</small></span><b>${tenxModelIsDefault() ? '当前：原版模型' : '当前：自定义模型'} →</b></button>` : ''}
       <div class="momentum-tabs" role="tablist">
         <button data-mode="tenx" class="${isTenx ? 'active' : ''}">10倍股雷达<small>33项 · 增长 · 质量 · 估值 · 催化</small></button>
         <button data-mode="movement" class="${!isTenx ? 'active' : ''}">动量移动追踪<small>51项 · 现货 · 期权 · Gamma · 波动</small></button>
@@ -580,6 +581,16 @@
   }
 
   function bindMomentumEvents(currentRows) {
+    const weightJump = document.getElementById('tenx-weight-jump');
+    if (weightJump) weightJump.addEventListener('click', () => {
+      const lab = document.getElementById('tenx-weight-lab');
+      if (!lab) return;
+      lab.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      lab.classList.remove('attention');
+      void lab.offsetWidth;
+      lab.classList.add('attention');
+      setTimeout(() => lab.classList.remove('attention'), 1400);
+    });
     $main.querySelectorAll('[data-mode]').forEach((button) => button.addEventListener('click', () => {
       momentumState.mode = button.dataset.mode;
       momentumState.signal = '';
@@ -765,9 +776,9 @@
     const researchTotal = sumWeights('research');
     const qualityTotal = sumWeights('quality');
     const custom = !tenxModelIsDefault();
-    return `<section class="tenx-workbench">
+    return `<section class="tenx-workbench" id="tenx-weight-lab">
       <div class="tenx-workbench-head">
-        <div><p class="eyebrow">INTERACTIVE RESEARCH MODEL</p><h2>10倍股权重实验室</h2><p>调整任一滑杆后，松手即重算全部股票的经营质量分、研究优先级分、状态与排名；权重保存在当前浏览器。</p></div>
+        <div><p class="eyebrow">INTERACTIVE RESEARCH MODEL</p><h2>调整评分权重</h2><p>调整任一滑杆后，松手即重算全部股票的经营质量分、研究优先级分、状态与排名；权重保存在当前浏览器。</p></div>
         <span class="model-state ${custom ? 'custom' : ''}">${custom ? '自定义模型' : '原版模型'}</span>
       </div>
       <div class="tenx-presets" aria-label="模型预设">

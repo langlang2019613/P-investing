@@ -13,7 +13,7 @@
   <meta name="mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
   <meta name="apple-mobile-web-app-title" content="飘投资" />
-  <link rel="stylesheet" href="css/app.css" />
+  <link rel="stylesheet" href="css/app.css?v=20260814-weights2" />
 </head>
 <body>
 
@@ -55,10 +55,12 @@
 </footer>
 
 <script src="js/marked.min.js"></script>
-<script src="js/app.js"></script>
+<script src="js/app.js?v=20260814-weights2"></script>
 <script>
   if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('sw.js');
+    navigator.serviceWorker.register('sw.js?v=20260814-weights2', { updateViaCache: 'none' })
+      .then((registration) => registration.update())
+      .catch(() => {});
   }
 </script>
 </body>

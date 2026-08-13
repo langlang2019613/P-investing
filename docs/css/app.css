@@ -147,6 +147,18 @@ mark { background: rgba(212, 175, 55, .3); color: var(--gold); border-radius: 3p
 .positive { color: var(--pos) !important; }
 .negative { color: var(--neg) !important; }
 
+.tenx-weight-entry {
+  width: 100%; display: flex; align-items: center; justify-content: space-between; gap: 16px;
+  padding: 11px 16px; cursor: pointer; border: 1px solid #8d742a; border-radius: 9px;
+  background: linear-gradient(100deg, rgba(212, 175, 55, .2), rgba(212, 175, 55, .06));
+  color: var(--text); font-family: inherit; text-align: left;
+}
+.tenx-weight-entry:hover { border-color: var(--gold); background: linear-gradient(100deg, rgba(212, 175, 55, .28), rgba(212, 175, 55, .08)); }
+.tenx-weight-entry span strong, .tenx-weight-entry span small { display: block; }
+.tenx-weight-entry span strong { color: #f0d369; font-size: 14px; }
+.tenx-weight-entry span small { margin-top: 1px; color: #9ca4b2; font-size: 10px; }
+.tenx-weight-entry b { flex: 0 0 auto; color: #e7d688; font-size: 11px; }
+
 .momentum-tabs { display: grid; grid-template-columns: 1fr 1fr; margin-top: 18px; border: 1px solid var(--line); border-radius: 10px 10px 0 0; overflow: hidden; }
 .momentum-tabs button {
   border: 0; border-right: 1px solid var(--line); padding: 12px 16px; cursor: pointer;
@@ -158,6 +170,8 @@ mark { background: rgba(212, 175, 55, .3); color: var(--gold); border-radius: 3p
 .momentum-tabs button.active small { color: rgba(0,0,0,.58); }
 
 .tenx-workbench { padding: 18px; background: linear-gradient(145deg, #151a24, #0d1118 58%); border: 1px solid #3b3a30; border-top: 0; }
+.tenx-workbench.attention { animation: tenx-attention 1.4s ease-out; }
+@keyframes tenx-attention { 0%, 35% { box-shadow: inset 0 0 0 2px var(--gold), 0 0 24px rgba(212, 175, 55, .25); } 100% { box-shadow: none; } }
 .tenx-workbench-head { display: flex; align-items: flex-start; justify-content: space-between; gap: 18px; }
 .tenx-workbench-head .eyebrow { color: var(--gold); font: 700 9px/1.2 Consolas, monospace; letter-spacing: 1.8px; }
 .tenx-workbench-head h2 { margin: 3px 0 3px; font-size: 20px; }
@@ -332,6 +346,8 @@ mark { background: rgba(212, 175, 55, .3); color: var(--gold); border-radius: 3p
   .momentum-hero { display: block; padding: 20px; }
   .momentum-asof { margin-top: 18px; }
   .momentum-kpis { grid-template-columns: 1fr 1fr; }
+  .tenx-weight-entry { padding: 10px 12px; }
+  .tenx-weight-entry b { font-size: 10px; }
   .momentum-tabs button { padding: 10px; font-size: 12px; }
   .momentum-filter-grid { grid-template-columns: 1fr 1fr; }
   .momentum-search-row { flex-wrap: wrap; }
