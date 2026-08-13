@@ -1,0 +1,50 @@
+name: Daily momentum tracker
+
+on:
+  schedule:
+    # 23:30 UTC Mon-Fri = 07:30 Singapore Tue-Sat, after the US close.
+    - cron: "30 23 * * 1-5"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-momentum-tracker
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Generate momentum dashboard
+        run: python tools/momentum_tracker.py --max-symbols 180 --workers 10
+
+      - name: Validate generated data
+        run: |
+          git diff --check
+          python -m json.tool docs/momentum.json >/dev/null
+          python -m json.tool data/momentum/history.json >/dev/null
+
+      - name: Commit and publish when data changed
+        run: |
+          if git diff --quiet && [ -z "$(git ls-files --others --exclude-standard)" ]; then
+            echo "No changes to publish."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/momentum.json data/momentum/history.json
+          git commit -m "data: refresh daily momentum tracker"
+          git push
