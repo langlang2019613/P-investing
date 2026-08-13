@@ -25,6 +25,41 @@
   let MOMENTUM = null;
   let momentumPromise = null;
   let momentumInputTimer = null;
+  const TENX_MODEL_STORAGE_KEY = 'p-investing-tenx-model-v1';
+  const TENX_MODEL_DEFAULTS = Object.freeze({
+    preset: 'default',
+    research: { quality: 60, catalyst: 25, momentum: 15 },
+    quality: { growth: 25, business: 45, financial: 10, capital: 10, confidence: 10 },
+    risk: { valuation: 8, leverage: 6, negativeFcf: 6 },
+  });
+  const TENX_MODEL_PRESETS = {
+    default: {
+      label: '原版平衡',
+      description: '经营质量为主，兼顾催化和连续动量。',
+      research: { quality: 60, catalyst: 25, momentum: 15 },
+      quality: { growth: 25, business: 45, financial: 10, capital: 10, confidence: 10 },
+    },
+    growth: {
+      label: '成长优先',
+      description: '提高收入与盈利成长的影响，适合寻找扩张期公司。',
+      research: { quality: 70, catalyst: 20, momentum: 10 },
+      quality: { growth: 50, business: 25, financial: 5, capital: 10, confidence: 10 },
+    },
+    quality: {
+      label: '质量优先',
+      description: '更重视利润、现金流、资本回报和财务稳健。',
+      research: { quality: 75, catalyst: 15, momentum: 10 },
+      quality: { growth: 15, business: 45, financial: 15, capital: 20, confidence: 5 },
+    },
+    catalyst: {
+      label: '催化动量',
+      description: '提高 Alpha 催化与市场确认，排名对价格变化更敏感。',
+      research: { quality: 35, catalyst: 35, momentum: 30 },
+      quality: { growth: 30, business: 35, financial: 10, capital: 15, confidence: 10 },
+    },
+  };
+  let tenxModel = loadTenxModel();
+  let tenxModelCache = { key: '', rows: [] };
   const momentumState = {
     mode: 'tenx',
     query: '',
@@ -197,6 +232,184 @@
     return momentumPromise;
   }
 
+  function copyTenxModel(source) {
+    const safeNumber = (value, fallback, max) => {
+      const parsed = Number(value);
+      return Number.isFinite(parsed) ? Math.max(0, Math.min(max, parsed)) : fallback;
+    };
+    const sourceResearch = source && source.research || {};
+    const sourceQuality = source && source.quality || {};
+    const sourceRisk = source && source.risk || {};
+    return {
+      preset: source && typeof source.preset === 'string' ? source.preset : 'default',
+      research: {
+        quality: safeNumber(sourceResearch.quality, 60, 100),
+        catalyst: safeNumber(sourceResearch.catalyst, 25, 100),
+        momentum: safeNumber(sourceResearch.momentum, 15, 100),
+      },
+      quality: {
+        growth: safeNumber(sourceQuality.growth, 25, 100),
+        business: safeNumber(sourceQuality.business, 45, 100),
+        financial: safeNumber(sourceQuality.financial, 10, 100),
+        capital: safeNumber(sourceQuality.capital, 10, 100),
+        confidence: safeNumber(sourceQuality.confidence, 10, 100),
+      },
+      risk: {
+        valuation: safeNumber(sourceRisk.valuation, 8, 25),
+        leverage: safeNumber(sourceRisk.leverage, 6, 25),
+        negativeFcf: safeNumber(sourceRisk.negativeFcf, 6, 25),
+      },
+    };
+  }
+
+  function loadTenxModel() {
+    try {
+      const saved = localStorage.getItem(TENX_MODEL_STORAGE_KEY);
+      return copyTenxModel(saved ? JSON.parse(saved) : TENX_MODEL_DEFAULTS);
+    } catch (_) {
+      return copyTenxModel(TENX_MODEL_DEFAULTS);
+    }
+  }
+
+  function saveTenxModel() {
+    tenxModelCache.key = '';
+    try { localStorage.setItem(TENX_MODEL_STORAGE_KEY, JSON.stringify(tenxModel)); } catch (_) { /* private mode */ }
+  }
+
+  function tenxModelIsDefault() {
+    return ['research', 'quality', 'risk'].every((group) =>
+      Object.keys(TENX_MODEL_DEFAULTS[group]).every((key) =>
+        Number(tenxModel[group][key]) === Number(TENX_MODEL_DEFAULTS[group][key])
+      )
+    );
+  }
+
+  function sumWeights(group) {
+    return Object.values(tenxModel[group]).reduce((total, value) => total + Number(value || 0), 0);
+  }
+
+  function weightedAvailable(parts) {
+    const present = parts.filter(([value, weight]) => value !== null && value !== undefined && Number.isFinite(Number(value)) && Number(weight) > 0);
+    const total = present.reduce((sum, item) => sum + Number(item[1]), 0);
+    if (!present.length || total <= 0) return null;
+    return present.reduce((sum, item) => sum + Number(item[0]) * Number(item[1]), 0) / total;
+  }
+
+  function sortedPopulation(rows, key, sector) {
+    return rows
+      .filter((row) => !sector || row.sector === sector)
+      .map((row) => Number(row[key]))
+      .filter((value) => Number.isFinite(value) && (key !== 'pe' || value > 0))
+      .sort((a, b) => a - b);
+  }
+
+  function percentileScore(value, population, inverse) {
+    const numeric = Number(value);
+    if (!Number.isFinite(numeric) || !population.length) return null;
+    let below = 0, equal = 0;
+    population.forEach((candidate) => {
+      if (candidate < numeric) below += 1;
+      else if (candidate === numeric) equal += 1;
+    });
+    const rank = (below + Math.max(0, equal - 1) / 2) / Math.max(1, population.length - 1) * 100;
+    return inverse ? 100 - rank : rank;
+  }
+
+  function tenxComponentRows() {
+    const rawRows = MOMENTUM.rows || [];
+    const metrics = ['revenueGrowth', 'revenueCagr3', 'epsGrowth', 'fcfMargin', 'roic', 'netMargin', 'debtEquity', 'fcfYield'];
+    const globalPopulations = Object.fromEntries(metrics.map((key) => [key, sortedPopulation(rawRows, key)]));
+    const sectorPopulations = {};
+    [...new Set(rawRows.map((row) => row.sector).filter(Boolean))].forEach((sector) => {
+      sectorPopulations[sector] = Object.fromEntries(metrics.map((key) => [key, sortedPopulation(rawRows, key, sector)]));
+    });
+    const score = (row, key, inverse) => {
+      const sectorValues = sectorPopulations[row.sector] && sectorPopulations[row.sector][key] || [];
+      return percentileScore(row[key], sectorValues.length >= 5 ? sectorValues : globalPopulations[key], inverse);
+    };
+    return rawRows.map((row) => {
+      const coverageKeys = ['revenueGrowth', 'revenueCagr3', 'epsGrowth', 'fcfMargin', 'roic', 'netMargin', 'debtEquity', 'pe'];
+      const coverage = coverageKeys.filter((key) => row[key] !== null && row[key] !== undefined && Number.isFinite(Number(row[key]))).length / coverageKeys.length * 100;
+      const growth = weightedAvailable([[score(row, 'revenueGrowth'), 40], [score(row, 'revenueCagr3'), 30], [score(row, 'epsGrowth'), 30]]);
+      const business = weightedAvailable([[score(row, 'fcfMargin'), 35], [score(row, 'roic'), 35], [score(row, 'netMargin'), 30]]);
+      const financial = weightedAvailable([[score(row, 'debtEquity', true), 70], [score(row, 'fcfMargin'), 30]]);
+      const capital = weightedAvailable([[score(row, 'roic'), 70], [score(row, 'fcfYield'), 30]]);
+      const alpha = row.davisDouble === '双重确认' ? 100 : row.alphaCatalyst === '是' ? 65 : 25;
+      return { row, components: { growth, business, financial, capital, confidence: coverage }, alpha };
+    });
+  }
+
+  function tenxRowsForModel() {
+    if (tenxModelIsDefault()) return MOMENTUM.rows;
+    const cacheKey = `${MOMENTUM.generatedAt || ''}|${JSON.stringify(tenxModel)}`;
+    if (tenxModelCache.key === cacheKey) return tenxModelCache.rows;
+    const research = sumWeights('research') > 0 ? tenxModel.research : TENX_MODEL_DEFAULTS.research;
+    const quality = sumWeights('quality') > 0 ? tenxModel.quality : TENX_MODEL_DEFAULTS.quality;
+    const risk = tenxModel.risk;
+    const rows = tenxComponentRows().map(({ row, components, alpha }) => {
+      const customQualityModel = weightedAvailable([
+        [components.growth, quality.growth],
+        [components.business, quality.business],
+        [components.financial, quality.financial],
+        [components.capital, quality.capital],
+        [components.confidence, quality.confidence],
+      ]) || 0;
+      const defaultQualityModel = weightedAvailable([
+        [components.growth, TENX_MODEL_DEFAULTS.quality.growth],
+        [components.business, TENX_MODEL_DEFAULTS.quality.business],
+        [components.financial, TENX_MODEL_DEFAULTS.quality.financial],
+        [components.capital, TENX_MODEL_DEFAULTS.quality.capital],
+        [components.confidence, TENX_MODEL_DEFAULTS.quality.confidence],
+      ]) || 0;
+      const publishedQuality = Number.isFinite(Number(row.fundamentalScore)) ? Number(row.fundamentalScore) : defaultQualityModel;
+      const quality100 = Math.max(0, Math.min(100, publishedQuality + customQualityModel - defaultQualityModel));
+      let riskPenalty = 0;
+      let defaultRiskPenalty = 0;
+      if ((row.pe || 0) > 100) riskPenalty += risk.valuation;
+      if ((row.pe || 0) > 100) defaultRiskPenalty += TENX_MODEL_DEFAULTS.risk.valuation;
+      if ((row.debtEquity || 0) > 3) riskPenalty += risk.leverage;
+      if ((row.debtEquity || 0) > 3) defaultRiskPenalty += TENX_MODEL_DEFAULTS.risk.leverage;
+      if (row.fcfMargin !== null && row.fcfMargin !== undefined && row.fcfMargin < 0) riskPenalty += risk.negativeFcf;
+      if (row.fcfMargin !== null && row.fcfMargin !== undefined && row.fcfMargin < 0) defaultRiskPenalty += TENX_MODEL_DEFAULTS.risk.negativeFcf;
+      const customResearchModel = weightedAvailable([
+        [quality100, research.quality],
+        [alpha, research.catalyst],
+        [row.momentumScore, research.momentum],
+      ]) || 0;
+      const defaultResearchModel = weightedAvailable([
+        [publishedQuality, TENX_MODEL_DEFAULTS.research.quality],
+        [alpha, TENX_MODEL_DEFAULTS.research.catalyst],
+        [row.momentumScore, TENX_MODEL_DEFAULTS.research.momentum],
+      ]) || 0;
+      const publishedResearch = Number.isFinite(Number(row.researchPriorityScore)) ? Number(row.researchPriorityScore) * 20 : defaultResearchModel - defaultRiskPenalty;
+      const research100 = Math.max(0, Math.min(100, publishedResearch + customResearchModel - defaultResearchModel - (riskPenalty - defaultRiskPenalty)));
+      const result = Object.assign({}, row, {
+        _modelComponents: components,
+        _modelAlphaScore: alpha,
+        _modelRiskPenalty: riskPenalty,
+        fundamentalScore: Math.round(quality100 * 10) / 10,
+        qualityScore: Math.round(quality100 / 2) / 10,
+        researchPriorityScore: Math.round(research100 / 2) / 10,
+        currentStatus: research100 >= 75 ? '重点研究' : research100 >= 55 ? '继续跟踪' : '观察',
+        watchAction: research100 >= 75 ? '重点研究' : research100 >= 60 ? '继续跟踪' : research100 >= 45 ? '等待确认' : '暂缓',
+      });
+      result.whyWatch = `自定义模型综合分${result.researchPriorityScore.toFixed(1)}，经营质量分${result.qualityScore.toFixed(1)}，季度趋势为${result.quarterlyTrend || '未覆盖'}，量价信号为${result.signal || '数据不足'}。`;
+      return result;
+    });
+    [...rows].sort((a, b) => b.fundamentalScore - a.fundamentalScore).forEach((row, index) => { row.sectorQualityRank = index + 1; });
+    [...rows].sort((a, b) => b.researchPriorityScore - a.researchPriorityScore || (b.momentumScore || 0) - (a.momentumScore || 0)).forEach((row, index) => {
+      const baseRank = row.researchPriorityRank;
+      row.researchPriorityRank = index + 1;
+      row.researchPriorityRankChange = baseRank ? baseRank - row.researchPriorityRank : null;
+    });
+    tenxModelCache = { key: cacheKey, rows };
+    return rows;
+  }
+
+  function activeMomentumRows() {
+    return momentumState.mode === 'tenx' ? tenxRowsForModel() : MOMENTUM.rows;
+  }
+
   function renderMomentum(mode) {
     if (mode) momentumState.mode = mode;
     setTab(momentumState.mode);
@@ -213,19 +426,20 @@
       return;
     }
 
-    const rows = filteredMomentumRows();
+    const allRows = activeMomentumRows();
+    const rows = filteredMomentumRows(allRows);
     const pageCount = Math.max(1, Math.ceil(rows.length / momentumState.perPage));
     momentumState.page = Math.min(momentumState.page, pageCount);
     const start = (momentumState.page - 1) * momentumState.perPage;
     const visible = rows.slice(start, start + momentumState.perPage);
-    const sectors = [...new Set(MOMENTUM.rows.map((row) => row.sector).filter(Boolean))].sort();
+    const sectors = [...new Set(allRows.map((row) => row.sector).filter(Boolean))].sort();
     const isTenx = momentumState.mode === 'tenx';
     const schema = momentumSchema();
     const columns = schema.columns || [];
     const computedCount = columns.filter((column) => column.source !== 'licensed').length;
     const licensedCount = columns.length - computedCount;
     const scoreField = isTenx ? 'researchPriorityScore' : 'momentumScore';
-    const strongCount = MOMENTUM.rows.filter((row) => (row[scoreField] || 0) >= (isTenx ? 3.5 : 65)).length;
+    const strongCount = allRows.filter((row) => isTenx ? row.currentStatus === '重点研究' : (row[scoreField] || 0) >= 65).length;
     const benchmark = MOMENTUM.benchmark || {};
     const filterFields = `
       <label>行业<select data-filter="sector"><option value="">全部行业</option>${sectors.map((sector) => `<option value="${esc(sector)}" ${momentumState.sector === sector ? 'selected' : ''}>${esc(sector)}</option>`).join('')}</select></label>
@@ -247,7 +461,7 @@
       </section>
       <div class="momentum-kpis">
         <div><span>已筛选</span><strong>${MOMENTUM.universe.screened}</strong><small>只股票</small></div>
-        <div><span>${isTenx ? '优先研究' : '偏强及以上'}</span><strong>${strongCount}</strong><small>${isTenx ? '优先级分 ≥ 3.5' : '动量分 ≥ 65'}</small></div>
+        <div><span>${isTenx ? '优先研究' : '偏强及以上'}</span><strong>${strongCount}</strong><small>${isTenx ? '当前状态 = 重点研究' : '动量分 ≥ 65'}</small></div>
         <div><span>本表指标</span><strong>${columns.length}</strong><small>${computedCount} 自动 · ${licensedCount} 待授权</small></div>
         <div><span>SPY 20 日</span><strong class="${valueClass(benchmark.ret20)}">${fmtPct(benchmark.ret20)}</strong><small>相对强弱基准</small></div>
       </div>
@@ -255,6 +469,7 @@
         <button data-mode="tenx" class="${isTenx ? 'active' : ''}">10倍股雷达<small>33项 · 增长 · 质量 · 估值 · 催化</small></button>
         <button data-mode="movement" class="${!isTenx ? 'active' : ''}">动量移动追踪<small>51项 · 现货 · 期权 · Gamma · 波动</small></button>
       </div>
+      ${isTenx ? tenxModelWorkbench() : ''}
       <section class="momentum-controls">
         <div class="momentum-search-row">
           <label class="momentum-query">搜索<input data-filter="query" type="search" value="${esc(momentumState.query)}" placeholder="代码、公司、行业"></label>
@@ -269,8 +484,8 @@
         <span>字段核对 ${esc(MOMENTUM.schemas.auditedAt)} · 参考版本 ${esc(schema.referenceVersion)}</span>
       </div>
       <div class="momentum-resultbar">
-        <span>显示 <strong>${rows.length}</strong> / ${MOMENTUM.rows.length} 只 · 完整 ${columns.length} 列</span>
-        <span>横向滚动查看全部指标 · 点击表头排序 · 点击股票展开明细</span>
+        <span>显示 <strong>${rows.length}</strong> / ${allRows.length} 只 · 完整 ${columns.length} 列</span>
+        <span>${isTenx && !tenxModelIsDefault() ? '自定义模式：排名变化为相对原版模型 · ' : ''}横向滚动查看全部指标 · 点击表头排序 · 点击股票展开明细</span>
       </div>
       <div class="momentum-table-wrap">
         <table class="momentum-table full-schema" style="min-width:${Math.max(1500, columns.length * 128)}px">
@@ -284,10 +499,10 @@
         <button data-page="next" ${momentumState.page >= pageCount ? 'disabled' : ''}>下一页</button>
         <select id="momentum-per-page" aria-label="每页行数">${[25, 50, 100].map((size) => `<option value="${size}" ${momentumState.perPage === size ? 'selected' : ''}>每页 ${size}</option>`).join('')}</select>
       </div>
-      <details class="momentum-method" open>
-        <summary>${esc(schema.title)}方法论与数据边界</summary>
+      <details class="momentum-method" ${isTenx ? '' : 'open'}>
+        <summary>${isTenx ? '数据边界与公开来源' : `${esc(schema.title)}方法论与数据边界`}</summary>
         <p>${esc(isTenx ? MOMENTUM.methodology.tenx : MOMENTUM.methodology.movement)}</p>
-        ${methodologyDetails(isTenx)}
+        ${isTenx ? '' : methodologyDetails(false)}
         <p>${esc(MOMENTUM.methodology.notice)}</p>
         <p><strong>完整性说明：</strong>所有 Excel 主表字段均已呈现。期权链、Gamma、Reddit 和分析师预期等不能由当前公开源可靠生成的字段显示“待授权源”，避免用猜测值冒充真实指标。</p>
         <p>公开来源：${(MOMENTUM.sources || []).map((source) => `<a href="${esc(source.url)}" target="_blank" rel="noopener">${esc(source.name)}</a>`).join(' · ')}</p>
@@ -300,7 +515,7 @@
     return MOMENTUM.schemas[momentumState.mode] || { columns: [], sheets: [] };
   }
 
-  function filteredMomentumRows() {
+  function filteredMomentumRows(sourceRows) {
     const isTenx = momentumState.mode === 'tenx';
     const scoreField = isTenx ? 'researchPriorityScore' : 'momentumScore';
     const statusField = isTenx ? 'currentStatus' : 'signal';
@@ -310,7 +525,7 @@
     const maxPe = nullableNumber(momentumState.maxPe);
     const minRevenueGrowth = nullableNumber(momentumState.minRevenueGrowth);
     const minRet20 = nullableNumber(momentumState.minRet20);
-    const rows = MOMENTUM.rows.filter((row) => {
+    const rows = (sourceRows || activeMomentumRows()).filter((row) => {
       const haystack = `${row.symbol} ${row.name} ${row.sector} ${row.industry}`.toLowerCase();
       if (query && !haystack.includes(query)) return false;
       if (momentumState.sector && row.sector !== momentumState.sector) return false;
@@ -348,6 +563,7 @@
   }
 
   function momentumDetail(row) {
+    const modelBreakdown = row._modelComponents ? `<p class="model-breakdown"><strong>自定义模型拆解：</strong>成长 ${fmtNumber(row._modelComponents.growth, 1)} · 业务质量 ${fmtNumber(row._modelComponents.business, 1)} · 财务强度 ${fmtNumber(row._modelComponents.financial, 1)} · 资本配置 ${fmtNumber(row._modelComponents.capital, 1)} · 数据置信度 ${fmtNumber(row._modelComponents.confidence, 1)} · Alpha ${fmtNumber(row._modelAlphaScore, 1)} · 风险扣分 ${fmtNumber(row._modelRiskPenalty, 1)}</p>` : '';
     return `<div class="momentum-detail">
       <div class="spark-card"><span>近 60 个交易日</span>${sparkline(row.sparkline || [])}</div>
       <dl>
@@ -359,6 +575,7 @@
         <div><dt>P/S</dt><dd>${fmtMultiple(row.ps)}</dd></div>
       </dl>
       <p><strong>${esc(row.symbol)}</strong> 当前处于“${esc(row.stage)}”阶段；量价分 ${fmtNumber(row.momentumScore, 1)}，基本面分 ${fmtNumber(row.fundamentalScore, 1)}。分数是同一股票池内的横截面相对值，不是目标价或买卖建议。</p>
+      ${modelBreakdown}
     </div>`;
   }
 
@@ -380,6 +597,49 @@
         clearTimeout(momentumInputTimer);
         momentumInputTimer = setTimeout(renderMomentum, event === 'input' ? 180 : 0);
       });
+    });
+    $main.querySelectorAll('[data-tenx-group]').forEach((control) => {
+      control.addEventListener('input', () => {
+        const group = control.dataset.tenxGroup;
+        const key = control.dataset.tenxKey;
+        tenxModel[group][key] = Number(control.value);
+        tenxModel.preset = 'custom';
+        const output = $main.querySelector(`[data-tenx-output="${group}.${key}"]`);
+        if (output) output.textContent = `${control.value}${group === 'risk' ? '分' : '%'}`;
+        const total = $main.querySelector(`[data-tenx-total="${group}"]`);
+        if (total) {
+          const value = sumWeights(group);
+          total.textContent = value <= 0 ? '0% · 回退原版' : `合计 ${value}%`;
+          total.classList.toggle('invalid', value <= 0);
+        }
+        const state = $main.querySelector('.model-state');
+        if (state) { state.textContent = '自定义模型'; state.classList.add('custom'); }
+      });
+      control.addEventListener('change', () => {
+        saveTenxModel();
+        momentumState.page = 1;
+        renderMomentum();
+      });
+    });
+    $main.querySelectorAll('[data-tenx-preset]').forEach((button) => button.addEventListener('click', () => {
+      const key = button.dataset.tenxPreset;
+      const preset = TENX_MODEL_PRESETS[key];
+      if (!preset) return;
+      tenxModel = copyTenxModel({ preset: key, research: preset.research, quality: preset.quality, risk: TENX_MODEL_DEFAULTS.risk });
+      saveTenxModel();
+      momentumState.page = 1;
+      momentumState.sort = 'researchPriorityRank';
+      momentumState.order = 'asc';
+      renderMomentum();
+    }));
+    const resetModel = document.getElementById('tenx-reset-model');
+    if (resetModel) resetModel.addEventListener('click', () => {
+      tenxModel = copyTenxModel(TENX_MODEL_DEFAULTS);
+      saveTenxModel();
+      momentumState.page = 1;
+      momentumState.sort = 'researchPriorityRank';
+      momentumState.order = 'asc';
+      renderMomentum();
     });
     $main.querySelectorAll('th[data-sort]').forEach((header) => header.addEventListener('click', () => {
       const field = header.dataset.sort;
@@ -438,7 +698,8 @@
     const blob = new Blob(['\ufeff' + csv], { type: 'text/csv;charset=utf-8' });
     const link = document.createElement('a');
     link.href = URL.createObjectURL(blob);
-    link.download = `p-investing-${momentumState.mode}-${MOMENTUM.asOf}.csv`;
+    const modelSuffix = momentumState.mode === 'tenx' && !tenxModelIsDefault() ? '-custom-model' : '';
+    link.download = `p-investing-${momentumState.mode}${modelSuffix}-${MOMENTUM.asOf}.csv`;
     link.click();
     URL.revokeObjectURL(link.href);
   }
@@ -491,11 +752,75 @@
     const sheets = schema.sheets || [];
     return `<details class="indicator-inventory"><summary>Excel 工作表与全部字段核对清单</summary><div class="inventory-grid">${sheets.map((sheet) => `<section><h3>${esc(sheet.name)}${sheet.count ? ` · ${sheet.count}项` : ''}</h3>${sheet.type === 'methodology' ? '<p>方法论/使用说明页</p>' : sheet.fields ? `<div>${sheet.fields.map((field) => `<span>${esc(field)}</span>`).join('')}</div>` : `<div>${(schema.columns || []).map((field) => `<span>${esc(field.label)}</span>`).join('')}</div>`}</section>`).join('')}</div></details>`;
   }
+  function tenxWeightControl(group, key, label, description, max = 100) {
+    const value = tenxModel[group][key];
+    return `<label class="tenx-weight-row">
+      <span><strong>${esc(label)}</strong><small>${esc(description)}</small></span>
+      <input type="range" min="0" max="${max}" step="1" value="${value}" data-tenx-group="${group}" data-tenx-key="${key}" aria-label="${esc(label)}">
+      <output data-tenx-output="${group}.${key}">${value}${group === 'risk' ? '分' : '%'}</output>
+    </label>`;
+  }
+
+  function tenxModelWorkbench() {
+    const researchTotal = sumWeights('research');
+    const qualityTotal = sumWeights('quality');
+    const custom = !tenxModelIsDefault();
+    return `<section class="tenx-workbench">
+      <div class="tenx-workbench-head">
+        <div><p class="eyebrow">INTERACTIVE RESEARCH MODEL</p><h2>10倍股权重实验室</h2><p>调整任一滑杆后，松手即重算全部股票的经营质量分、研究优先级分、状态与排名；权重保存在当前浏览器。</p></div>
+        <span class="model-state ${custom ? 'custom' : ''}">${custom ? '自定义模型' : '原版模型'}</span>
+      </div>
+      <div class="tenx-presets" aria-label="模型预设">
+        ${Object.entries(TENX_MODEL_PRESETS).map(([key, preset]) => `<button type="button" data-tenx-preset="${key}" class="${tenxModel.preset === key && (key !== 'default' || !custom) ? 'active' : ''}" title="${esc(preset.description)}"><strong>${esc(preset.label)}</strong><small>${esc(preset.description)}</small></button>`).join('')}
+        <button type="button" id="tenx-reset-model" class="reset-model"><strong>恢复原版</strong><small>清除本机自定义设置</small></button>
+      </div>
+      <div class="tenx-model-grid">
+        <section class="tenx-weight-card">
+          <div class="weight-card-head"><div><h3>① 研究优先级</h3><p>决定最终 0–5 分及先后顺序</p></div><span data-tenx-total="research" class="${researchTotal <= 0 ? 'invalid' : ''}">${researchTotal <= 0 ? '0% · 回退原版' : `合计 ${researchTotal}%`}</span></div>
+          ${tenxWeightControl('research', 'quality', '经营质量', '增长、利润、现金流与资本效率')}
+          ${tenxWeightControl('research', 'catalyst', 'Alpha 催化', '经营恢复与市场确认的共振')}
+          ${tenxWeightControl('research', 'momentum', '市场动量', '连续价格趋势和相对强弱')}
+        </section>
+        <section class="tenx-weight-card">
+          <div class="weight-card-head"><div><h3>② 经营质量五维</h3><p>决定经营质量 0–5 分</p></div><span data-tenx-total="quality" class="${qualityTotal <= 0 ? 'invalid' : ''}">${qualityTotal <= 0 ? '0% · 回退原版' : `合计 ${qualityTotal}%`}</span></div>
+          ${tenxWeightControl('quality', 'growth', '成长质量', '收入、三年复合增长、EPS')}
+          ${tenxWeightControl('quality', 'business', '业务质量', '利润率、FCF率、ROIC')}
+          ${tenxWeightControl('quality', 'financial', '财务强度', '杠杆与现金流韧性')}
+          ${tenxWeightControl('quality', 'capital', '资本配置', 'ROIC 与 FCF Yield')}
+          ${tenxWeightControl('quality', 'confidence', '数据置信度', '关键公开字段覆盖完整度')}
+        </section>
+        <section class="tenx-weight-card risk-card">
+          <div class="weight-card-head"><div><h3>③ 风险扣分</h3><p>在加权总分之后直接扣减</p></div><span>最高 ${sumWeights('risk')}分</span></div>
+          ${tenxWeightControl('risk', 'valuation', '极端估值', 'TTM P/E > 100x', 25)}
+          ${tenxWeightControl('risk', 'leverage', '高杠杆', 'Debt/Equity > 3x', 25)}
+          ${tenxWeightControl('risk', 'negativeFcf', '负自由现金流', 'FCF Margin < 0', 25)}
+          <div class="tenx-formula"><strong>实时公式</strong><code>优先级 = 加权(经营质量, Alpha, 动量) − 风险扣分</code><small>同组权重不必手工凑到 100%，计算时按当前合计自动归一化。自定义结果以当日原版分数为锚点，叠加新旧权重差；若一组全部为 0，该组暂按原版权重计算。</small></div>
+        </section>
+      </div>
+      <div class="tenx-guide-grid">
+        <details open>
+          <summary>使用指南</summary>
+          <ol>
+            <li><strong>先选模型：</strong>原版平衡适合建立研究清单；成长优先偏向高速扩张；质量优先偏向现金流与资本回报；催化动量更快响应价格。</li>
+            <li><strong>再做微调：</strong>拖动任一权重，松手后全股票池即时重算。调整一层不会隐藏任何原始指标。</li>
+            <li><strong>看结果：</strong>优先级分越高，代表“现在越值得先研究”，并不代表未来涨幅或成为十倍股的概率。</li>
+            <li><strong>配合筛选：</strong>用行业、市值、收入增速、P/E 和最低综合分缩小范围，再点击股票核对趋势、估值与风险。</li>
+            <li><strong>比较排名：</strong>自定义模式下“排名变化”表示相对原版模型上升或下降；原版模式显示每日历史排名变化。</li>
+            <li><strong>保存与更新：</strong>参数自动保存在本机浏览器。每日数据更新后会继续套用当前参数；更换设备需重新设置。</li>
+          </ol>
+        </details>
+        <details open>
+          <summary>10倍股方法论</summary>
+          ${methodologyDetails(true)}
+        </details>
+      </div>
+    </section>`;
+  }
   function methodologyDetails(isTenx) {
     if (isTenx) return `
       <div class="methodology-grid">
-        <section><h3>研究优先级</h3><p><code>60% 当前基本面与趋势基础项 + 25% Alpha 催化 + 15% 连续市场动量 − 风险扣分</code>。回答“现在先研究谁”，不是十倍收益预测。</p></section>
-        <section><h3>经营质量</h3><p>参考权重为成长质量 25%、业务质量 45%、财务强度 10%、资本配置 10%、数据置信度 10%；在公开版中以收入增长、利润率、FCF、ROIC 与杠杆做代理。</p></section>
+        <section><h3>研究优先级</h3><p>原版权重为 <code>60% 经营质量 + 25% Alpha 催化 + 15% 连续市场动量 − 风险扣分</code>。三个权重可调整，并按合计自动归一化；新结果以当日原版分数为锚点计算权重差。</p></section>
+        <section><h3>经营质量</h3><p>原版权重为成长质量 25%、业务质量 45%、财务强度 10%、资本配置 10%、数据置信度 10%；公开版以行业内增长、利润率、FCF、ROIC 与杠杆分位数做代理。</p></section>
         <section><h3>季度验证</h3><p>使用最近季度收入同比/环比、营业利润率与自由现金流，分为加速增长、平稳、增速放缓、趋势恶化及未覆盖。</p></section>
         <section><h3>Alpha 催化</h3><p>要求市场动量与至少两项经营恢复信号共同出现。分析师周度预期需要授权快照，因此 FY1 增速、FY2 Forward P/E 与预期变化列保留但不填猜测值。</p></section>
         <section><h3>五个核心维度</h3><p>成长空间、商业质量、资本配置、估值与安全边际、季度经营趋势验证。投资画像用于选择适合的研究路径，不等于交易评级。</p></section>

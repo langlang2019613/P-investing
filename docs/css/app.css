@@ -157,6 +157,47 @@ mark { background: rgba(212, 175, 55, .3); color: var(--gold); border-radius: 3p
 .momentum-tabs button.active { color: #111; background: linear-gradient(100deg, var(--gold), #e8cb6a); }
 .momentum-tabs button.active small { color: rgba(0,0,0,.58); }
 
+.tenx-workbench { padding: 18px; background: linear-gradient(145deg, #151a24, #0d1118 58%); border: 1px solid #3b3a30; border-top: 0; }
+.tenx-workbench-head { display: flex; align-items: flex-start; justify-content: space-between; gap: 18px; }
+.tenx-workbench-head .eyebrow { color: var(--gold); font: 700 9px/1.2 Consolas, monospace; letter-spacing: 1.8px; }
+.tenx-workbench-head h2 { margin: 3px 0 3px; font-size: 20px; }
+.tenx-workbench-head p:last-child { max-width: 760px; color: var(--muted); font-size: 12px; }
+.model-state { flex: 0 0 auto; padding: 5px 10px; border: 1px solid #50657e; border-radius: 14px; color: #9fc7f8; background: rgba(77, 135, 199, .1); font-size: 11px; }
+.model-state.custom { color: #f0d369; border-color: #846f31; background: rgba(212, 175, 55, .1); }
+.tenx-presets { display: grid; grid-template-columns: repeat(5, 1fr); gap: 7px; margin: 14px 0; }
+.tenx-presets button { min-height: 58px; padding: 8px 10px; cursor: pointer; border: 1px solid #30384a; border-radius: 7px; background: #0c1118; color: var(--text); text-align: left; font-family: inherit; }
+.tenx-presets button:hover, .tenx-presets button.active { border-color: var(--gold-dim); background: rgba(212, 175, 55, .08); }
+.tenx-presets button.active { box-shadow: inset 3px 0 0 var(--gold); }
+.tenx-presets button strong, .tenx-presets button small { display: block; }
+.tenx-presets button strong { font-size: 12px; }
+.tenx-presets button small { margin-top: 3px; color: var(--muted); font-size: 9.5px; line-height: 1.35; }
+.tenx-presets .reset-model strong { color: #e9cd73; }
+.tenx-model-grid { display: grid; grid-template-columns: .85fr 1.25fr .9fr; gap: 9px; }
+.tenx-weight-card { min-width: 0; padding: 12px; border: 1px solid #293141; border-radius: 8px; background: rgba(11, 15, 22, .76); }
+.weight-card-head { min-height: 43px; display: flex; justify-content: space-between; gap: 10px; border-bottom: 1px solid #252c39; margin-bottom: 7px; }
+.weight-card-head h3 { color: #e3ca74; font-size: 12px; }
+.weight-card-head p { color: #687183; font-size: 9.5px; }
+.weight-card-head > span { white-space: nowrap; color: #8ebaf8; font: 700 10px Consolas, monospace; }
+.weight-card-head > span.invalid { color: var(--neg); }
+.tenx-weight-row { display: grid; grid-template-columns: minmax(100px, 1fr) minmax(80px, 1.1fr) 38px; align-items: center; gap: 8px; min-height: 42px; }
+.tenx-weight-row span strong, .tenx-weight-row span small { display: block; }
+.tenx-weight-row span strong { color: #c9ced7; font-size: 11px; }
+.tenx-weight-row span small { overflow: hidden; color: #626b7b; font-size: 8.5px; white-space: nowrap; text-overflow: ellipsis; }
+.tenx-weight-row input[type="range"] { width: 100%; height: 18px; cursor: pointer; accent-color: var(--gold); }
+.tenx-weight-row output { color: #e7d688; text-align: right; font: 700 10px Consolas, monospace; }
+.tenx-formula { margin-top: 7px; padding: 9px; border-radius: 6px; background: #111721; }
+.tenx-formula strong, .tenx-formula code, .tenx-formula small { display: block; }
+.tenx-formula strong { color: #bfc6d2; font-size: 10px; }
+.tenx-formula code { margin: 3px 0; color: #8ebaf8; font-size: 9.5px; white-space: normal; }
+.tenx-formula small { color: #687183; font-size: 9px; line-height: 1.45; }
+.tenx-guide-grid { display: grid; grid-template-columns: 1fr 1.5fr; gap: 9px; margin-top: 10px; }
+.tenx-guide-grid > details { padding: 11px 13px; border: 1px solid #293141; border-radius: 7px; background: #0d121a; color: var(--muted); font-size: 11px; }
+.tenx-guide-grid > details > summary { cursor: pointer; color: #e4d087; font-weight: 600; }
+.tenx-guide-grid ol { margin: 10px 0 0; padding-left: 20px; line-height: 1.6; }
+.tenx-guide-grid li { margin-bottom: 5px; }
+.tenx-guide-grid li strong { color: #cbd1dc; }
+.tenx-guide-grid .methodology-grid { grid-template-columns: repeat(2, 1fr); }
+
 .momentum-controls { padding: 15px; background: var(--panel); border: 1px solid var(--line); border-top: 0; border-radius: 0 0 10px 10px; }
 .momentum-search-row { display: flex; align-items: end; gap: 8px; }
 .momentum-search-row .momentum-query { flex: 1; }
@@ -218,6 +259,7 @@ mark { background: rgba(212, 175, 55, .3); color: var(--gold); border-radius: 3p
 .momentum-detail dd { font-size: 12px; }
 .momentum-detail p { align-self: center; color: #a7afbd; font-size: 12px; }
 .momentum-detail p strong { color: var(--gold); }
+.momentum-detail .model-breakdown { grid-column: 1 / -1; margin-top: -8px; padding-top: 10px; border-top: 1px dotted #2a3140; }
 
 .momentum-pagination { display: flex; align-items: center; justify-content: center; gap: 10px; margin: 13px 0; color: var(--muted); font-size: 12px; }
 .momentum-pagination button, .momentum-pagination select { cursor: pointer; }
@@ -297,6 +339,13 @@ mark { background: rgba(212, 175, 55, .3); color: var(--gold); border-radius: 3p
   .momentum-resultbar span:last-child { display: none; }
   .momentum-detail { grid-template-columns: 1fr; }
   .methodology-grid { grid-template-columns: 1fr; }
+  .tenx-workbench { padding: 14px 10px; }
+  .tenx-workbench-head { display: block; }
+  .model-state { display: inline-block; margin-top: 8px; }
+  .tenx-presets { grid-template-columns: 1fr 1fr; }
+  .tenx-model-grid, .tenx-guide-grid { grid-template-columns: 1fr; }
+  .tenx-guide-grid .methodology-grid { grid-template-columns: 1fr; }
+  .tenx-weight-row { grid-template-columns: minmax(105px, 1fr) 1fr 38px; }
 }
 
 @media (min-width: 641px) and (max-width: 1050px) {
@@ -304,4 +353,8 @@ mark { background: rgba(212, 175, 55, .3); color: var(--gold); border-radius: 3p
   .momentum-detail { grid-template-columns: 240px 1fr; }
   .momentum-detail p { grid-column: 1 / -1; }
   .methodology-grid { grid-template-columns: 1fr 1fr; }
+  .tenx-presets { grid-template-columns: repeat(3, 1fr); }
+  .tenx-model-grid { grid-template-columns: 1fr 1fr; }
+  .tenx-model-grid .risk-card { grid-column: 1 / -1; }
+  .tenx-guide-grid { grid-template-columns: 1fr; }
 }
