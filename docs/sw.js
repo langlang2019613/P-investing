@@ -14,15 +14,7 @@
    - 导航请求（用户直接访问/刷新任意路径）离线且未命中缓存时，兜底返回
      缓存的 index.html——因为这是纯前端 hash 路由单页应用，任何路径都
      能由 index.html + app.js 正确渲染。 */
-<<<<<<< HEAD
-const CACHE = 'pi-20260828105649';
-=======
-<<<<<<< HEAD
-const CACHE = 'pi-20260828105649';
-=======
-const CACHE = 'pi-20260828105649';
->>>>>>> eb9b5b8 (record: 2026-08-26-alpha-picks-latest-20-analysis.md)
->>>>>>> 1fdfceb84ff40f3d437b669985571a77c1778693
+const CACHE = 'pi-20260828105752';
 const SHELL = [
   './',
   'index.html',
