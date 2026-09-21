@@ -15,9 +15,9 @@
      缓存的 index.html——因为这是纯前端 hash 路由单页应用，任何路径都
      能由 index.html + app.js 正确渲染。 */
 <<<<<<< HEAD
-const CACHE = 'pi-20260914010109';
+const CACHE = 'pi-20260921010238';
 =======
-const CACHE = 'pi-20260914010109';
+const CACHE = 'pi-20260921010238';
 >>>>>>> origin/main
 const SHELL = [
   './',
