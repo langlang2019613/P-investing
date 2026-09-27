@@ -14,11 +14,7 @@
    - 导航请求（用户直接访问/刷新任意路径）离线且未命中缓存时，兜底返回
      缓存的 index.html——因为这是纯前端 hash 路由单页应用，任何路径都
      能由 index.html + app.js 正确渲染。 */
-<<<<<<< HEAD
-const CACHE = 'pi-20260927142810';
-=======
-const CACHE = 'pi-20260927142810';
->>>>>>> origin/main
+const CACHE = 'pi-20260927143151';
 const SHELL = [
   './',
   'index.html',
@@ -59,7 +55,7 @@ self.addEventListener('fetch', (e) => {
   if (url.origin !== location.origin) return;
 
   // 动态 JSON: 网络优先（拿最新内容），成功则更新缓存；失败回退缓存（离线可用）
-  if (url.pathname.endsWith('/data.json') || url.pathname.endsWith('/momentum.json')) {
+  if (url.pathname.endsWith('/data.json') || url.pathname.endsWith('/momentum.json') || url.pathname.endsWith('/news_tracker.json')) {
     e.respondWith(
       fetch(e.request)
         .then((res) => {

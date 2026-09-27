@@ -25,6 +25,13 @@
   let MOMENTUM = null;
   let momentumPromise = null;
   let momentumInputTimer = null;
+  let NEWS = null;
+  let newsPromise = null;
+  let newsInputTimer = null;
+  const newsState = {
+    view: 'items', week: '', query: '', category: '', tier: '', access: '', source: '',
+    sort: 'priority', limit: 60,
+  };
   const TENX_MODEL_STORAGE_KEY = 'p-investing-tenx-model-v1';
   const TENX_MODEL_DEFAULTS = Object.freeze({
     preset: 'default',
@@ -106,6 +113,7 @@
     const mCat = h.match(/^#\/c\/(\w+)$/);
     const mSearch = h.match(/^#\/s\/(.*)$/);
     const mMomentum = h.match(/^#\/momentum\/(tenx|movement)$/);
+    if (h === '#/news') return renderNews();
     if (mMomentum) return renderMomentum(mMomentum[1]);
     if (h === '#/momentum') { location.hash = '#/momentum/tenx'; return; }
     $main.classList.remove('wide');
@@ -114,6 +122,214 @@
     if (mSearch) { $search.value = mSearch[1]; return renderSearch(mSearch[1]); }
     renderHome();
   }
+
+  /* ── 视图：每周信息追踪 ── */
+  function loadNews() {
+    if (NEWS) return Promise.resolve(NEWS);
+    if (!newsPromise) {
+      newsPromise = fetch('news_tracker.json', { cache: 'no-store' })
+        .then((response) => {
+          if (!response.ok) throw new Error(`HTTP ${response.status}`);
+          return response.json();
+        })
+        .then((data) => (NEWS = data))
+        .finally(() => { newsPromise = null; });
+    }
+    return newsPromise;
+  }
+
+  function renderNews() {
+    setTab('news');
+    $main.classList.add('wide');
+    if (!NEWS) {
+      $main.innerHTML = '<div class="loading">正在加载每周信息源…</div>';
+      loadNews().then(() => renderNews()).catch(() => {
+        $main.innerHTML = '<div class="empty">每周信息数据加载失败，请联网后重试。</div>';
+      });
+      return;
+    }
+    if (!newsState.week) newsState.week = NEWS.latestWeek;
+    const selectedWeek = NEWS.weeks.find((week) => week.key === newsState.week) || NEWS.weeks[0] || { items: 0, sources: 0, themes: [] };
+    const categories = Object.entries(NEWS.categories || {});
+    const sourceOptions = [...NEWS.sources].sort((a, b) => a.name.localeCompare(b.name));
+    const failureNames = NEWS.sources.filter((source) => source.status === '抓取失败').map((source) => source.name);
+    const partialNames = NEWS.sources.filter((source) => source.status === '部分可用').map((source) => source.name);
+
+    const weekOptions = NEWS.weeks.map((week) =>
+      `<option value="${esc(week.key)}" ${newsState.week === week.key ? 'selected' : ''}>${esc(week.key)} · ${week.items} 条</option>`
+    ).join('');
+    const categoryOptions = categories.map(([key, label]) =>
+      `<option value="${esc(key)}" ${newsState.category === key ? 'selected' : ''}>${esc(label)}</option>`
+    ).join('');
+    const sourceSelectOptions = sourceOptions.map((source) =>
+      `<option value="${esc(source.id)}" ${newsState.source === source.id ? 'selected' : ''}>${esc(source.name)}</option>`
+    ).join('');
+
+    $main.innerHTML = `
+      <section class="news-hero">
+        <div>
+          <p class="eyebrow">WEEKLY INTELLIGENCE MAP</p>
+          <h1>每周信息追踪</h1>
+          <p>把半导体、VC、AI研究、亚洲供应链、能源和生物科技来源放进同一张可审计的阅读清单。只提取公开标题、链接与短摘要。</p>
+        </div>
+        <div class="news-asof"><span>当前周</span><strong>${esc(newsState.week)}</strong><small>${esc(selectedWeek.label || NEWS.latestWeekLabel)}</small></div>
+      </section>
+      <div class="news-kpis">
+        <div><span>纳入来源</span><strong>${NEWS.stats.sources}</strong><small>用户清单 + 补充框架来源</small></div>
+        <div><span>本周条目</span><strong>${selectedWeek.items || 0}</strong><small>来自 ${selectedWeek.sources || 0} 个来源</small></div>
+        <div><span>来源可用</span><strong class="${NEWS.stats.failedSources ? 'negative' : 'positive'}">${NEWS.stats.activeSources}/${NEWS.stats.sources}</strong><small>${NEWS.stats.failedSources} 个当前失败</small></div>
+        <div><span>历史归档</span><strong>${NEWS.stats.storedItems.toLocaleString('zh-CN')}</strong><small>${NEWS.weeks.length} 个周次</small></div>
+      </div>
+      ${(failureNames.length || partialNames.length) ? `<div class="news-health-note">
+        ${failureNames.length ? `<span class="health-error">抓取失败：${failureNames.map(esc).join('、')}</span>` : ''}
+        ${partialNames.length ? `<span class="health-partial">部分可用：${partialNames.map(esc).join('、')}</span>` : ''}
+        <button type="button" data-news-view="sources">查看来源状态</button>
+      </div>` : ''}
+      <div class="news-theme-row"><span>本周主题</span>${(selectedWeek.themes || []).map((theme) => `<button data-theme="${esc(theme)}">${esc(theme)}</button>`).join('') || '<em>暂无主题</em>'}</div>
+      <div class="news-tabs" role="tablist">
+        <button type="button" data-news-view="items" class="${newsState.view === 'items' ? 'active' : ''}">信息流<small>精选、摘要与投资视角</small></button>
+        <button type="button" data-news-view="sources" class="${newsState.view === 'sources' ? 'active' : ''}">来源地图<small>覆盖、费用与抓取健康</small></button>
+      </div>
+      <section class="news-controls">
+        <label class="news-query">搜索<input data-news-filter="query" type="search" value="${esc(newsState.query)}" placeholder="标题、摘要、来源、主题、代码"></label>
+        <label>周次<select data-news-filter="week">${weekOptions}</select></label>
+        <label>类别<select data-news-filter="category"><option value="">全部类别</option>${categoryOptions}</select></label>
+        <label>梯队<select data-news-filter="tier"><option value="">全部梯队</option>${[1,2,3,4,5,6,7,0].map((tier) => `<option value="${tier}" ${String(newsState.tier) === String(tier) ? 'selected' : ''}>${tier ? `第 ${tier} 梯队` : '补充来源'}</option>`).join('')}</select></label>
+        <label>访问<select data-news-filter="access"><option value="">全部</option>${['免费','免费/付费','付费'].map((value) => `<option value="${value}" ${newsState.access === value ? 'selected' : ''}>${value}</option>`).join('')}</select></label>
+        ${newsState.view === 'items' ? `<label>来源<select data-news-filter="source"><option value="">全部来源</option>${sourceSelectOptions}</select></label><label>排序<select data-news-filter="sort"><option value="priority" ${newsState.sort === 'priority' ? 'selected' : ''}>阅读优先级</option><option value="newest" ${newsState.sort === 'newest' ? 'selected' : ''}>最新发布</option><option value="source" ${newsState.sort === 'source' ? 'selected' : ''}>来源</option></select></label>` : ''}
+        <button id="news-reset" type="button">重置</button>
+      </section>
+      <div id="news-content">${newsState.view === 'sources' ? newsSourcesHTML() : newsItemsHTML()}</div>
+      <details class="news-method">
+        <summary>口径、去重与优先级说明</summary>
+        <div class="news-method-grid">
+          <p><strong>收录范围</strong>${esc(NEWS.methodology.scope)}</p>
+          <p><strong>阅读优先级</strong>${esc(NEWS.methodology.ranking)}</p>
+          <p><strong>日期</strong>${esc(NEWS.methodology.dates)}</p>
+          <p><strong>去重</strong>${esc(NEWS.methodology.deduplication)}</p>
+        </div>
+      </details>`;
+    bindNewsControls();
+    window.scrollTo(0, 0);
+  }
+
+  function filteredNewsItems() {
+    const query = newsState.query.trim().toLowerCase();
+    const rows = NEWS.items.filter((item) => {
+      if (item.week !== newsState.week) return false;
+      if (newsState.category && item.category !== newsState.category) return false;
+      if (newsState.tier !== '' && String(item.tier) !== String(newsState.tier)) return false;
+      if (newsState.access && item.access !== newsState.access) return false;
+      if (newsState.source && item.sourceId !== newsState.source) return false;
+      if (query) {
+        const haystack = [item.title, item.excerpt, item.source, item.author, ...(item.tags || []), ...(item.tickers || [])].join(' ').toLowerCase();
+        if (!query.split(/\s+/).every((term) => haystack.includes(term))) return false;
+      }
+      return true;
+    });
+    if (newsState.sort === 'newest') rows.sort((a, b) => newsSortDate(b).localeCompare(newsSortDate(a)) || b.score - a.score);
+    else if (newsState.sort === 'source') rows.sort((a, b) => a.source.localeCompare(b.source) || newsSortDate(b).localeCompare(newsSortDate(a)));
+    else rows.sort((a, b) => b.score - a.score || newsSortDate(b).localeCompare(newsSortDate(a)));
+    return rows;
+  }
+
+  function newsItemsHTML() {
+    const rows = filteredNewsItems();
+    const visible = rows.slice(0, newsState.limit);
+    const featuredSet = new Set(NEWS.featuredIds || []);
+    const featured = rows.filter((item) => featuredSet.has(item.id)).slice(0, 12);
+    const showFeatured = featured.length && !newsState.query && !newsState.category && newsState.tier === '' && !newsState.access && !newsState.source;
+    return `
+      ${showFeatured ? `<section class="news-featured"><div class="news-section-head"><div><span>EDITOR'S QUEUE</span><h2>本周优先阅读</h2></div><small>自动排序后做来源与类别分散，不代表投资评级</small></div><div class="news-featured-grid">${featured.map(newsFeaturedCard).join('')}</div></section>` : ''}
+      <div class="news-resultbar"><span>符合条件 <strong>${rows.length}</strong> 条</span><span>显示 ${Math.min(visible.length, rows.length)} 条 · ${esc(newsState.week)}</span></div>
+      <div class="news-stream">${visible.map(newsItemCard).join('') || '<div class="empty">这一周没有符合筛选条件的条目</div>'}</div>
+      ${visible.length < rows.length ? `<button class="news-load-more" id="news-load-more" type="button">再显示 ${Math.min(60, rows.length - visible.length)} 条</button>` : ''}`;
+  }
+
+  function newsFeaturedCard(item) {
+    return `<a class="news-featured-card" href="${esc(item.url)}" target="_blank" rel="noopener noreferrer">
+      <div><span class="news-rank">${item.score}</span><span>${esc(item.source)}</span><span>${esc(newsItemDate(item))}</span></div>
+      <h3>${esc(item.title)}</h3>
+      <p>${esc(item.excerpt || item.lens)}</p>
+    </a>`;
+  }
+
+  function newsItemCard(item) {
+    const category = NEWS.categories[item.category] || item.category;
+    return `<article class="news-item">
+      <div class="news-item-score"><strong class="score-pill ${scoreClass(item.score)}">${item.score}</strong><small>优先级</small></div>
+      <div class="news-item-body">
+        <div class="news-item-meta">
+          <span class="badge cat">${esc(category)}</span>
+          <span>${item.tier ? `第 ${item.tier} 梯队` : '补充来源'}</span>
+          <span>${esc(item.source)}</span><span>${esc(item.channel)}</span>
+          <span>${esc(newsItemDate(item))}</span>
+          <span class="access-badge">${esc(item.access)}</span>
+          ${item.isNew ? '<span class="new-badge">本次新增</span>' : ''}
+        </div>
+        <h2><a href="${esc(item.url)}" target="_blank" rel="noopener noreferrer">${esc(item.title)} <span aria-hidden="true">↗</span></a></h2>
+        <p class="news-excerpt">${esc(item.excerpt || '该来源未提供公开摘要，请打开原文查看。')}</p>
+        <div class="news-item-foot">
+          <div>${(item.tags || []).map((tag) => `<span class="news-tag">${esc(tag)}</span>`).join('')}${(item.tickers || []).map((ticker) => `<span class="badge ticker">${esc(ticker)}</span>`).join('')}</div>
+          <p><strong>研究视角</strong>${esc(item.lens)}</p>
+        </div>
+      </div>
+    </article>`;
+  }
+
+  function newsSourcesHTML() {
+    const query = newsState.query.trim().toLowerCase();
+    const rows = NEWS.sources.filter((source) => {
+      if (newsState.category && source.category !== newsState.category) return false;
+      if (newsState.tier !== '' && String(source.tier) !== String(newsState.tier)) return false;
+      if (newsState.access && source.access !== newsState.access) return false;
+      if (query && ![source.name, source.author, source.focus, source.status].join(' ').toLowerCase().includes(query)) return false;
+      return true;
+    }).sort((a, b) => (a.tier || 9) - (b.tier || 9) || a.name.localeCompare(b.name));
+    const weekCounts = NEWS.items.reduce((counts, item) => {
+      if (item.week === newsState.week) counts[item.sourceId] = (counts[item.sourceId] || 0) + 1;
+      return counts;
+    }, {});
+    return `<div class="news-resultbar"><span>来源 <strong>${rows.length}</strong> 个</span><span>状态来自 ${esc(formatGeneratedAt(NEWS.generatedAt))}</span></div>
+      <div class="source-map">${rows.map((source) => `<article class="source-card ${source.status === '抓取失败' ? 'failed' : source.status === '部分可用' ? 'partial' : ''}">
+        <div class="source-card-head"><div><span>${source.tier ? `第 ${source.tier} 梯队` : '补充来源'}</span><h2><a href="${esc(source.homepage)}" target="_blank" rel="noopener noreferrer">${esc(source.name)} ↗</a></h2></div><span class="source-status">${esc(source.status)}</span></div>
+        <p>${esc(source.focus)}</p>
+        <dl><div><dt>作者/机构</dt><dd>${esc(source.author)}</dd></div><div><dt>访问</dt><dd>${esc(source.access)}</dd></div><div><dt>最近内容</dt><dd>${esc(source.latestItemDate || '未取得')}</dd></div><div><dt>所选周/归档</dt><dd>${weekCounts[source.id] || 0} / ${source.storedItems}</dd></div></dl>
+        <small>${esc(source.method)}${source.error ? ` · ${esc(source.error)}` : ''}</small>
+      </article>`).join('') || '<div class="empty">没有符合筛选条件的来源</div>'}</div>`;
+  }
+
+  function bindNewsControls() {
+    $main.querySelectorAll('[data-news-view]').forEach((button) => button.addEventListener('click', () => {
+      newsState.view = button.dataset.newsView;
+      newsState.limit = 60;
+      renderNews();
+    }));
+    $main.querySelectorAll('[data-theme]').forEach((button) => button.addEventListener('click', () => {
+      newsState.view = 'items';
+      newsState.query = button.dataset.theme;
+      newsState.limit = 60;
+      renderNews();
+    }));
+    $main.querySelectorAll('[data-news-filter]').forEach((control) => {
+      const event = control.tagName === 'INPUT' ? 'input' : 'change';
+      control.addEventListener(event, () => {
+        newsState[control.dataset.newsFilter] = control.value;
+        newsState.limit = 60;
+        clearTimeout(newsInputTimer);
+        newsInputTimer = setTimeout(renderNews, event === 'input' ? 180 : 0);
+      });
+    });
+    document.getElementById('news-reset').addEventListener('click', () => {
+      Object.assign(newsState, { week: NEWS.latestWeek, query: '', category: '', tier: '', access: '', source: '', sort: 'priority', limit: 60 });
+      renderNews();
+    });
+    const loadMore = document.getElementById('news-load-more');
+    if (loadMore) loadMore.addEventListener('click', () => { newsState.limit += 60; renderNews(); });
+  }
+
+  function newsSortDate(item) { return item.publishedAt || `${item.firstSeen}T00:00:00Z`; }
+  function newsItemDate(item) { return item.publishedAt ? item.publishedAt.slice(0, 10) : `首次发现 ${item.firstSeen}`; }
 
   function setTab(cat) {
     let active = null;

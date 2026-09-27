@@ -54,6 +54,19 @@ record.py         构建 + git 提交 + 推送（= 发布）
 docs/             网站本体（GitHub Pages 从这里发布）
 ```
 
+## 每周新闻与信息追踪
+
+网站导航中的“每周信息”汇总半导体、VC、AI 研究、公司与行业深度、亚洲供应链、能源基础设施、生物科技和高频信号来源。页面提供周次归档、来源/类别/梯队/费用筛选、本周优先阅读、公开摘要、投资研究视角和来源抓取健康状态。
+
+`.github/workflows/weekly-news.yml` 在每周一 08:05（新加坡时间）运行。来源注册表位于 `tools/weekly_news_sources.json`，抓取器位于 `tools/weekly_news_tracker.py`。系统优先读取官方 RSS/Atom；没有可用 Feed 时读取公开索引页。它只保存标题、链接和短公开摘要，不绕过登录或付费墙，抓取失败会直接显示在来源地图中。
+
+本地可复现：
+
+```
+python tools/weekly_news_tracker.py
+python build.py
+```
+
 ## AI 行业景气度每周监测
 
 网站会在每周一 07:15（新加坡时间）自动生成一期 AI 行业景气度周报，保留历史快照，并重建 GitHub Pages 数据。自动化入口是 `.github/workflows/ai-weekly.yml`，核心口径和数据源位于 `tools/ai_weekly_sources.json`。

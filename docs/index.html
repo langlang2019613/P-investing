@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
   <title>飘投资 · P-Investing 研究库</title>
-  <meta name="description" content="个人投资研究永久知识库与自动更新的美股动量追踪工具" />
+  <meta name="description" content="个人投资研究永久知识库、每周信息源追踪与美股动量工具" />
   <meta name="theme-color" content="#0b0e14" />
   <link rel="manifest" href="manifest.json" />
   <link rel="icon" href="icons/icon-192.png" />
@@ -13,7 +13,7 @@
   <meta name="mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
   <meta name="apple-mobile-web-app-title" content="飘投资" />
-  <link rel="stylesheet" href="css/app.css?v=20260814-weights2" />
+  <link rel="stylesheet" href="css/app.css?v=20260927-weekly-news" />
 </head>
 <body>
 
@@ -41,6 +41,7 @@
   <a href="#/c/learning" data-cat="learning">学习</a>
   <a href="#/c/books" data-cat="books">书刊</a>
   <a href="#/c/history" data-cat="history">历史</a>
+  <a href="#/news" data-cat="news">每周信息</a>
   <a href="#/momentum/tenx" data-cat="tenx">10倍股雷达</a>
   <a href="#/momentum/movement" data-cat="movement">动量移动追踪</a>
 </nav>
@@ -55,10 +56,10 @@
 </footer>
 
 <script src="js/marked.min.js"></script>
-<script src="js/app.js?v=20260814-weights2"></script>
+<script src="js/app.js?v=20260927-weekly-news"></script>
 <script>
   if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('sw.js?v=20260814-weights2', { updateViaCache: 'none' })
+    navigator.serviceWorker.register('sw.js?v=20260927-weekly-news', { updateViaCache: 'none' })
       .then((registration) => registration.update())
       .catch(() => {});
   }
