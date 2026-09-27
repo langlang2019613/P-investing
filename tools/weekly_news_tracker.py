@@ -30,6 +30,7 @@ from zoneinfo import ZoneInfo, ZoneInfoNotFoundError
 ROOT = Path(__file__).resolve().parents[1]
 CONFIG_PATH = ROOT / "tools" / "weekly_news_sources.json"
 HISTORY_PATH = ROOT / "data" / "weekly_news" / "history.json"
+ANALYSIS_PATH = ROOT / "data" / "weekly_news" / "analyses.json"
 OUTPUT_PATH = ROOT / "docs" / "news_tracker.json"
 USER_AGENT = "P-investing-weekly-news/1.0 research@pickalphas.com"
 TIMEOUT = 24
@@ -162,6 +163,15 @@ def canonical_url(url: str, base: str = "") -> str:
 def item_id(source_id: str, url: str, title: str) -> str:
     stable = url or re.sub(r"\W+", " ", title.lower()).strip()
     return hashlib.sha256(f"{source_id}|{stable}".encode("utf-8")).hexdigest()[:20]
+
+
+def analysis_input_hash(item: dict[str, Any]) -> str:
+    """Hash only the public metadata supplied to the analysis pipeline."""
+    payload = "\n".join((
+        item.get("source", ""), item.get("title", ""), item.get("url", ""),
+        item.get("publishedAt", ""), item.get("excerpt", ""),
+    ))
+    return hashlib.sha256(payload.encode("utf-8")).hexdigest()[:20]
 
 
 def parse_feed(raw: bytes, source: dict[str, Any], feed: dict[str, str], final_url: str) -> list[dict[str, Any]]:
@@ -511,6 +521,8 @@ def main() -> int:
     report_day = today - timedelta(days=7) if today.weekday() == 0 else today
     latest_week = iso_week_key(report_day)
     previous = load_json(HISTORY_PATH, {"version": 1, "items": [], "runs": []})
+    analysis_store = load_json(ANALYSIS_PATH, {"version": 1, "analyses": {}})
+    analyses = analysis_store.get("analyses", {})
     previous_by_id = {item["id"]: item for item in previous.get("items", [])}
 
     with concurrent.futures.ThreadPoolExecutor(max_workers=10) as pool:
@@ -545,6 +557,9 @@ def main() -> int:
         item["week"] = iso_week_key(effective_date(item))
         item["score"] = score_item(item, today)
         item["isNew"] = item["firstSeen"] == today.isoformat()
+        cached_analysis = analyses.get(item["id"])
+        if cached_analysis and cached_analysis.get("inputHash") == analysis_input_hash(item):
+            item["analysis"] = cached_analysis
     items.sort(key=lambda item: (effective_date(item), item["score"], item["source"], item["title"]), reverse=True)
 
     source_rows: list[dict[str, Any]] = []
@@ -571,6 +586,7 @@ def main() -> int:
             "key": key, "label": week_label(key), "items": len(rows),
             "sources": len({item["sourceId"] for item in rows}),
             "new": sum(bool(item.get("isNew")) for item in rows),
+            "analyzed": sum(bool(item.get("analysis")) for item in rows),
             "themes": [name for name, _ in theme_counts.most_common(5)],
         })
     if latest_week not in week_counts and weeks:
@@ -594,7 +610,7 @@ def main() -> int:
 
     generated_at = now.isoformat(timespec="seconds")
     output = {
-        "version": 1,
+        "version": 2,
         "generatedAt": generated_at,
         "schedule": config.get("schedule_description", "每周"),
         "timezone": config.get("timezone", "Asia/Singapore"),
@@ -608,6 +624,8 @@ def main() -> int:
             "storedItems": len(items),
             "latestWeekItems": sum(item["week"] == latest_week for item in items),
             "latestWeekSources": len({item["sourceId"] for item in items if item["week"] == latest_week}),
+            "analyzedItems": sum(bool(item.get("analysis")) for item in items),
+            "latestWeekAnalyzed": sum(item["week"] == latest_week and bool(item.get("analysis")) for item in items),
         },
         "featuredIds": featured_ids(items, latest_week),
         "weeks": weeks,
@@ -618,9 +636,11 @@ def main() -> int:
             "ranking": "优先级综合来源梯队、时效、主题命中、内容深度线索和公开摘要完整度；它是阅读排序，不是投资评分。",
             "dates": "有发布日期时按发布日期归周；网页索引无法核对日期时按首次发现日归周并明确标记。",
             "deduplication": "同一来源按规范化链接去重；跨来源的同一主题保留，以便观察信息扩散。",
+            "analysis": "逐篇分析只使用可公开读取的正文、来源摘要和标题；页面会标明证据范围与置信度。拿不到付费正文时不推断未披露事实，投资影响是研究假设，不是买卖建议。",
         },
     }
-    state = {"version": 1, "generatedAt": generated_at, "items": items, "runs": runs}
+    state_items = [{key: value for key, value in item.items() if key != "analysis"} for item in items]
+    state = {"version": 1, "generatedAt": generated_at, "items": state_items, "runs": runs}
     HISTORY_PATH.parent.mkdir(parents=True, exist_ok=True)
     OUTPUT_PATH.parent.mkdir(parents=True, exist_ok=True)
     HISTORY_PATH.write_text(json.dumps(state, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")

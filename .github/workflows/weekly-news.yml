@@ -31,6 +31,12 @@ jobs:
       - name: Collect public source metadata
         run: python tools/weekly_news_tracker.py
 
+      - name: Generate per-article summaries and analysis
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          NEWS_ANALYSIS_MODEL: ${{ vars.NEWS_ANALYSIS_MODEL }}
+        run: python tools/weekly_news_analyzer.py --provider auto --week latest
+
       - name: Rebuild website cache version
         run: python build.py
 
@@ -39,6 +45,7 @@ jobs:
           git diff --check
           python -m json.tool tools/weekly_news_sources.json >/dev/null
           python -m json.tool data/weekly_news/history.json >/dev/null
+          python -m json.tool data/weekly_news/analyses.json >/dev/null
           python -m json.tool docs/news_tracker.json >/dev/null
           python -m json.tool docs/data.json >/dev/null
 
@@ -50,7 +57,7 @@ jobs:
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add .github/workflows/weekly-news.yml tools/weekly_news_tracker.py tools/weekly_news_sources.json data/weekly_news docs/news_tracker.json docs/data.json docs/sw.js
+          git add .github/workflows/weekly-news.yml tools/weekly_news_tracker.py tools/weekly_news_analyzer.py tools/weekly_news_sources.json data/weekly_news docs/news_tracker.json docs/data.json docs/sw.js
           git commit -m "data: refresh weekly information tracker"
           git pull --rebase origin main
           git push

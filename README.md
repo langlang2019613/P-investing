@@ -56,15 +56,25 @@ docs/             网站本体（GitHub Pages 从这里发布）
 
 ## 每周新闻与信息追踪
 
-网站导航中的“每周信息”汇总半导体、VC、AI 研究、公司与行业深度、亚洲供应链、能源基础设施、生物科技和高频信号来源。页面提供周次归档、来源/类别/梯队/费用筛选、本周优先阅读、公开摘要、投资研究视角和来源抓取健康状态。
+网站导航中的“每周信息”汇总半导体、VC、AI 研究、公司与行业深度、亚洲供应链、能源基础设施、生物科技和高频信号来源。页面提供周次归档、来源/类别/梯队/费用筛选和来源抓取健康状态。每篇信息都有独立研究卡片，包含中文内容摘要、核心判断、投资影响、来源证据、可能受益/承压环节、后续验证项、风险、证据范围与置信度。
 
-`.github/workflows/weekly-news.yml` 在每周一 08:05（新加坡时间）运行。来源注册表位于 `tools/weekly_news_sources.json`，抓取器位于 `tools/weekly_news_tracker.py`。系统优先读取官方 RSS/Atom；没有可用 Feed 时读取公开索引页。它只保存标题、链接和短公开摘要，不绕过登录或付费墙，抓取失败会直接显示在来源地图中。
+`.github/workflows/weekly-news.yml` 在每周一 08:05（新加坡时间）运行。来源注册表位于 `tools/weekly_news_sources.json`，抓取器位于 `tools/weekly_news_tracker.py`，逐篇分析器位于 `tools/weekly_news_analyzer.py`。系统优先读取官方 RSS/Atom；没有可用 Feed 时读取公开索引页。分析时可临时读取公开正文，但仓库只保存标题、链接、短公开摘要和分析结果，不保存文章正文，也不绕过登录或付费墙。拿不到正文时会明确标为“公开摘要”或“仅标题”，并降低置信度。
+
+自动任务配置 `OPENAI_API_KEY` 后会通过 Responses API 的结构化输出增量分析新增或变化的文章，默认模型为 `gpt-6-luna`，也可用仓库变量 `NEWS_ANALYSIS_MODEL` 修改。没有模型密钥时仍会生成逐篇、来源标注的提取式卡片；之后配置密钥会自动升级这些低置信度记录。分析缓存按文章公开元数据哈希保存在 `data/weekly_news/analyses.json`。
 
 本地可复现：
 
 ```
 python tools/weekly_news_tracker.py
+python tools/weekly_news_analyzer.py --provider auto --week latest
 python build.py
+```
+
+本地安装 Ollama 后也可以完全离线生成模型分析：
+
+```
+ollama pull qwen3:1.7b
+python tools/weekly_news_analyzer.py --provider ollama --model qwen3:1.7b --week latest
 ```
 
 ## AI 行业景气度每周监测

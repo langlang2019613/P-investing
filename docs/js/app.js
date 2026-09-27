@@ -170,13 +170,13 @@
         <div>
           <p class="eyebrow">WEEKLY INTELLIGENCE MAP</p>
           <h1>每周信息追踪</h1>
-          <p>把半导体、VC、AI研究、亚洲供应链、能源和生物科技来源放进同一张可审计的阅读清单。只提取公开标题、链接与短摘要。</p>
+          <p>逐篇提取公开正文或摘要，整理中文内容摘要、核心判断、投资影响、证据、验证项和风险；同时保留原文与证据范围供复核。</p>
         </div>
         <div class="news-asof"><span>当前周</span><strong>${esc(newsState.week)}</strong><small>${esc(selectedWeek.label || NEWS.latestWeekLabel)}</small></div>
       </section>
       <div class="news-kpis">
         <div><span>纳入来源</span><strong>${NEWS.stats.sources}</strong><small>用户清单 + 补充框架来源</small></div>
-        <div><span>本周条目</span><strong>${selectedWeek.items || 0}</strong><small>来自 ${selectedWeek.sources || 0} 个来源</small></div>
+        <div><span>本周逐篇分析</span><strong>${selectedWeek.analyzed || 0}/${selectedWeek.items || 0}</strong><small>来自 ${selectedWeek.sources || 0} 个来源</small></div>
         <div><span>来源可用</span><strong class="${NEWS.stats.failedSources ? 'negative' : 'positive'}">${NEWS.stats.activeSources}/${NEWS.stats.sources}</strong><small>${NEWS.stats.failedSources} 个当前失败</small></div>
         <div><span>历史归档</span><strong>${NEWS.stats.storedItems.toLocaleString('zh-CN')}</strong><small>${NEWS.weeks.length} 个周次</small></div>
       </div>
@@ -207,6 +207,7 @@
           <p><strong>阅读优先级</strong>${esc(NEWS.methodology.ranking)}</p>
           <p><strong>日期</strong>${esc(NEWS.methodology.dates)}</p>
           <p><strong>去重</strong>${esc(NEWS.methodology.deduplication)}</p>
+          ${NEWS.methodology.analysis ? `<p><strong>逐篇分析</strong>${esc(NEWS.methodology.analysis)}</p>` : ''}
         </div>
       </details>`;
     bindNewsControls();
@@ -222,7 +223,10 @@
       if (newsState.access && item.access !== newsState.access) return false;
       if (newsState.source && item.sourceId !== newsState.source) return false;
       if (query) {
-        const haystack = [item.title, item.excerpt, item.source, item.author, ...(item.tags || []), ...(item.tickers || [])].join(' ').toLowerCase();
+        const analysis = item.analysis || {};
+        const haystack = [item.title, item.excerpt, item.source, item.author, analysis.summary, analysis.coreJudgment,
+          analysis.investmentImpact, ...(analysis.evidence || []), ...(analysis.watchItems || []),
+          ...(analysis.risks || []), ...(item.tags || []), ...(item.tickers || [])].join(' ').toLowerCase();
         if (!query.split(/\s+/).every((term) => haystack.includes(term))) return false;
       }
       return true;
@@ -250,12 +254,36 @@
     return `<a class="news-featured-card" href="${esc(item.url)}" target="_blank" rel="noopener noreferrer">
       <div><span class="news-rank">${item.score}</span><span>${esc(item.source)}</span><span>${esc(newsItemDate(item))}</span></div>
       <h3>${esc(item.title)}</h3>
-      <p>${esc(item.excerpt || item.lens)}</p>
+      <p>${esc(item.analysis?.summary || item.excerpt || item.lens)}</p>
     </a>`;
   }
 
   function newsItemCard(item) {
     const category = NEWS.categories[item.category] || item.category;
+    const analysis = item.analysis;
+    const analysisHTML = analysis ? `<section class="news-analysis">
+      <div class="news-analysis-head">
+        <strong>逐篇研究</strong>
+        <span class="analysis-basis">${esc(analysis.basis || '公开摘要')}</span>
+        <span class="confidence confidence-${analysis.confidence === '高' ? 'high' : analysis.confidence === '中' ? 'mid' : 'low'}">${esc(analysis.confidence || '低')}置信度</span>
+        <span class="stance stance-${analysis.stance === '正面' ? 'positive' : analysis.stance === '负面' ? 'negative' : analysis.stance === '复杂' ? 'mixed' : 'neutral'}">${esc(analysis.stance || '中性')}</span>
+      </div>
+      <div class="analysis-summary"><span>内容摘要</span><p>${esc(analysis.summary)}</p></div>
+      <div class="analysis-thesis-grid">
+        <div><span>核心判断</span><p>${esc(analysis.coreJudgment)}</p></div>
+        <div><span>投资影响</span><p>${esc(analysis.investmentImpact)}</p></div>
+      </div>
+      <details class="news-analysis-details">
+        <summary>展开证据、受益/承压、验证项与风险</summary>
+        <div class="analysis-detail-grid">
+          ${analysisList('来源证据', analysis.evidence)}
+          ${analysisList('需要验证', analysis.watchItems)}
+          ${analysisList('可能受益', analysis.beneficiaries, '暂无足够证据')}
+          ${analysisList('可能承压', analysis.pressures, '暂无足够证据')}
+          ${analysisList('判断风险', analysis.risks)}
+        </div>
+      </details>
+    </section>` : `<section class="news-analysis pending"><strong>逐篇分析待生成</strong><p>${esc(item.excerpt || '当前只有标题，尚无足够公开材料。')}</p></section>`;
     return `<article class="news-item">
       <div class="news-item-score"><strong class="score-pill ${scoreClass(item.score)}">${item.score}</strong><small>优先级</small></div>
       <div class="news-item-body">
@@ -268,13 +296,18 @@
           ${item.isNew ? '<span class="new-badge">本次新增</span>' : ''}
         </div>
         <h2><a href="${esc(item.url)}" target="_blank" rel="noopener noreferrer">${esc(item.title)} <span aria-hidden="true">↗</span></a></h2>
-        <p class="news-excerpt">${esc(item.excerpt || '该来源未提供公开摘要，请打开原文查看。')}</p>
+        ${analysisHTML}
         <div class="news-item-foot">
           <div>${(item.tags || []).map((tag) => `<span class="news-tag">${esc(tag)}</span>`).join('')}${(item.tickers || []).map((ticker) => `<span class="badge ticker">${esc(ticker)}</span>`).join('')}</div>
-          <p><strong>研究视角</strong>${esc(item.lens)}</p>
+          <p><strong>原文</strong><a href="${esc(item.url)}" target="_blank" rel="noopener noreferrer">打开来源核对 ↗</a></p>
         </div>
       </div>
     </article>`;
+  }
+
+  function analysisList(label, values, emptyText = '未提供') {
+    const rows = Array.isArray(values) ? values.filter(Boolean) : [];
+    return `<div><span>${esc(label)}</span>${rows.length ? `<ul>${rows.map((value) => `<li>${esc(value)}</li>`).join('')}</ul>` : `<p class="analysis-empty">${esc(emptyText)}</p>`}</div>`;
   }
 
   function newsSourcesHTML() {
