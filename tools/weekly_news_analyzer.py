@@ -34,6 +34,7 @@ from typing import Any
 ROOT = Path(__file__).resolve().parents[1]
 TRACKER_PATH = ROOT / "docs" / "news_tracker.json"
 ANALYSIS_PATH = ROOT / "data" / "weekly_news" / "analyses.json"
+OVERRIDES_PATH = ROOT / "data" / "weekly_news" / "editorial_overrides.json"
 USER_AGENT = "P-investing-weekly-analysis/2.0 research@pickalphas.com"
 ARTICLE_LIMIT = 2_800
 DOWNLOAD_LIMIT = 2_500_000
@@ -358,6 +359,33 @@ def normalize_analysis(raw: dict[str, Any], item: dict[str, Any], source: dict[s
     return repair_analysis_text(result)
 
 
+def apply_editorial_overrides(tracker: dict[str, Any], analyses: dict[str, Any]) -> int:
+    """Apply small, source-verified corrections for pages automation cannot parse reliably."""
+    overrides = load_json(OVERRIDES_PATH, {}).get("analyses", {})
+    items_by_id = {item.get("id"): item for item in tracker.get("items", [])}
+    applied = 0
+    for item_id, raw in overrides.items():
+        item = items_by_id.get(item_id)
+        if not item or not isinstance(raw, dict):
+            continue
+        editorial_hash = hashlib.sha256(
+            json.dumps(raw, ensure_ascii=False, sort_keys=True).encode("utf-8")
+        ).hexdigest()[:20]
+        cached = analyses.get(item_id, {})
+        if (
+            cached.get("provider") == "editorial"
+            and cached.get("inputHash") == input_hash(item)
+            and cached.get("editorialHash") == editorial_hash
+        ):
+            continue
+        source = {"text": "", "basis": raw.get("basis", "公开页面")}
+        normalized = normalize_analysis(raw, item, source, "editorial", "source-verified-v1")
+        normalized["editorialHash"] = editorial_hash
+        analyses[item_id] = normalized
+        applied += 1
+    return applied
+
+
 def choose_provider(requested: str, ollama_endpoint: str) -> str:
     if requested != "auto":
         return requested
@@ -411,6 +439,9 @@ def main() -> int:
         cached = analyses.get(item.get("id"))
         if cached:
             analyses[item["id"]] = repair_analysis_text(cached)
+    editorial_updates = apply_editorial_overrides(tracker, analyses)
+    if editorial_updates:
+        print(f"Applied {editorial_updates} source-verified editorial overrides")
     provider = choose_provider(args.provider, args.ollama_endpoint)
     default_models = {"openai": "gpt-6-luna", "ollama": "qwen3:1.7b", "extractive": "source-grounded-v1"}
     model = args.model or os.environ.get("NEWS_ANALYSIS_MODEL", "") or default_models[provider]

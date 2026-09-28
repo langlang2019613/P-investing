@@ -62,6 +62,8 @@ docs/             网站本体（GitHub Pages 从这里发布）
 
 自动任务配置 `OPENAI_API_KEY` 后会通过 Responses API 的结构化输出增量分析新增或变化的文章，默认模型为 `gpt-6-luna`，也可用仓库变量 `NEWS_ANALYSIS_MODEL` 修改。没有模型密钥时仍会生成逐篇、来源标注的提取式卡片；之后配置密钥会自动升级这些低置信度记录。分析缓存按文章公开元数据哈希保存在 `data/weekly_news/analyses.json`。
 
+少数动态索引页或付费墙页面若无法被自动解析，可在 `data/weekly_news/editorial_overrides.json` 保存基于公开页面核验的结构化卡片。分析器会按文章元数据与覆盖内容的双重哈希重放这些修订，避免后续定时任务把已核验内容降级。
+
 本地可复现：
 
 ```

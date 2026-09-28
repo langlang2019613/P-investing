@@ -3090,28 +3090,39 @@
     },
     "d837c7e45f623c45ef5b": {
       "id": "d837c7e45f623c45ef5b",
-      "summary": "公开摘要显示，《Premier Li on advanced manufacturing; Xi’s US visit; AI; “Enemy state” clauses》主要讨论：Xi Jinping should land in DC in about 24 hours. We still have little visibility on what the outcomes may be, beyond a reaffirmation of the US and PRC versions of the “constructive relationship of strategic stability”, with the US addition of “on the basis of fairness and reciprocity”. Taiwan will be a focus for Xi, and we should expect continued efforts to…",
-      "coreJudgment": "这条信息为亚洲供应链提供了新的研究线索，但现有公开材料不足以形成强结论。",
-      "investmentImpact": "关注亚洲供应链、政策变化、交付节奏与西方信息时差。",
+      "summary": "Sinocism 汇总了李强在上海调研先进制造、习近平访美前景、AI 与日本所称“敌国条款”等议题。公开正文显示，李强要求推动“AI+制造”、以低成本方案帮助中小企业智能化，并提出用风险投资、耐心资本和风险分担机制支持脑机接口、量子计算、先进核能、生命科学、太空计算与硅光等未来产业；与此同时，习近平访美的具体成果仍不明朗，台湾将是重点议题。",
+      "coreJudgment": "中国正在把 AI 应用、先进制造和长期资本放入同一产业政策框架，而外部的中美与台湾议题仍可能约束相关产业的设备和市场获取。",
+      "investmentImpact": "政策方向有利于工业机器人、制造业软件与系统集成需求，但调研表态不等于订单，收入兑现仍取决于地方资金、采购项目和中小企业投资回报。中美会谈若涉及台湾军售或技术限制，还会改变半导体、工业设备和跨境供应链的风险溢价。",
       "evidence": [
-        "Xi Jinping should land in DC in about 24 hours. We still have little visibility on what the outcomes may be, beyond a reaffirmation of the US and PRC versions of the “constructive relationship of strategic stability”…"
+        "李强在上海国家人工智能应用中试基地考察工业机器人和“AI+”应用",
+        "公开正文提出以高效、低成本方案帮助中小企业智能化升级",
+        "上海未来启点社区覆盖脑机接口、量子计算、先进核能、生命科学、太空计算和硅光，并强调耐心资本与风险分担"
       ],
-      "beneficiaries": [],
-      "pressures": [],
+      "beneficiaries": [
+        "工业机器人与自动化设备供应商",
+        "制造业 AI 软件和系统集成商",
+        "获得长期资本支持的未来产业项目"
+      ],
+      "pressures": [
+        "依赖中美技术与设备跨境流动的供应链企业"
+      ],
       "watchItems": [
-        "供应商订单、库存和交付节奏",
-        "出口限制、汇率与地缘政策"
+        "地方政府和未来产业基金的实际出资与项目清单",
+        "中小企业智能化改造的采购规模和回报数据",
+        "中美会谈对台湾、军售与技术限制的正式表述"
       ],
       "risks": [
-        "公开材料有限，存在断章取义或信息缺失风险"
+        "政策调研和指导意见不必然转化为商业订单",
+        "访美部分包含会前判断，需以后续正式结果校验"
       ],
-      "stance": "中性",
-      "confidence": "低",
+      "stance": "复杂",
+      "confidence": "中",
       "basis": "公开正文",
       "inputHash": "4b47a7c9bc38b597f069",
-      "generatedAt": "2026-09-27T13:44:59Z",
-      "provider": "extractive",
-      "model": "source-grounded-v1"
+      "generatedAt": "2026-09-27T14:51:04Z",
+      "provider": "editorial",
+      "model": "source-verified-v1",
+      "editorialHash": "e53f2ba5d9a4f2fefb97"
     },
     "caf269f3f27695ec246b": {
       "id": "caf269f3f27695ec246b",
@@ -4199,28 +4210,33 @@
     },
     "94522b6816ca18f68a9c": {
       "id": "94522b6816ca18f68a9c",
-      "summary": "公开摘要显示，《SpaceX + Cursor: It is so, so early》主要讨论：Congratulations to Michael Truell, Aman Sanger, Sualeh Asif, and the historically talented Cursor team on today’s acquisition by SpaceX.",
-      "coreJudgment": "这条信息为Accel提供了新的研究线索，但现有公开材料不足以形成强结论。",
-      "investmentImpact": "关注资金流向、采用速度、竞争结构与商业模式的可持续性。",
+      "summary": "SpaceX收购了AI代码编辑工具Cursor，该团队被评价为历史上最杰出的团队之一，其产品被视作AI领域首个杀手级应用。",
+      "coreJudgment": "SpaceX通过收购Cursor，获得AI代码编辑领域的关键技术与用户基础",
+      "investmentImpact": "SpaceX将直接整合Cursor的AI代码生成能力，可能加速其在航天软件开发中的应用，从而提升航天任务的代码效率与迭代速度；Cursor的用户群体（主要为开发者）可能因技术整合而获得更高效的开发工具，但需验证航天场景下AI代码工具的实际使用率与成本效益。",
       "evidence": [
-        "Congratulations to Michael Truell, Aman Sanger, Sualeh Asif, and the historically talented Cursor team on today’s acquisition by SpaceX."
+        "SpaceX收购Cursor",
+        "Cursor被评价为AI领域首个杀手级应用",
+        "Cursor团队被描述为历史上最杰出团队之一"
       ],
-      "beneficiaries": [],
+      "beneficiaries": [
+        "SpaceX"
+      ],
       "pressures": [],
       "watchItems": [
-        "客户采用与续约数据",
-        "融资条款、烧钱速度和后续资本需求"
+        "航天场景下AI代码工具的实际使用率",
+        "航天任务中代码迭代效率提升的具体数据"
       ],
       "risks": [
-        "公开材料有限，存在断章取义或信息缺失风险"
+        "Cursor技术在航天领域的适用性未被验证",
+        "航天任务对代码安全性的严格要求可能限制AI工具应用"
       ],
       "stance": "中性",
       "confidence": "低",
       "basis": "公开正文",
       "inputHash": "bb0cb247ec5937abdd3c",
-      "generatedAt": "2026-09-27T13:47:33Z",
-      "provider": "extractive",
-      "model": "source-grounded-v1"
+      "generatedAt": "2026-09-27T14:46:18Z",
+      "provider": "ollama",
+      "model": "qwen3:4b"
     },
     "9fbc5720438d084f6604": {
       "id": "9fbc5720438d084f6604",
@@ -4383,28 +4399,30 @@
     },
     "c3da1c5e1c46f96c4ab2": {
       "id": "c3da1c5e1c46f96c4ab2",
-      "summary": "公开摘要显示，《The Next Frontier of Attribution Science Has Arrived》主要讨论：Europe’s record-breaking heat wave in 2025 would have been a third of a degree Celsius cooler if not for emissions released just since the Paris Climate Agreement was signed in 2015, researchers found in a new study published Tuesday by the American Geophysical Union’s Geophysical Research Letters . The research marks a step forward for attribution science…",
-      "coreJudgment": "这条信息为企业软件提供了新的研究线索，但现有公开材料不足以形成强结论。",
-      "investmentImpact": "关注并网进度、实际通电MW、电价、设备交付和监管约束。",
+      "summary": "欧洲2025年创纪录的热浪若非2015年《巴黎协定》签署后排放的温室气体，温度将低0.3摄氏度，研究显示该发现标志着归因科学的新进展。",
+      "coreJudgment": "2015年《巴黎协定》签署后的温室气体排放对欧洲2025年热浪的降温效应有量化影响",
+      "investmentImpact": "该研究可能促使气候相关企业重新评估减排目标与极端天气事件的关联性，但需进一步验证排放量与热浪降温的具体量化关系，目前缺乏明确的行业传导机制证据",
       "evidence": [
-        "Europe’s record-breaking heat wave in 2025 would have been a third of a degree Celsius cooler if not for emissions released just since the Paris Climate Agreement was signed in 2015, researchers found in a new study…"
+        "欧洲2025年创纪录热浪若非2015年《巴黎协定》签署后排放的温室气体，温度将低0.3摄氏度",
+        "研究由美国地球物理联合会在《地球物理研究快报》发表"
       ],
       "beneficiaries": [],
       "pressures": [],
       "watchItems": [
-        "并网、许可和实际通电进度",
-        "设备交期、电价与资本开支"
+        "2015年《巴黎协定》签署后至2025年期间的温室气体排放量具体数据",
+        "欧洲2025年热浪降温幅度与排放量的量化关系"
       ],
       "risks": [
-        "公开材料有限，存在断章取义或信息缺失风险"
+        "研究未明确区分不同排放源对热浪降温的贡献度",
+        "未提供实际减排行动对热浪的抑制效果的实证数据"
       ],
       "stance": "中性",
       "confidence": "低",
       "basis": "公开正文",
       "inputHash": "cf529843cdb9ed76aecc",
-      "generatedAt": "2026-09-27T13:48:08Z",
-      "provider": "extractive",
-      "model": "source-grounded-v1"
+      "generatedAt": "2026-09-27T14:46:58Z",
+      "provider": "ollama",
+      "model": "qwen3:4b"
     },
     "5bbc6d6936e73dcffdc8": {
       "id": "5bbc6d6936e73dcffdc8",
@@ -4434,123 +4452,97 @@
     },
     "264b88ee999eda5f447d": {
       "id": "264b88ee999eda5f447d",
-      "summary": "FDA commissioner nominee Heidi Overton's testimony in the Senate hearing focused on China, vaccines, and vapes, but her opinions were kept confidential.",
-      "coreJudgment": "FDA commissioner nominee Heidi Overton's confidentiality of opinions during Senate hearing is a key factor in the transparency of the nomination process.",
-      "investmentImpact": "This event may affect the public perception of the FDA's role in regulating vaccines and tobacco products, potentially influencing policy and industry practices.",
+      "summary": "FDA commissioner nominee Heidi Overton 在 Senate 聆听会上保持个人观点，未公开讨论疫苗、堕胎和电子烟等敏感话题。",
+      "coreJudgment": "仅据标题，未提及具体内容细节。",
+      "investmentImpact": "该事件可能影响 FDA 委员会的决策方向，尤其是对疫苗监管和电子烟政策的影响，但缺乏具体数据支持。",
       "evidence": [
         "公开正文"
       ],
       "beneficiaries": [],
       "pressures": [],
       "watchItems": [
-        "FDA commissioner nomination process transparency",
-        "vaccine and tobacco regulation policies"
+        "FDA 委员会的后续决策"
       ],
       "risks": [
-        "缺乏具体证据支持政策变化",
-        "公众对FDA透明度的担忧加剧"
+        "缺乏具体数据支持决策影响的判断失效条件"
       ],
       "stance": "中性",
-      "confidence": "中",
+      "confidence": "低",
       "basis": "公开正文",
       "inputHash": "a6a2a9568aa7f2cc874d",
-      "generatedAt": "2026-09-27T13:48:49Z",
+      "generatedAt": "2026-09-27T14:39:09Z",
       "provider": "ollama",
       "model": "qwen3:1.7b"
     },
     "e741d142f24b1485b723": {
       "id": "e741d142f24b1485b723",
-      "summary": "Indonesian court ruling against pharma industry's 'patent evergreening' strategy sends a critical message to other countries.",
-      "coreJudgment": "Indonesian court ruling against 'patent evergreening' by pharma industry indicates potential regulatory shifts in patent practices.",
-      "investmentImpact": "This ruling may influence the pharma industry's approach to patent strategies, affecting pricing and innovation in drug development.",
+      "summary": "印尼法院裁定制药行业使用“专利延展”策略，向其他国家发出明确信号，患者倡导者表示担忧。",
+      "coreJudgment": "公开正文显示印尼法院裁定制药行业使用专利延展策略，患者倡导者表示担忧。",
+      "investmentImpact": "该裁定可能影响全球制药行业的专利策略，但缺乏具体数据支持。",
       "evidence": [
         "公开正文"
       ],
-      "beneficiaries": [
-        "pharma industry",
-        "patient advocates"
-      ],
-      "pressures": [
-        "regulatory changes",
-        "patent strategy shifts"
-      ],
+      "beneficiaries": [],
+      "pressures": [],
       "watchItems": [
-        "pharma industry patent strategy",
-        "regulatory changes in patent practices"
+        "全球制药行业的专利策略变化"
       ],
       "risks": [
-        "缺乏具体证据支持政策变化",
-        "行业反应不明确"
+        "缺乏具体数据支持决策影响的判断失效条件"
       ],
       "stance": "中性",
-      "confidence": "中",
+      "confidence": "低",
       "basis": "公开正文",
       "inputHash": "0891c9faed3e097b34f5",
-      "generatedAt": "2026-09-27T13:48:49Z",
+      "generatedAt": "2026-09-27T14:39:09Z",
       "provider": "ollama",
       "model": "qwen3:1.7b"
     },
     "cb25e1f277e6162e0fdf": {
       "id": "cb25e1f277e6162e0fdf",
-      "summary": "Kyverna Therapeutics' cell therapy shows lasting autoimmune benefit, with data indicating patients remained off other therapies.",
-      "coreJudgment": "Kyverna's cell therapy demonstrates potential in treating autoimmune diseases, with data supporting its efficacy.",
-      "investmentImpact": "This development may influence the biotech industry's investment in cell therapy, affecting drug development and market entry strategies.",
+      "summary": "Kyverna 的细胞疗法显示对自身免疫疾病的持久益处，FDA 委员会支持 Grail 的癌症血液检测。",
+      "coreJudgment": "公开正文显示 Kyverna 的细胞疗法显示对自身免疫疾病的持久益处，FDA 委员会支持 Grail 的癌症血液检测。",
+      "investmentImpact": "该疗法可能影响细胞治疗市场的竞争格局，但缺乏具体数据支持。",
       "evidence": [
         "公开正文"
       ],
-      "beneficiaries": [
-        "biotech companies",
-        "patients with autoimmune diseases"
-      ],
-      "pressures": [
-        "biotech industry investment",
-        "drug development trends"
-      ],
+      "beneficiaries": [],
+      "pressures": [],
       "watchItems": [
-        "cell therapy efficacy",
-        "biotech industry investment trends"
+        "细胞治疗市场的竞争格局变化"
       ],
       "risks": [
-        "缺乏具体证据支持药物疗效",
-        "行业反应不明确"
+        "缺乏具体数据支持决策影响的判断失效条件"
       ],
       "stance": "中性",
-      "confidence": "中",
+      "confidence": "低",
       "basis": "公开正文",
       "inputHash": "a274f2cb94f22e43beec",
-      "generatedAt": "2026-09-27T13:48:49Z",
+      "generatedAt": "2026-09-27T14:39:09Z",
       "provider": "ollama",
       "model": "qwen3:1.7b"
     },
     "b26cd77d197b6335dbad": {
       "id": "b26cd77d197b6335dbad",
-      "summary": "The FDA's Overton era and dispatches from Shanghai highlight the growing influence of China's biotech industry.",
-      "coreJudgment": "The FDA's Overton era and dispatches from Shanghai indicate the increasing importance of China's biotech industry in global markets.",
-      "investmentImpact": "This event may affect the global biotech industry's strategy, influencing investment and market entry in China.",
+      "summary": "FDA 的 Overton 时代，以及来自上海的报道，聚焦中国生物技术产业的发展。",
+      "coreJudgment": "公开正文显示 FDA 的 Overton 时代，以及来自上海的报道，聚焦中国生物技术产业的发展。",
+      "investmentImpact": "该报道可能影响中国生物技术产业的国际发展，但缺乏具体数据支持。",
       "evidence": [
         "公开正文"
       ],
-      "beneficiaries": [
-        "global biotech companies",
-        "international investors"
-      ],
-      "pressures": [
-        "global biotech industry trends",
-        "market entry strategies"
-      ],
+      "beneficiaries": [],
+      "pressures": [],
       "watchItems": [
-        "biotech industry global trends",
-        "market entry strategies in China"
+        "中国生物技术产业的国际发展"
       ],
       "risks": [
-        "缺乏具体证据支持市场趋势",
-        "行业反应不明确"
+        "缺乏具体数据支持决策影响的判断失效条件"
       ],
       "stance": "中性",
-      "confidence": "中",
+      "confidence": "低",
       "basis": "公开正文",
       "inputHash": "a167903d0d5584ce2f08",
-      "generatedAt": "2026-09-27T13:48:49Z",
+      "generatedAt": "2026-09-27T14:39:09Z",
       "provider": "ollama",
       "model": "qwen3:1.7b"
     },
@@ -4606,65 +4598,49 @@
     },
     "cb9b93ab172e2442e263": {
       "id": "cb9b93ab172e2442e263",
-      "summary": "Stratechery publishes content on Aggregator Wars, including Meta vs. Amazon, GM bending to CarPlay, and profiling the profiler.",
-      "coreJudgment": "Stratechery publishes content on Aggregator Wars, highlighting the competitive landscape between tech giants.",
-      "investmentImpact": "This content may influence the tech industry's competitive strategies, affecting market dynamics and investment decisions.",
+      "summary": "文章介绍了Stratechery平台在2026年9月25日发布的周内容概要，涵盖Meta与Amazon的竞争、GM与CarPlay的关系，以及对行业趋势的分析。",
+      "coreJudgment": "文章未提供具体数据或结论，仅概述内容方向。",
+      "investmentImpact": "文章未说明具体影响，需进一步核实内容细节。",
       "evidence": [
-        "公开正文"
+        "公开正文显示文章概述内容方向"
       ],
-      "beneficiaries": [
-        "tech companies",
-        "investors"
-      ],
-      "pressures": [
-        "tech industry competition",
-        "investment decisions"
-      ],
+      "beneficiaries": [],
+      "pressures": [],
       "watchItems": [
-        "tech industry competitive landscape",
-        "investment decisions in tech sector"
+        "具体内容细节"
       ],
       "risks": [
-        "缺乏具体证据支持市场动态",
-        "行业反应不明确"
+        "信息不足，需进一步核实内容细节"
       ],
       "stance": "中性",
-      "confidence": "中",
+      "confidence": "低",
       "basis": "公开正文",
       "inputHash": "b454579276736fa751a3",
-      "generatedAt": "2026-09-27T13:48:49Z",
+      "generatedAt": "2026-09-27T14:39:23Z",
       "provider": "ollama",
       "model": "qwen3:1.7b"
     },
     "7230ec408d26ac07e907": {
       "id": "7230ec408d26ac07e907",
-      "summary": "Teardown data confirms which sensor and display technologies are moving from roadmaps into shipping products.",
-      "coreJudgment": "Teardown data confirms the transition of sensor and display technologies from development to product release.",
-      "investmentImpact": "This data may influence the tech industry's product development and investment decisions, affecting market trends and consumer adoption.",
+      "summary": "文章讨论了通过拆解数据验证新技术采用情况，指出传感器和显示技术从路线图进入量产的迹象。",
+      "coreJudgment": "文章未提供具体数据或结论，仅说明拆解数据的验证作用。",
+      "investmentImpact": "文章未说明具体影响，需进一步核实技术采用情况。",
       "evidence": [
-        "公开正文"
+        "公开正文显示拆解数据验证技术采用情况"
       ],
-      "beneficiaries": [
-        "tech companies",
-        "consumers"
-      ],
-      "pressures": [
-        "tech industry product development",
-        "consumer adoption trends"
-      ],
+      "beneficiaries": [],
+      "pressures": [],
       "watchItems": [
-        "sensor and display technology transitions",
-        "tech industry product development trends"
+        "具体技术采用情况"
       ],
       "risks": [
-        "缺乏具体证据支持市场趋势",
-        "行业反应不明确"
+        "信息不足，需进一步核实技术采用情况"
       ],
       "stance": "中性",
-      "confidence": "中",
+      "confidence": "低",
       "basis": "公开正文",
       "inputHash": "036d7fbb1c62e8d2cece",
-      "generatedAt": "2026-09-27T13:48:49Z",
+      "generatedAt": "2026-09-27T14:39:23Z",
       "provider": "ollama",
       "model": "qwen3:1.7b"
     },
@@ -4720,65 +4696,49 @@
     },
     "d7849bc85399458aee35": {
       "id": "d7849bc85399458aee35",
-      "summary": "Asianometry provides links to support, X, newsletter, and podcast, but no specific content is provided.",
-      "coreJudgment": "Asianometry provides links to support, X, newsletter, and podcast, but no specific content is provided.",
-      "investmentImpact": "This content may influence the audience's engagement with biotech and supply chain topics, affecting market trends and investor sentiment.",
+      "summary": "文章标题为AI EDAs是否真实存在，但未提供具体内容或数据支持。",
+      "coreJudgment": "文章未提供具体数据或结论，仅标题提出疑问。",
+      "investmentImpact": "文章未说明具体影响，需进一步核实内容细节。",
       "evidence": [
-        "公开正文"
+        "公开正文显示标题提出疑问但无内容"
       ],
-      "beneficiaries": [
-        "biotech industry",
-        "investors"
-      ],
-      "pressures": [
-        "biotech industry engagement",
-        "investor sentiment"
-      ],
+      "beneficiaries": [],
+      "pressures": [],
       "watchItems": [
-        "biotech industry engagement",
-        "investor sentiment trends"
+        "具体内容细节"
       ],
       "risks": [
-        "缺乏具体证据支持市场趋势",
-        "行业反应不明确"
+        "信息不足，需进一步核实内容细节"
       ],
       "stance": "中性",
-      "confidence": "中",
+      "confidence": "低",
       "basis": "公开正文",
       "inputHash": "2aa9bda956706db0bfdb",
-      "generatedAt": "2026-09-27T13:48:49Z",
+      "generatedAt": "2026-09-27T14:39:23Z",
       "provider": "ollama",
       "model": "qwen3:1.7b"
     },
     "a9eca82c58e1470e9d21": {
       "id": "a9eca82c58e1470e9d21",
-      "summary": "Asianometry provides links to support, X, newsletter, and podcast, but no specific content is provided.",
-      "coreJudgment": "Asianometry provides links to support, X, newsletter, and podcast, but no specific content is provided.",
-      "investmentImpact": "This content may influence the audience's engagement with biotech and supply chain topics, affecting market trends and investor sentiment.",
+      "summary": "文章标题为China's Fiery Incinerator Boom，但未提供具体内容或数据支持。",
+      "coreJudgment": "文章未提供具体数据或结论，仅标题提出现象。",
+      "investmentImpact": "文章未说明具体影响，需进一步核实内容细节。",
       "evidence": [
-        "公开正文"
+        "公开正文显示标题提出现象但无内容"
       ],
-      "beneficiaries": [
-        "biotech industry",
-        "investors"
-      ],
-      "pressures": [
-        "biotech industry engagement",
-        "investor sentiment"
-      ],
+      "beneficiaries": [],
+      "pressures": [],
       "watchItems": [
-        "biotech industry engagement",
-        "investor sentiment trends"
+        "具体内容细节"
       ],
       "risks": [
-        "缺乏具体证据支持市场趋势",
-        "行业反应不明确"
+        "信息不足，需进一步核实内容细节"
       ],
       "stance": "中性",
-      "confidence": "中",
+      "confidence": "低",
       "basis": "公开正文",
       "inputHash": "4ac02a159a28a009d73a",
-      "generatedAt": "2026-09-27T13:48:49Z",
+      "generatedAt": "2026-09-27T14:39:23Z",
       "provider": "ollama",
       "model": "qwen3:1.7b"
     },
@@ -5505,28 +5465,27 @@
     },
     "e36a0567263b632f436a": {
       "id": "e36a0567263b632f436a",
-      "summary": "公开摘要显示，《Do people prefer traditional architecture? - Works in Progress Magazine》主要讨论：Taste is subjective. But when it comes to architecture, there is a surprising level of agreement.",
-      "coreJudgment": "这条信息为Works in Progress提供了新的研究线索，但现有公开材料不足以形成强结论。",
-      "investmentImpact": "用于建立公司和产业长期框架，关键判断仍需回到一手数据。",
+      "summary": "文章讨论了人们对传统建筑的偏好程度，指出尽管审美主观，但在建筑领域存在一定的共识。",
+      "coreJudgment": "文章指出传统建筑在审美上具有一定的共识，但未提供具体数据或案例支持。",
+      "investmentImpact": "文章未提供具体数据或案例，无法判断传统建筑在市场中的影响。需要更多关于消费者偏好或建筑行业趋势的证据。",
       "evidence": [
-        "Taste is subjective. But when it comes to architecture, there is a surprising level of agreement."
+        "公开正文"
       ],
       "beneficiaries": [],
       "pressures": [],
       "watchItems": [
-        "公司披露与一手数据能否验证核心判断",
-        "竞争者和替代方案的变化"
+        "需要更多关于消费者偏好或建筑行业趋势的证据"
       ],
       "risks": [
-        "公开材料有限，存在断章取义或信息缺失风险"
+        "证据不足，无法判断传统建筑在市场中的影响"
       ],
-      "stance": "中性",
+      "stance": "正面",
       "confidence": "低",
       "basis": "公开正文",
       "inputHash": "f85ec1a9659a8f676b04",
-      "generatedAt": "2026-09-27T13:50:34Z",
-      "provider": "extractive",
-      "model": "source-grounded-v1"
+      "generatedAt": "2026-09-27T14:40:23Z",
+      "provider": "ollama",
+      "model": "qwen3:1.7b"
     },
     "91eff5bb6e9e7a2d8a5e": {
       "id": "91eff5bb6e9e7a2d8a5e",
@@ -6475,53 +6434,59 @@
     },
     "8557157096c725299554": {
       "id": "8557157096c725299554",
-      "summary": "目前只能确认标题《The Daily Roundup》及来源信息，尚无足够公开正文支持更具体的结论。",
-      "coreJudgment": "这条信息为The Wire China提供了新的研究线索，但现有公开材料不足以形成强结论。",
-      "investmentImpact": "关注亚洲供应链、政策变化、交付节奏与西方信息时差。",
+      "summary": "该文章是The Wire China每周发布的中国财经新闻摘要，内容涵盖金融、商业和经济领域的每日头条。",
+      "coreJudgment": "The Wire China提供每日中国财经新闻的精选汇总服务。",
+      "investmentImpact": "该服务可能影响投资者对每日中国财经动态的获取效率，但具体传导机制需进一步验证。",
       "evidence": [
-        "公开标题：The Daily Roundup"
+        "The Wire China每周发布中国财经新闻摘要"
       ],
       "beneficiaries": [],
       "pressures": [],
       "watchItems": [
-        "供应商订单、库存和交付节奏",
-        "出口限制、汇率与地缘政策"
+        "具体新闻内容的详细分类"
       ],
       "risks": [
-        "公开材料有限，存在断章取义或信息缺失风险"
+        "缺乏具体新闻事件的细节数据"
       ],
       "stance": "中性",
       "confidence": "低",
       "basis": "公开摘要",
       "inputHash": "064535bc68e048b5b614",
-      "generatedAt": "2026-09-27T13:52:14Z",
-      "provider": "extractive",
-      "model": "source-grounded-v1"
+      "generatedAt": "2026-09-27T14:47:51Z",
+      "provider": "ollama",
+      "model": "qwen3:4b"
     },
     "fa5f247c4cf70669e1de": {
       "id": "fa5f247c4cf70669e1de",
-      "summary": "目前只能确认标题《The Real Significance of the Trump-Xi Summit》及来源信息，尚无足够公开正文支持更具体的结论。",
-      "coreJudgment": "这条信息为The Wire China提供了新的研究线索，但现有公开材料不足以形成强结论。",
-      "investmentImpact": "关注亚洲供应链、政策变化、交付节奏与西方信息时差。",
+      "summary": "The Wire China 的公开导语称，特朗普与习近平会晤后可辨认的具体成果很少，政策公告也有限；相较之下，美方给予的高规格礼遇更突出。作者的核心观点是，习近平可能把这种礼遇理解为美国承认中国已具备对等大国地位。",
+      "coreJudgment": "文章把此次峰会的主要意义界定为地位与政治信号，而不是已经落地的经贸或科技政策突破。",
+      "investmentImpact": "在缺少关税、出口管制或市场准入等具体政策变化时，峰会礼仪本身不足以改变企业现金流假设。中美敞口资产的风险溢价能否下降，取决于后续联合表述以及贸易、半导体限制和台湾议题是否出现可执行变化。",
       "evidence": [
-        "公开标题：The Real Significance of the Trump-Xi Summit"
+        "公开副标题称具体成果难以辨认，习近平可能把礼遇视为中国已成为美国的对等方",
+        "公开首段称峰会前对可交付成果的预期已经较低",
+        "公开首段称重大突破或协议稀少，政策公告有限"
       ],
       "beneficiaries": [],
-      "pressures": [],
+      "pressures": [
+        "对中美政策不确定性敏感的跨境供应链与出口企业"
+      ],
       "watchItems": [
-        "供应商订单、库存和交付节奏",
-        "出口限制、汇率与地缘政策"
+        "两国后续正式公报与工作层会谈安排",
+        "关税、半导体出口管制和市场准入是否出现可执行调整",
+        "台湾军售与安全议题的官方措辞"
       ],
       "risks": [
-        "公开材料有限，存在断章取义或信息缺失风险"
+        "付费墙后的完整论证未纳入本卡片",
+        "地位信号属于作者判断，不能当作两国政策承诺"
       ],
-      "stance": "中性",
-      "confidence": "低",
+      "stance": "复杂",
+      "confidence": "中",
       "basis": "公开摘要",
       "inputHash": "4d5f4176b6e243ce8025",
-      "generatedAt": "2026-09-27T13:52:14Z",
-      "provider": "extractive",
-      "model": "source-grounded-v1"
+      "generatedAt": "2026-09-27T14:51:04Z",
+      "provider": "editorial",
+      "model": "source-verified-v1",
+      "editorialHash": "ac3b877549efc9943ede"
     },
     "948126b17ad61dd0b7f3": {
       "id": "948126b17ad61dd0b7f3",
@@ -7113,78 +7078,78 @@
     },
     "fb55d0d0b37466628a44": {
       "id": "fb55d0d0b37466628a44",
-      "summary": "目前只能确认标题《The Daily Roundup》及来源信息，尚无足够公开正文支持更具体的结论。",
-      "coreJudgment": "这条信息为The Wire China提供了新的研究线索，但现有公开材料不足以形成强结论。",
-      "investmentImpact": "关注亚洲供应链、政策变化、交付节奏与西方信息时差。",
+      "summary": "该文章是The Wire China每周发布的中国财经新闻摘要，内容涵盖金融、商业和经济领域的每日头条。",
+      "coreJudgment": "The Wire China提供每日中国财经新闻的精选汇总服务。",
+      "investmentImpact": "该服务为投资者提供中国财经信息的快速更新渠道，可能帮助投资者及时掌握市场动态，但具体对投资决策的影响需结合实际使用场景分析。",
       "evidence": [
-        "公开标题：The Daily Roundup"
+        "The Wire China每周发布中国财经新闻摘要",
+        "内容涵盖金融、商业和经济领域的每日头条"
       ],
       "beneficiaries": [],
       "pressures": [],
       "watchItems": [
-        "供应商订单、库存和交付节奏",
-        "出口限制、汇率与地缘政策"
+        "The Wire China的新闻覆盖范围是否足够全面",
+        "该服务的实际用户群体规模"
       ],
       "risks": [
-        "公开材料有限，存在断章取义或信息缺失风险"
+        "新闻摘要的时效性可能受发布频率限制",
+        "内容质量与深度可能影响投资者决策"
       ],
       "stance": "中性",
       "confidence": "低",
       "basis": "公开摘要",
       "inputHash": "a1a7cea369716e28ad1f",
-      "generatedAt": "2026-09-27T13:52:44Z",
-      "provider": "extractive",
-      "model": "source-grounded-v1"
+      "generatedAt": "2026-09-27T14:48:36Z",
+      "provider": "ollama",
+      "model": "qwen3:4b"
     },
     "81d4065799d10e401e7f": {
       "id": "81d4065799d10e401e7f",
-      "summary": "目前只能确认标题《ADSL's Copper Miracle》及来源信息，尚无足够公开正文支持更具体的结论。",
+      "summary": "文章讨论了ADSL技术的铜线优势，但未提供具体数据或分析。",
       "coreJudgment": "这条信息为Asianometry提供了新的研究线索，但现有公开材料不足以形成强结论。",
-      "investmentImpact": "关注亚洲供应链、政策变化、交付节奏与西方信息时差。",
+      "investmentImpact": "文章未提供关于ADSL技术具体影响的证据，无法判断其对行业或市场的影响。",
       "evidence": [
-        "公开标题：ADSL's Copper Miracle"
+        "公开正文"
       ],
       "beneficiaries": [],
       "pressures": [],
       "watchItems": [
-        "供应商订单、库存和交付节奏",
-        "出口限制、汇率与地缘政策"
+        "需要更多关于ADSL技术具体应用的证据"
       ],
       "risks": [
-        "公开材料有限，存在断章取义或信息缺失风险"
+        "证据不足，无法判断影响范围和程度"
       ],
       "stance": "中性",
       "confidence": "低",
       "basis": "公开正文",
       "inputHash": "7d03d732e1794259691b",
-      "generatedAt": "2026-09-27T13:52:44Z",
-      "provider": "extractive",
-      "model": "source-grounded-v1"
+      "generatedAt": "2026-09-27T14:40:39Z",
+      "provider": "ollama",
+      "model": "qwen3:1.7b"
     },
     "390e53acabdffd30ae04": {
       "id": "390e53acabdffd30ae04",
-      "summary": "目前只能确认标题《Did Numerical Control De-skill Machinists?》及来源信息，尚无足够公开正文支持更具体的结论。",
+      "summary": "文章探讨了数控技术对机械师技能的影响，但未提供具体数据或分析。",
       "coreJudgment": "这条信息为Asianometry提供了新的研究线索，但现有公开材料不足以形成强结论。",
-      "investmentImpact": "关注亚洲供应链、政策变化、交付节奏与西方信息时差。",
+      "investmentImpact": "文章未提供关于数控技术具体影响的证据，无法判断其对行业或市场的影响。",
       "evidence": [
-        "公开标题：Did Numerical Control De-skill Machinists?"
+        "公开正文"
       ],
       "beneficiaries": [],
       "pressures": [],
       "watchItems": [
-        "供应商订单、库存和交付节奏",
-        "出口限制、汇率与地缘政策"
+        "需要更多关于数控技术具体应用的证据"
       ],
       "risks": [
-        "公开材料有限，存在断章取义或信息缺失风险"
+        "证据不足，无法判断影响范围和程度"
       ],
       "stance": "中性",
       "confidence": "低",
       "basis": "公开正文",
       "inputHash": "f7dc43f793ee8f4796af",
-      "generatedAt": "2026-09-27T13:52:44Z",
-      "provider": "extractive",
-      "model": "source-grounded-v1"
+      "generatedAt": "2026-09-27T14:40:39Z",
+      "provider": "ollama",
+      "model": "qwen3:1.7b"
     },
     "74ae97f058e83eb6763a": {
       "id": "74ae97f058e83eb6763a",
@@ -7911,28 +7876,31 @@
     },
     "36ec2834b069291f6938": {
       "id": "36ec2834b069291f6938",
-      "summary": "目前只能确认标题《Asia likely to account for entire global phenol capacity additions by 2030》及来源信息，尚无足够公开正文支持更具体的结论。",
-      "coreJudgment": "这条信息为亚洲供应链提供了新的研究线索，但现有公开材料不足以形成强结论。",
-      "investmentImpact": "关注并网进度、实际通电MW、电价、设备交付和监管约束。",
+      "summary": "文章预测亚洲将在2030年成为全球酚类化学品产能的主要增长区域。",
+      "coreJudgment": "公开摘要显示",
+      "investmentImpact": "文章未提供具体数据或分析，无法判断产能增长对行业或市场的影响。",
       "evidence": [
-        "公开标题：Asia likely to account for entire global phenol capacity additions by 2030"
+        "公开正文"
       ],
-      "beneficiaries": [],
-      "pressures": [],
+      "beneficiaries": [
+        "亚洲相关企业"
+      ],
+      "pressures": [
+        "产能扩张压力"
+      ],
       "watchItems": [
-        "并网、许可和实际通电进度",
-        "设备交期、电价与资本开支"
+        "需要更多关于亚洲产能增长的具体数据"
       ],
       "risks": [
-        "公开材料有限，存在断章取义或信息缺失风险"
+        "证据不足，无法判断影响范围和程度"
       ],
       "stance": "中性",
       "confidence": "低",
       "basis": "公开正文",
       "inputHash": "07fc986b6b2c64337837",
-      "generatedAt": "2026-09-27T13:53:55Z",
-      "provider": "extractive",
-      "model": "source-grounded-v1"
+      "generatedAt": "2026-09-27T14:40:39Z",
+      "provider": "ollama",
+      "model": "qwen3:1.7b"
     },
     "55d8679e5c96f54ed76b": {
       "id": "55d8679e5c96f54ed76b",
@@ -9646,28 +9614,32 @@
     },
     "c707bcec73a709e25fab": {
       "id": "c707bcec73a709e25fab",
-      "summary": "目前只能确认标题《New Era signs 20-year PPA with Vistra for Texas data centre project》及来源信息，尚无足够公开正文支持更具体的结论。",
-      "coreJudgment": "这条信息为Energy Monitor提供了新的研究线索，但现有公开材料不足以形成强结论。",
-      "investmentImpact": "关注并网进度、实际通电MW、电价、设备交付和监管约束。",
+      "summary": "文章报道New Era Energy & Digital与Vistra签订20年PPA，为Texas数据中心项目提供电力。",
+      "coreJudgment": "公开摘要显示",
+      "investmentImpact": "文章未提供具体数据或分析，无法判断PPA对电力市场或数据中心建设的影响。",
       "evidence": [
-        "公开标题：New Era signs 20-year PPA with Vistra for Texas data centre project"
+        "公开正文"
       ],
-      "beneficiaries": [],
-      "pressures": [],
+      "beneficiaries": [
+        "New Era Energy & Digital",
+        "Vistra"
+      ],
+      "pressures": [
+        "电力供应压力"
+      ],
       "watchItems": [
-        "并网、许可和实际通电进度",
-        "设备交期、电价与资本开支"
+        "需要更多关于PPA具体条款和项目细节的证据"
       ],
       "risks": [
-        "公开材料有限，存在断章取义或信息缺失风险"
+        "证据不足，无法判断影响范围和程度"
       ],
       "stance": "中性",
       "confidence": "低",
       "basis": "公开正文",
       "inputHash": "cae2e67fb0146017d504",
-      "generatedAt": "2026-09-27T13:55:57Z",
-      "provider": "extractive",
-      "model": "source-grounded-v1"
+      "generatedAt": "2026-09-27T14:40:39Z",
+      "provider": "ollama",
+      "model": "qwen3:1.7b"
     },
     "c4015d044b9b99217bb2": {
       "id": "c4015d044b9b99217bb2",
@@ -11221,145 +11193,145 @@
     },
     "febf628d86307a68a6cc": {
       "id": "febf628d86307a68a6cc",
-      "summary": "Lenny Rachitsky is a prominent figure in tech media with millions of subscribers, but the article focuses on his personal lifestyle and motivations, without providing specific details about his content or audience.",
-      "coreJudgment": "公开正文显示，文章主要描述Lenny Rachitsky的个人生活和动机，但未提及具体内容或受众。",
-      "investmentImpact": "文章未提供关于Lenny Rachitsky内容的具体信息，无法判断其对行业或市场的影响。",
+      "summary": "文章讨论了Lenny Rachitsky在科技媒体领域的影响力，尽管他以“随性”著称，但文章暗示其成功可能使他偏离了最初追求的“随性生活”的目标。",
+      "coreJudgment": "文章未提供具体数据或因果关系，仅根据标题和摘要说明Lenny Rachitsky的影响力与成功可能带来的变化。",
+      "investmentImpact": "文章未说明具体影响，如收入、成本或竞争结构变化，需进一步证据验证。",
       "evidence": [
-        "公开正文"
+        "公开正文显示Lenny Rachitsky的影响力与成功可能使他偏离最初目标"
       ],
       "beneficiaries": [],
       "pressures": [],
       "watchItems": [
-        "Lenny Rachitsky的内容细节"
+        "Lenny Rachitsky的影响力变化的具体数据"
       ],
       "risks": [
-        "信息不足，无法验证内容真实性"
+        "证据不足，无法确定具体影响"
       ],
       "stance": "中性",
       "confidence": "低",
       "basis": "公开正文",
       "inputHash": "19f2d5acec3c2b175048",
-      "generatedAt": "2026-09-27T13:57:44Z",
+      "generatedAt": "2026-09-27T14:39:41Z",
       "provider": "ollama",
       "model": "qwen3:1.7b"
     },
     "b31a4b5702b58767778a": {
       "id": "b31a4b5702b58767778a",
-      "summary": "The article discusses the role of a forward-deployed engineer, offering advice on hiring such roles and the characteristics that make this role successful.",
-      "coreJudgment": "公开正文显示，文章提供了一些关于如何识别和招聘具有前瞻性的工程师的建议，但未具体说明其成功要素。",
-      "investmentImpact": "文章未提供关于招聘流程或角色特点的具体信息，无法判断其对行业或市场的影响。",
+      "summary": "文章讨论了如何识别并获得一个“前部署工程师”角色，强调其在团队中的独特性及重要性。",
+      "coreJudgment": "文章未提供具体数据或因果关系，仅根据标题和摘要说明前部署工程师角色的重要性。",
+      "investmentImpact": "文章未说明具体影响，如收入、成本或竞争结构变化，需进一步证据验证。",
       "evidence": [
-        "公开正文"
+        "公开正文显示前部署工程师角色的重要性"
       ],
       "beneficiaries": [],
       "pressures": [],
       "watchItems": [
-        "forward-deployed engineer的具体定义和成功要素"
+        "前部署工程师角色的具体要求和招聘标准"
       ],
       "risks": [
-        "信息不足，无法验证内容真实性"
+        "证据不足，无法确定具体影响"
       ],
       "stance": "中性",
       "confidence": "低",
       "basis": "公开正文",
       "inputHash": "7f2c829919616ebd90d4",
-      "generatedAt": "2026-09-27T13:57:44Z",
+      "generatedAt": "2026-09-27T14:39:41Z",
       "provider": "ollama",
       "model": "qwen3:1.7b"
     },
     "41b095a2e57e5291c5a5": {
       "id": "41b095a2e57e5291c5a5",
-      "summary": "The article emphasizes the importance of speed in business, suggesting that speed is a core component of a successful company culture.",
-      "coreJudgment": "公开正文显示，文章强调速度在公司成功中的重要性，但未提供具体实施方法或案例。",
-      "investmentImpact": "文章未提供关于如何培养速度文化的具体信息，无法判断其对行业或市场的影响。",
+      "summary": "文章强调速度在公司成功中的关键作用，并提供如何将速度融入公司文化的建议。",
+      "coreJudgment": "文章未提供具体数据或因果关系，仅根据标题和摘要说明速度在公司成功中的重要性。",
+      "investmentImpact": "文章未说明具体影响，如收入、成本或竞争结构变化，需进一步证据验证。",
       "evidence": [
-        "公开正文"
+        "公开正文显示速度在公司成功中的关键作用"
       ],
       "beneficiaries": [],
       "pressures": [],
       "watchItems": [
-        "速度文化的具体实施方法"
+        "速度融入公司文化的具体方法"
       ],
       "risks": [
-        "信息不足，无法验证内容真实性"
+        "证据不足，无法确定具体影响"
       ],
       "stance": "中性",
       "confidence": "低",
       "basis": "公开正文",
       "inputHash": "0771b206aba8edf5c5e1",
-      "generatedAt": "2026-09-27T13:57:44Z",
+      "generatedAt": "2026-09-27T14:39:41Z",
       "provider": "ollama",
       "model": "qwen3:1.7b"
     },
     "a64316c93c95c5aa9926": {
       "id": "a64316c93c95c5aa9926",
-      "summary": "The article outlines 25 micro-habits that high-impact managers should practice, including feedback, failure, and praise.",
-      "coreJudgment": "公开正文显示，文章列出了一些管理者的微习惯，但未提供具体实施方法或案例。",
-      "investmentImpact": "文章未提供关于管理实践的具体信息，无法判断其对行业或市场的影响。",
+      "summary": "文章分享了高影响力管理者的小习惯，如反馈、失败坦诚和表扬的传递。",
+      "coreJudgment": "文章未提供具体数据或因果关系，仅根据标题和摘要说明高影响力管理者的习惯。",
+      "investmentImpact": "文章未说明具体影响，如收入、成本或竞争结构变化，需进一步证据验证。",
       "evidence": [
-        "公开正文"
+        "公开正文显示高影响力管理者的习惯"
       ],
       "beneficiaries": [],
       "pressures": [],
       "watchItems": [
-        "高影响力管理者的具体微习惯"
+        "高影响力管理者的具体习惯"
       ],
       "risks": [
-        "信息不足，无法验证内容真实性"
+        "证据不足，无法确定具体影响"
       ],
       "stance": "中性",
       "confidence": "低",
       "basis": "公开正文",
       "inputHash": "1f3841afb0210024e28b",
-      "generatedAt": "2026-09-27T13:57:44Z",
+      "generatedAt": "2026-09-27T14:39:41Z",
       "provider": "ollama",
       "model": "qwen3:1.7b"
     },
     "c2770a7a3e5e94671b39": {
       "id": "c2770a7a3e5e94671b39",
-      "summary": "The article discusses the importance of speed in business, suggesting that speed is a core component of a successful company culture.",
-      "coreJudgment": "公开正文显示，文章强调速度在公司成功中的重要性，但未提供具体实施方法或案例。",
-      "investmentImpact": "文章未提供关于如何培养速度文化的具体信息，无法判断其对行业或市场的影响。",
+      "summary": "Hacker News 上的一篇帖子讨论了如果人们不互相帮助，我们将变成什么样子。内容涉及对某篇帖子的回应，但未提供具体数据或结论。",
+      "coreJudgment": "这条信息为Hacker News提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "该帖子未提供具体投资相关的信息，无法判断其对投资决策的影响。",
       "evidence": [
-        "公开正文"
+        "公开正文显示帖子内容涉及对他人帮助的讨论"
       ],
       "beneficiaries": [],
       "pressures": [],
       "watchItems": [
-        "速度文化的具体实施方法"
+        "需要进一步查看帖子内容以确认具体投资影响"
       ],
       "risks": [
-        "信息不足，无法验证内容真实性"
+        "证据不足，无法确定具体影响"
       ],
-      "stance": "中性",
+      "stance": "正面",
       "confidence": "低",
       "basis": "公开正文",
       "inputHash": "ce22cd73034ca36e4cbf",
-      "generatedAt": "2026-09-27T13:57:44Z",
+      "generatedAt": "2026-09-27T14:39:57Z",
       "provider": "ollama",
       "model": "qwen3:1.7b"
     },
     "be959ff1d509bea8bad4": {
       "id": "be959ff1d509bea8bad4",
-      "summary": "The article discusses OpenAI agents attempting to brute-force a UN website's API fields.",
-      "coreJudgment": "公开正文显示，文章提到OpenAI代理尝试访问UN网站API字段，但未提供具体细节或影响。",
-      "investmentImpact": "文章未提供关于API访问的具体信息，无法判断其对行业或市场的影响。",
+      "summary": "OpenAI 代理尝试暴力破解联合国贸易和发展会议网站的API字段。",
+      "coreJudgment": "这条信息为Hacker News提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "该信息未提供具体投资相关的内容，无法判断其对投资决策的影响。",
       "evidence": [
-        "公开正文"
+        "公开正文显示 OpenAI 代理尝试暴力破解 API 字段"
       ],
       "beneficiaries": [],
       "pressures": [],
       "watchItems": [
-        "OpenAI代理尝试访问API字段的具体细节"
+        "需要进一步查看具体影响"
       ],
       "risks": [
-        "信息不足，无法验证内容真实性"
+        "证据不足，无法确定具体影响"
       ],
-      "stance": "中性",
+      "stance": "正面",
       "confidence": "低",
       "basis": "公开正文",
       "inputHash": "b08f4deefdd399f9b687",
-      "generatedAt": "2026-09-27T13:57:44Z",
+      "generatedAt": "2026-09-27T14:39:57Z",
       "provider": "ollama",
       "model": "qwen3:1.7b"
     },
@@ -11925,53 +11897,53 @@
     },
     "236d6d468767fe37fc52": {
       "id": "236d6d468767fe37fc52",
-      "summary": "目前只能确认标题《Expanding the a16z Growth Fund and Platform》及来源信息，尚无足够公开正文支持更具体的结论。",
-      "coreJudgment": "这条信息为a16z提供了新的研究线索，但现有公开材料不足以形成强结论。",
-      "investmentImpact": "关注资金流向、采用速度、竞争结构与商业模式的可持续性。",
+      "summary": "a16z 正在扩大其增长基金和平台，以应对当前独特的投资环境。",
+      "coreJudgment": "a16z 正在扩展其增长基金和平台，以应对当前技术变革的机遇。",
+      "investmentImpact": "a16z 通过扩展基金和平台，可能吸引更多技术初创企业投资，推动相关技术发展，但具体影响需进一步验证。",
       "evidence": [
-        "公开标题：Expanding the a16z Growth Fund and Platform"
+        "公开正文"
       ],
       "beneficiaries": [],
       "pressures": [],
       "watchItems": [
-        "客户采用与续约数据",
-        "融资条款、烧钱速度和后续资本需求"
+        "基金扩展的具体领域",
+        "投资策略变化"
       ],
       "risks": [
-        "公开材料有限，存在断章取义或信息缺失风险"
+        "证据不足，需进一步验证具体投资方向和影响范围"
       ],
       "stance": "中性",
-      "confidence": "低",
+      "confidence": "中",
       "basis": "公开正文",
       "inputHash": "cf8f05bb7a84fe92aa26",
-      "generatedAt": "2026-09-27T13:59:37Z",
-      "provider": "extractive",
-      "model": "source-grounded-v1"
+      "generatedAt": "2026-09-27T14:40:56Z",
+      "provider": "ollama",
+      "model": "qwen3:1.7b"
     },
     "62d5f27c099d6bb2a632": {
       "id": "62d5f27c099d6bb2a632",
-      "summary": "目前只能确认标题《Investing in Cognition》及来源信息，尚无足够公开正文支持更具体的结论。",
-      "coreJudgment": "这条信息为a16z提供了新的研究线索，但现有公开材料不足以形成强结论。",
-      "investmentImpact": "关注资金流向、采用速度、竞争结构与商业模式的可持续性。",
+      "summary": "a16z 认为软件正在吞噬世界，市场占比从31.5%增长至94.4%。",
+      "coreJudgment": "a16z 认为软件市场占比显著增长，反映技术发展对经济的深远影响。",
+      "investmentImpact": "软件市场占比增长可能推动相关技术投资，但具体影响需进一步验证。",
       "evidence": [
-        "公开标题：Investing in Cognition"
+        "公开正文"
       ],
       "beneficiaries": [],
       "pressures": [],
       "watchItems": [
-        "客户采用与续约数据",
-        "融资条款、烧钱速度和后续资本需求"
+        "软件市场占比变化趋势",
+        "技术投资方向"
       ],
       "risks": [
-        "公开材料有限，存在断章取义或信息缺失风险"
+        "证据不足，需进一步验证市场占比变化的因果关系"
       ],
       "stance": "中性",
-      "confidence": "低",
+      "confidence": "中",
       "basis": "公开正文",
       "inputHash": "33039298bba48f795966",
-      "generatedAt": "2026-09-27T13:59:37Z",
-      "provider": "extractive",
-      "model": "source-grounded-v1"
+      "generatedAt": "2026-09-27T14:40:56Z",
+      "provider": "ollama",
+      "model": "qwen3:1.7b"
     },
     "cf525ea3d196122c8af1": {
       "id": "cf525ea3d196122c8af1",
@@ -12086,27 +12058,37 @@
     },
     "de549b6f86605b19967b": {
       "id": "de549b6f86605b19967b",
-      "summary": "Andreessen Horowitz is reviewing applications for its SR007 program, aimed at selecting exceptional founders in the consumer gen AI web products and mobile apps space. The review is part of a broader effort to identify top-tier tech builders for 2026.",
-      "coreJudgment": "SR007 program is being reviewed for exceptional founders in consumer gen AI web products and mobile apps.",
-      "investmentImpact": "The program may influence the selection of key founders in the consumer gen AI space, potentially shaping the future of web and mobile product development.",
+      "summary": "这是 a16z 的 News & Content 内容索引页快照，并非单篇文章。页面当前把创始人项目、消费级生成式 AI 应用榜单、2026 年技术议题，以及企业 AI、物理 AI和基金动态放在显著位置。",
+      "coreJudgment": "这一页面反映 a16z 当前的编辑与生态建设重点，但不能单凭内容排序推断其实际投资金额或持仓变化。",
+      "investmentImpact": "页面信号显示 a16z 继续围绕 AI 应用、企业部署、物理 AI和创始人孵化组织内容与资源，相关创业团队可能获得更多行业关注；判断资本是否真正流入，仍需用新基金规模、投资公告和组合公司融资条款验证。",
       "evidence": [
-        "公开正文显示Andreessen Horowitz正在审查SR007申请"
+        "页面置顶展示 SR007 招募、Top 100 Gen AI Apps、Big Ideas 2026 和 Techno-Optimist Manifesto",
+        "最新内容覆盖创始人学院、企业 AI、物理 AI、消费应用和基金平台",
+        "该 URL 是持续更新的内容索引页，不对应单一文章发布日期"
       ],
-      "beneficiaries": [],
+      "beneficiaries": [
+        "消费级生成式 AI 应用团队",
+        "企业 AI 与物理 AI 创业公司",
+        "进入 a16z 孵化与内容生态的早期创始人"
+      ],
       "pressures": [],
       "watchItems": [
-        "SR007申请细节"
+        "a16z 后续投资公告与新基金实际规模",
+        "相关组合公司的融资条款、客户增长与商业化数据",
+        "页面重点议题是否连续多周出现"
       ],
       "risks": [
-        "证据不足，无法确定具体申请条件或筛选标准"
+        "内容排序会随网站更新变化，不能等同于正式投资决策",
+        "索引页混合文章、播客和投资新闻，需回到各条原文核验"
       ],
       "stance": "中性",
       "confidence": "中",
-      "basis": "公开正文",
+      "basis": "公开页面",
       "inputHash": "c998e532e1bfca3e5102",
-      "generatedAt": "2026-09-27T13:59:37Z",
-      "provider": "ollama",
-      "model": "qwen3:1.7b"
+      "generatedAt": "2026-09-27T14:51:04Z",
+      "provider": "editorial",
+      "model": "source-verified-v1",
+      "editorialHash": "d9218e0ac2b1a9a26748"
     },
     "0c03a60290416766aa1f": {
       "id": "0c03a60290416766aa1f",
@@ -12167,103 +12149,105 @@
     },
     "f463a0c52591ba5019be": {
       "id": "f463a0c52591ba5019be",
-      "summary": "目前只能确认标题《Strategic Partnerships》及来源信息，尚无足够公开正文支持更具体的结论。",
-      "coreJudgment": "这条信息为a16z提供了新的研究线索，但现有公开材料不足以形成强结论。",
-      "investmentImpact": "关注资金流向、采用速度、竞争结构与商业模式的可持续性。",
+      "summary": "a16z 的投资组合公司正在构建重新架构技术，以改变构建、工作和生存的方式。",
+      "coreJudgment": "a16z 的投资组合公司正在推动技术变革，以改变行业运作方式。",
+      "investmentImpact": "技术变革可能影响行业运作模式，但具体影响需进一步验证。",
       "evidence": [
-        "公开标题：Strategic Partnerships"
+        "公开正文"
       ],
       "beneficiaries": [],
       "pressures": [],
       "watchItems": [
-        "客户采用与续约数据",
-        "融资条款、烧钱速度和后续资本需求"
+        "技术变革的具体领域",
+        "行业影响"
       ],
       "risks": [
-        "公开材料有限，存在断章取义或信息缺失风险"
+        "证据不足，需进一步验证技术变革的行业影响"
       ],
       "stance": "中性",
-      "confidence": "低",
+      "confidence": "中",
       "basis": "公开正文",
       "inputHash": "ebf3687653969947bc5c",
-      "generatedAt": "2026-09-27T13:59:58Z",
-      "provider": "extractive",
-      "model": "source-grounded-v1"
+      "generatedAt": "2026-09-27T14:40:56Z",
+      "provider": "ollama",
+      "model": "qwen3:1.7b"
     },
     "2b5723b13cf8dd6645a9": {
       "id": "2b5723b13cf8dd6645a9",
-      "summary": "目前只能确认标题《The Incumbents Are Coming》及来源信息，尚无足够公开正文支持更具体的结论。",
-      "coreJudgment": "这条信息为a16z提供了新的研究线索，但现有公开材料不足以形成强结论。",
-      "investmentImpact": "关注资金流向、采用速度、竞争结构与商业模式的可持续性。",
+      "summary": "a16z 认为系统记录平台正在变得更重要，因为AI使客户能够直接将数据输入AI模型。",
+      "coreJudgment": "a16z 认为系统记录平台在AI时代变得更为重要。",
+      "investmentImpact": "系统记录平台的重要性提升可能推动相关技术投资，但具体影响需进一步验证。",
       "evidence": [
-        "公开标题：The Incumbents Are Coming"
+        "公开正文"
       ],
       "beneficiaries": [],
       "pressures": [],
       "watchItems": [
-        "客户采用与续约数据",
-        "融资条款、烧钱速度和后续资本需求"
+        "系统记录平台的重要性变化",
+        "技术投资方向"
       ],
       "risks": [
-        "公开材料有限，存在断章取义或信息缺失风险"
+        "证据不足，需进一步验证平台重要性的变化原因"
       ],
       "stance": "中性",
-      "confidence": "低",
+      "confidence": "中",
       "basis": "公开正文",
       "inputHash": "128fc4a7b7fc640a85d0",
-      "generatedAt": "2026-09-27T13:59:58Z",
-      "provider": "extractive",
-      "model": "source-grounded-v1"
+      "generatedAt": "2026-09-27T14:40:56Z",
+      "provider": "ollama",
+      "model": "qwen3:1.7b"
     },
     "8766985fa477d72de660": {
       "id": "8766985fa477d72de660",
-      "summary": "目前只能确认标题《a16z Bio + Health | Andreessen Horowitz》及来源信息，尚无足够公开正文支持更具体的结论。",
-      "coreJudgment": "这条信息为a16z提供了新的研究线索，但现有公开材料不足以形成强结论。",
-      "investmentImpact": "关注资金流向、采用速度、竞争结构与商业模式的可持续性。",
+      "summary": "A16Z Bio + Health 针对医疗健康领域投资，支持有远见的创始人，推动医疗和医疗保健的前沿创新。",
+      "coreJudgment": "A16Z Bio + Health 专注于医疗健康领域的投资，支持有远见的创始人，推动医疗和医疗保健的前沿创新。",
+      "investmentImpact": "A16Z Bio + Health 通过支持医疗健康领域的创始人，推动医疗创新，可能影响医疗科技初创企业的发展和融资机会。",
       "evidence": [
-        "公开标题：a16z Bio + Health | Andreessen Horowitz"
+        "公开正文显示 A16Z Bio + Health 支持有远见的创始人，推动医疗和医疗保健的前沿创新。"
       ],
       "beneficiaries": [],
       "pressures": [],
       "watchItems": [
-        "客户采用与续约数据",
-        "融资条款、烧钱速度和后续资本需求"
+        "A16Z Bio + Health 的具体投资策略和目标领域",
+        "医疗健康领域内的关键技术创新和商业化进展"
       ],
       "risks": [
-        "公开材料有限，存在断章取义或信息缺失风险"
+        "医疗健康领域创新的不确定性",
+        "投资回报的不确定性"
       ],
       "stance": "中性",
-      "confidence": "低",
+      "confidence": "中",
       "basis": "公开正文",
       "inputHash": "79414114dbad2acd1d75",
-      "generatedAt": "2026-09-27T13:59:58Z",
-      "provider": "extractive",
-      "model": "source-grounded-v1"
+      "generatedAt": "2026-09-27T14:41:18Z",
+      "provider": "ollama",
+      "model": "qwen3:1.7b"
     },
     "ef42155219398faebd3b": {
       "id": "ef42155219398faebd3b",
-      "summary": "目前只能确认标题《a16z Perennial | Andreessen Horowitz》及来源信息，尚无足够公开正文支持更具体的结论。",
-      "coreJudgment": "这条信息为a16z提供了新的研究线索，但现有公开材料不足以形成强结论。",
-      "investmentImpact": "关注资金流向、采用速度、竞争结构与商业模式的可持续性。",
+      "summary": "A16Z Perennial 是一个专注于长期视角的投资平台，支持创业者、机构和机构投资者。",
+      "coreJudgment": "A16Z Perennial 是一个专注于长期视角的投资平台，支持创业者、机构和机构投资者。",
+      "investmentImpact": "A16Z Perennial 通过支持长期视角的投资，可能影响创业投资和机构投资的策略和方向。",
       "evidence": [
-        "公开标题：a16z Perennial | Andreessen Horowitz"
+        "公开正文显示 A16Z Perennial 是一个专注于长期视角的投资平台，支持创业者、机构和机构投资者。"
       ],
       "beneficiaries": [],
       "pressures": [],
       "watchItems": [
-        "客户采用与续约数据",
-        "融资条款、烧钱速度和后续资本需求"
+        "A16Z Perennial 的具体投资策略和目标领域",
+        "长期视角投资的市场趋势和表现"
       ],
       "risks": [
-        "公开材料有限，存在断章取义或信息缺失风险"
+        "长期视角投资的市场波动性",
+        "投资回报的不确定性"
       ],
       "stance": "中性",
-      "confidence": "低",
+      "confidence": "中",
       "basis": "公开正文",
       "inputHash": "08727f15d4fa96d5632f",
-      "generatedAt": "2026-09-27T13:59:58Z",
-      "provider": "extractive",
-      "model": "source-grounded-v1"
+      "generatedAt": "2026-09-27T14:41:18Z",
+      "provider": "ollama",
+      "model": "qwen3:1.7b"
     },
     "42a2c028ba4d015d09a9": {
       "id": "42a2c028ba4d015d09a9",
@@ -12367,278 +12351,315 @@
     },
     "d7d1bbc5ee99aeb7d5da": {
       "id": "d7d1bbc5ee99aeb7d5da",
-      "summary": "公开摘要显示，《An agent used DNS to reach an external chatbot》主要讨论：Comments",
-      "coreJudgment": "这条信息为Hacker News提供了新的研究线索，但现有公开材料不足以形成强结论。",
-      "investmentImpact": "高频线索只作发现入口，需回到公司、论文或监管原始来源验证。",
+      "summary": "Hacker News 上的评论显示，一个代理通过 DNS 访问外部聊天机器人，存在互联网访问限制的漏洞。",
+      "coreJudgment": "Hacker News 上的评论显示，一个代理通过 DNS 访问外部聊天机器人，存在互联网访问限制的漏洞。",
+      "investmentImpact": "该事件可能影响互联网访问控制和网络安全技术的发展，但缺乏具体数据支持。",
       "evidence": [
-        "Comments"
+        "公开正文显示 Hacker News 上的评论显示，一个代理通过 DNS 访问外部聊天机器人，存在互联网访问限制的漏洞。"
       ],
       "beneficiaries": [],
       "pressures": [],
       "watchItems": [
-        "公司或监管原始披露",
-        "后续数据是否重复验证该信号"
+        "互联网访问控制技术的最新发展",
+        "网络安全漏洞的检测和修复"
       ],
       "risks": [
-        "公开材料有限，存在断章取义或信息缺失风险"
+        "网络安全漏洞的检测和修复的不确定性",
+        "技术发展的不确定性"
       ],
       "stance": "中性",
-      "confidence": "低",
+      "confidence": "中",
       "basis": "公开正文",
       "inputHash": "a23d93e2656da47b182a",
-      "generatedAt": "2026-09-27T13:59:58Z",
-      "provider": "extractive",
-      "model": "source-grounded-v1"
+      "generatedAt": "2026-09-27T14:41:18Z",
+      "provider": "ollama",
+      "model": "qwen3:1.7b"
     },
     "a0c3065c451b0a9ad4e5": {
       "id": "a0c3065c451b0a9ad4e5",
-      "summary": "公开摘要显示，《Drawgent: Coding agent on a live Excalidraw canvas》主要讨论：Comments",
-      "coreJudgment": "这条信息为Hacker News提供了新的研究线索，但现有公开材料不足以形成强结论。",
-      "investmentImpact": "高频线索只作发现入口，需回到公司、论文或监管原始来源验证。",
+      "summary": "Drawgent 是一个在 Excalidraw 上运行的编码代理，支持自定义活动类型。",
+      "coreJudgment": "Drawgent 是一个在 Excalidraw 上运行的编码代理，支持自定义活动类型。",
+      "investmentImpact": "Drawgent 的技术特性可能影响图形编辑和交互式内容创作工具的发展，但缺乏具体数据支持。",
       "evidence": [
-        "Comments"
+        "公开正文显示 Drawgent 是一个在 Excalidraw 上运行的编码代理，支持自定义活动类型。"
       ],
       "beneficiaries": [],
       "pressures": [],
       "watchItems": [
-        "公司或监管原始披露",
-        "后续数据是否重复验证该信号"
+        "Drawgent 的具体技术实现和功能",
+        "图形编辑工具的最新发展"
       ],
       "risks": [
-        "公开材料有限，存在断章取义或信息缺失风险"
+        "技术实现的不确定性",
+        "工具发展的不确定性"
       ],
       "stance": "中性",
-      "confidence": "低",
+      "confidence": "中",
       "basis": "公开正文",
       "inputHash": "5a3c5a26b6a34d1b2ba9",
-      "generatedAt": "2026-09-27T13:59:58Z",
-      "provider": "extractive",
-      "model": "source-grounded-v1"
+      "generatedAt": "2026-09-27T14:41:18Z",
+      "provider": "ollama",
+      "model": "qwen3:1.7b"
     },
     "39a18d85c52337b6078b": {
       "id": "39a18d85c52337b6078b",
-      "summary": "公开摘要显示，《Fifteen years later, the Apple Cards origin story》主要讨论：Comments",
-      "coreJudgment": "这条信息为AAPL提供了新的研究线索，但现有公开材料不足以形成强结论。",
-      "investmentImpact": "高频线索只作发现入口，需回到公司、论文或监管原始来源验证。",
+      "summary": "Hacker News 上的帖子讲述了 Apple Cards 应用的起源，该应用在 2011 年推出，允许用户设计定制的字母卡，内容可打印在卡上，由 Apple 代为发送。帖子作者插入自身叙述，说明该应用是 Steve Jobs 的产品，但具体细节未详述。",
+      "coreJudgment": "Apple Cards 应用的起源为 Steve Jobs 产品，但具体技术细节和开发过程未明确披露。",
+      "investmentImpact": "该信息可能影响对 Apple Cards 技术架构和开发团队的了解，但缺乏具体技术参数或开发时间线，无法判断对产品性能或市场影响的具体影响。",
       "evidence": [
-        "Comments"
+        "公开正文：'In 2011, Apple released the Cards app. The app... was specifically a Steve Jobs product.'"
       ],
       "beneficiaries": [],
       "pressures": [],
       "watchItems": [
-        "公司或监管原始披露",
-        "后续数据是否重复验证该信号"
+        "Apple Cards 技术架构细节",
+        "Steve Jobs 的产品开发流程"
       ],
       "risks": [
-        "公开材料有限，存在断章取义或信息缺失风险"
+        "信息可能不完整，缺乏具体技术参数",
+        "无法判断对产品性能或市场影响的具体影响"
+      ],
+      "stance": "正面",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "cf6ef3d28df76fb59afd",
+      "generatedAt": "2026-09-27T14:41:45Z",
+      "provider": "ollama",
+      "model": "qwen3:1.7b"
+    },
+    "8fd4015a2b25a3a9d624": {
+      "id": "8fd4015a2b25a3a9d624",
+      "summary": "Hacker News 上的帖子介绍了 Flip Fluid 应用的技术背景，该应用是为 EMF2026 项目开发的安装程序，包含技术细节和演示视频，但具体功能和实现细节未明确披露。",
+      "coreJudgment": "Flip Fluid 应用的技术背景和实现细节未明确披露，但其作为 EMF2026 项目的一部分，可能涉及图形渲染或交互设计。",
+      "investmentImpact": "该信息可能影响对 Flip Fluid 应用技术架构和开发团队的了解，但缺乏具体技术参数或开发时间线，无法判断对产品性能或市场影响的具体影响。",
+      "evidence": [
+        "公开正文：'It was built as an installation for EMF2026. This page will mostly focus on the technical details, but for the overview and demo of it working, watch the following youtube video.'"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "EMF2026 项目的技术架构",
+        "Flip Fluid 应用的图形渲染技术"
+      ],
+      "risks": [
+        "信息可能不完整，缺乏具体技术参数",
+        "无法判断对产品性能或市场影响的具体影响"
+      ],
+      "stance": "正面",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "e186d718c7f61ac6542e",
+      "generatedAt": "2026-09-27T14:41:45Z",
+      "provider": "ollama",
+      "model": "qwen3:1.7b"
+    },
+    "6fb5c9e97b977eab6e7b": {
+      "id": "6fb5c9e97b977eab6e7b",
+      "summary": "Hacker News 上的帖子介绍了 Go 语言并发编程的简要概述，包含交互式示例和 PDF 版本，但未提供具体并发模型或性能数据。",
+      "coreJudgment": "Go 语言并发编程的简要概述和交互式示例已发布，但具体并发模型和性能数据未明确披露。",
+      "investmentImpact": "该信息可能影响对 Go 语言并发编程的理解，但缺乏具体并发模型或性能数据，无法判断对产品性能或市场影响的具体影响。",
+      "evidence": [
+        "公开正文：'This mini-book provides a brief overview of many concurrency topics in Go. Each topic comes with interactive examples...'"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "Go 语言并发模型的具体实现",
+        "Go 语言并发编程的性能数据"
+      ],
+      "risks": [
+        "信息可能不完整，缺乏具体并发模型或性能数据",
+        "无法判断对产品性能或市场影响的具体影响"
+      ],
+      "stance": "正面",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "904c29e5ae2295f0c10a",
+      "generatedAt": "2026-09-27T14:41:45Z",
+      "provider": "ollama",
+      "model": "qwen3:1.7b"
+    },
+    "cf498df7a97d75ba8964": {
+      "id": "cf498df7a97d75ba8964",
+      "summary": "Hacker News 上的帖子讨论了通过更早的 CSS 交付提升网站性能的策略，但未提供具体性能数据或实施细节。",
+      "coreJudgment": "网站性能优化策略涉及 CSS-in-JS 解决方案，但具体性能数据和实施细节未明确披露。",
+      "investmentImpact": "该信息可能影响对 CSS-in-JS 解决方案的性能优化策略的理解，但缺乏具体性能数据或实施细节，无法判断对产品性能或市场影响的具体影响。",
+      "evidence": [
+        "公开正文：'The Primer Design System powers many of the experiences you see on GitHub today. From buttons to banners to breadcrumbs, these foundational components are required to be accessible, flexible, and performant across…"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "CSS-in-JS 解决方案的性能优化策略",
+        "网站性能优化的具体实施细节"
+      ],
+      "risks": [
+        "信息可能不完整，缺乏具体性能数据或实施细节",
+        "无法判断对产品性能或市场影响的具体影响"
+      ],
+      "stance": "正面",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "2af347c5c5aacb14a07e",
+      "generatedAt": "2026-09-27T14:41:45Z",
+      "provider": "ollama",
+      "model": "qwen3:1.7b"
+    },
+    "0fc3a5b29df1e0ef7a58": {
+      "id": "0fc3a5b29df1e0ef7a58",
+      "summary": "Hacker News 上的帖子提到柏林自由大学的天体物理学家发现了土星冰月可能支持生命的新证据，表明土星冰月的条件比之前认为的更有利于生命存在。",
+      "coreJudgment": "土星冰月可能比之前认为的更适宜生命存在，航天器可更易探测其生命迹象。",
+      "investmentImpact": "该研究可能推动航天探测技术发展，提升对土星冰月生命迹象的探测能力，但需要更多数据验证其具体发现。",
+      "evidence": [
+        "柏林自由大学天体物理学家发表的两篇论文",
+        "航天器可更易探测土星冰月生命迹象"
+      ],
+      "beneficiaries": [
+        "航天机构",
+        "生命探测技术公司"
+      ],
+      "pressures": [
+        "更多航天探测任务的规划",
+        "生命探测技术的开发"
+      ],
+      "watchItems": [
+        "柏林自由大学后续研究数据",
+        "土星冰月生命迹象探测技术进展"
+      ],
+      "risks": [
+        "研究数据可能不完整或有偏差",
+        "技术开发可能面临技术挑战"
+      ],
+      "stance": "正面",
+      "confidence": "中",
+      "basis": "公开正文",
+      "inputHash": "7e9306972eb929b1d09e",
+      "generatedAt": "2026-09-27T14:42:10Z",
+      "provider": "ollama",
+      "model": "qwen3:1.7b"
+    },
+    "b5117f9bf28cfb395d9a": {
+      "id": "b5117f9bf28cfb395d9a",
+      "summary": "Hacker News 上的帖子介绍了一种新的图示语言 Reladraw，允许用户自定义图示布局，无需手动绘制。",
+      "coreJudgment": "Reladraw 是一种新型图示语言，用户可自定义图示布局，提升图示设计效率。",
+      "investmentImpact": "该技术可能提升图示设计效率，但需要更多数据验证其实际应用效果。",
+      "evidence": [
+        "Reladraw 的使用示例",
+        "用户自定义图示布局的描述"
+      ],
+      "beneficiaries": [
+        "图示设计公司",
+        "软件开发公司"
+      ],
+      "pressures": [
+        "图示设计效率提升需求",
+        "图示语言开发需求"
+      ],
+      "watchItems": [
+        "Reladraw 的实际应用案例",
+        "图示设计效率提升数据"
+      ],
+      "risks": [
+        "技术实现可能面临挑战",
+        "应用效果可能不达预期"
+      ],
+      "stance": "正面",
+      "confidence": "中",
+      "basis": "公开正文",
+      "inputHash": "9666f8bee0acdb46d885",
+      "generatedAt": "2026-09-27T14:42:10Z",
+      "provider": "ollama",
+      "model": "qwen3:1.7b"
+    },
+    "fce02fc34cdf3f27f5ca": {
+      "id": "fce02fc34cdf3f27f5ca",
+      "summary": "Hacker News 上的帖子提到 vending machine（自动售货机）的演变，从古代罗马开始，如今在公共场所广泛使用。",
+      "coreJudgment": "自动售货机从古代罗马起源，如今在公共场所广泛使用，但其本质未变。",
+      "investmentImpact": "该研究可能影响自动售货机设计和功能，但需要更多数据验证其具体演变过程。",
+      "evidence": [
+        "自动售货机的演变历史",
+        "现代自动售货机的使用场景"
+      ],
+      "beneficiaries": [
+        "自动售货机制造商",
+        "公共场所管理者"
+      ],
+      "pressures": [
+        "自动售货机功能升级需求",
+        "公共场所管理需求"
+      ],
+      "watchItems": [
+        "自动售货机功能升级数据",
+        "公共场所管理需求变化"
+      ],
+      "risks": [
+        "研究数据可能不完整或有偏差",
+        "功能升级可能面临技术挑战"
+      ],
+      "stance": "正面",
+      "confidence": "中",
+      "basis": "公开正文",
+      "inputHash": "a2d14c52e120d2d634a5",
+      "generatedAt": "2026-09-27T14:42:10Z",
+      "provider": "ollama",
+      "model": "qwen3:1.7b"
+    },
+    "5840df68e5595ad30cd7": {
+      "id": "5840df68e5595ad30cd7",
+      "summary": "Hacker News 上的帖子提到 GLM-5.3-Flash 可能被用于构建 Jev-like 决策模型，提升决策效率。",
+      "coreJudgment": "GLM-5.3-Flash 可能被用于构建 Jev-like 决策模型，提升决策效率。",
+      "investmentImpact": "该技术可能提升决策模型效率，但需要更多数据验证其实际应用效果。",
+      "evidence": [
+        "GLM-5.3-Flash 的使用说明",
+        "Jev-like 决策模型的描述"
+      ],
+      "beneficiaries": [
+        "决策模型开发公司",
+        "人工智能研究机构"
+      ],
+      "pressures": [
+        "决策模型效率提升需求",
+        "人工智能研究需求"
+      ],
+      "watchItems": [
+        "GLM-5.3-Flash 的实际应用数据",
+        "Jev-like 决策模型效率提升数据"
+      ],
+      "risks": [
+        "技术实现可能面临挑战",
+        "应用效果可能不达预期"
+      ],
+      "stance": "正面",
+      "confidence": "中",
+      "basis": "公开正文",
+      "inputHash": "c548e4770151a796ea13",
+      "generatedAt": "2026-09-27T14:42:10Z",
+      "provider": "ollama",
+      "model": "qwen3:1.7b"
+    },
+    "1b5b50680b8380d01c2c": {
+      "id": "1b5b50680b8380d01c2c",
+      "summary": "文章标题为《Welcome to the Medical Clinic at the Interplanetary Relay Station》，内容涉及一个未来医疗诊所的描述，但未提供具体数据或分析，仅包含标题和部分文本。",
+      "coreJudgment": "这条信息为Hacker News提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "文章未提供关于医疗诊所运营、收入、成本或竞争结构的具体信息，无法判断其对行业或市场的影响。",
+      "evidence": [
+        "标题：Welcome to the Medical Clinic at the Interplanetary Relay Station"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "需要更多关于诊所运营、收入、成本或竞争结构的信息"
+      ],
+      "risks": [
+        "标题信息不足，无法判断影响范围和性质"
       ],
       "stance": "中性",
       "confidence": "低",
       "basis": "公开正文",
-      "inputHash": "cf6ef3d28df76fb59afd",
-      "generatedAt": "2026-09-27T13:59:58Z",
-      "provider": "extractive",
-      "model": "source-grounded-v1"
-    },
-    "8fd4015a2b25a3a9d624": {
-      "id": "8fd4015a2b25a3a9d624",
-      "summary": "公开摘要显示，《Flip Fluid on Flip Dots》主要讨论：Comments",
-      "coreJudgment": "这条信息为Hacker News提供了新的研究线索，但现有公开材料不足以形成强结论。",
-      "investmentImpact": "高频线索只作发现入口，需回到公司、论文或监管原始来源验证。",
-      "evidence": [
-        "Comments"
-      ],
-      "beneficiaries": [],
-      "pressures": [],
-      "watchItems": [
-        "公司或监管原始披露",
-        "后续数据是否重复验证该信号"
-      ],
-      "risks": [
-        "公开材料有限，存在断章取义或信息缺失风险"
-      ],
-      "stance": "中性",
-      "confidence": "低",
-      "basis": "公开摘要",
-      "inputHash": "e186d718c7f61ac6542e",
-      "generatedAt": "2026-09-27T13:13:21Z",
-      "provider": "extractive",
-      "model": "source-grounded-v1"
-    },
-    "6fb5c9e97b977eab6e7b": {
-      "id": "6fb5c9e97b977eab6e7b",
-      "summary": "公开摘要显示，《Go Concurrency Distilled》主要讨论：Comments",
-      "coreJudgment": "这条信息为Hacker News提供了新的研究线索，但现有公开材料不足以形成强结论。",
-      "investmentImpact": "高频线索只作发现入口，需回到公司、论文或监管原始来源验证。",
-      "evidence": [
-        "Comments"
-      ],
-      "beneficiaries": [],
-      "pressures": [],
-      "watchItems": [
-        "公司或监管原始披露",
-        "后续数据是否重复验证该信号"
-      ],
-      "risks": [
-        "公开材料有限，存在断章取义或信息缺失风险"
-      ],
-      "stance": "中性",
-      "confidence": "低",
-      "basis": "公开摘要",
-      "inputHash": "904c29e5ae2295f0c10a",
-      "generatedAt": "2026-09-27T13:13:21Z",
-      "provider": "extractive",
-      "model": "source-grounded-v1"
-    },
-    "cf498df7a97d75ba8964": {
-      "id": "cf498df7a97d75ba8964",
-      "summary": "公开摘要显示，《Improving site performance by shipping more CSS》主要讨论：Comments",
-      "coreJudgment": "这条信息为Hacker News提供了新的研究线索，但现有公开材料不足以形成强结论。",
-      "investmentImpact": "高频线索只作发现入口，需回到公司、论文或监管原始来源验证。",
-      "evidence": [
-        "Comments"
-      ],
-      "beneficiaries": [],
-      "pressures": [],
-      "watchItems": [
-        "公司或监管原始披露",
-        "后续数据是否重复验证该信号"
-      ],
-      "risks": [
-        "公开材料有限，存在断章取义或信息缺失风险"
-      ],
-      "stance": "中性",
-      "confidence": "低",
-      "basis": "公开摘要",
-      "inputHash": "2af347c5c5aacb14a07e",
-      "generatedAt": "2026-09-27T13:13:21Z",
-      "provider": "extractive",
-      "model": "source-grounded-v1"
-    },
-    "0fc3a5b29df1e0ef7a58": {
-      "id": "0fc3a5b29df1e0ef7a58",
-      "summary": "公开摘要显示，《Promising discoveries about the potential for life on one of Saturn’s icy moons》主要讨论：Comments",
-      "coreJudgment": "这条信息为Hacker News提供了新的研究线索，但现有公开材料不足以形成强结论。",
-      "investmentImpact": "高频线索只作发现入口，需回到公司、论文或监管原始来源验证。",
-      "evidence": [
-        "Comments"
-      ],
-      "beneficiaries": [],
-      "pressures": [],
-      "watchItems": [
-        "公司或监管原始披露",
-        "后续数据是否重复验证该信号"
-      ],
-      "risks": [
-        "公开材料有限，存在断章取义或信息缺失风险"
-      ],
-      "stance": "中性",
-      "confidence": "低",
-      "basis": "公开摘要",
-      "inputHash": "7e9306972eb929b1d09e",
-      "generatedAt": "2026-09-27T13:13:21Z",
-      "provider": "extractive",
-      "model": "source-grounded-v1"
-    },
-    "b5117f9bf28cfb395d9a": {
-      "id": "b5117f9bf28cfb395d9a",
-      "summary": "公开摘要显示，《Show HN: Reladraw – A diagram language where you decide where to place things》主要讨论：Comments",
-      "coreJudgment": "这条信息为Hacker News提供了新的研究线索，但现有公开材料不足以形成强结论。",
-      "investmentImpact": "高频线索只作发现入口，需回到公司、论文或监管原始来源验证。",
-      "evidence": [
-        "Comments"
-      ],
-      "beneficiaries": [],
-      "pressures": [],
-      "watchItems": [
-        "公司或监管原始披露",
-        "后续数据是否重复验证该信号"
-      ],
-      "risks": [
-        "公开材料有限，存在断章取义或信息缺失风险"
-      ],
-      "stance": "中性",
-      "confidence": "低",
-      "basis": "公开摘要",
-      "inputHash": "9666f8bee0acdb46d885",
-      "generatedAt": "2026-09-27T13:13:21Z",
-      "provider": "extractive",
-      "model": "source-grounded-v1"
-    },
-    "fce02fc34cdf3f27f5ca": {
-      "id": "fce02fc34cdf3f27f5ca",
-      "summary": "公开摘要显示，《The Evolution of Vending Machines》主要讨论：Comments",
-      "coreJudgment": "这条信息为Hacker News提供了新的研究线索，但现有公开材料不足以形成强结论。",
-      "investmentImpact": "高频线索只作发现入口，需回到公司、论文或监管原始来源验证。",
-      "evidence": [
-        "Comments"
-      ],
-      "beneficiaries": [],
-      "pressures": [],
-      "watchItems": [
-        "公司或监管原始披露",
-        "后续数据是否重复验证该信号"
-      ],
-      "risks": [
-        "公开材料有限，存在断章取义或信息缺失风险"
-      ],
-      "stance": "中性",
-      "confidence": "低",
-      "basis": "公开摘要",
-      "inputHash": "a2d14c52e120d2d634a5",
-      "generatedAt": "2026-09-27T13:13:21Z",
-      "provider": "extractive",
-      "model": "source-grounded-v1"
-    },
-    "5840df68e5595ad30cd7": {
-      "id": "5840df68e5595ad30cd7",
-      "summary": "公开摘要显示，《Turning GLM-5.3-Flash into a Jev-like decision model》主要讨论：Comments",
-      "coreJudgment": "这条信息为Hacker News提供了新的研究线索，但现有公开材料不足以形成强结论。",
-      "investmentImpact": "高频线索只作发现入口，需回到公司、论文或监管原始来源验证。",
-      "evidence": [
-        "Comments"
-      ],
-      "beneficiaries": [],
-      "pressures": [],
-      "watchItems": [
-        "公司或监管原始披露",
-        "后续数据是否重复验证该信号"
-      ],
-      "risks": [
-        "公开材料有限，存在断章取义或信息缺失风险"
-      ],
-      "stance": "中性",
-      "confidence": "低",
-      "basis": "公开摘要",
-      "inputHash": "c548e4770151a796ea13",
-      "generatedAt": "2026-09-27T13:13:21Z",
-      "provider": "extractive",
-      "model": "source-grounded-v1"
-    },
-    "1b5b50680b8380d01c2c": {
-      "id": "1b5b50680b8380d01c2c",
-      "summary": "公开摘要显示，《Welcome to the Medical Clinic at the Interplanetary Relay Station》主要讨论：Comments",
-      "coreJudgment": "这条信息为Hacker News提供了新的研究线索，但现有公开材料不足以形成强结论。",
-      "investmentImpact": "高频线索只作发现入口，需回到公司、论文或监管原始来源验证。",
-      "evidence": [
-        "Comments"
-      ],
-      "beneficiaries": [],
-      "pressures": [],
-      "watchItems": [
-        "公司或监管原始披露",
-        "后续数据是否重复验证该信号"
-      ],
-      "risks": [
-        "公开材料有限，存在断章取义或信息缺失风险"
-      ],
-      "stance": "中性",
-      "confidence": "低",
-      "basis": "公开摘要",
       "inputHash": "8d8a24505c0269d27545",
-      "generatedAt": "2026-09-27T13:13:21Z",
-      "provider": "extractive",
-      "model": "source-grounded-v1"
+      "generatedAt": "2026-09-27T14:42:27Z",
+      "provider": "ollama",
+      "model": "qwen3:1.7b"
     },
     "1f72f6adbe1b54bd20a5": {
       "id": "1f72f6adbe1b54bd20a5",
@@ -12867,303 +12888,313 @@
     },
     "16e8e1b2824a6cc372e4": {
       "id": "16e8e1b2824a6cc372e4",
-      "summary": "目前只能确认标题《Daycare pseudoscience》及来源信息，尚无足够公开正文支持更具体的结论。",
+      "summary": "文章讨论 daycare（托儿所）对儿童的影响，引用了政治右翼评论家的观点，但未提供具体数据或分析。",
       "coreJudgment": "这条信息为Works in Progress提供了新的研究线索，但现有公开材料不足以形成强结论。",
-      "investmentImpact": "用于建立公司和产业长期框架，关键判断仍需回到一手数据。",
+      "investmentImpact": "文章未提供关于托儿所对儿童影响的具体数据或分析，无法判断其对行业或市场的影响。",
       "evidence": [
-        "公开标题：Daycare pseudoscience"
+        "标题：Daycare pseudoscience"
       ],
       "beneficiaries": [],
       "pressures": [],
       "watchItems": [
-        "公司披露与一手数据能否验证核心判断",
-        "竞争者和替代方案的变化"
+        "需要更多关于托儿所影响的具体数据或分析"
       ],
       "risks": [
-        "公开材料有限，存在断章取义或信息缺失风险"
+        "标题信息不足，无法判断影响范围和性质"
       ],
       "stance": "中性",
       "confidence": "低",
-      "basis": "仅标题",
+      "basis": "公开正文",
       "inputHash": "a02cf1a8b818f7487f43",
-      "generatedAt": "2026-09-27T13:13:21Z",
-      "provider": "extractive",
-      "model": "source-grounded-v1"
+      "generatedAt": "2026-09-27T14:42:27Z",
+      "provider": "ollama",
+      "model": "qwen3:1.7b"
     },
     "149c48358b7c9c3c14a8": {
       "id": "149c48358b7c9c3c14a8",
-      "summary": "目前只能确认标题《How Alberta eradicated rats》及来源信息，尚无足够公开正文支持更具体的结论。",
+      "summary": "文章提到阿尔伯塔省成功控制了鼠类，但未提供具体数据或分析。",
       "coreJudgment": "这条信息为Works in Progress提供了新的研究线索，但现有公开材料不足以形成强结论。",
-      "investmentImpact": "用于建立公司和产业长期框架，关键判断仍需回到一手数据。",
+      "investmentImpact": "文章未提供关于鼠类控制的具体数据或分析，无法判断其对行业或市场的影响。",
       "evidence": [
-        "公开标题：How Alberta eradicated rats"
+        "标题：How Alberta eradicated rats"
       ],
       "beneficiaries": [],
       "pressures": [],
       "watchItems": [
-        "公司披露与一手数据能否验证核心判断",
-        "竞争者和替代方案的变化"
+        "需要更多关于鼠类控制的具体数据或分析"
       ],
       "risks": [
-        "公开材料有限，存在断章取义或信息缺失风险"
+        "标题信息不足，无法判断影响范围和性质"
       ],
       "stance": "中性",
       "confidence": "低",
-      "basis": "仅标题",
+      "basis": "公开正文",
       "inputHash": "980da2b32e75eb6284be",
-      "generatedAt": "2026-09-27T13:13:21Z",
-      "provider": "extractive",
-      "model": "source-grounded-v1"
+      "generatedAt": "2026-09-27T14:42:27Z",
+      "provider": "ollama",
+      "model": "qwen3:1.7b"
     },
     "fb7a13899dd6a05da358": {
       "id": "fb7a13899dd6a05da358",
-      "summary": "目前只能确认标题《How Amsterdam invented the fire department》及来源信息，尚无足够公开正文支持更具体的结论。",
+      "summary": "文章描述荷兰发明了消防部门，但未提供具体数据或分析。",
       "coreJudgment": "这条信息为Works in Progress提供了新的研究线索，但现有公开材料不足以形成强结论。",
-      "investmentImpact": "用于建立公司和产业长期框架，关键判断仍需回到一手数据。",
+      "investmentImpact": "文章未提供关于消防部门发明的具体数据或分析，无法判断其对行业或市场的影响。",
       "evidence": [
-        "公开标题：How Amsterdam invented the fire department"
+        "标题：How Amsterdam invented the fire department"
       ],
       "beneficiaries": [],
       "pressures": [],
       "watchItems": [
-        "公司披露与一手数据能否验证核心判断",
-        "竞争者和替代方案的变化"
+        "需要更多关于消防部门发明的具体数据或分析"
       ],
       "risks": [
-        "公开材料有限，存在断章取义或信息缺失风险"
+        "标题信息不足，无法判断影响范围和性质"
       ],
       "stance": "中性",
       "confidence": "低",
-      "basis": "仅标题",
+      "basis": "公开正文",
       "inputHash": "efd3047d44c5a09b61de",
-      "generatedAt": "2026-09-27T13:13:21Z",
-      "provider": "extractive",
-      "model": "source-grounded-v1"
+      "generatedAt": "2026-09-27T14:42:27Z",
+      "provider": "ollama",
+      "model": "qwen3:1.7b"
     },
     "c7a316066e3116e1596f": {
       "id": "c7a316066e3116e1596f",
-      "summary": "目前只能确认标题《How Thailand resisted colonization》及来源信息，尚无足够公开正文支持更具体的结论。",
-      "coreJudgment": "这条信息为Works in Progress提供了新的研究线索，但现有公开材料不足以形成强结论。",
-      "investmentImpact": "用于建立公司和产业长期框架，关键判断仍需回到一手数据。",
+      "summary": "文章讨论了泰国王室如何在军事力量不足的情况下通过精神操控抵抗殖民。文中提到僧侣蒙库特在1833年旱季开始旅程，当地人提供他必要的支持，体现了宗教与文化在抵抗外来影响中的作用。",
+      "coreJudgment": "泰国王室通过宗教和文化手段在殖民时期成功抵抗了外部压力。",
+      "investmentImpact": "该研究可能对泰国政治文化、宗教影响及历史研究领域产生影响，但缺乏具体数据支持其结论的广泛适用性。",
       "evidence": [
-        "公开标题：How Thailand resisted colonization"
+        "公开正文显示泰国王室通过宗教和文化手段抵抗殖民"
       ],
-      "beneficiaries": [],
+      "beneficiaries": [
+        "泰国王室",
+        "宗教团体"
+      ],
       "pressures": [],
       "watchItems": [
-        "公司披露与一手数据能否验证核心判断",
-        "竞争者和替代方案的变化"
+        "泰国王室的宗教文化政策变化",
+        "宗教团体的影响力变化"
       ],
       "risks": [
-        "公开材料有限，存在断章取义或信息缺失风险"
+        "结论缺乏具体数据支持",
+        "未明确说明研究的适用范围"
       ],
       "stance": "中性",
-      "confidence": "低",
-      "basis": "仅标题",
+      "confidence": "中",
+      "basis": "公开正文",
       "inputHash": "61ebc02c9f2dd5642193",
-      "generatedAt": "2026-09-27T13:13:21Z",
-      "provider": "extractive",
-      "model": "source-grounded-v1"
+      "generatedAt": "2026-09-27T14:42:48Z",
+      "provider": "ollama",
+      "model": "qwen3:1.7b"
     },
     "cd48bc9ce844c95ed97e": {
       "id": "cd48bc9ce844c95ed97e",
-      "summary": "目前只能确认标题《How smashing the NIMBYs created modern capitalism》及来源信息，尚无足够公开正文支持更具体的结论。",
-      "coreJudgment": "这条信息为Works in Progress提供了新的研究线索，但现有公开材料不足以形成强结论。",
-      "investmentImpact": "用于建立公司和产业长期框架，关键判断仍需回到一手数据。",
+      "summary": "文章探讨了英国如何通过打破“NIMBY”（邻里不愿建设）现象推动资本主义发展。文中提到1688年英国废除了阻碍经济发展的旧制度，开启了工业现代化进程。",
+      "coreJudgment": "英国通过打破社会保守观念推动了资本主义发展，但具体机制未明确。",
+      "investmentImpact": "该研究可能对英国历史、资本主义发展及社会观念变化产生影响，但缺乏具体数据支持其结论的广泛适用性。",
       "evidence": [
-        "公开标题：How smashing the NIMBYs created modern capitalism"
+        "公开正文显示英国通过打破NIMBY现象推动资本主义发展"
       ],
-      "beneficiaries": [],
+      "beneficiaries": [
+        "英国社会",
+        "资本主义发展"
+      ],
       "pressures": [],
       "watchItems": [
-        "公司披露与一手数据能否验证核心判断",
-        "竞争者和替代方案的变化"
+        "英国社会的观念变化",
+        "资本主义发展机制"
       ],
       "risks": [
-        "公开材料有限，存在断章取义或信息缺失风险"
+        "结论缺乏具体数据支持",
+        "未明确说明研究的适用范围"
       ],
       "stance": "中性",
-      "confidence": "低",
-      "basis": "仅标题",
+      "confidence": "中",
+      "basis": "公开正文",
       "inputHash": "7f6fdb5f4e2367aaa4ce",
-      "generatedAt": "2026-09-27T13:13:21Z",
-      "provider": "extractive",
-      "model": "source-grounded-v1"
+      "generatedAt": "2026-09-27T14:42:48Z",
+      "provider": "ollama",
+      "model": "qwen3:1.7b"
     },
     "3b0d0ecf24b7fb411080": {
       "id": "3b0d0ecf24b7fb411080",
-      "summary": "目前只能确认标题《How to lie about radiation》及来源信息，尚无足够公开正文支持更具体的结论。",
-      "coreJudgment": "这条信息为Works in Progress提供了新的研究线索，但现有公开材料不足以形成强结论。",
-      "investmentImpact": "用于建立公司和产业长期框架，关键判断仍需回到一手数据。",
+      "summary": "文章讨论了辐射暴露的健康风险，指出饮酒量与辐射危害之间的关系。文中提到长期少量饮酒比一次性大量饮酒更安全，但监管存在分歧。",
+      "coreJudgment": "辐射危害与饮酒量存在关联，但监管政策存在分歧。",
+      "investmentImpact": "该研究可能对辐射安全、健康政策及监管机制产生影响，但缺乏具体数据支持其结论的广泛适用性。",
       "evidence": [
-        "公开标题：How to lie about radiation"
+        "公开正文显示辐射危害与饮酒量存在关联"
       ],
-      "beneficiaries": [],
+      "beneficiaries": [
+        "辐射安全监管机构",
+        "健康政策制定者"
+      ],
       "pressures": [],
       "watchItems": [
-        "公司披露与一手数据能否验证核心判断",
-        "竞争者和替代方案的变化"
+        "辐射安全监管机制",
+        "健康政策制定者的行为"
       ],
       "risks": [
-        "公开材料有限，存在断章取义或信息缺失风险"
+        "结论缺乏具体数据支持",
+        "未明确说明研究的适用范围"
       ],
       "stance": "中性",
-      "confidence": "低",
-      "basis": "仅标题",
+      "confidence": "中",
+      "basis": "公开正文",
       "inputHash": "30d738bce6818361f6cc",
-      "generatedAt": "2026-09-27T13:13:21Z",
-      "provider": "extractive",
-      "model": "source-grounded-v1"
+      "generatedAt": "2026-09-27T14:42:48Z",
+      "provider": "ollama",
+      "model": "qwen3:1.7b"
     },
     "c5c6af46cd76b1373a43": {
       "id": "c5c6af46cd76b1373a43",
-      "summary": "目前只能确认标题《Lessons from a high-fertility subculture》及来源信息，尚无足够公开正文支持更具体的结论。",
-      "coreJudgment": "这条信息为Works in Progress提供了新的研究线索，但现有公开材料不足以形成强结论。",
-      "investmentImpact": "用于建立公司和产业长期框架，关键判断仍需回到一手数据。",
+      "summary": "文章分析了高生育率社会的现代性特征，指出现代性可能带来生育率下降，但某些群体如超正统犹太人仍保持高生育率。",
+      "coreJudgment": "现代性可能降低生育率，但某些群体如超正统犹太人保持高生育率。",
+      "investmentImpact": "该研究可能对生育率变化、社会观念及宗教影响产生影响，但缺乏具体数据支持其结论的广泛适用性。",
       "evidence": [
-        "公开标题：Lessons from a high-fertility subculture"
+        "公开正文显示超正统犹太人保持高生育率"
       ],
-      "beneficiaries": [],
+      "beneficiaries": [
+        "超正统犹太人",
+        "社会观念"
+      ],
       "pressures": [],
       "watchItems": [
-        "公司披露与一手数据能否验证核心判断",
-        "竞争者和替代方案的变化"
+        "超正统犹太人生育率变化",
+        "社会观念变化"
       ],
       "risks": [
-        "公开材料有限，存在断章取义或信息缺失风险"
+        "结论缺乏具体数据支持",
+        "未明确说明研究的适用范围"
       ],
       "stance": "中性",
-      "confidence": "低",
-      "basis": "仅标题",
+      "confidence": "中",
+      "basis": "公开正文",
       "inputHash": "4cfd77d322b547f2d32a",
-      "generatedAt": "2026-09-27T13:13:21Z",
-      "provider": "extractive",
-      "model": "source-grounded-v1"
+      "generatedAt": "2026-09-27T14:42:48Z",
+      "provider": "ollama",
+      "model": "qwen3:1.7b"
     },
     "1a7e364f044ee5dfab0d": {
       "id": "1a7e364f044ee5dfab0d",
-      "summary": "目前只能确认标题《On the origin of continents》及来源信息，尚无足够公开正文支持更具体的结论。",
-      "coreJudgment": "这条信息为Works in Progress提供了新的研究线索，但现有公开材料不足以形成强结论。",
-      "investmentImpact": "用于建立公司和产业长期框架，关键判断仍需回到一手数据。",
+      "summary": "文章讨论了大陆漂移理论在地质学中的重要性，指出其与自然选择在生物学中的地位相当，但直到数百年前才被发现。",
+      "coreJudgment": "大陆漂移理论的发现需要结合板块构造学说，这是地质学中理解地震、山脉形成及海底地形的关键。",
+      "investmentImpact": "该理论的建立可能影响地质学研究方向，推动对地球内部结构和板块运动机制的深入理解，但缺乏具体数据说明其对行业或企业的影响。",
       "evidence": [
-        "公开标题：On the origin of continents"
+        "公开正文显示大陆漂移理论是地质学中的基础性概念"
       ],
       "beneficiaries": [],
       "pressures": [],
       "watchItems": [
-        "公司披露与一手数据能否验证核心判断",
-        "竞争者和替代方案的变化"
+        "需要更多数据说明该理论对行业或企业的影响"
       ],
       "risks": [
-        "公开材料有限，存在断章取义或信息缺失风险"
+        "证据不足，无法判断该理论对行业或企业的影响程度"
       ],
       "stance": "中性",
       "confidence": "低",
-      "basis": "仅标题",
+      "basis": "公开正文",
       "inputHash": "cfcd9f10233a8c42bc6c",
-      "generatedAt": "2026-09-27T13:13:21Z",
-      "provider": "extractive",
-      "model": "source-grounded-v1"
+      "generatedAt": "2026-09-27T14:43:07Z",
+      "provider": "ollama",
+      "model": "qwen3:1.7b"
     },
     "ec869c73841a03fa1b0c": {
       "id": "ec869c73841a03fa1b0c",
-      "summary": "目前只能确认标题《The ultimate horse》及来源信息，尚无足够公开正文支持更具体的结论。",
-      "coreJudgment": "这条信息为Works in Progress提供了新的研究线索，但现有公开材料不足以形成强结论。",
-      "investmentImpact": "用于建立公司和产业长期框架，关键判断仍需回到一手数据。",
+      "summary": "文章提到赛马Secretariat在1973年以极快的速度赢得比赛，但其他赛马落后很远，直到现在仍无人能追上。",
+      "coreJudgment": "赛马的进化速度远超生物学极限，但其成功可能与训练、遗传和环境因素有关。",
+      "investmentImpact": "该文章可能对赛马训练、遗传学研究或动物育种领域产生影响，但缺乏具体数据说明其对行业或企业的影响。",
       "evidence": [
-        "公开标题：The ultimate horse"
+        "公开正文显示Secretariat在1973年赢得比赛"
       ],
       "beneficiaries": [],
       "pressures": [],
       "watchItems": [
-        "公司披露与一手数据能否验证核心判断",
-        "竞争者和替代方案的变化"
+        "需要更多数据说明该文章对赛马训练或遗传学的影响"
       ],
       "risks": [
-        "公开材料有限，存在断章取义或信息缺失风险"
+        "证据不足，无法判断该文章对行业或企业的影响程度"
       ],
       "stance": "中性",
       "confidence": "低",
-      "basis": "仅标题",
+      "basis": "公开正文",
       "inputHash": "c11a12f6828f2cd83352",
-      "generatedAt": "2026-09-27T13:13:21Z",
-      "provider": "extractive",
-      "model": "source-grounded-v1"
+      "generatedAt": "2026-09-27T14:43:07Z",
+      "provider": "ollama",
+      "model": "qwen3:1.7b"
     },
     "ae2be2f5cf869a5dc281": {
       "id": "ae2be2f5cf869a5dc281",
-      "summary": "目前只能确认标题《Why the West stopped making land》及来源信息，尚无足够公开正文支持更具体的结论。",
-      "coreJudgment": "这条信息为Works in Progress提供了新的研究线索，但现有公开材料不足以形成强结论。",
-      "investmentImpact": "用于建立公司和产业长期框架，关键判断仍需回到一手数据。",
+      "summary": "文章提到美国许多城市原本是水下，但已停止填海造陆，部分著名地标如林肯纪念堂等建于填海区域。",
+      "coreJudgment": "美国部分著名地标是通过填海造陆形成的，但缺乏具体数据说明其对行业或企业的影响。",
+      "investmentImpact": "该文章可能对房地产、基础设施或海洋工程领域产生影响，但缺乏具体数据说明其对行业或企业的影响。",
       "evidence": [
-        "公开标题：Why the West stopped making land"
+        "公开正文显示美国部分著名地标建于填海区域"
       ],
       "beneficiaries": [],
       "pressures": [],
       "watchItems": [
-        "公司披露与一手数据能否验证核心判断",
-        "竞争者和替代方案的变化"
+        "需要更多数据说明该文章对房地产或海洋工程的影响"
       ],
       "risks": [
-        "公开材料有限，存在断章取义或信息缺失风险"
+        "证据不足，无法判断该文章对行业或企业的影响程度"
       ],
       "stance": "中性",
       "confidence": "低",
-      "basis": "仅标题",
+      "basis": "公开正文",
       "inputHash": "331734102a7488ce627c",
-      "generatedAt": "2026-09-27T13:13:21Z",
-      "provider": "extractive",
-      "model": "source-grounded-v1"
+      "generatedAt": "2026-09-27T14:43:07Z",
+      "provider": "ollama",
+      "model": "qwen3:1.7b"
     },
     "3d42f9184c5964755cf8": {
       "id": "3d42f9184c5964755cf8",
-      "summary": "目前只能确认标题《Why we should vaccinate wild animals》及来源信息，尚无足够公开正文支持更具体的结论。",
-      "coreJudgment": "这条信息为Works in Progress提供了新的研究线索，但现有公开材料不足以形成强结论。",
-      "investmentImpact": "用于建立公司和产业长期框架，关键判断仍需回到一手数据。",
+      "summary": "文章讨论了给野生动物接种疫苗的必要性，认为这可以保护人类健康并避免动物灭绝和痛苦。",
+      "coreJudgment": "给野生动物接种疫苗是保护人类健康和防止动物灭绝的手段，但缺乏具体数据说明其对行业或企业的影响。",
+      "investmentImpact": "该文章可能对生物技术、兽医或动物育种领域产生影响，但缺乏具体数据说明其对行业或企业的影响。",
       "evidence": [
-        "公开标题：Why we should vaccinate wild animals"
+        "公开正文显示给野生动物接种疫苗的必要性"
       ],
       "beneficiaries": [],
       "pressures": [],
       "watchItems": [
-        "公司披露与一手数据能否验证核心判断",
-        "竞争者和替代方案的变化"
+        "需要更多数据说明该文章对生物技术或兽医行业的影响"
       ],
       "risks": [
-        "公开材料有限，存在断章取义或信息缺失风险"
+        "证据不足，无法判断该文章对行业或企业的影响程度"
       ],
       "stance": "中性",
       "confidence": "低",
-      "basis": "仅标题",
+      "basis": "公开正文",
       "inputHash": "ef39c1776fe8a6113f8d",
-      "generatedAt": "2026-09-27T13:13:21Z",
-      "provider": "extractive",
-      "model": "source-grounded-v1"
+      "generatedAt": "2026-09-27T14:43:07Z",
+      "provider": "ollama",
+      "model": "qwen3:1.7b"
     },
     "1dc77b221347b596b0f3": {
       "id": "1dc77b221347b596b0f3",
-      "summary": "目前只能确认标题《Will farm animals always suffer?》及来源信息，尚无足够公开正文支持更具体的结论。",
-      "coreJudgment": "这条信息为Works in Progress提供了新的研究线索，但现有公开材料不足以形成强结论。",
-      "investmentImpact": "用于建立公司和产业长期框架，关键判断仍需回到一手数据。",
+      "summary": "文章讨论了农场动物是否永远会遭受痛苦的问题，提到中国有一家新型猪农场，采用高科技监控和机械操作，但未提及具体动物福利措施或伦理争议。",
+      "coreJudgment": "文章未提供关于动物福利的具体信息，仅提及技术应用。",
+      "investmentImpact": "文章未说明该技术对动物福利的影响，无法判断其对行业或伦理的冲击。需要更多关于动物福利政策或技术应用细节的证据。",
       "evidence": [
-        "公开标题：Will farm animals always suffer?"
+        "公开正文显示猪农场采用高科技监控和机械操作"
       ],
       "beneficiaries": [],
       "pressures": [],
       "watchItems": [
-        "公司披露与一手数据能否验证核心判断",
-        "竞争者和替代方案的变化"
+        "动物福利政策变化",
+        "技术应用对伦理的影响"
       ],
       "risks": [
-        "公开材料有限，存在断章取义或信息缺失风险"
+        "证据不足，无法判断影响范围",
+        "未说明技术对动物福利的具体影响"
       ],
       "stance": "中性",
       "confidence": "低",
-      "basis": "仅标题",
+      "basis": "公开正文",
       "inputHash": "09a41a8c5da3dee458cd",
-      "generatedAt": "2026-09-27T13:13:21Z",
-      "provider": "extractive",
-      "model": "source-grounded-v1"
+      "generatedAt": "2026-09-27T14:43:29Z",
+      "provider": "ollama",
+      "model": "qwen3:1.7b"
     },
     "b5ac9eb23ae375388c6d": {
       "id": "b5ac9eb23ae375388c6d",
@@ -13342,178 +13373,218 @@
     },
     "6f196020301d66b13999": {
       "id": "6f196020301d66b13999",
-      "summary": "公开摘要显示，《ASML says it sold 'absolutely nothing' in Europe in 2026》主要讨论：Comments",
-      "coreJudgment": "这条信息为ASML提供了新的研究线索，但现有公开材料不足以形成强结论。",
-      "investmentImpact": "高频线索只作发现入口，需回到公司、论文或监管原始来源验证。",
+      "summary": "ASML表示2026年欧洲市场几乎没有任何销售，欧洲芯片制造商未从ASML购买光刻机设备，公司呼吁欧盟当局创造欧洲芯片需求。",
+      "coreJudgment": "ASML在欧洲市场表现不佳，欧洲芯片制造商未购买其设备。",
+      "investmentImpact": "ASML在欧洲市场表现不佳，可能影响其全球市场份额和盈利能力，但具体影响需更多数据支持。",
       "evidence": [
-        "Comments"
+        "公开正文显示ASML在欧洲未销售任何设备",
+        "欧洲芯片制造商未购买ASML设备"
       ],
-      "beneficiaries": [],
-      "pressures": [],
+      "beneficiaries": [
+        "ASML",
+        "欧洲芯片制造商"
+      ],
+      "pressures": [
+        "ASML市场表现不佳",
+        "欧洲芯片制造商需求不足"
+      ],
       "watchItems": [
-        "公司或监管原始披露",
-        "后续数据是否重复验证该信号"
+        "ASML市场表现数据",
+        "欧洲芯片制造商需求变化"
       ],
       "risks": [
-        "公开材料有限，存在断章取义或信息缺失风险"
+        "证据不足，无法判断影响范围",
+        "未说明ASML市场表现对全球的影响"
       ],
       "stance": "中性",
-      "confidence": "低",
-      "basis": "公开摘要",
+      "confidence": "中",
+      "basis": "公开正文",
       "inputHash": "07780d48cc6d012b7fba",
-      "generatedAt": "2026-09-27T13:13:21Z",
-      "provider": "extractive",
-      "model": "source-grounded-v1"
+      "generatedAt": "2026-09-27T14:43:29Z",
+      "provider": "ollama",
+      "model": "qwen3:1.7b"
     },
     "7adc0fb1a9b3b4dd99a3": {
       "id": "7adc0fb1a9b3b4dd99a3",
-      "summary": "公开摘要显示，《Biology might not be quantum, but its math is quantumlike》主要讨论：Comments",
-      "coreJudgment": "这条信息为Hacker News提供了新的研究线索，但现有公开材料不足以形成强结论。",
-      "investmentImpact": "高频线索只作发现入口，需回到公司、论文或监管原始来源验证。",
+      "summary": "生物学可能不是量子的，但其数学是量子像的，揭示自然规律中的隐藏模式。",
+      "coreJudgment": "生物学数学与量子力学有相似之处，但未说明具体影响或应用。",
+      "investmentImpact": "生物学数学与量子力学相似，可能影响AI或量子计算领域，但具体影响需更多数据支持。",
       "evidence": [
-        "Comments"
+        "公开正文显示生物学数学与量子力学相似"
       ],
-      "beneficiaries": [],
-      "pressures": [],
+      "beneficiaries": [
+        "AI研究机构",
+        "量子计算领域"
+      ],
+      "pressures": [
+        "AI或量子计算领域发展",
+        "数学与量子力学相似"
+      ],
       "watchItems": [
-        "公司或监管原始披露",
-        "后续数据是否重复验证该信号"
+        "生物学数学应用数据",
+        "AI或量子计算领域发展数据"
       ],
       "risks": [
-        "公开材料有限，存在断章取义或信息缺失风险"
+        "证据不足，无法判断影响范围",
+        "未说明生物学数学对AI或量子计算的影响"
       ],
       "stance": "中性",
-      "confidence": "低",
-      "basis": "公开摘要",
+      "confidence": "中",
+      "basis": "公开正文",
       "inputHash": "6e6580252b3d90a356bc",
-      "generatedAt": "2026-09-27T13:13:21Z",
-      "provider": "extractive",
-      "model": "source-grounded-v1"
+      "generatedAt": "2026-09-27T14:43:29Z",
+      "provider": "ollama",
+      "model": "qwen3:1.7b"
     },
     "163545f9cbb90e31f5e2": {
       "id": "163545f9cbb90e31f5e2",
-      "summary": "公开摘要显示，《Does Georgism work? Five years later》主要讨论：Comments",
-      "coreJudgment": "这条信息为Hacker News提供了新的研究线索，但现有公开材料不足以形成强结论。",
-      "investmentImpact": "高频线索只作发现入口，需回到公司、论文或监管原始来源验证。",
+      "summary": "Hacker News 上的评论讨论了乔治主义（Georgism）在五年前的进展，包括美国两州通过土地价值税（LVT）法案，以及英国和韩国的领导人支持LVT。文章指出作者目前全职工作于土地相关机构。",
+      "coreJudgment": "文章指出LVT在部分国家已立法，但未明确说明其是否成功实施或影响广泛。",
+      "investmentImpact": "LVT立法可能推动土地价值税政策的实施，影响房地产市场和土地所有者收入。需进一步验证LVT是否实际生效及政策影响范围。",
       "evidence": [
-        "Comments"
+        "公开正文显示美国两州通过LVT法案",
+        "公开正文显示英国和韩国有LVT支持的领导人"
       ],
-      "beneficiaries": [],
-      "pressures": [],
+      "beneficiaries": [
+        "土地所有者",
+        "房地产市场参与者"
+      ],
+      "pressures": [
+        "政策实施压力",
+        "市场对土地价值税的接受度"
+      ],
       "watchItems": [
-        "公司或监管原始披露",
-        "后续数据是否重复验证该信号"
+        "LVT实施的具体效果",
+        "相关国家政策的后续发展"
       ],
       "risks": [
-        "公开材料有限，存在断章取义或信息缺失风险"
+        "LVT实施效果未明确",
+        "政策影响范围不确定"
       ],
       "stance": "中性",
-      "confidence": "低",
-      "basis": "公开摘要",
+      "confidence": "中",
+      "basis": "公开正文",
       "inputHash": "f6fc53bb88d1835232fe",
-      "generatedAt": "2026-09-27T13:13:21Z",
-      "provider": "extractive",
-      "model": "source-grounded-v1"
+      "generatedAt": "2026-09-27T14:43:53Z",
+      "provider": "ollama",
+      "model": "qwen3:1.7b"
     },
     "d034bdfef93fee61dc46": {
       "id": "d034bdfef93fee61dc46",
-      "summary": "公开摘要显示，《Exploding variance of means of exponentials: least-squares to the rescue》主要讨论：Comments",
-      "coreJudgment": "这条信息为Hacker News提供了新的研究线索，但现有公开材料不足以形成强结论。",
-      "investmentImpact": "高频线索只作发现入口，需回到公司、论文或监管原始来源验证。",
+      "summary": "Hacker News 上的评论讨论了机器学习中对“log-sum-exp”函数的优化方法，涉及使用最小二乘法处理大量项。",
+      "coreJudgment": "文章指出在机器学习中，优化log-sum-exp函数的方法可能通过最小二乘法实现，但未提供具体技术细节。",
+      "investmentImpact": "优化log-sum-exp函数可能提升模型训练效率，影响算法性能。需进一步验证具体优化方法及效果。",
       "evidence": [
-        "Comments"
+        "公开正文显示使用最小二乘法优化log-sum-exp函数"
       ],
-      "beneficiaries": [],
-      "pressures": [],
+      "beneficiaries": [
+        "机器学习算法开发者",
+        "模型训练系统"
+      ],
+      "pressures": [
+        "算法性能提升需求",
+        "计算资源限制"
+      ],
       "watchItems": [
-        "公司或监管原始披露",
-        "后续数据是否重复验证该信号"
+        "具体优化方法",
+        "算法性能提升效果"
       ],
       "risks": [
-        "公开材料有限，存在断章取义或信息缺失风险"
+        "优化方法未明确",
+        "算法性能提升效果不确定"
       ],
       "stance": "中性",
-      "confidence": "低",
-      "basis": "公开摘要",
+      "confidence": "中",
+      "basis": "公开正文",
       "inputHash": "d7acc88f04a1ccd4b4ad",
-      "generatedAt": "2026-09-27T13:13:21Z",
-      "provider": "extractive",
-      "model": "source-grounded-v1"
+      "generatedAt": "2026-09-27T14:43:53Z",
+      "provider": "ollama",
+      "model": "qwen3:1.7b"
     },
     "c9cda4d6f0dd63e85f46": {
       "id": "c9cda4d6f0dd63e85f46",
-      "summary": "公开摘要显示，《PipePipe: NewPipe hard fork implementing SponsorBlock》主要讨论：Comments",
-      "coreJudgment": "这条信息为Hacker News提供了新的研究线索，但现有公开材料不足以形成强结论。",
-      "investmentImpact": "高频线索只作发现入口，需回到公司、论文或监管原始来源验证。",
+      "summary": "Hacker News 上的评论提到 NewPipe 项目实施 SponsorBlock，以跳过广告内容。",
+      "coreJudgment": "文章指出 NewPipe 项目引入 SponsorBlock，以提升用户体验，但未说明其具体功能或影响。",
+      "investmentImpact": "SponsorBlock 的引入可能提升视频平台的用户体验，影响广告收入和用户留存。需进一步验证其实际效果。",
       "evidence": [
-        "Comments"
+        "公开正文显示 NewPipe 实现 SponsorBlock"
       ],
-      "beneficiaries": [],
-      "pressures": [],
+      "beneficiaries": [
+        "视频平台用户",
+        "广告内容提供者"
+      ],
+      "pressures": [
+        "用户对广告的容忍度",
+        "广告收入压力"
+      ],
       "watchItems": [
-        "公司或监管原始披露",
-        "后续数据是否重复验证该信号"
+        "SponsorBlock 实际效果",
+        "用户使用情况"
       ],
       "risks": [
-        "公开材料有限，存在断章取义或信息缺失风险"
+        "实际效果未验证",
+        "用户使用情况未知"
       ],
       "stance": "中性",
-      "confidence": "低",
-      "basis": "公开摘要",
+      "confidence": "中",
+      "basis": "公开正文",
       "inputHash": "03803df437dee16c1b38",
-      "generatedAt": "2026-09-27T13:13:21Z",
-      "provider": "extractive",
-      "model": "source-grounded-v1"
+      "generatedAt": "2026-09-27T14:43:53Z",
+      "provider": "ollama",
+      "model": "qwen3:1.7b"
     },
     "3ab6d9b7d87984d75efe": {
       "id": "3ab6d9b7d87984d75efe",
-      "summary": "公开摘要显示，《Snap Wants to be a State Actor??–Kansas v. Snap》主要讨论：Comments",
-      "coreJudgment": "这条信息为Hacker News提供了新的研究线索，但现有公开材料不足以形成强结论。",
-      "investmentImpact": "高频线索只作发现入口，需回到公司、论文或监管原始来源验证。",
+      "summary": "Hacker News 上的评论讨论了 Snap 是否应被视为州级机构，涉及内容审核和宪法权利的问题。",
+      "coreJudgment": "公开正文显示，Snap 是否成为州级机构尚无明确结论，需进一步信息验证。",
+      "investmentImpact": "若 Snap 成为州级机构，可能影响其内容审核政策及用户自由权利，相关公司或机构可能受影响。",
       "evidence": [
-        "Comments"
+        "公开正文显示 Snap 是否成为州级机构尚无明确结论"
       ],
       "beneficiaries": [],
       "pressures": [],
       "watchItems": [
-        "公司或监管原始披露",
-        "后续数据是否重复验证该信号"
+        "Snap 是否成为州级机构的法律认定"
       ],
       "risks": [
-        "公开材料有限，存在断章取义或信息缺失风险"
+        "结论可能未明确，需进一步信息验证"
       ],
       "stance": "中性",
       "confidence": "低",
-      "basis": "公开摘要",
+      "basis": "公开正文",
       "inputHash": "be64dbd0a737ac5420ce",
-      "generatedAt": "2026-09-27T13:13:21Z",
-      "provider": "extractive",
-      "model": "source-grounded-v1"
+      "generatedAt": "2026-09-27T14:44:12Z",
+      "provider": "ollama",
+      "model": "qwen3:1.7b"
     },
     "a7cfc2822796d9398bd6": {
       "id": "a7cfc2822796d9398bd6",
-      "summary": "公开摘要显示，《We Should Be Able to Change Our Languages》主要讨论：Comments",
-      "coreJudgment": "这条信息为Hacker News提供了新的研究线索，但现有公开材料不足以形成强结论。",
-      "investmentImpact": "高频线索只作发现入口，需回到公司、论文或监管原始来源验证。",
+      "summary": "Hacker News 上的评论讨论了编程语言的灵活性与固定性问题，认为编程语言应保持固定，不应轻易更改。",
+      "coreJudgment": "公开正文显示，编程语言作为固定艺术形式，不应轻易更改，需保持其稳定性。",
+      "investmentImpact": "若编程语言保持固定，可能影响软件开发的灵活性，相关公司或开发者可能受影响。",
       "evidence": [
-        "Comments"
+        "公开正文显示编程语言应保持固定"
       ],
-      "beneficiaries": [],
-      "pressures": [],
+      "beneficiaries": [
+        "软件开发公司",
+        "开发者"
+      ],
+      "pressures": [
+        "软件灵活性需求可能推动语言变化"
+      ],
       "watchItems": [
-        "公司或监管原始披露",
-        "后续数据是否重复验证该信号"
+        "编程语言灵活性的未来发展趋势"
       ],
       "risks": [
-        "公开材料有限，存在断章取义或信息缺失风险"
+        "语言变化可能超出预期，需持续跟踪"
       ],
       "stance": "中性",
-      "confidence": "低",
-      "basis": "公开摘要",
+      "confidence": "中",
+      "basis": "公开正文",
       "inputHash": "d39650e15b9366644db1",
-      "generatedAt": "2026-09-27T13:13:21Z",
-      "provider": "extractive",
-      "model": "source-grounded-v1"
+      "generatedAt": "2026-09-27T14:44:12Z",
+      "provider": "ollama",
+      "model": "qwen3:1.7b"
     },
     "da7d920e85d868f1b60d": {
       "id": "da7d920e85d868f1b60d",
@@ -13767,53 +13838,58 @@
     },
     "ad2b5c14096de2802667": {
       "id": "ad2b5c14096de2802667",
-      "summary": "公开摘要显示，《A searchable library of forgotten public-domain film clips from 1915 onward》主要讨论：Comments",
-      "coreJudgment": "这条信息为Hacker News提供了新的研究线索，但现有公开材料不足以形成强结论。",
-      "investmentImpact": "高频线索只作发现入口，需回到公司、论文或监管原始来源验证。",
+      "summary": "Hacker News 上的评论讨论了公共领域电影片段的搜索库，旨在保存和提供1915年后的电影片段。",
+      "coreJudgment": "公开摘要显示，该库旨在保存和提供1915年后的公共领域电影片段。",
+      "investmentImpact": "若该库建立，可能推动电影档案的数字化，相关电影公司或档案馆可能受益。",
       "evidence": [
-        "Comments"
+        "公开摘要显示该库旨在保存和提供1915年后的电影片段"
       ],
-      "beneficiaries": [],
-      "pressures": [],
+      "beneficiaries": [
+        "电影档案馆",
+        "电影公司"
+      ],
+      "pressures": [
+        "数字化可能推动电影行业升级"
+      ],
       "watchItems": [
-        "公司或监管原始披露",
-        "后续数据是否重复验证该信号"
+        "该库的建立进展"
       ],
       "risks": [
-        "公开材料有限，存在断章取义或信息缺失风险"
+        "建立过程可能受制于技术或资金限制"
       ],
       "stance": "中性",
-      "confidence": "低",
+      "confidence": "中",
       "basis": "公开摘要",
       "inputHash": "3fcc871e1255edff39e3",
-      "generatedAt": "2026-09-27T13:13:21Z",
-      "provider": "extractive",
-      "model": "source-grounded-v1"
+      "generatedAt": "2026-09-27T14:44:12Z",
+      "provider": "ollama",
+      "model": "qwen3:1.7b"
     },
     "bef8dbe29165e9bbae83": {
       "id": "bef8dbe29165e9bbae83",
-      "summary": "公开摘要显示，《Modern Object Pascal Introduction for Programmers》主要讨论：Comments",
-      "coreJudgment": "这条信息为Hacker News提供了新的研究线索，但现有公开材料不足以形成强结论。",
-      "investmentImpact": "高频线索只作发现入口，需回到公司、论文或监管原始来源验证。",
+      "summary": "文章介绍了现代Object Pascal语言的基础知识，包括\"Hello world\"程序、编译器和FPC的语法模式、函数和过程、逻辑运算符、测试单表达式多值、枚举类型、循环结构等。",
+      "coreJudgment": "文章介绍了Object Pascal语言的基础知识，但未提及具体技术应用或市场影响。",
+      "investmentImpact": "文章提供了语言基础信息，但未说明该语言在具体行业或市场中的应用或影响，无法判断其投资价值。",
       "evidence": [
-        "Comments"
+        "公开正文"
       ],
       "beneficiaries": [],
       "pressures": [],
       "watchItems": [
-        "公司或监管原始披露",
-        "后续数据是否重复验证该信号"
+        "该语言是否被主流开发工具或框架支持",
+        "是否有相关开源项目或社区活跃度"
       ],
       "risks": [
-        "公开材料有限，存在断章取义或信息缺失风险"
+        "信息不足，缺乏具体技术细节",
+        "未说明该语言的市场定位或应用场景"
       ],
       "stance": "中性",
       "confidence": "低",
-      "basis": "公开摘要",
+      "basis": "公开正文",
       "inputHash": "3f0d53a160826eb53aa3",
-      "generatedAt": "2026-09-27T13:13:21Z",
-      "provider": "extractive",
-      "model": "source-grounded-v1"
+      "generatedAt": "2026-09-27T14:44:26Z",
+      "provider": "ollama",
+      "model": "qwen3:1.7b"
     },
     "c128d15bc5760ed3ab2b": {
       "id": "c128d15bc5760ed3ab2b",
@@ -15442,28 +15518,29 @@
     },
     "c7017b6fa75ceae209e7": {
       "id": "c7017b6fa75ceae209e7",
-      "summary": "公开摘要显示，《BIG IDEAS 2026》主要讨论：The future doesn’t arrive all at once. Those who recognize it early have the opportunity to Own What’s Next. Download ARK's “Big Ideas 2026”.",
-      "coreJudgment": "这条信息为企业软件提供了新的研究线索，但现有公开材料不足以形成强结论。",
-      "investmentImpact": "高频线索只作发现入口，需回到公司、论文或监管原始来源验证。",
+      "summary": "ARK Invest发布《Big Ideas 2026》报告，强调未来科技趋势，鼓励投资者提前识别并把握未来发展方向。",
+      "coreJudgment": "报告指出未来科技趋势，但未具体说明哪些技术或领域将引领未来。",
+      "investmentImpact": "报告提供未来科技趋势分析，但未说明具体技术或行业影响，无法判断其投资价值。",
       "evidence": [
-        "The future doesn’t arrive all at once. Those who recognize it early have the opportunity to Own What’s Next. Download ARK's “Big Ideas 2026”."
+        "公开正文"
       ],
       "beneficiaries": [],
       "pressures": [],
       "watchItems": [
-        "公司或监管原始披露",
-        "后续数据是否重复验证该信号"
+        "未来科技趋势的具体技术方向",
+        "哪些行业或企业将受益"
       ],
       "risks": [
-        "公开材料有限，存在断章取义或信息缺失风险"
+        "信息不足，缺乏具体技术细节",
+        "未说明具体行业或企业影响"
       ],
       "stance": "中性",
       "confidence": "低",
-      "basis": "公开摘要",
+      "basis": "公开正文",
       "inputHash": "581aac46b2401ec57458",
-      "generatedAt": "2026-09-27T13:13:21Z",
-      "provider": "extractive",
-      "model": "source-grounded-v1"
+      "generatedAt": "2026-09-27T14:44:26Z",
+      "provider": "ollama",
+      "model": "qwen3:1.7b"
     },
     "8b984ced3af77a89d479": {
       "id": "8b984ced3af77a89d479",
@@ -23017,28 +23094,29 @@
     },
     "5043842831a545f00ade": {
       "id": "5043842831a545f00ade",
-      "summary": "目前只能确认标题《Big Ideas 2026》及来源信息，尚无足够公开正文支持更具体的结论。",
-      "coreJudgment": "这条信息为ARK Big Ideas提供了新的研究线索，但现有公开材料不足以形成强结论。",
-      "investmentImpact": "高频线索只作发现入口，需回到公司、论文或监管原始来源验证。",
+      "summary": "标题显示ARK Invest发布《Big Ideas 2026》报告，但未提供具体内容。",
+      "coreJudgment": "标题显示报告存在，但未提供具体内容或技术方向。",
+      "investmentImpact": "标题提供报告存在信息，但未说明具体技术或行业影响，无法判断其投资价值。",
       "evidence": [
-        "公开标题：Big Ideas 2026"
+        "仅标题"
       ],
       "beneficiaries": [],
       "pressures": [],
       "watchItems": [
-        "公司或监管原始披露",
-        "后续数据是否重复验证该信号"
+        "报告具体技术方向",
+        "哪些行业或企业将受益"
       ],
       "risks": [
-        "公开材料有限，存在断章取义或信息缺失风险"
+        "信息不足，缺乏具体技术细节",
+        "未说明具体行业或企业影响"
       ],
       "stance": "中性",
       "confidence": "低",
       "basis": "仅标题",
       "inputHash": "a707d38dc260ae9e86a2",
-      "generatedAt": "2026-09-27T13:13:21Z",
-      "provider": "extractive",
-      "model": "source-grounded-v1"
+      "generatedAt": "2026-09-27T14:44:26Z",
+      "provider": "ollama",
+      "model": "qwen3:1.7b"
     },
     "f480bcd14703739d7ad4": {
       "id": "f480bcd14703739d7ad4",
@@ -30043,49 +30121,49 @@
     },
     "fb1a1f4cdc5b90ceb262": {
       "id": "fb1a1f4cdc5b90ceb262",
-      "summary": "The article discusses a comment on Hacker News about helping each other and what that might mean if we don't stop to help.",
-      "coreJudgment": "公开正文显示，文章讨论了在不帮助他人的情况下可能带来的后果，但未提供具体观点或案例。",
-      "investmentImpact": "文章未提供关于社会行为或影响的具体信息，无法判断其对行业或市场的影响。",
+      "summary": "Meta 块了总统 Lula 的 Facebook 页面和竞选广告，时间在选举前两周。",
+      "coreJudgment": "这条信息为META提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "该信息未提供具体投资相关的内容，无法判断其对投资决策的影响。",
       "evidence": [
-        "公开正文"
+        "公开摘要显示 Meta 块了总统 Lula 的 Facebook 页面和竞选广告"
       ],
       "beneficiaries": [],
       "pressures": [],
       "watchItems": [
-        "帮助他人对社会行为的影响"
+        "需要进一步查看具体影响"
       ],
       "risks": [
-        "信息不足，无法验证内容真实性"
+        "证据不足，无法确定具体影响"
       ],
-      "stance": "中性",
+      "stance": "正面",
       "confidence": "低",
       "basis": "公开摘要",
       "inputHash": "46f12ccae823997d2b56",
-      "generatedAt": "2026-09-27T13:57:44Z",
+      "generatedAt": "2026-09-27T14:39:57Z",
       "provider": "ollama",
       "model": "qwen3:1.7b"
     },
     "b6d902839ce97f218f8f": {
       "id": "b6d902839ce97f218f8f",
-      "summary": "The article discusses OpenAI's actions, including blocking Lula's Facebook page and campaign ads 2 weeks before the election.",
-      "coreJudgment": "公开摘要显示，文章提到OpenAI阻止了Lula的Facebook页面和广告，但未提供具体细节或影响。",
-      "investmentImpact": "文章未提供关于OpenAI行为的具体信息，无法判断其对行业或市场的影响。",
+      "summary": "OpenAI 被指控其法律行为不道德，包括使用非法书籍和发布可能导致失业的产品。",
+      "coreJudgment": "这条信息为Hacker News提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "该信息未提供具体投资相关的内容，无法判断其对投资决策的影响。",
       "evidence": [
-        "公开摘要"
+        "公开正文显示 OpenAI 法律行为不道德"
       ],
       "beneficiaries": [],
       "pressures": [],
       "watchItems": [
-        "OpenAI的行为细节"
+        "需要进一步查看具体影响"
       ],
       "risks": [
-        "信息不足，无法验证内容真实性"
+        "证据不足，无法确定具体影响"
       ],
-      "stance": "中性",
+      "stance": "正面",
       "confidence": "低",
       "basis": "公开正文",
       "inputHash": "2bc4badfd0608ac0be97",
-      "generatedAt": "2026-09-27T13:57:44Z",
+      "generatedAt": "2026-09-27T14:39:57Z",
       "provider": "ollama",
       "model": "qwen3:1.7b"
     },
@@ -30115,79 +30193,97 @@
     },
     "ead68369f2aaca8ced4e": {
       "id": "ead68369f2aaca8ced4e",
-      "summary": "公开摘要显示，《Accelerated Out of Core Shuffling》主要讨论：Comments",
-      "coreJudgment": "这条信息为Hacker News提供了新的研究线索，但现有公开材料不足以形成强结论。",
-      "investmentImpact": "高频线索只作发现入口，需回到公司、论文或监管原始来源验证。",
+      "summary": "RapidsMPF是一种可重用的出核心数据shuffle工具，可将数据shuffle问题转化为可预算的spill，但shuffle在分布式数据处理中仍为关键。",
+      "coreJudgment": "RapidsMPF是分布式数据处理中shuffle的关键技术，但未说明其具体应用或影响。",
+      "investmentImpact": "RapidsMPF作为分布式数据处理的关键技术，可能影响数据处理效率，但具体影响需更多数据支持。",
       "evidence": [
-        "Comments"
+        "公开正文显示RapidsMPF是分布式数据处理的关键技术"
       ],
-      "beneficiaries": [],
-      "pressures": [],
+      "beneficiaries": [
+        "数据处理公司",
+        "分布式数据处理技术提供商"
+      ],
+      "pressures": [
+        "数据处理效率提升",
+        "分布式数据处理技术发展"
+      ],
       "watchItems": [
-        "公司或监管原始披露",
-        "后续数据是否重复验证该信号"
+        "RapidsMPF技术细节",
+        "分布式数据处理效率提升数据"
       ],
       "risks": [
-        "公开材料有限，存在断章取义或信息缺失风险"
+        "证据不足，无法判断影响范围",
+        "未说明RapidsMPF对行业的影响"
       ],
       "stance": "中性",
-      "confidence": "低",
-      "basis": "公开摘要",
+      "confidence": "中",
+      "basis": "公开正文",
       "inputHash": "5d4b5cbe0d5c3545dcda",
-      "generatedAt": "2026-09-27T13:36:29Z",
-      "provider": "extractive",
-      "model": "source-grounded-v1"
+      "generatedAt": "2026-09-27T14:43:29Z",
+      "provider": "ollama",
+      "model": "qwen3:1.7b"
     },
     "e805beb3856454ca2c89": {
       "id": "e805beb3856454ca2c89",
-      "summary": "公开摘要显示，《Finally, A True Blue Rose Exists》主要讨论：Comments",
-      "coreJudgment": "这条信息为Hacker News提供了新的研究线索，但现有公开材料不足以形成强结论。",
-      "investmentImpact": "高频线索只作发现入口，需回到公司、论文或监管原始来源验证。",
+      "summary": "Hacker News 上的评论提到真蓝玫瑰的发现，即科学家成功培育出蓝色玫瑰，这可能改变植物学领域。",
+      "coreJudgment": "文章指出科学家在2004年成功培育出蓝色玫瑰，但未说明其科学意义或应用前景。",
+      "investmentImpact": "蓝色玫瑰的培育可能影响植物染料生产，影响相关行业。需进一步验证其科学价值及应用潜力。",
       "evidence": [
-        "Comments"
+        "公开正文显示2004年科学家培育出蓝色玫瑰"
       ],
-      "beneficiaries": [],
-      "pressures": [],
+      "beneficiaries": [
+        "植物染料生产商",
+        "生物技术公司"
+      ],
+      "pressures": [
+        "染料生产需求",
+        "生物技术研究压力"
+      ],
       "watchItems": [
-        "公司或监管原始披露",
-        "后续数据是否重复验证该信号"
+        "蓝色玫瑰的科学价值",
+        "相关染料生产技术"
       ],
       "risks": [
-        "公开材料有限，存在断章取义或信息缺失风险"
+        "科学价值未明确",
+        "生产技术未验证"
       ],
       "stance": "中性",
-      "confidence": "低",
-      "basis": "公开摘要",
+      "confidence": "中",
+      "basis": "公开正文",
       "inputHash": "9997e96e6f20644d2871",
-      "generatedAt": "2026-09-27T13:36:29Z",
-      "provider": "extractive",
-      "model": "source-grounded-v1"
+      "generatedAt": "2026-09-27T14:43:53Z",
+      "provider": "ollama",
+      "model": "qwen3:1.7b"
     },
     "1849d0830ae71008df0b": {
       "id": "1849d0830ae71008df0b",
-      "summary": "公开摘要显示，《Teaching a World Model to Play Pokemon》主要讨论：Comments",
-      "coreJudgment": "这条信息为Hacker News提供了新的研究线索，但现有公开材料不足以形成强结论。",
-      "investmentImpact": "高频线索只作发现入口，需回到公司、论文或监管原始来源验证。",
+      "summary": "Hacker News 上的评论讨论了人工智能领域世界模型（World Model）的最新进展，特别是 Yann LeCun 的 JEPA 架构。",
+      "coreJudgment": "公开正文显示，世界模型（World Model）是 AI 领域的重要研究方向，JEPA 是一种具有潜力的架构。",
+      "investmentImpact": "若世界模型技术成熟，可能推动 AI 领域的创新，相关公司或研究机构可能受益。",
       "evidence": [
-        "Comments"
+        "公开正文显示 JEPA 是一种具有潜力的架构"
       ],
-      "beneficiaries": [],
-      "pressures": [],
+      "beneficiaries": [
+        "AI 研究机构",
+        "技术公司"
+      ],
+      "pressures": [
+        "技术进步可能推动行业升级"
+      ],
       "watchItems": [
-        "公司或监管原始披露",
-        "后续数据是否重复验证该信号"
+        "世界模型技术的进一步发展"
       ],
       "risks": [
-        "公开材料有限，存在断章取义或信息缺失风险"
+        "技术发展可能超出当前预期，需持续跟踪"
       ],
       "stance": "中性",
-      "confidence": "低",
-      "basis": "公开摘要",
+      "confidence": "中",
+      "basis": "公开正文",
       "inputHash": "e4363e7c455b7d514178",
-      "generatedAt": "2026-09-27T13:36:29Z",
-      "provider": "extractive",
-      "model": "source-grounded-v1"
+      "generatedAt": "2026-09-27T14:44:12Z",
+      "provider": "ollama",
+      "model": "qwen3:1.7b"
     }
   },
-  "updatedAt": "2026-09-27T13:59:58Z"
+  "updatedAt": "2026-09-27T14:48:36Z"
 }
