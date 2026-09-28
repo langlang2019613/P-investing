@@ -30283,7 +30283,707 @@
       "generatedAt": "2026-09-27T14:44:12Z",
       "provider": "ollama",
       "model": "qwen3:1.7b"
+    },
+    "c9d007b2c74baf606715": {
+      "id": "c9d007b2c74baf606715",
+      "summary": "公开摘要显示，《Meta Muse fuels agentic AI demand, tightening CPU supply》主要讨论：Meta's AI assistant Muse is drawing strong market response, and the rise of agentic AI is drawing attention to AI infrastructure shortages beyond GPUs and high-bandwidth memory (HBM), including server CPUs. The trend is lifting order demand for AMD and Intel products, while also tightening the server CPU packaging supply chain.",
+      "coreJudgment": "这条信息为AMD、INTC、META提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "关注亚洲供应链、政策变化、交付节奏与西方信息时差。",
+      "evidence": [
+        "Meta's AI assistant Muse is drawing strong market response, and the rise of agentic AI is drawing attention to AI infrastructure shortages beyond GPUs and high-bandwidth memory (HBM), including server CPUs. The trend is…"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "供应商订单、库存和交付节奏",
+        "出口限制、汇率与地缘政策"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "c6ef5e940e65f0915779",
+      "generatedAt": "2026-09-28T05:10:55Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "81606d4d3f78c7b71fb5": {
+      "id": "81606d4d3f78c7b71fb5",
+      "summary": "公开摘要显示，《Beijing escalates domestic chip drive with Broadcom audits》主要讨论：China is intensifying its push to replace foreign technology across critical computing infrastructure, targeting high-speed networking hardware alongside foreign AI accelerators.",
+      "coreJudgment": "这条信息为AVGO提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "关注亚洲供应链、政策变化、交付节奏与西方信息时差。",
+      "evidence": [
+        "China is intensifying its push to replace foreign technology across critical computing infrastructure, targeting high-speed networking hardware alongside foreign AI accelerators."
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "供应商订单、库存和交付节奏",
+        "出口限制、汇率与地缘政策"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "08a234b0c28a76572a38",
+      "generatedAt": "2026-09-28T05:10:55Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "dc6e9aa850f9a16ef503": {
+      "id": "dc6e9aa850f9a16ef503",
+      "summary": "公开摘要显示，《China wields LCD pricing power as OLED patent war with Samsung heats up》主要讨论：Chinese LCD panel manufacturers are issuing price adjustment notices to their clients, a move poised to increase television manufacturing costs for South Korean tech giants Samsung Electronics and LG Electronics. Following the strategic exit of South Korean display makers from TV LCD manufacturing, Chinese suppliers have solidified their dominance over the…",
+      "coreJudgment": "这条信息为半导体制造、中国科技、亚洲供应链提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "关注亚洲供应链、政策变化、交付节奏与西方信息时差。",
+      "evidence": [
+        "Chinese LCD panel manufacturers are issuing price adjustment notices to their clients, a move poised to increase television manufacturing costs for South Korean tech giants Samsung Electronics and LG Electronics…"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "供应商订单、库存和交付节奏",
+        "出口限制、汇率与地缘政策"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "f7b2cef38c205073d5c3",
+      "generatedAt": "2026-09-28T05:10:55Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "3a13a6ba5e757fac281c": {
+      "id": "3a13a6ba5e757fac281c",
+      "summary": "公开摘要显示，《Chinese automakers tighten control over supply chains as margins shrink》主要讨论：Chinese automakers are reshaping how they build, source, and sell vehicles as profits come under pressure, a shift with implications for suppliers, buyers, and global car markets. Industry moves toward in-house technology, tighter payment rules, and new supplier roles suggest a broader effort to capture more value across the automotive chain.",
+      "coreJudgment": "这条信息为中国科技、亚洲供应链、财报/估值提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "关注亚洲供应链、政策变化、交付节奏与西方信息时差。",
+      "evidence": [
+        "Chinese automakers are reshaping how they build, source, and sell vehicles as profits come under pressure, a shift with implications for suppliers, buyers, and global car markets. Industry moves toward in-house…"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "供应商订单、库存和交付节奏",
+        "出口限制、汇率与地缘政策"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "111c15f87029563d085c",
+      "generatedAt": "2026-09-28T05:10:55Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "7a59def4f3406f06f3db": {
+      "id": "7a59def4f3406f06f3db",
+      "summary": "公开摘要显示，《Nvidia's push for personal AI computers points to a broader shift toward on-premise compute》主要讨论：Nvidia is positioning its newest personal AI system as more than a developer tool. By putting DGX Spark on desks and, eventually, in homes, the company is signaling that the next phase of AI computing may rely less on remote data centers and more on local machines.",
+      "coreJudgment": "这条信息为NVDA提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "关注亚洲供应链、政策变化、交付节奏与西方信息时差。",
+      "evidence": [
+        "Nvidia is positioning its newest personal AI system as more than a developer tool. By putting DGX Spark on desks and, eventually, in homes, the company is signaling that the next phase of AI computing may rely less on…"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "供应商订单、库存和交付节奏",
+        "出口限制、汇率与地缘政策"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "298aa96dcba45714a009",
+      "generatedAt": "2026-09-28T05:10:55Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "b3e1e1e4ee5633b9122d": {
+      "id": "b3e1e1e4ee5633b9122d",
+      "summary": "公开摘要显示，《South Korea's 300mm research gap: Daejeon pitches an open fab as a US$1.46 billion fix》主要讨论：Daejeon is seeking to build a roughly KRW2 trillion (approx. US$1.46 billion) national semiconductor research hub centered on an open 300mm manufacturing and demonstration fab, aiming to fill a gap between South Korea's research infrastructure and its large commercial chipmaking base.",
+      "coreJudgment": "这条信息为算力/芯片、半导体制造、亚洲供应链提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "关注亚洲供应链、政策变化、交付节奏与西方信息时差。",
+      "evidence": [
+        "Daejeon is seeking to build a roughly KRW2 trillion (approx. US$1.46 billion) national semiconductor research hub centered on an open 300mm manufacturing and demonstration fab, aiming to fill a gap between South Korea's…"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "供应商订单、库存和交付节奏",
+        "出口限制、汇率与地缘政策"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "fc8dce8815e3700659cf",
+      "generatedAt": "2026-09-28T05:10:55Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "dd77d6d763f42d0964b7": {
+      "id": "dd77d6d763f42d0964b7",
+      "summary": "公开摘要显示，《Keysight pushes design-to-deployment standard for AI cluster validation》主要讨论：As AI applications expand rapidly across industries, testing and validation have become essential to moving innovation from R&D into real-world use. Gartner's latest forecast puts global AI spending at US$2.7 trillion in 2026, up 49.5%, and about US$3.6 trillion in 2027.",
+      "coreJudgment": "这条信息为AI模型、财报/估值提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "关注亚洲供应链、政策变化、交付节奏与西方信息时差。",
+      "evidence": [
+        "As AI applications expand rapidly across industries, testing and validation have become essential to moving innovation from R&D into real-world use. Gartner's latest forecast puts global AI spending at US$2.7 trillion…"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "供应商订单、库存和交付节奏",
+        "出口限制、汇率与地缘政策"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "0828eaaea3bf57233c8d",
+      "generatedAt": "2026-09-28T05:10:55Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "87564f1bb139957d4bfe": {
+      "id": "87564f1bb139957d4bfe",
+      "summary": "公开摘要显示，《Oral history of John Chowning, inventor of FM synthesis [video]》主要讨论：Comments",
+      "coreJudgment": "这条信息为Hacker News提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "高频线索只作发现入口，需回到公司、论文或监管原始来源验证。",
+      "evidence": [
+        "Comments"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "公司或监管原始披露",
+        "后续数据是否重复验证该信号"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开摘要",
+      "inputHash": "788fa9bfa911f2d3cb98",
+      "generatedAt": "2026-09-28T05:10:55Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "578983cd4ef5cb1d0c67": {
+      "id": "578983cd4ef5cb1d0c67",
+      "summary": "公开摘要显示，《The state of SIMD in Rust in 2026》主要讨论：Comments",
+      "coreJudgment": "这条信息为Hacker News提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "高频线索只作发现入口，需回到公司、论文或监管原始来源验证。",
+      "evidence": [
+        "Comments"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "公司或监管原始披露",
+        "后续数据是否重复验证该信号"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "8946f95018fc483ddb79",
+      "generatedAt": "2026-09-28T05:10:55Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "6a8ec04f7519c9a3d9db": {
+      "id": "6a8ec04f7519c9a3d9db",
+      "summary": "公开摘要显示，《Replacing the old battery on rechargeable bike lights》主要讨论：Comments",
+      "coreJudgment": "这条信息为能源/电网提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "高频线索只作发现入口，需回到公司、论文或监管原始来源验证。",
+      "evidence": [
+        "Comments"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "公司或监管原始披露",
+        "后续数据是否重复验证该信号"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "d7384fd9b1b20fc5e88b",
+      "generatedAt": "2026-09-28T05:10:55Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "ed3dbfe322f996914377": {
+      "id": "ed3dbfe322f996914377",
+      "summary": "公开摘要显示，《Alan Kay's answer to “Did the ENIAC have a BIOS”?》主要讨论：Comments",
+      "coreJudgment": "这条信息为Hacker News提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "高频线索只作发现入口，需回到公司、论文或监管原始来源验证。",
+      "evidence": [
+        "Comments"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "公司或监管原始披露",
+        "后续数据是否重复验证该信号"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开摘要",
+      "inputHash": "8bc9878e7509aad4ea49",
+      "generatedAt": "2026-09-28T05:10:55Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "7191894eb701133a1af6": {
+      "id": "7191894eb701133a1af6",
+      "summary": "公开摘要显示，《Don't couple your Go code to GitHub》主要讨论：Comments",
+      "coreJudgment": "这条信息为Hacker News提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "高频线索只作发现入口，需回到公司、论文或监管原始来源验证。",
+      "evidence": [
+        "Comments"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "公司或监管原始披露",
+        "后续数据是否重复验证该信号"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "2ba95a27fbe795596114",
+      "generatedAt": "2026-09-28T05:10:55Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "99a0248a2cf706bb4e47": {
+      "id": "99a0248a2cf706bb4e47",
+      "summary": "公开摘要显示，《Ember-1》主要讨论：Comments",
+      "coreJudgment": "这条信息为Hacker News提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "高频线索只作发现入口，需回到公司、论文或监管原始来源验证。",
+      "evidence": [
+        "Comments"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "公司或监管原始披露",
+        "后续数据是否重复验证该信号"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "c797efc9322f2ea4f0f8",
+      "generatedAt": "2026-09-28T05:10:55Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "058ea066fd07c23ec326": {
+      "id": "058ea066fd07c23ec326",
+      "summary": "公开摘要显示，《Imp is a full port of DSPy to the BEAM》主要讨论：Comments",
+      "coreJudgment": "这条信息为Hacker News提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "高频线索只作发现入口，需回到公司、论文或监管原始来源验证。",
+      "evidence": [
+        "Comments"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "公司或监管原始披露",
+        "后续数据是否重复验证该信号"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "431bfd4ff8365b69c42b",
+      "generatedAt": "2026-09-28T05:10:55Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "aeeb17ef91e4254ebbff": {
+      "id": "aeeb17ef91e4254ebbff",
+      "summary": "公开摘要显示，《In an $80 motel room, a discovery to shed light on the origins of life》主要讨论：Comments",
+      "coreJudgment": "这条信息为Hacker News提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "高频线索只作发现入口，需回到公司、论文或监管原始来源验证。",
+      "evidence": [
+        "Comments"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "公司或监管原始披露",
+        "后续数据是否重复验证该信号"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开摘要",
+      "inputHash": "a8a5822e556d003a431f",
+      "generatedAt": "2026-09-28T05:10:55Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "86770d5aa41a738484d2": {
+      "id": "86770d5aa41a738484d2",
+      "summary": "公开摘要显示，《Lunar Terminator Paradox》主要讨论：Comments",
+      "coreJudgment": "这条信息为Hacker News提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "高频线索只作发现入口，需回到公司、论文或监管原始来源验证。",
+      "evidence": [
+        "Comments"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "公司或监管原始披露",
+        "后续数据是否重复验证该信号"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "0935f8ec3d146ce4ce0a",
+      "generatedAt": "2026-09-28T05:10:55Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "f8ecaef9731c11c163eb": {
+      "id": "f8ecaef9731c11c163eb",
+      "summary": "公开摘要显示，《Malleable software: Restoring user agency in a world of locked-down apps (2025)》主要讨论：Comments",
+      "coreJudgment": "这条信息为Hacker News提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "高频线索只作发现入口，需回到公司、论文或监管原始来源验证。",
+      "evidence": [
+        "Comments"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "公司或监管原始披露",
+        "后续数据是否重复验证该信号"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "dfd974fe05b28d2aa8d5",
+      "generatedAt": "2026-09-28T05:10:55Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "7cadf601bd3de77ef288": {
+      "id": "7cadf601bd3de77ef288",
+      "summary": "公开摘要显示，《Self-Hosting on the Dark Web》主要讨论：Comments",
+      "coreJudgment": "这条信息为Hacker News提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "高频线索只作发现入口，需回到公司、论文或监管原始来源验证。",
+      "evidence": [
+        "Comments"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "公司或监管原始披露",
+        "后续数据是否重复验证该信号"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "ffb6fcdcbf15850a2f0b",
+      "generatedAt": "2026-09-28T05:10:55Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "e63399b50b461d341572": {
+      "id": "e63399b50b461d341572",
+      "summary": "公开摘要显示，《Show HN: Lofi Cities – Pixel-art city nights with browser-generated lofi》主要讨论：Comments",
+      "coreJudgment": "这条信息为Hacker News提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "高频线索只作发现入口，需回到公司、论文或监管原始来源验证。",
+      "evidence": [
+        "Comments"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "公司或监管原始披露",
+        "后续数据是否重复验证该信号"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "802608e50798f4ef7f52",
+      "generatedAt": "2026-09-28T05:10:55Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "19422b76341b8694c9ea": {
+      "id": "19422b76341b8694c9ea",
+      "summary": "公开摘要显示，《What I did at Recurse Center》主要讨论：Comments",
+      "coreJudgment": "这条信息为Hacker News提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "高频线索只作发现入口，需回到公司、论文或监管原始来源验证。",
+      "evidence": [
+        "Comments"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "公司或监管原始披露",
+        "后续数据是否重复验证该信号"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "00e7b26caf18a55b7a18",
+      "generatedAt": "2026-09-28T05:10:55Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "17a54271b0975bc4614f": {
+      "id": "17a54271b0975bc4614f",
+      "summary": "公开摘要显示，《When did Google get so weird?》主要讨论：Comments",
+      "coreJudgment": "这条信息为GOOGL提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "高频线索只作发现入口，需回到公司、论文或监管原始来源验证。",
+      "evidence": [
+        "Comments"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "公司或监管原始披露",
+        "后续数据是否重复验证该信号"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "230cdb7f238d1988e07a",
+      "generatedAt": "2026-09-28T05:10:55Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "8c66c624b7df3646f890": {
+      "id": "8c66c624b7df3646f890",
+      "summary": "公开摘要显示，《Deterministic Concurrency [video]》主要讨论：Comments",
+      "coreJudgment": "这条信息为Hacker News提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "高频线索只作发现入口，需回到公司、论文或监管原始来源验证。",
+      "evidence": [
+        "Comments"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "公司或监管原始披露",
+        "后续数据是否重复验证该信号"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开摘要",
+      "inputHash": "ea89730c4eb1c6099264",
+      "generatedAt": "2026-09-28T05:10:55Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "59b98a2b3d8a458ea97f": {
+      "id": "59b98a2b3d8a458ea97f",
+      "summary": "公开摘要显示，《Guitar amp and effects pedal built on the Waveshare ESP32-S3-Touch-AMOLED-2.06》主要讨论：Comments",
+      "coreJudgment": "这条信息为Hacker News提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "高频线索只作发现入口，需回到公司、论文或监管原始来源验证。",
+      "evidence": [
+        "Comments"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "公司或监管原始披露",
+        "后续数据是否重复验证该信号"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "57aee9a6ad7eb062b732",
+      "generatedAt": "2026-09-28T05:10:55Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "2f970f7b233320fdcb10": {
+      "id": "2f970f7b233320fdcb10",
+      "summary": "公开摘要显示，《The Cartesian Hand: In-Hand Manipulation with All-Linear Fingers》主要讨论：Comments",
+      "coreJudgment": "这条信息为Hacker News提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "高频线索只作发现入口，需回到公司、论文或监管原始来源验证。",
+      "evidence": [
+        "Comments"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "公司或监管原始披露",
+        "后续数据是否重复验证该信号"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开摘要",
+      "inputHash": "2ad37d0a5099ad0a705f",
+      "generatedAt": "2026-09-28T05:10:55Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "6f646c1d0d90529ba242": {
+      "id": "6f646c1d0d90529ba242",
+      "summary": "公开摘要显示，《There is more to code review than (automatable) detection》主要讨论：Comments",
+      "coreJudgment": "这条信息为Hacker News提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "高频线索只作发现入口，需回到公司、论文或监管原始来源验证。",
+      "evidence": [
+        "Comments"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "公司或监管原始披露",
+        "后续数据是否重复验证该信号"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "a754936fc778b5afa1f3",
+      "generatedAt": "2026-09-28T05:10:55Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "da560eeb11d4d69c8243": {
+      "id": "da560eeb11d4d69c8243",
+      "summary": "公开摘要显示，《A New Experiment Meta-Strategy》主要讨论：Comments",
+      "coreJudgment": "这条信息为META提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "高频线索只作发现入口，需回到公司、论文或监管原始来源验证。",
+      "evidence": [
+        "Comments"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "公司或监管原始披露",
+        "后续数据是否重复验证该信号"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开摘要",
+      "inputHash": "d8e7b57a80cb889a6465",
+      "generatedAt": "2026-09-28T05:10:55Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "d3620193e592de6711de": {
+      "id": "d3620193e592de6711de",
+      "summary": "公开摘要显示，《Previously unheard recordings of John Coltrane, captured by Frank Tiberi》主要讨论：Comments",
+      "coreJudgment": "这条信息为Hacker News提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "高频线索只作发现入口，需回到公司、论文或监管原始来源验证。",
+      "evidence": [
+        "Comments"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "公司或监管原始披露",
+        "后续数据是否重复验证该信号"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开摘要",
+      "inputHash": "61800735c579a263e052",
+      "generatedAt": "2026-09-28T05:10:55Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "3b09d302486ae67d6a45": {
+      "id": "3b09d302486ae67d6a45",
+      "summary": "公开摘要显示，《Writing Efficient C++ Code (2013)》主要讨论：Comments",
+      "coreJudgment": "这条信息为Hacker News提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "高频线索只作发现入口，需回到公司、论文或监管原始来源验证。",
+      "evidence": [
+        "Comments"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "公司或监管原始披露",
+        "后续数据是否重复验证该信号"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "21817c7740cbd059ced4",
+      "generatedAt": "2026-09-28T05:10:55Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
     }
   },
-  "updatedAt": "2026-09-27T14:48:36Z"
+  "updatedAt": "2026-09-28T05:10:55Z"
 }
