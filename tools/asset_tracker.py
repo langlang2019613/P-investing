@@ -46,9 +46,11 @@ USER_AGENT = (
     "P-investing-asset-tracker/1.0"
 )
 TIMEOUT = 45
-MAX_ANNUAL_YEARS = 30   # 年度收益率/年度波动率窗口
-MONTHLY_VOL_YEARS = 10  # 月度波动率回看窗口
-DAILY_VOL_YEARS = 5     # 日度波动率回看窗口
+MAX_ANNUAL_YEARS = 30    # 年度收益率/年度波动率窗口
+MONTHLY_VOL_YEARS = 10   # 月度波动率回看窗口（也是月度相关性回看窗口）
+DAILY_VOL_YEARS = 5      # 日度波动率回看窗口
+MIN_MONTHLY_OVERLAP = 24 # 月度相关性最少重叠月数，不足则该对资产标注数据不足
+MIN_ANNUAL_OVERLAP = 5   # 年度相关性最少重叠年数
 
 # 资产类别 -> 可自动抓取的代理标的（流动性最好、历史最长的公开上市工具）
 UNIVERSE: list[dict[str, str]] = [
@@ -151,6 +153,61 @@ def month_end_closes(dates: list[datetime], closes: list[float]) -> list[float]:
     return [buckets[k] for k in sorted(buckets.keys())]
 
 
+def month_end_closes_keyed(dates: list[datetime], closes: list[float]) -> dict[str, float]:
+    buckets: dict[tuple[int, int], float] = {}
+    for d, c in zip(dates, closes):
+        buckets[(d.year, d.month)] = c
+    return {f"{y:04d}-{m:02d}": buckets[(y, m)] for (y, m) in sorted(buckets.keys())}
+
+
+def monthly_return_map(keyed_closes: dict[str, float], cutoff_months: int) -> dict[str, float]:
+    """Month-over-month % returns, keyed by the *later* month's 'YYYY-MM', capped to the trailing window."""
+    keys = sorted(keyed_closes.keys())[-(cutoff_months + 1):]
+    out: dict[str, float] = {}
+    for i in range(1, len(keys)):
+        prev, cur = keyed_closes[keys[i - 1]], keyed_closes[keys[i]]
+        if prev > 0:
+            out[keys[i]] = cur / prev - 1.0
+    return out
+
+
+def pearson_correlation(pairs: list[tuple[float, float]]) -> float | None:
+    n = len(pairs)
+    if n < 2:
+        return None
+    xs = [p[0] for p in pairs]
+    ys = [p[1] for p in pairs]
+    mx, my = statistics.fmean(xs), statistics.fmean(ys)
+    cov = sum((x - mx) * (y - my) for x, y in pairs)
+    var_x = sum((x - mx) ** 2 for x in xs)
+    var_y = sum((y - my) ** 2 for y in ys)
+    if var_x <= 0 or var_y <= 0:
+        return None
+    return cov / math.sqrt(var_x * var_y)
+
+
+def correlation_matrix(
+    series_by_id: dict[str, dict[str, float]], min_overlap: int
+) -> dict[str, Any]:
+    ids = sorted(series_by_id.keys())
+    matrix: dict[str, dict[str, Any]] = {}
+    for a in ids:
+        matrix[a] = {}
+        for b in ids:
+            if a == b:
+                matrix[a][b] = {"r": 1.0, "n": len(series_by_id[a])}
+                continue
+            shared_keys = sorted(set(series_by_id[a]) & set(series_by_id[b]))
+            n = len(shared_keys)
+            if n < min_overlap:
+                matrix[a][b] = {"r": None, "n": n}
+                continue
+            pairs = [(series_by_id[a][k], series_by_id[b][k]) for k in shared_keys]
+            r = pearson_correlation(pairs)
+            matrix[a][b] = {"r": round(r, 3) if r is not None else None, "n": n}
+    return {"assetIds": ids, "matrix": matrix}
+
+
 def pct_returns(series: list[float]) -> list[float]:
     return [(series[i] / series[i - 1] - 1.0) for i in range(1, len(series)) if series[i - 1] > 0]
 
@@ -172,8 +229,10 @@ def geometric_mean_pct(annual_returns_pct: list[float]) -> float | None:
     return (product ** (1.0 / len(annual_returns_pct)) - 1.0) * 100.0
 
 
-def build_asset_stats(asset_id: str, category: str, name: str, symbol: str, note: str) -> dict[str, Any]:
-    # Monthly series (explicit bounded range) drives annual returns + monthly vol.
+def build_asset_stats(
+    asset_id: str, category: str, name: str, symbol: str, note: str
+) -> tuple[dict[str, Any], dict[str, float]]:
+    # Monthly series (explicit bounded range) drives annual returns + monthly vol + monthly correlation.
     dates, closes = fetch_series(symbol, f"{MAX_ANNUAL_YEARS + 5}y", "1mo")
     first_year, last_year = dates[0].year, dates[-1].year
 
@@ -198,6 +257,9 @@ def build_asset_stats(asset_id: str, category: str, name: str, symbol: str, note
     monthly_cut = monthly[-(MONTHLY_VOL_YEARS * 12 + 1):]
     monthly_rets = pct_returns(monthly_cut)
 
+    monthly_keyed = month_end_closes_keyed(dates, closes)
+    monthly_ret_map = monthly_return_map(monthly_keyed, MONTHLY_VOL_YEARS * 12)
+
     daily_rets: list[float] = []
     try:
         _, daily_closes = fetch_series(symbol, f"{DAILY_VOL_YEARS}y", "1d")
@@ -205,7 +267,7 @@ def build_asset_stats(asset_id: str, category: str, name: str, symbol: str, note
     except Exception as exc:  # daily vol is best-effort; annual/monthly stats still valid
         print(f"    (no daily series for {symbol}: {exc})")
 
-    return {
+    stats = {
         "id": asset_id,
         "category": category,
         "name": name,
@@ -229,6 +291,7 @@ def build_asset_stats(asset_id: str, category: str, name: str, symbol: str, note
         "dailyVolWindowYears": DAILY_VOL_YEARS,
         "source": "Yahoo Finance 公开行情接口（调整后收盘价，含股息再投资的ETF除外，另有逐项说明）",
     }
+    return stats, monthly_ret_map
 
 
 def build_curated_asset(key: str, payload: dict[str, Any]) -> dict[str, Any]:
@@ -273,12 +336,17 @@ def main() -> None:
 
     assets: list[dict[str, Any]] = []
     errors: list[dict[str, str]] = []
+    monthly_series_by_id: dict[str, dict[str, float]] = {}
 
     for spec in UNIVERSE:
         if args.only and spec["id"] not in args.only:
             continue
         try:
-            assets.append(build_asset_stats(spec["id"], spec["category"], spec["name"], spec["symbol"], spec["note"]))
+            stats, monthly_ret_map = build_asset_stats(
+                spec["id"], spec["category"], spec["name"], spec["symbol"], spec["note"]
+            )
+            assets.append(stats)
+            monthly_series_by_id[spec["id"]] = monthly_ret_map
             print(f"OK  {spec['id']:24s} {spec['symbol']}")
         except Exception as exc:
             errors.append({"id": spec["id"], "symbol": spec["symbol"], "error": str(exc)})
@@ -291,6 +359,14 @@ def main() -> None:
         if args.only and key not in args.only:
             continue
         assets.append(build_curated_asset(key, payload))
+
+    # 相关性矩阵：月度（仅限可自动抓取月频数据的ETF/指数代理，窗口与月度波动率一致）
+    # 及年度（覆盖全部资产，含对冲基金/私募股权真实指数，用各自已展示的年度收益序列）
+    monthly_corr = correlation_matrix(monthly_series_by_id, MIN_MONTHLY_OVERLAP)
+    annual_series_by_id = {
+        a["id"]: {k: v for k, v in a["annualReturnsPct"].items()} for a in assets if a.get("annualReturnsPct")
+    }
+    annual_corr = correlation_matrix(annual_series_by_id, MIN_ANNUAL_OVERLAP)
 
     generated_at = datetime.now(timezone.utc).isoformat()
     payload_out = {
@@ -308,9 +384,26 @@ def main() -> None:
                 "股票类指数（标普500/欧洲斯托克50/日经225）为价格指数，未计入股息再投资，实际总回报会更高；全球股票(ACWI)与跨资产另类类别(PSP/QAI)为含息ETF总回报。",
                 "私募股权与对冲基金的『上市代理』(PSP/QAI)与其『真实指数』(Cambridge Associates/HFRI)收益特征差异很大，不可互相替代，请分别参考。",
                 "比特币、全球股票ETF、多数商品/另类ETF的历史均不足30年，已在各自dataStartYear/yearsOfAnnualData字段中如实标注，不做任何方式的历史数据外推或编造。",
+                f"相关性矩阵分两套：『月度』用最近{MONTHLY_VOL_YEARS}年月度收益率计算，仅覆盖有逐月行情的13个ETF/指数代理（对冲基金与私募股权的真实指数无月度数据，不参与此表）；"
+                f"『年度』用各资产展示的年度收益序列计算，覆盖全部15个资产（含HFRI/Cambridge真实指数），但年度数据点少、相关性估计噪音更大。"
+                f"两套矩阵均要求至少{MIN_MONTHLY_OVERLAP}个重叠月份/{MIN_ANNUAL_OVERLAP}个重叠年份才计算相关系数，样本不足的资产对将相关系数标为null并保留实际重叠样本量(n)，不做估算填充。",
+                "相关系数为Pearson线性相关，基于各标的本币（美股/欧股/日股/原始计价货币）收益率计算，未做汇率换算；日经225等非美元计价资产与美元资产的相关系数因此同时包含了市场联动和汇率波动两部分影响，解读时需注意。",
+                "年度相关性矩阵中部分资产对（尤其含对冲基金/私募股权真实指数、比特币、现金等历史较短或数据有缺口的资产）重叠样本量(n)很小（个位数到十几年），相关系数噪音大、稳健性低，使用前请参考n值；月度相关性矩阵样本量更大（通常100+个月），统计稳健性更高，是更适合做资产配置参考的主表。",
             ],
         },
         "assets": assets,
+        "correlations": {
+            "monthly": monthly_corr | {
+                "windowYears": MONTHLY_VOL_YEARS,
+                "minOverlap": MIN_MONTHLY_OVERLAP,
+                "description": f"最近{MONTHLY_VOL_YEARS}年月度收益率相关系数（Pearson），仅限13个可自动抓取月频数据的ETF/指数代理",
+            },
+            "annual": annual_corr | {
+                "windowYears": MAX_ANNUAL_YEARS,
+                "minOverlap": MIN_ANNUAL_OVERLAP,
+                "description": f"各资产展示的年度收益序列（最多{MAX_ANNUAL_YEARS}年）相关系数（Pearson），覆盖全部资产含对冲基金/私募股权真实指数",
+            },
+        },
         "errors": errors,
     }
 

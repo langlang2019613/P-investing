@@ -536,3 +536,9 @@ mark { background: rgba(212, 175, 55, .3); color: var(--gold); border-radius: 3p
 .a-year-table th, .a-year-table td { padding: 3px 10px 3px 0; text-align: left; font-size: 13px; }
 .a-note { color: var(--muted); font-size: 12.5px; margin-top: 6px; line-height: 1.6; }
 .a-note a { color: var(--gold-dim); }
+.a-corr-section { margin-top: 10px; }
+.a-corr-wrap { overflow-x: auto; margin-top: 10px; }
+.a-corr-table { border-collapse: collapse; font-size: 12px; white-space: nowrap; }
+.a-corr-table th, .a-corr-table td { border: 1px solid var(--line); padding: 5px 8px; text-align: center; }
+.a-corr-head { background: var(--panel2); color: var(--text); font-weight: 600; text-align: left !important; position: sticky; left: 0; z-index: 1; }
+.a-corr-cell { color: var(--text); }

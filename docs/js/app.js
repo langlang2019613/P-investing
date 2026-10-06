@@ -1166,6 +1166,34 @@
     return `<span style="color:${color}">${sign}${v.toFixed(d)}%</span>`;
   }
 
+  const ASSET_SHORT_LABELS = {
+    cash: '现金', us_treasury: '美国国债', us_ig_credit: '美IG企业债', us_equity: '美股',
+    europe_equity: '欧股', asia_equity: '日股(亚洲代表)', global_equity: '全球股票',
+    private_equity_proxy: 'PE(ETF代理)', hedge_fund_proxy: '对冲基金(ETF代理)',
+    commodities: '大宗商品', gold: '黄金', oil: '原油', bitcoin: '比特币',
+    hedge_funds_hfri_fwc: 'HFRI对冲基金(真实指数)', private_equity_ca_us_pe: 'Cambridge PE(真实指数)',
+  };
+
+  function corrCell(cell) {
+    if (!cell || cell.r === null || cell.r === undefined) {
+      return `<td class="a-corr-cell" title="重叠样本不足(n=${cell ? cell.n : 0})"><span class="a-na">—</span></td>`;
+    }
+    const r = cell.r;
+    const intensity = Math.min(1, Math.abs(r));
+    const rgb = r >= 0 ? '34,197,94' : '239,68,68';
+    const bg = `rgba(${rgb},${(intensity * 0.6).toFixed(2)})`;
+    return `<td class="a-corr-cell" style="background:${bg}" title="n=${cell.n}">${r.toFixed(2)}</td>`;
+  }
+
+  function renderCorrMatrix(corr) {
+    const ids = corr.assetIds;
+    const head = `<tr><th></th>${ids.map((id) => `<th class="a-corr-head">${esc(ASSET_SHORT_LABELS[id] || id)}</th>`).join('')}</tr>`;
+    const body = ids.map((rowId) => `
+      <tr><th class="a-corr-head">${esc(ASSET_SHORT_LABELS[rowId] || rowId)}</th>
+      ${ids.map((colId) => corrCell(corr.matrix[rowId][colId])).join('')}</tr>`).join('');
+    return `<table class="a-corr-table">${head}${body}</table>`;
+  }
+
   function assetYearRows(asset) {
     const years = Object.keys(asset.annualReturnsPct || {}).sort((a, b) => Number(b) - Number(a));
     return years.map((y) => `<tr><td>${y}</td><td>${fmtPct(asset.annualReturnsPct[y])}</td></tr>`).join('');
@@ -1236,6 +1264,18 @@
           <tbody>${rows}</tbody>
         </table>
       </div>
+
+      ${d.correlations ? `
+      <section class="a-corr-section">
+        <h2 style="font-size:16px;margin:22px 0 6px">资产相关性矩阵</h2>
+        <p class="a-note">${esc(d.correlations.monthly.description)}（n=重叠样本数，深绿=强正相关，深红=强负相关）</p>
+        <div class="a-corr-wrap">${renderCorrMatrix(d.correlations.monthly)}</div>
+        <details class="a-detail" style="margin-top:14px">
+          <summary>年度相关性矩阵（覆盖全部资产，含对冲基金/私募股权真实指数，样本量更小、噪音更大）</summary>
+          <p class="a-note">${esc(d.correlations.annual.description)}</p>
+          <div class="a-corr-wrap">${renderCorrMatrix(d.correlations.annual)}</div>
+        </details>
+      </section>` : ''}
 
       <section class="a-details-section">
         <h2 style="font-size:16px;margin:22px 0 10px">各资产逐年收益明细与数据来源</h2>
