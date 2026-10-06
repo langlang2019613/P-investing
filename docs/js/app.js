@@ -28,6 +28,8 @@
   let NEWS = null;
   let newsPromise = null;
   let newsInputTimer = null;
+  let ASSETS = null;
+  let assetsPromise = null;
   const newsState = {
     view: 'items', week: '', query: '', category: '', tier: '', access: '', source: '',
     sort: 'priority', limit: 60,
@@ -114,6 +116,7 @@
     const mSearch = h.match(/^#\/s\/(.*)$/);
     const mMomentum = h.match(/^#\/momentum\/(tenx|movement)$/);
     if (h === '#/news') return renderNews();
+    if (h === '#/assets') return renderAssetTracker();
     if (mMomentum) return renderMomentum(mMomentum[1]);
     if (h === '#/momentum') { location.hash = '#/momentum/tenx'; return; }
     $main.classList.remove('wide');
@@ -1140,6 +1143,111 @@
         <div class="card-excerpt">${excerpt}</div>
         ${e.tags.length ? `<div class="card-tags">${e.tags.map((t) => `<span class="tag">${esc(t)}</span>`).join('')}</div>` : ''}
       </a>`;
+  }
+
+  /* ── 视图：大类资产收益率与波动率追踪 ── */
+  function loadAssets() {
+    if (ASSETS) return Promise.resolve(ASSETS);
+    if (!assetsPromise) {
+      assetsPromise = fetch('asset_tracker.json', { cache: 'no-store' })
+        .then((r) => r.json())
+        .then((data) => (ASSETS = data))
+        .finally(() => { assetsPromise = null; });
+    }
+    return assetsPromise;
+  }
+
+  function fmtPct(v, digits) {
+    if (v === null || v === undefined) return '<span class="a-na">—</span>';
+    const d = digits === undefined ? 2 : digits;
+    const color = v > 0 ? 'var(--pos)' : v < 0 ? 'var(--neg)' : 'var(--muted)';
+    const sign = v > 0 ? '+' : '';
+    return `<span style="color:${color}">${sign}${v.toFixed(d)}%</span>`;
+  }
+
+  function assetYearRows(asset) {
+    const years = Object.keys(asset.annualReturnsPct || {}).sort((a, b) => Number(b) - Number(a));
+    return years.map((y) => `<tr><td>${y}</td><td>${fmtPct(asset.annualReturnsPct[y])}</td></tr>`).join('');
+  }
+
+  function renderAssetTracker() {
+    $main.classList.add('wide');
+    if (!ASSETS) {
+      $main.innerHTML = '<div class="loading">加载中…</div>';
+      loadAssets().then(() => { if (decodeURIComponent(location.hash) === '#/assets') renderAssetTracker(); });
+      return;
+    }
+    const d = ASSETS;
+    const assets = d.assets || [];
+    const categories = [...new Set(assets.map((a) => a.category))];
+
+    const rows = assets.map((a) => `
+      <tr>
+        <td><strong>${esc(a.name)}</strong>${a.symbol ? `<br><small class="a-sym">${esc(a.symbol)}</small>` : ''}</td>
+        <td>${esc(a.category)}</td>
+        <td>${a.dataStartYear}${a.dataStartYear > new Date().getFullYear() - 30 ? ' <small class="a-flag">（不足30年）</small>' : ''}</td>
+        <td>${a.yearsOfAnnualData}</td>
+        <td>${fmtPct(a.annualizedArithmeticMeanPct)}</td>
+        <td>${fmtPct(a.annualizedGeometricMeanPct)}</td>
+        <td>${fmtPct(a.annualVolatilityPct)}</td>
+        <td>${fmtPct(a.monthlyVolatilityAnnualizedPct)}</td>
+        <td>${fmtPct(a.dailyVolatilityAnnualizedPct)}</td>
+        <td>${fmtPct(a.latestYtdReturnPct)}</td>
+      </tr>`).join('');
+
+    const detailBlocks = assets.map((a) => `
+      <details class="a-detail">
+        <summary>${esc(a.name)} — 逐年收益明细（${a.dataStartYear}–${a.dataEndYear}）${a.missingYears && a.missingYears.length ? `<span class="a-flag"> · 缺失年份：${a.missingYears.join('、')}（数据待查，未填估算值）</span>` : ''}</summary>
+        <table class="a-year-table"><thead><tr><th>年度</th><th>总回报</th></tr></thead>
+        <tbody>${assetYearRows(a)}</tbody></table>
+        <p class="a-note">${esc(a.note || '')}</p>
+        <p class="a-note">来源：${esc(a.source || '')}${(a.sourceUrls || []).length ? ' · ' + a.sourceUrls.map((u) => `<a href="${esc(u)}" target="_blank" rel="noopener">链接</a>`).join(' · ') : ''}</p>
+        ${a.longTermAnnualized ? `<p class="a-note">官方发布的长期年化回报（截至最近统计日）：${Object.entries(a.longTermAnnualized).map(([k, v]) => `${k} ${v}%`).join(' / ')}</p>` : ''}
+      </details>`).join('');
+
+    $main.innerHTML = `
+      <section class="momentum-hero">
+        <span class="eyebrow">ASSET CLASS TRACKER</span>
+        <h1>大类资产收益率与波动率追踪</h1>
+        <p>覆盖现金/债券/股票/私募股权/对冲基金/大宗商品/加密资产等主要大类资产，按日历年度统计总回报，并给出年度、月度、日度三种频率的年化波动率。</p>
+        <div class="momentum-asof"><span>数据生成时间</span><strong>${esc(formatGeneratedAt(d.generatedAt))}</strong><small>覆盖 ${categories.length} 个大类、${assets.length} 个资产条目</small></div>
+      </section>
+
+      <section class="momentum-controls">
+        <div class="momentum-resultbar" style="margin-bottom:10px">
+          <span>年度窗口：${esc(d.methodology.annualWindow)}</span>
+        </div>
+        <div class="momentum-resultbar">
+          <span>月度波动率：${esc(d.methodology.monthlyVolWindow)}</span>
+        </div>
+        <div class="momentum-resultbar">
+          <span>日度波动率：${esc(d.methodology.dailyVolWindow)}</span>
+        </div>
+      </section>
+
+      <div class="momentum-table-wrap">
+        <table class="momentum-table full-schema" style="min-width:1100px">
+          <thead><tr>
+            <th>资产类别</th><th>大类</th><th>数据起始年</th><th>年数</th>
+            <th>年化算术均值</th><th>年化几何均值(CAGR)</th>
+            <th>年度波动率</th><th>月度波动率(年化)</th><th>日度波动率(年化)</th><th>最新YTD</th>
+          </tr></thead>
+          <tbody>${rows}</tbody>
+        </table>
+      </div>
+
+      <section class="a-details-section">
+        <h2 style="font-size:16px;margin:22px 0 10px">各资产逐年收益明细与数据来源</h2>
+        ${detailBlocks}
+      </section>
+
+      <details class="momentum-method" open>
+        <summary>方法论与数据局限说明</summary>
+        <p>${esc(d.methodology.summary)}</p>
+        <ul>${d.methodology.caveats.map((c) => `<li>${esc(c)}</li>`).join('')}</ul>
+        ${(d.errors || []).length ? `<p class="a-flag">本次抓取失败的条目（已跳过，未编造数据）：${d.errors.map((e) => `${esc(e.id)}(${esc(e.symbol)})`).join('、')}</p>` : ''}
+      </details>
+    `;
   }
 
   function esc(s) {

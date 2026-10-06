@@ -13,7 +13,7 @@
   <meta name="mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
   <meta name="apple-mobile-web-app-title" content="飘投资" />
-  <link rel="stylesheet" href="css/app.css?v=20260927-weekly-news" />
+  <link rel="stylesheet" href="css/app.css?v=20261006-asset-tracker" />
 </head>
 <body>
 
@@ -44,6 +44,7 @@
   <a href="#/news" data-cat="news">每周信息</a>
   <a href="#/momentum/tenx" data-cat="tenx">10倍股雷达</a>
   <a href="#/momentum/movement" data-cat="movement">动量移动追踪</a>
+  <a href="#/assets" data-cat="assets">大类资产追踪</a>
 </nav>
 
 <main id="main">
@@ -56,10 +57,10 @@
 </footer>
 
 <script src="js/marked.min.js"></script>
-<script src="js/app.js?v=20260927-weekly-news"></script>
+<script src="js/app.js?v=20261006-asset-tracker"></script>
 <script>
   if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('sw.js?v=20260927-weekly-news', { updateViaCache: 'none' })
+    navigator.serviceWorker.register('sw.js?v=20261006-asset-tracker', { updateViaCache: 'none' })
       .then((registration) => registration.update())
       .catch(() => {});
   }

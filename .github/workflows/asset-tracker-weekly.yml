@@ -1,0 +1,51 @@
+name: Weekly cross-asset tracker
+
+on:
+  schedule:
+    # 22:00 UTC every Sunday = 06:00 Singapore Monday, after weekend close.
+    - cron: "0 22 * * 0"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: weekly-asset-tracker
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Generate asset class tracker
+        run: python tools/asset_tracker.py
+
+      - name: Validate generated data
+        run: |
+          git diff --check
+          python -m json.tool docs/asset_tracker.json >/dev/null
+          python -m json.tool data/asset_tracker/history.json >/dev/null
+          python -c "import json; d=json.load(open('docs/asset_tracker.json')); assert len(d['assets']) >= 13, d['assets']"
+
+      - name: Commit and publish when data changed
+        run: |
+          if git diff --quiet && [ -z "$(git ls-files --others --exclude-standard)" ]; then
+            echo "No changes to publish."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/asset_tracker.json data/asset_tracker/history.json
+          git commit -m "data: refresh weekly asset class tracker"
+          git push

@@ -518,3 +518,21 @@ mark { background: rgba(212, 175, 55, .3); color: var(--gold); border-radius: 3p
   .tenx-model-grid .risk-card { grid-column: 1 / -1; }
   .tenx-guide-grid { grid-template-columns: 1fr; }
 }
+
+/* 大类资产追踪 */
+.a-na { color: var(--muted); }
+.a-sym { color: var(--muted); font-family: Consolas, monospace; }
+.a-flag { color: var(--gold-dim); }
+.a-details-section { margin-top: 18px; }
+.a-detail {
+  background: var(--panel2);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 10px 14px;
+  margin-bottom: 8px;
+}
+.a-detail summary { cursor: pointer; font-weight: 600; }
+.a-year-table { width: 100%; max-width: 360px; margin: 10px 0; border-collapse: collapse; }
+.a-year-table th, .a-year-table td { padding: 3px 10px 3px 0; text-align: left; font-size: 13px; }
+.a-note { color: var(--muted); font-size: 12.5px; margin-top: 6px; line-height: 1.6; }
+.a-note a { color: var(--gold-dim); }
