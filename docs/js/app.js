@@ -8,6 +8,7 @@
     options: '期权研究',
     macro: '宏观经济',
     reports: '研报分析',
+    'investment-news': '投资新闻汇总',
     interviews: '访谈',
     learning: '学习',
     books: '书刊笔记',
@@ -112,7 +113,7 @@
   function route() {
     const h = decodeURIComponent(location.hash || '#/');
     const mArticle = h.match(/^#\/a\/(.+)$/);
-    const mCat = h.match(/^#\/c\/(\w+)$/);
+    const mCat = h.match(/^#\/c\/([\w-]+)$/);
     const mSearch = h.match(/^#\/s\/(.*)$/);
     const mMomentum = h.match(/^#\/momentum\/(tenx|movement)$/);
     if (h === '#/news') return renderNews();
