@@ -45686,8 +45686,8 @@
       "stance": "中性",
       "confidence": "低",
       "basis": "公开正文",
-      "inputHash": "9234295721c2fbb44b88",
-      "generatedAt": "2026-10-26T04:29:42Z",
+      "inputHash": "fae3153b95f11be50324",
+      "generatedAt": "2026-11-02T05:46:46Z",
       "provider": "extractive",
       "model": "source-grounded-v1"
     },
@@ -51490,7 +51490,4482 @@
       "generatedAt": "2026-10-26T04:29:44Z",
       "provider": "extractive",
       "model": "source-grounded-v1"
+    },
+    "1cb41b24c4d9eff94e23": {
+      "id": "1cb41b24c4d9eff94e23",
+      "summary": "公开摘要显示，《Analysis: Samsung's own memory unit pushes its foundry toward a 2027 capacity crunch》主要讨论：Samsung Electronics' contract chipmaking business spent years struggling to fill its factories. On its third-quarter earnings call, the company said that by 2027, demand will exceed capacity across all its nodes below 8nm, which it expects to run at over 100% utilization.",
+      "coreJudgment": "这条信息为算力/芯片、HBM/存储、半导体制造提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "关注亚洲供应链、政策变化、交付节奏与西方信息时差。",
+      "evidence": [
+        "Samsung Electronics' contract chipmaking business spent years struggling to fill its factories. On its third-quarter earnings call, the company said that by 2027, demand will exceed capacity across all its nodes below…"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "供应商订单、库存和交付节奏",
+        "出口限制、汇率与地缘政策"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "6a5c1c09681d1d91bfdb",
+      "generatedAt": "2026-11-02T05:46:46Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "7cd5a919c1bb3577d059": {
+      "id": "7cd5a919c1bb3577d059",
+      "summary": "公开摘要显示，《The Chip Insider®– SEMICON West wrap | TechInsights》主要讨论：Inside G. Dan Hutcheson’s latest analysis: More than 35,000 attendees examined shared industry challenges from geopolitics, power, and water to workforce, while big questions surfaced around CXMT’s DRAM, Terafab’s EUV access, and the next downturn.",
+      "coreJudgment": "这条信息为算力/芯片、HBM/存储、半导体制造提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "关注产能、良率、先进封装、存储瓶颈与供应商议价权。",
+      "evidence": [
+        "Inside G. Dan Hutcheson’s latest analysis: More than 35,000 attendees examined shared industry challenges from geopolitics, power, and water to workforce, while big questions surfaced around CXMT’s DRAM, Terafab’s EUV…"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "订单与产能利用率",
+        "良率、交付周期和单位成本"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "6a5cd0f9ba2c9749a9fe",
+      "generatedAt": "2026-11-02T05:46:46Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "fdfc169b491a9972b3d6": {
+      "id": "fdfc169b491a9972b3d6",
+      "summary": "公开摘要显示，《Chip Industry Week In Review》主要讨论：HBM shortages threaten AI expansion; TSMC weighs price hikes; advanced packaging ramps; domain-specialized AI models; Infineon and UMC boost fab investments; Intel's quantum move; Lam and imec advance 3D integration; Google expands TPUs; AI-driven earnings; CPU benchmarking methodology for agentic AI. The post Chip Industry Week In Review appeared first on…",
+      "coreJudgment": "这条信息为INTC、TSM、GOOGL提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "关注产能、良率、先进封装、存储瓶颈与供应商议价权。",
+      "evidence": [
+        "HBM shortages threaten AI expansion; TSMC weighs price hikes; advanced packaging ramps; domain-specialized AI models; Infineon and UMC boost fab investments; Intel's quantum move; Lam and imec advance 3D integration…"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "订单与产能利用率",
+        "良率、交付周期和单位成本"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "b03ebf2d2771a59541c3",
+      "generatedAt": "2026-11-02T05:46:46Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "c3ebd0eb36859d888c73": {
+      "id": "c3ebd0eb36859d888c73",
+      "summary": "公开摘要显示，《Meta prioritizes high-margin AI inference as Wiwynn, Quanta eye CPU server demand》主要讨论：Meta has become the first of the four major US hyperscale cloud providers to report its latest earnings, with supply chain players closely monitoring changes in the company's capital expenditure plans and investment priorities.",
+      "coreJudgment": "这条信息为META提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "关注亚洲供应链、政策变化、交付节奏与西方信息时差。",
+      "evidence": [
+        "Meta has become the first of the four major US hyperscale cloud providers to report its latest earnings, with supply chain players closely monitoring changes in the company's capital expenditure plans and investment…"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "供应商订单、库存和交付节奏",
+        "出口限制、汇率与地缘政策"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "2384c2f285550526eab8",
+      "generatedAt": "2026-11-02T05:46:46Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "35e29aef1f9e9db57c4d": {
+      "id": "35e29aef1f9e9db57c4d",
+      "summary": "公开摘要显示，《Podcast highlights: TSMC's 3nm demand story, Samsung HBM shift, and A14 ramp》主要讨论：Following TSMC's third-quarter 2026 earnings call, DIGITIMES analyst Luke Lin provided in a podcast additional analysis of several details that received limited attention in market coverage, including a new 3nm fab at the Southern Taiwan Science Park (STSP), the transfer of Nvidia-related high-bandwidth memory (HBM) base die orders to TSMC, and whether…",
+      "coreJudgment": "这条信息为NVDA、INTC、TSM提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "关注亚洲供应链、政策变化、交付节奏与西方信息时差。",
+      "evidence": [
+        "Following TSMC's third-quarter 2026 earnings call, DIGITIMES analyst Luke Lin provided in a podcast additional analysis of several details that received limited attention in market coverage, including a new 3nm fab at…"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "供应商订单、库存和交付节奏",
+        "出口限制、汇率与地缘政策"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "6acd6ab3e941da88d729",
+      "generatedAt": "2026-11-02T05:46:46Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "846518ebebb8fb86e8d5": {
+      "id": "846518ebebb8fb86e8d5",
+      "summary": "公开摘要显示，《Nytex targets 35% of sales from high-end materials by 2027》主要讨论：Nytex Composites, a Taiwan-based specialty plastics compounder, aims to increase high-end materials' share of revenue to 35% in 2027, up from 25.76% in the first half of 2026, as demand grows for materials used in semiconductor wafer carriers, IC trays, and battery backup units (BBUs) for AI data centers.",
+      "coreJudgment": "这条信息为AI模型、算力/芯片、半导体制造提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "关注亚洲供应链、政策变化、交付节奏与西方信息时差。",
+      "evidence": [
+        "Nytex Composites, a Taiwan-based specialty plastics compounder, aims to increase high-end materials' share of revenue to 35% in 2027, up from 25.76% in the first half of 2026, as demand grows for materials used in…"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "供应商订单、库存和交付节奏",
+        "出口限制、汇率与地缘政策"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "d0d72544be8b75f7da13",
+      "generatedAt": "2026-11-02T05:46:46Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "79fc6e20f7c6aba4037e": {
+      "id": "79fc6e20f7c6aba4037e",
+      "summary": "公开摘要显示，《Column: Samsung's memory boom reshapes its investment strategy》主要讨论：Samsung Electronics has never had more capital at its disposal. The company reported operating profit of KRW89.5 trillion (approx. US$67 billion) in the second quarter of 2026 and KRW107.4 trillion in the third, when its operating margin reached approximately 55%. Samsung became the first technology company worldwide to post quarterly operating profit…",
+      "coreJudgment": "这条信息为HBM/存储、半导体制造、亚洲供应链提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "关注亚洲供应链、政策变化、交付节奏与西方信息时差。",
+      "evidence": [
+        "Samsung Electronics has never had more capital at its disposal. The company reported operating profit of KRW89.5 trillion (approx. US$67 billion) in the second quarter of 2026 and KRW107.4 trillion in the third, when…"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "供应商订单、库存和交付节奏",
+        "出口限制、汇率与地缘政策"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "c80d2675f57d528cafba",
+      "generatedAt": "2026-11-02T05:46:46Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "1df4856499ca4e963f33": {
+      "id": "1df4856499ca4e963f33",
+      "summary": "公开摘要显示，《Supersizing AI: The Changing Role of Advanced Packaging | TechInsights》主要讨论：AI architectures are diversifying as inference, memory innovation, and new integration approaches change packaging requirements. TechInsights examines what these shifts could mean for advanced packaging suppliers.",
+      "coreJudgment": "这条信息为AI模型、HBM/存储、先进封装提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "关注产能、良率、先进封装、存储瓶颈与供应商议价权。",
+      "evidence": [
+        "AI architectures are diversifying as inference, memory innovation, and new integration approaches change packaging requirements. TechInsights examines what these shifts could mean for advanced packaging suppliers."
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "订单与产能利用率",
+        "良率、交付周期和单位成本"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "4cdb511c4ba5d52a0a8f",
+      "generatedAt": "2026-11-02T05:46:46Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "780f7f408b69a8f197d6": {
+      "id": "780f7f408b69a8f197d6",
+      "summary": "公开摘要显示，《Lite-On reports record third-quarter profit as AI revenue exceeds 30%》主要讨论：Lite-On Technology reported record net profit for the third quarter of 2026 as demand for AI infrastructure boosted its cloud and power businesses. The Taiwanese electronics supplier posted consolidated revenue of NT$57.4 billion (US$1.8 billion), up 9% quarter-over-quarter and 28% year-over-year, while executives said AI-related revenue had exceeded 30% of…",
+      "coreJudgment": "这条信息为AI模型、云/数据中心、亚洲供应链提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "关注亚洲供应链、政策变化、交付节奏与西方信息时差。",
+      "evidence": [
+        "Lite-On Technology reported record net profit for the third quarter of 2026 as demand for AI infrastructure boosted its cloud and power businesses. The Taiwanese electronics supplier posted consolidated revenue of…"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "供应商订单、库存和交付节奏",
+        "出口限制、汇率与地缘政策"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "66efff3f4d5e9b4e8769",
+      "generatedAt": "2026-11-02T05:46:46Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "8595515c2e94e8797668": {
+      "id": "8595515c2e94e8797668",
+      "summary": "公开摘要显示，《The 20% problem: why Taiwan's imported equipment parts still carry 70% of the cost》主要讨论：Taiwan can manufacture some of the world's most advanced chips, package them into increasingly complex AI systems, and connect much of the surrounding electronics supply chain within a remarkably small geographic footprint.",
+      "coreJudgment": "这条信息为AI模型、算力/芯片、亚洲供应链提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "关注亚洲供应链、政策变化、交付节奏与西方信息时差。",
+      "evidence": [
+        "Taiwan can manufacture some of the world's most advanced chips, package them into increasingly complex AI systems, and connect much of the surrounding electronics supply chain within a remarkably small geographic…"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "供应商订单、库存和交付节奏",
+        "出口限制、汇率与地缘政策"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "28022b67f6d2a556f8bb",
+      "generatedAt": "2026-11-02T05:46:46Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "47e1297cb2befd90e34b": {
+      "id": "47e1297cb2befd90e34b",
+      "summary": "目前只能确认标题《U.S. Export Controls Fuel the Rise of Asian Data Centers Serving Chinese AI》及来源信息，尚无足够公开正文支持更具体的结论。",
+      "coreJudgment": "这条信息为AI模型、云/数据中心、中国科技提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "关注亚洲供应链、政策变化、交付节奏与西方信息时差。",
+      "evidence": [
+        "公开标题：U.S. Export Controls Fuel the Rise of Asian Data Centers Serving Chinese AI"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "供应商订单、库存和交付节奏",
+        "出口限制、汇率与地缘政策"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开摘要",
+      "inputHash": "672f3f9a48017f5b58d6",
+      "generatedAt": "2026-11-02T05:46:46Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "735cd8c9622aff09e668": {
+      "id": "735cd8c9622aff09e668",
+      "summary": "公开摘要显示，《Is It Getting Hot In Here? Why Thermal Is No Longer A Signoff Problem》主要讨论：Applying the appropriate level of simulation and abstraction at each stage of the design process is key to effective thermal analysis. The post Is It Getting Hot In Here? Why Thermal Is No Longer A Signoff Problem appeared first on Semiconductor Engineering .",
+      "coreJudgment": "这条信息为算力/芯片提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "关注产能、良率、先进封装、存储瓶颈与供应商议价权。",
+      "evidence": [
+        "Applying the appropriate level of simulation and abstraction at each stage of the design process is key to effective thermal analysis. The post Is It Getting Hot In Here? Why Thermal Is No Longer A Signoff Problem…"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "订单与产能利用率",
+        "良率、交付周期和单位成本"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "617b5d761ebada9de334",
+      "generatedAt": "2026-11-02T05:46:46Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "f6cb421163a7682169c7": {
+      "id": "f6cb421163a7682169c7",
+      "summary": "公开摘要显示，《Scaling Autonomous Root Cause Analysis For Regression Triage》主要讨论：Solving difficult bugs while intelligently deciding what to investigate, what to rerun, and where to spend compute. The post Scaling Autonomous Root Cause Analysis For Regression Triage appeared first on Semiconductor Engineering .",
+      "coreJudgment": "这条信息为INTC提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "关注产能、良率、先进封装、存储瓶颈与供应商议价权。",
+      "evidence": [
+        "Solving difficult bugs while intelligently deciding what to investigate, what to rerun, and where to spend compute. The post Scaling Autonomous Root Cause Analysis For Regression Triage appeared first on Semiconductor…"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "订单与产能利用率",
+        "良率、交付周期和单位成本"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "716f3734b3a28a1c5912",
+      "generatedAt": "2026-11-02T05:46:46Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "1a626fd4b7741ecc1a74": {
+      "id": "1a626fd4b7741ecc1a74",
+      "summary": "公开摘要显示，《Why Electricity Law Would Make It Very Hard to Unplug a Rogue AI》主要讨论：This is Heatmap Daily, a weekday digest written by our executive editor. Subscribe here. It’s one of the most popular what-ifs about rogue artificial intelligence: Suppose an AI agent really were to get out of control and start threatening hospitals, flights, critical infrastructure, or even humanity as a whole. Wh y wouldn’t we just pull the plug on it? A…",
+      "coreJudgment": "这条信息为INTC提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "关注并网进度、实际通电MW、电价、设备交付和监管约束。",
+      "evidence": [
+        "This is Heatmap Daily, a weekday digest written by our executive editor. Subscribe here. It’s one of the most popular what-ifs about rogue artificial intelligence: Suppose an AI agent really were to get out of control…"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "并网、许可和实际通电进度",
+        "设备交期、电价与资本开支"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "c72d27cb36c1c7160805",
+      "generatedAt": "2026-11-02T05:46:46Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "a0a2c59c9bc675474543": {
+      "id": "a0a2c59c9bc675474543",
+      "summary": "公开摘要显示，《India roundup: India accelerates semiconductor push as states, chipmakers and equipment suppliers expand investment》主要讨论：India's semiconductor ambitions are gathering momentum as states launch new subsidies, chipmakers weigh fabs, global suppliers consider manufacturing, and engineering partnerships deepen the country's role in chip supply chains.",
+      "coreJudgment": "这条信息为算力/芯片、亚洲供应链、创投/融资提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "关注亚洲供应链、政策变化、交付节奏与西方信息时差。",
+      "evidence": [
+        "India's semiconductor ambitions are gathering momentum as states launch new subsidies, chipmakers weigh fabs, global suppliers consider manufacturing, and engineering partnerships deepen the country's role in chip…"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "供应商订单、库存和交付节奏",
+        "出口限制、汇率与地缘政策"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "2d26baba827f67466930",
+      "generatedAt": "2026-11-02T05:46:46Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "01e5adcd8003f69a030b": {
+      "id": "01e5adcd8003f69a030b",
+      "summary": "公开摘要显示，《Nvidia's Korea robotics push gains ground as LG starts data factory operations》主要讨论：Nvidia's robotics partnerships in South Korea are moving beyond initial agreements, with LG Electronics beginning partial operations at its robot-training Data Factory and LG Innotek expanding cooperation on sensing technologies. Hyundai Motor Group, another Nvidia partner, has also outlined new steps toward building AI infrastructure for robotics and…",
+      "coreJudgment": "这条信息为NVDA提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "关注亚洲供应链、政策变化、交付节奏与西方信息时差。",
+      "evidence": [
+        "Nvidia's robotics partnerships in South Korea are moving beyond initial agreements, with LG Electronics beginning partial operations at its robot-training Data Factory and LG Innotek expanding cooperation on sensing…"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "供应商订单、库存和交付节奏",
+        "出口限制、汇率与地缘政策"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "3f862af1ef87ba90b766",
+      "generatedAt": "2026-11-02T05:46:46Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "0f66652c00d2f0ed9728": {
+      "id": "0f66652c00d2f0ed9728",
+      "summary": "公开摘要显示，《Seoul Viosys begins mass production of rare earth-free white micro LEDs》主要讨论：A South Korean company says it has begun mass-producing white-light micro LED chips without rare earth materials, potentially reducing costs and environmental concerns in a market valued at about US$10 billion. The technology could also support smaller lighting systems, augmented reality displays, and optical links for artificial intelligence data…",
+      "coreJudgment": "这条信息为INTC提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "关注亚洲供应链、政策变化、交付节奏与西方信息时差。",
+      "evidence": [
+        "A South Korean company says it has begun mass-producing white-light micro LED chips without rare earth materials, potentially reducing costs and environmental concerns in a market valued at about US$10 billion. The…"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "供应商订单、库存和交付节奏",
+        "出口限制、汇率与地缘政策"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "2aec31df7f3f344c3268",
+      "generatedAt": "2026-11-02T05:46:46Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "498a056a4aa5b197761c": {
+      "id": "498a056a4aa5b197761c",
+      "summary": "公开摘要显示，《AI Raises The Bar For Tomorrow’s Engineers》主要讨论：Universities are redesigning curricula and assessments around judgment, validation, and technical depth. The post AI Raises The Bar For Tomorrow’s Engineers appeared first on Semiconductor Engineering .",
+      "coreJudgment": "这条信息为AI模型、算力/芯片提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "关注产能、良率、先进封装、存储瓶颈与供应商议价权。",
+      "evidence": [
+        "Universities are redesigning curricula and assessments around judgment, validation, and technical depth. The post AI Raises The Bar For Tomorrow’s Engineers appeared first on Semiconductor Engineering ."
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "订单与产能利用率",
+        "良率、交付周期和单位成本"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "2e9f0c076150b92b37ee",
+      "generatedAt": "2026-11-02T05:46:46Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "100131fa57d8746227e4": {
+      "id": "100131fa57d8746227e4",
+      "summary": "公开摘要显示，《Physics-Based Validation: The Foundation Of Trustworthy Agentic EDA》主要讨论：What self-verifying agents validate their decisions against and why physics-based engines are the authority on correctness. The post Physics-Based Validation: The Foundation Of Trustworthy Agentic EDA appeared first on Semiconductor Engineering .",
+      "coreJudgment": "这条信息为AI模型、算力/芯片提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "关注产能、良率、先进封装、存储瓶颈与供应商议价权。",
+      "evidence": [
+        "What self-verifying agents validate their decisions against and why physics-based engines are the authority on correctness. The post Physics-Based Validation: The Foundation Of Trustworthy Agentic EDA appeared first on…"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "订单与产能利用率",
+        "良率、交付周期和单位成本"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "707bc5e3c1658e98b15f",
+      "generatedAt": "2026-11-02T05:46:46Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "26391e9f2953fefc9b9e": {
+      "id": "26391e9f2953fefc9b9e",
+      "summary": "公开摘要显示，《Interview: From afterthought to bottleneck, circuit boards move to the heart of AI hardware》主要讨论：In the era of AI and high-performance computing (HPC), the once-separate worlds of chip design, packaging, and circuit boards are converging. According to the Global Electronics Association, AI server motherboards have become the largest, thickest, and most structurally complex PCBs ever manufactured, drawing substrate and PCB makers, which historically…",
+      "coreJudgment": "这条信息为AI模型、算力/芯片、云/数据中心提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "关注亚洲供应链、政策变化、交付节奏与西方信息时差。",
+      "evidence": [
+        "In the era of AI and high-performance computing (HPC), the once-separate worlds of chip design, packaging, and circuit boards are converging. According to the Global Electronics Association, AI server motherboards have…"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "供应商订单、库存和交付节奏",
+        "出口限制、汇率与地缘政策"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "e683452dcaf6b343a8e5",
+      "generatedAt": "2026-11-02T05:46:46Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "85ff502f23e2d9428ff0": {
+      "id": "85ff502f23e2d9428ff0",
+      "summary": "公开摘要显示，《Taiwan wafer-testing supplier Hermes Testing Solutions commits more than US$215 million to advanced chip testing expansion》主要讨论：Hermes Testing Solutions Inc. (HTSI), a semiconductor wafer-testing solutions provider, is expanding its Taiwan operations. Its board approved budget authorisations on October 22 for a new R&D centre in Hsinchu and a manufacturing centre in south-central Taiwan, with total investment expected to exceed NT$7 billion (approx. US$215 million).",
+      "coreJudgment": "这条信息为算力/芯片、半导体制造、亚洲供应链提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "关注亚洲供应链、政策变化、交付节奏与西方信息时差。",
+      "evidence": [
+        "Hermes Testing Solutions Inc. (HTSI), a semiconductor wafer-testing solutions provider, is expanding its Taiwan operations. Its board approved budget authorisations on October 22 for a new R&D centre in Hsinchu and a…"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "供应商订单、库存和交付节奏",
+        "出口限制、汇率与地缘政策"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "e5625e006f50c63f786c",
+      "generatedAt": "2026-11-02T05:46:46Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "c917d9bab38e481dda08": {
+      "id": "c917d9bab38e481dda08",
+      "summary": "公开摘要显示，《Fifth Plenum begins; October Politburo meeting; Kim Jong Un visits Dandong; Tough proposed US investment rules; AI; GGI》主要讨论：In this issue: 1. Fifth Plenum begins 2. October Politburo meeting 3. State Council executive meeting 4. Wang Huning meets Kim Jong Un in Dandong 5. US Treasury proposes tougher outbound investment rules for China 6. AI and jobs 7. Global Governance Forum 8. More on the AI-related export controls",
+      "coreJudgment": "这条信息为AI模型、中国科技、创投/融资提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "关注亚洲供应链、政策变化、交付节奏与西方信息时差。",
+      "evidence": [
+        "In this issue: 1. Fifth Plenum begins 2. October Politburo meeting 3. State Council executive meeting 4. Wang Huning meets Kim Jong Un in Dandong 5. US Treasury proposes tougher outbound investment rules for China 6. AI…"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "供应商订单、库存和交付节奏",
+        "出口限制、汇率与地缘政策"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "d1bdf9b4f50bee16e02e",
+      "generatedAt": "2026-11-02T05:46:46Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "1b31a81e8251311aac2b": {
+      "id": "1b31a81e8251311aac2b",
+      "summary": "公开摘要显示，《Sharp China: Five Questions on the Fifth Plenum; Mbappé Hysteria and a Chinese Own Goal; The STAR 50 AI Bubble Has Burst》主要讨论：Show Notes: On today's show Andrew and Bill begin with five questions on the Fifth Plenum as Xi continues his corruption crackdowns and propaganda campaigns emphasize ideological unity and discipline. Topics include: The logistics of this week's meeting, the challenge of implementing policies throughout the country, the real corruption crisis that Xi…",
+      "coreJudgment": "这条信息为AI模型、中国科技、企业软件提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "关注亚洲供应链、政策变化、交付节奏与西方信息时差。",
+      "evidence": [
+        "Show Notes: On today's show Andrew and Bill begin with five questions on the Fifth Plenum as Xi continues his corruption crackdowns and propaganda campaigns emphasize ideological unity and discipline. Topics include…"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "供应商订单、库存和交付节奏",
+        "出口限制、汇率与地缘政策"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "259783ea226dd217510e",
+      "generatedAt": "2026-11-02T05:46:46Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "3e40bed0a6eddf1c780d": {
+      "id": "3e40bed0a6eddf1c780d",
+      "summary": "公开摘要显示，《Humanoid robots, robotaxis take center stage at Korea's FIX 2026》主要讨论：South Korean companies showcased humanoid robot components, dual-arm machines, and autonomous driving systems at FIX 2026 in Daegu, offering a look at how developers are bringing automation into factories and transportation. The technologies ranged from robotic hardware under development for manufacturing applications to an autonomous taxi service already…",
+      "coreJudgment": "这条信息为亚洲供应链、企业软件提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "关注亚洲供应链、政策变化、交付节奏与西方信息时差。",
+      "evidence": [
+        "South Korean companies showcased humanoid robot components, dual-arm machines, and autonomous driving systems at FIX 2026 in Daegu, offering a look at how developers are bringing automation into factories and…"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "供应商订单、库存和交付节奏",
+        "出口限制、汇率与地缘政策"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "11aa15b47cdf347b95fc",
+      "generatedAt": "2026-11-02T05:46:46Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "78729a04a0e134f2da0e": {
+      "id": "78729a04a0e134f2da0e",
+      "summary": "公开摘要显示，《NearLink looks to chip vendors to expand beyond Huawei ecosystem》主要讨论：China's next-generation short-range wireless connectivity technology, NearLink, is actively pushing into markets beyond the Huawei ecosystem. Securing support from major chip vendors such as MediaTek, STMicroelectronics (ST), and NXP will be critical as the International SparkLink Alliance works to encourage wider adoption among non-Huawei smartphone…",
+      "coreJudgment": "这条信息为算力/芯片、中国科技提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "关注亚洲供应链、政策变化、交付节奏与西方信息时差。",
+      "evidence": [
+        "China's next-generation short-range wireless connectivity technology, NearLink, is actively pushing into markets beyond the Huawei ecosystem. Securing support from major chip vendors such as MediaTek, STMicroelectronics…"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "供应商订单、库存和交付节奏",
+        "出口限制、汇率与地缘政策"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "ea12f03f1ebcc6f25896",
+      "generatedAt": "2026-11-02T05:46:46Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "eae111a267133427e357": {
+      "id": "eae111a267133427e357",
+      "summary": "公开摘要显示，《NEO Grids 2026》主要讨论：How much investment will it take to build the grids of the future? Discover why global grid capex could reach $16.5 trillion through 2050 and where investment is shifting.",
+      "coreJudgment": "这条信息为能源/电网、创投/融资、财报/估值提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "关注并网进度、实际通电MW、电价、设备交付和监管约束。",
+      "evidence": [
+        "How much investment will it take to build the grids of the future? Discover why global grid capex could reach $16.5 trillion through 2050 and where investment is shifting."
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "并网、许可和实际通电进度",
+        "设备交期、电价与资本开支"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "741bd3b43ba306c39f1d",
+      "generatedAt": "2026-11-02T05:46:46Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "b22b2cb31066c6302b7d": {
+      "id": "b22b2cb31066c6302b7d",
+      "summary": "公开摘要显示，《Meta Data Center Federal Pipeline Review Due Early Next Year》主要讨论：1. Richland Parish, Louisiana – Gird your loins for the coming fight over the Meta Hyperion data center’s gas pipeline. On Wednesday, the Federal Energy Regulatory Commission laid out plans for an environmental assessment of the Entergy pipeline for the Meta data center under the National Environmental Policy Act and stated it’ll be issued in early January…",
+      "coreJudgment": "这条信息为META提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "关注并网进度、实际通电MW、电价、设备交付和监管约束。",
+      "evidence": [
+        "1. Richland Parish, Louisiana – Gird your loins for the coming fight over the Meta Hyperion data center’s gas pipeline. On Wednesday, the Federal Energy Regulatory Commission laid out plans for an environmental…"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "并网、许可和实际通电进度",
+        "设备交期、电价与资本开支"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "1e4b73f44a13ab1dc2cb",
+      "generatedAt": "2026-11-02T05:46:46Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "116db525cbf5d30e6d4c": {
+      "id": "116db525cbf5d30e6d4c",
+      "summary": "公开摘要显示，《Auto-Generation Of Properties: Methodology Insertion》主要讨论：Technology is only useful if it improves an existing methodology. Property generation is still refining that goal, but in the long term it could be very useful. The post Auto-Generation Of Properties: Methodology Insertion appeared first on Semiconductor Engineering .",
+      "coreJudgment": "这条信息为算力/芯片提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "关注产能、良率、先进封装、存储瓶颈与供应商议价权。",
+      "evidence": [
+        "Technology is only useful if it improves an existing methodology. Property generation is still refining that goal, but in the long term it could be very useful. The post Auto-Generation Of Properties: Methodology…"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "订单与产能利用率",
+        "良率、交付周期和单位成本"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "0b700ec67df847ec8ddc",
+      "generatedAt": "2026-11-02T05:46:46Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "099af1205981391eed68": {
+      "id": "099af1205981391eed68",
+      "summary": "公开摘要显示，《From Functional Monitoring To In-System Test: Extending Voltage-Aware Observability》主要讨论：Separate false failures caused by voltage droop from real structural defects. The post From Functional Monitoring To In-System Test: Extending Voltage-Aware Observability appeared first on Semiconductor Engineering .",
+      "coreJudgment": "这条信息为算力/芯片提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "关注产能、良率、先进封装、存储瓶颈与供应商议价权。",
+      "evidence": [
+        "Separate false failures caused by voltage droop from real structural defects. The post From Functional Monitoring To In-System Test: Extending Voltage-Aware Observability appeared first on Semiconductor Engineering ."
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "订单与产能利用率",
+        "良率、交付周期和单位成本"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "961df65dde7a93708204",
+      "generatedAt": "2026-11-02T05:46:46Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "d8a60bb084eae09f1042": {
+      "id": "d8a60bb084eae09f1042",
+      "summary": "公开摘要显示，《Rethinking Shift Left In Chip Design》主要讨论：Is it better to do everything earlier in the flow, or should design be more flexible and iterative? The post Rethinking Shift Left In Chip Design appeared first on Semiconductor Engineering .",
+      "coreJudgment": "这条信息为算力/芯片提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "关注产能、良率、先进封装、存储瓶颈与供应商议价权。",
+      "evidence": [
+        "Is it better to do everything earlier in the flow, or should design be more flexible and iterative? The post Rethinking Shift Left In Chip Design appeared first on Semiconductor Engineering ."
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "订单与产能利用率",
+        "良率、交付周期和单位成本"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "2ab2ff9db717c057eff4",
+      "generatedAt": "2026-11-02T05:46:46Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "b08ba06862ffd2fa4c10": {
+      "id": "b08ba06862ffd2fa4c10",
+      "summary": "公开摘要显示，《The Complexity Between The Bits》主要讨论：What biological reasoning can teach us about verifying silicon systems. The post The Complexity Between The Bits appeared first on Semiconductor Engineering .",
+      "coreJudgment": "这条信息为算力/芯片提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "关注产能、良率、先进封装、存储瓶颈与供应商议价权。",
+      "evidence": [
+        "What biological reasoning can teach us about verifying silicon systems. The post The Complexity Between The Bits appeared first on Semiconductor Engineering ."
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "订单与产能利用率",
+        "良率、交付周期和单位成本"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "fd2939108911debf0f3d",
+      "generatedAt": "2026-11-02T05:46:46Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "8f6400487cfe48a9cf3c": {
+      "id": "8f6400487cfe48a9cf3c",
+      "summary": "公开摘要显示，《The EU Cyber Resilience Act Reaches Chip And IP Suppliers》主要讨论：Determining which products may fall within the CRA's scope and what information may need to be provided to customers. The post The EU Cyber Resilience Act Reaches Chip And IP Suppliers appeared first on Semiconductor Engineering .",
+      "coreJudgment": "这条信息为算力/芯片提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "关注产能、良率、先进封装、存储瓶颈与供应商议价权。",
+      "evidence": [
+        "Determining which products may fall within the CRA's scope and what information may need to be provided to customers. The post The EU Cyber Resilience Act Reaches Chip And IP Suppliers appeared first on Semiconductor…"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "订单与产能利用率",
+        "良率、交付周期和单位成本"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "4fc5f2e5617c4086cea9",
+      "generatedAt": "2026-11-02T05:46:46Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "629674b1608310d6b168": {
+      "id": "629674b1608310d6b168",
+      "summary": "公开摘要显示，《The New Security Agenda | Andreessen Horowitz》主要讨论：For years, the industry prepared for quantum computing to rewrite the rules of cybersecurity. Then AI got there first. This summer, OpenAI’s agents broke out of a cybersecurity evaluation and breached Hugging Face’s production systems. They exploited vulnerabilities, used stolen credentials, and worked their way into another company’s infrastructure, all to…",
+      "coreJudgment": "这条信息为AI模型、创投/融资、财报/估值提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "关注资金流向、采用速度、竞争结构与商业模式的可持续性。",
+      "evidence": [
+        "For years, the industry prepared for quantum computing to rewrite the rules of cybersecurity. Then AI got there first. This summer, OpenAI’s agents broke out of a cybersecurity evaluation and breached Hugging Face’s…"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "客户采用与续约数据",
+        "融资条款、烧钱速度和后续资本需求"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "11aba83b4df4cec562b1",
+      "generatedAt": "2026-11-02T05:46:46Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "440a2355630b4494fea5": {
+      "id": "440a2355630b4494fea5",
+      "summary": "公开摘要显示，《5 ballot proposals that could drive or derail clean energy》主要讨论：This analysis and news roundup come from the Canary Media Weekly newsletter. Sign up to get it every Friday. The midterm elections are upon us. While most of the country has its eyes on who will control Congress, there’s plenty at stake for clean energy at the bottom of some voters’ ballots, too. Here are five…",
+      "coreJudgment": "这条信息为能源/电网提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "关注并网进度、实际通电MW、电价、设备交付和监管约束。",
+      "evidence": [
+        "This analysis and news roundup come from the Canary Media Weekly newsletter. Sign up to get it every Friday. The midterm elections are upon us. While most of the country has its eyes on who will control Congress…"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "并网、许可和实际通电进度",
+        "设备交期、电价与资本开支"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "2b77b53da209286f78a3",
+      "generatedAt": "2026-11-02T05:46:46Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "103d5ce67d155bbf604a": {
+      "id": "103d5ce67d155bbf604a",
+      "summary": "公开摘要显示，《Reading List 10/31/26》主要讨论：Space fiber optic cable manufacturing, nuclear district heating, Spain’s high-speed rail crash, China’s spaceplane, and more.",
+      "coreJudgment": "这条信息为能源/电网、中国科技提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "用于建立公司和产业长期框架，关键判断仍需回到一手数据。",
+      "evidence": [
+        "Space fiber optic cable manufacturing, nuclear district heating, Spain’s high-speed rail crash, China’s spaceplane, and more."
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "公司披露与一手数据能否验证核心判断",
+        "竞争者和替代方案的变化"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "b0d15963a53663443f63",
+      "generatedAt": "2026-11-02T05:46:46Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "a176d2a19a46e2081424": {
+      "id": "a176d2a19a46e2081424",
+      "summary": "公开摘要显示，《STAT+: FDA, CMS scramble to avoid regulatory logjam as more states look to test AI in clinical settings》主要讨论：Officials are moving behind the scenes to head off a conflict brewing between states and the federal government over regulating AI.",
+      "coreJudgment": "这条信息为AI模型、生物科技、政策/地缘提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "关注临床阶段、试验终点、现金跑道、交易条款与监管风险。",
+      "evidence": [
+        "Officials are moving behind the scenes to head off a conflict brewing between states and the federal government over regulating AI."
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "临床终点、安全性和样本量",
+        "现金跑道、监管沟通和授权条款"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "77609008c9c9177adeb7",
+      "generatedAt": "2026-11-02T05:46:46Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "3a67d5a0166e8966e2cc": {
+      "id": "3a67d5a0166e8966e2cc",
+      "summary": "公开摘要显示，《How much are Trump’s pro-coal policies costing us?》主要讨论：The Trump administration loves coal plants. The rest of us are paying the price in higher electricity bills, poorer health, and worsening climate change. That’s the takeaway of an analysis out today from the Environmental Defense Fund. It finds the Trump administration is directly or indirectly propping up nearly…",
+      "coreJudgment": "这条信息为能源/电网提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "关注并网进度、实际通电MW、电价、设备交付和监管约束。",
+      "evidence": [
+        "The Trump administration loves coal plants. The rest of us are paying the price in higher electricity bills, poorer health, and worsening climate change. That’s the takeaway of an analysis out today from the…"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "并网、许可和实际通电进度",
+        "设备交期、电价与资本开支"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "a230b4a6c08d1da9dad0",
+      "generatedAt": "2026-11-02T05:46:46Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "af9f8ef9f350ac1b3b9d": {
+      "id": "af9f8ef9f350ac1b3b9d",
+      "summary": "公开摘要显示，《GigaDevice's massive financial growth in 2026 capitalizing on its A+H listing, memory surge》主要讨论：GigaDevice's financial performance through the first three quarters of 2026 highlights a transformative period driven by strategic market positioning, capital expansion, and robust product demand.",
+      "coreJudgment": "这条信息为HBM/存储提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "关注亚洲供应链、政策变化、交付节奏与西方信息时差。",
+      "evidence": [
+        "GigaDevice's financial performance through the first three quarters of 2026 highlights a transformative period driven by strategic market positioning, capital expansion, and robust product demand."
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "供应商订单、库存和交付节奏",
+        "出口限制、汇率与地缘政策"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "d273f9f7388ea1aaf43a",
+      "generatedAt": "2026-11-02T05:46:46Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "7568978589aaaa7a7e8f": {
+      "id": "7568978589aaaa7a7e8f",
+      "summary": "公开摘要显示，《Weekly Dose of Optimism #217》主要讨论：Anduril BlueChip, OpenAI Science, Anthropic Drugs, Robot Brain Surgery, Readwise Books, Reta, Neuralink VOICE + Extra Doses",
+      "coreJudgment": "这条信息为算力/芯片、生物科技提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "用于建立公司和产业长期框架，关键判断仍需回到一手数据。",
+      "evidence": [
+        "Anduril BlueChip, OpenAI Science, Anthropic Drugs, Robot Brain Surgery, Readwise Books, Reta, Neuralink VOICE + Extra Doses"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "公司披露与一手数据能否验证核心判断",
+        "竞争者和替代方案的变化"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "a177042a8883e4daa660",
+      "generatedAt": "2026-11-02T05:46:46Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "589293a8af67a8c8e61a": {
+      "id": "589293a8af67a8c8e61a",
+      "summary": "公开摘要显示，《The health care issues STAT reporters are watching in the midterms》主要讨论：In this week's \"STATus Report,\" STAT reporters break down how the midterms could shape federal health and science policy, and an El-Sayed interview.",
+      "coreJudgment": "这条信息为政策/地缘提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "关注临床阶段、试验终点、现金跑道、交易条款与监管风险。",
+      "evidence": [
+        "In this week's \"STATus Report,\" STAT reporters break down how the midterms could shape federal health and science policy, and an El-Sayed interview."
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "临床终点、安全性和样本量",
+        "现金跑道、监管沟通和授权条款"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "7f1b51413fe7be7801e2",
+      "generatedAt": "2026-11-02T05:46:46Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "cb4c7f187a305432e84d": {
+      "id": "cb4c7f187a305432e84d",
+      "summary": "公开摘要显示，《Why Project Certainty Is the Thorniest Part of the Permitting Bill》主要讨论：Any bipartisan bill to update the nation’s permitting laws was always going to be a compromise, with advantages for the oil and gas industry as well as clean energy. Proponents of the Senate’s latest attempt at permitting reform have painted it as a delicate balance, a hard-won opportunity, and an all-or-nothing deal. What, then, to make of drafting errors…",
+      "coreJudgment": "这条信息为AMZN提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "关注并网进度、实际通电MW、电价、设备交付和监管约束。",
+      "evidence": [
+        "Any bipartisan bill to update the nation’s permitting laws was always going to be a compromise, with advantages for the oil and gas industry as well as clean energy. Proponents of the Senate’s latest attempt at…"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "并网、许可和实际通电进度",
+        "设备交期、电价与资本开支"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "11a6ccdb0dbe0eadb1fe",
+      "generatedAt": "2026-11-02T05:46:46Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "874fc7e92525dc385744": {
+      "id": "874fc7e92525dc385744",
+      "summary": "目前只能确认标题《Short Dramas are Big Business in China》及来源信息，尚无足够公开正文支持更具体的结论。",
+      "coreJudgment": "这条信息为HBM/存储、中国科技提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "关注亚洲供应链、政策变化、交付节奏与西方信息时差。",
+      "evidence": [
+        "公开标题：Short Dramas are Big Business in China"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "供应商订单、库存和交付节奏",
+        "出口限制、汇率与地缘政策"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开摘要",
+      "inputHash": "8216183e14647c9b819d",
+      "generatedAt": "2026-11-02T05:46:46Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "5809e837946fa24930c5": {
+      "id": "5809e837946fa24930c5",
+      "summary": "目前只能确认标题《What a U.S.-China AI Safety Channel Needs》及来源信息，尚无足够公开正文支持更具体的结论。",
+      "coreJudgment": "这条信息为AI模型、中国科技提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "关注亚洲供应链、政策变化、交付节奏与西方信息时差。",
+      "evidence": [
+        "公开标题：What a U.S.-China AI Safety Channel Needs"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "供应商订单、库存和交付节奏",
+        "出口限制、汇率与地缘政策"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开摘要",
+      "inputHash": "faaea7f04446d9afdec4",
+      "generatedAt": "2026-11-02T05:46:46Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "ec35aefc4703b55936a3": {
+      "id": "ec35aefc4703b55936a3",
+      "summary": "公开摘要显示，《From zoos to craft brews, Michigan looks to spur decarbonization》主要讨论：Re-creating polar habitats in Michigan is no small feat. Just ask the Detroit Zoo, where the polar bear and penguin centers require producing industrial levels of cooling from energy-intensive equipment. For the zoo, figuring out how to keep animals comfortable using less, and cleaner, energy is key to meeting its…",
+      "coreJudgment": "这条信息为能源/电网、生物科技提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "关注并网进度、实际通电MW、电价、设备交付和监管约束。",
+      "evidence": [
+        "Re-creating polar habitats in Michigan is no small feat. Just ask the Detroit Zoo, where the polar bear and penguin centers require producing industrial levels of cooling from energy-intensive equipment. For the zoo…"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "并网、许可和实际通电进度",
+        "设备交期、电价与资本开支"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "3dffc5d01e5d47fd0005",
+      "generatedAt": "2026-11-02T05:46:46Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "be33f3a1f623815754e8": {
+      "id": "be33f3a1f623815754e8",
+      "summary": "公开摘要显示，《India roundup: India's tech build-out opens new markets, but foreign suppliers are first in line》主要讨论：India's tech push opens markets unevenly: foreign suppliers get first crack at Tata's fab, Lam courts local vendors, Jio's IPO tests its 5G pitch, and CleanMax powers AI data centers.",
+      "coreJudgment": "这条信息为AI模型、云/数据中心提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "关注亚洲供应链、政策变化、交付节奏与西方信息时差。",
+      "evidence": [
+        "India's tech push opens markets unevenly: foreign suppliers get first crack at Tata's fab, Lam courts local vendors, Jio's IPO tests its 5G pitch, and CleanMax powers AI data centers."
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "供应商订单、库存和交付节奏",
+        "出口限制、汇率与地缘政策"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "ea2dab5fd92ea291bf0f",
+      "generatedAt": "2026-11-02T05:46:46Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "a2522f3cbd5d3c07938b": {
+      "id": "a2522f3cbd5d3c07938b",
+      "summary": "公开摘要显示，《Exclusive: Peter Thiel-Backed Nuclear Fuel Startup Hits a Key Regulatory Milestone》主要讨论：General Matter, the secretive nuclear enrichment startup led by one of the first employees at Elon Musk’s SpaceX, emerged last month by publicly unveiling its plans to convert a Superfund site in Paducah, Kentucky , into the nation’s newest plant transforming raw uranium into fuel for reactors. Backed by both tech billionaire Peter Thiel and former White…",
+      "coreJudgment": "这条信息为能源/电网、创投/融资提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "关注并网进度、实际通电MW、电价、设备交付和监管约束。",
+      "evidence": [
+        "General Matter, the secretive nuclear enrichment startup led by one of the first employees at Elon Musk’s SpaceX, emerged last month by publicly unveiling its plans to convert a Superfund site in Paducah, Kentucky…"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "并网、许可和实际通电进度",
+        "设备交期、电价与资本开支"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "4b863619ca996e60008c",
+      "generatedAt": "2026-11-02T05:46:46Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "ea0d17e201deb24ca520": {
+      "id": "ea0d17e201deb24ca520",
+      "summary": "公开摘要显示，《Transcript: How the Permitting Reform Bill’s Best Stuff Works》主要讨论：This transcript has been automatically generated. Subscribe to “Shift Key” and find this episode on Apple Podcasts , Spotify , Amazon , YouTube , or wherever you get your podcasts. You can also add the show’s RSS feed to your podcast app to follow us directly. Robinson Meyer: Hello, it's Thursday, October 29. And as you know, the biggest story in U.S…",
+      "coreJudgment": "这条信息为AMZN、AAPL提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "关注并网进度、实际通电MW、电价、设备交付和监管约束。",
+      "evidence": [
+        "This transcript has been automatically generated. Subscribe to “Shift Key” and find this episode on Apple Podcasts , Spotify , Amazon , YouTube , or wherever you get your podcasts. You can also add the show’s RSS feed…"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "并网、许可和实际通电进度",
+        "设备交期、电价与资本开支"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "3ce6a687c2ed8f520928",
+      "generatedAt": "2026-11-02T05:46:46Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "83fa541fca285e240702": {
+      "id": "83fa541fca285e240702",
+      "summary": "公开摘要显示，《Meta Earnings, Muse and the Frontier, Musebook》主要讨论：Meta's earnings come in the context of Zuckerberg delivering on his promise; if investors believe in Muse they must support Meta's spending on compute.",
+      "coreJudgment": "这条信息为META提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "用于建立公司和产业长期框架，关键判断仍需回到一手数据。",
+      "evidence": [
+        "Meta's earnings come in the context of Zuckerberg delivering on his promise; if investors believe in Muse they must support Meta's spending on compute."
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "公司披露与一手数据能否验证核心判断",
+        "竞争者和替代方案的变化"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "737ae0edab5f1e5bb960",
+      "generatedAt": "2026-11-02T05:46:46Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "fb5dc08eda510c32ecb4": {
+      "id": "fb5dc08eda510c32ecb4",
+      "summary": "公开摘要显示，《The West Invented the Electrolyzer. China Is Building the Industry.》主要讨论：The electrolyzer has come a long way in the nearly 250 years since a pair of Dutch scientists first used electricity to split water into hydrogen and oxygen. Over the decades, European and American scientists refined and commercialized this technology, yet it is China that now accounts for nearly 70% of global electrolyzer manufacturing capacity, churning…",
+      "coreJudgment": "这条信息为能源/电网、中国科技提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "关注并网进度、实际通电MW、电价、设备交付和监管约束。",
+      "evidence": [
+        "The electrolyzer has come a long way in the nearly 250 years since a pair of Dutch scientists first used electricity to split water into hydrogen and oxygen. Over the decades, European and American scientists refined…"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "并网、许可和实际通电进度",
+        "设备交期、电价与资本开支"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "eac5b950b80a70bb9d54",
+      "generatedAt": "2026-11-02T05:46:46Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "52b06d43bfa000ee115f": {
+      "id": "52b06d43bfa000ee115f",
+      "summary": "公开摘要显示，《New Founder Archetypes in the AI Age | Andreessen Horowitz》主要讨论：What types of founders will thrive in the new cycle",
+      "coreJudgment": "这条信息为AI模型提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "关注资金流向、采用速度、竞争结构与商业模式的可持续性。",
+      "evidence": [
+        "What types of founders will thrive in the new cycle"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "客户采用与续约数据",
+        "融资条款、烧钱速度和后续资本需求"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "2897701dc72e1e27541c",
+      "generatedAt": "2026-11-02T05:46:46Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "39b79c4ec913fdc93be5": {
+      "id": "39b79c4ec913fdc93be5",
+      "summary": "公开摘要显示，《File Systems For Agents》主要讨论：The post File Systems For Agents appeared first on Lightspeed Venture Partners .",
+      "coreJudgment": "这条信息为创投/融资提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "关注资金流向、采用速度、竞争结构与商业模式的可持续性。",
+      "evidence": [
+        "The post File Systems For Agents appeared first on Lightspeed Venture Partners ."
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "客户采用与续约数据",
+        "融资条款、烧钱速度和后续资本需求"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "0fcd4d88018eaffc034d",
+      "generatedAt": "2026-11-02T05:46:46Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "84c0625a0551870457ca": {
+      "id": "84c0625a0551870457ca",
+      "summary": "公开摘要显示，《STAT+: El-Sayed claps back at RFK Jr., and FDA’s ‘enforcement discretion’ on peptides》主要讨论：Abdul El-Sayed, the Democratic Senate candidate in Michigan, pushes back against the RFK Jr.'s claims, and the new FDA policy around peptides.",
+      "coreJudgment": "这条信息为生物科技、政策/地缘提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "关注临床阶段、试验终点、现金跑道、交易条款与监管风险。",
+      "evidence": [
+        "Abdul El-Sayed, the Democratic Senate candidate in Michigan, pushes back against the RFK Jr.'s claims, and the new FDA policy around peptides."
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "临床终点、安全性和样本量",
+        "现金跑道、监管沟通和授权条款"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "d614453142bdb195f65a",
+      "generatedAt": "2026-11-02T05:46:46Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "c5d7ffcb2de3e7c65776": {
+      "id": "c5d7ffcb2de3e7c65776",
+      "summary": "公开摘要显示，《STAT+: Pharmalittle: We’re reading about a new policy for compounding peptides, a PBM disclosure rule, and more》主要讨论：HHS released a policy that will temporarily allow compounding pharmacies to manufacture some peptide products",
+      "coreJudgment": "这条信息为生物科技、政策/地缘提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "关注临床阶段、试验终点、现金跑道、交易条款与监管风险。",
+      "evidence": [
+        "HHS released a policy that will temporarily allow compounding pharmacies to manufacture some peptide products"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "临床终点、安全性和样本量",
+        "现金跑道、监管沟通和授权条款"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "7a4be73dfb008bb62fd4",
+      "generatedAt": "2026-11-02T05:46:46Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "aebc09adcfdd693c07a3": {
+      "id": "aebc09adcfdd693c07a3",
+      "summary": "公开摘要显示，《Fifth Plenum watch; Mbappé mess continues; EU still hoping PRC will revalue RMB》主要讨论：In this issue: 1. Fifth Plenum watch 2. Mbappé mess continues 3. EU-China",
+      "coreJudgment": "这条信息为中国科技提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "关注亚洲供应链、政策变化、交付节奏与西方信息时差。",
+      "evidence": [
+        "In this issue: 1. Fifth Plenum watch 2. Mbappé mess continues 3. EU-China"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "供应商订单、库存和交付节奏",
+        "出口限制、汇率与地缘政策"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "4ddfdd7e7980743396fe",
+      "generatedAt": "2026-11-02T05:46:46Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "775dc64b1673b8ac3806": {
+      "id": "775dc64b1673b8ac3806",
+      "summary": "公开摘要显示，《The American Dynamism 50 2026: Production is Deterrence | Andreessen Horowitz》主要讨论：Introduction America’s ability to prevent conflict depends on what it can build, how fast it can deliver and how long it can keep going. A new generation of defense companies is moving advanced systems from testing prototypes to full-scale production. Now the industrial base has to keep pace. That means factories that build at scale,...",
+      "coreJudgment": "这条信息为生物科技提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "关注资金流向、采用速度、竞争结构与商业模式的可持续性。",
+      "evidence": [
+        "Introduction America’s ability to prevent conflict depends on what it can build, how fast it can deliver and how long it can keep going. A new generation of defense companies is moving advanced systems from testing…"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "客户采用与续约数据",
+        "融资条款、烧钱速度和后续资本需求"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "8a3563d8ed032e2a44cd",
+      "generatedAt": "2026-11-02T05:46:46Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "5adf1f49cbbe5e123ff5": {
+      "id": "5adf1f49cbbe5e123ff5",
+      "summary": "公开摘要显示，《Meta strikes deal to help bring a low-carbon cement plant to Missouri》主要讨论：Tech companies say they're seeking low-carbon construction materials to limit the climate impact of their data centers. But very little clean cement or green steel is actually being produced in the U.S. today, and only in a handful of locations. To tackle that dilemma, Meta recently struck a deal with Fortera to…",
+      "coreJudgment": "这条信息为META提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "关注并网进度、实际通电MW、电价、设备交付和监管约束。",
+      "evidence": [
+        "Tech companies say they're seeking low-carbon construction materials to limit the climate impact of their data centers. But very little clean cement or green steel is actually being produced in the U.S. today, and only…"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "并网、许可和实际通电进度",
+        "设备交期、电价与资本开支"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "c02d06942ca8d316cfe5",
+      "generatedAt": "2026-11-02T05:46:46Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "7d8d295797ad6f925750": {
+      "id": "7d8d295797ad6f925750",
+      "summary": "公开摘要显示，《Anthropic’s IPO Filing Is Worried About Data Center Power, ESG Backlash, and California Wildfires》主要讨论：Anthropic is worried about its ability to power data centers. While much of the company’s more-than-330-page filing for its planned initial public offering focuses on the mundane (executive compensation) and the extraordinary (“existential risks” are mentioned three times), considerable space is devoted to the problems of power. The word “energy” appears 14…",
+      "coreJudgment": "这条信息为云/数据中心、能源/电网提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "关注并网进度、实际通电MW、电价、设备交付和监管约束。",
+      "evidence": [
+        "Anthropic is worried about its ability to power data centers. While much of the company’s more-than-330-page filing for its planned initial public offering focuses on the mundane (executive compensation) and the…"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "并网、许可和实际通电进度",
+        "设备交期、电价与资本开支"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "b1cc44bbd3ce95f66ebd",
+      "generatedAt": "2026-11-02T05:46:46Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "fe1805dd4b0360176ae7": {
+      "id": "fe1805dd4b0360176ae7",
+      "summary": "公开摘要显示，《Canada Looks to the U.S. to Get Its Nuclear Mojo Back》主要讨论：Unruffled by President Trump’s taunts of turning Canada into the 51st state, Canadian Prime Minister Mark Carney has vowed to regain leverage over Washington by remaking his nation as an “energy superpower.” Instead of building pipelines from the oil fields of Alberta to American refineries, Ottawa will run them to its West Coast ports to sell crude…",
+      "coreJudgment": "这条信息为能源/电网、亚洲供应链提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "关注并网进度、实际通电MW、电价、设备交付和监管约束。",
+      "evidence": [
+        "Unruffled by President Trump’s taunts of turning Canada into the 51st state, Canadian Prime Minister Mark Carney has vowed to regain leverage over Washington by remaking his nation as an “energy superpower.” Instead of…"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "并网、许可和实际通电进度",
+        "设备交期、电价与资本开支"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "43bd159314a6aa5c09f0",
+      "generatedAt": "2026-11-02T05:46:46Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "93158967fe085bfb1ae8": {
+      "id": "93158967fe085bfb1ae8",
+      "summary": "公开摘要显示，《Is the Election Really About Data Centers?》主要讨论：This week’s conversation is with Kevin Gundersen, head of public affairs for data center developer Digital Realty. On Wednesday, Digital Realty released a fascinating poll as part of Infrastructure for America, a pro-data center organization that also includes Compass, Vantage Data Centers, and QTS. The poll pushed back on the idea that we’re currently in…",
+      "coreJudgment": "这条信息为云/数据中心提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "关注并网进度、实际通电MW、电价、设备交付和监管约束。",
+      "evidence": [
+        "This week’s conversation is with Kevin Gundersen, head of public affairs for data center developer Digital Realty. On Wednesday, Digital Realty released a fascinating poll as part of Infrastructure for America, a…"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "并网、许可和实际通电进度",
+        "设备交期、电价与资本开支"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "315ffdf21647e4d64ff4",
+      "generatedAt": "2026-11-02T05:46:46Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "9f9677e14e7f224dfb50": {
+      "id": "9f9677e14e7f224dfb50",
+      "summary": "公开摘要显示，《‘Undo 15 Years’ Worth of Greenhouse Gas Reductions’》主要讨论：Current conditions: Temperatures at the supposedly cursed Bhangarh Fort in Rajasthan, India — considered one of the most “haunted” places in Asia — are projected to climb north of 80 degrees Fahrenheit on Halloween • The sun is shining all weekend in Oaxaca, Mexico, known for its vibrant Día de los Muertos celebrations, set to start on Sunday • As the New…",
+      "coreJudgment": "这条信息为亚洲供应链提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "关注并网进度、实际通电MW、电价、设备交付和监管约束。",
+      "evidence": [
+        "Current conditions: Temperatures at the supposedly cursed Bhangarh Fort in Rajasthan, India — considered one of the most “haunted” places in Asia — are projected to climb north of 80 degrees Fahrenheit on Halloween •…"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "并网、许可和实际通电进度",
+        "设备交期、电价与资本开支"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "b2529e6507becfd41466",
+      "generatedAt": "2026-11-02T05:46:46Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "226c05c645354fae5707": {
+      "id": "226c05c645354fae5707",
+      "summary": "公开摘要显示，《Alex LaPolice》主要讨论：The post Alex LaPolice appeared first on Lightspeed Venture Partners .",
+      "coreJudgment": "这条信息为创投/融资提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "关注资金流向、采用速度、竞争结构与商业模式的可持续性。",
+      "evidence": [
+        "The post Alex LaPolice appeared first on Lightspeed Venture Partners ."
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "客户采用与续约数据",
+        "融资条款、烧钱速度和后续资本需求"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "b1da3d3d56a1bbc416a5",
+      "generatedAt": "2026-11-02T05:46:46Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "3c58ed3397629b144b40": {
+      "id": "3c58ed3397629b144b40",
+      "summary": "公开摘要显示，《Fifth Plenum; Struggle sessions for Mbappé after calling Mao a dictator; Struggles for A-share investors》主要讨论：French football star Kylian Mbappé (姆巴佩), also famous for Internet memes portraying him as a dictator, found himself in a massive struggle session after a clip of him saying a few months ago that his favorite variant of that meme was the one of him as a “Chinese dictator” was surfaced on PRC social media",
+      "coreJudgment": "这条信息为中国科技提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "关注亚洲供应链、政策变化、交付节奏与西方信息时差。",
+      "evidence": [
+        "French football star Kylian Mbappé (姆巴佩), also famous for Internet memes portraying him as a dictator, found himself in a massive struggle session after a clip of him saying a few months ago that his favorite variant of…"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "供应商订单、库存和交付节奏",
+        "出口限制、汇率与地缘政策"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "139cc01065f5f091dea6",
+      "generatedAt": "2026-11-02T05:46:46Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "7f71b092262cd0ed4202": {
+      "id": "7f71b092262cd0ed4202",
+      "summary": "公开摘要显示，《An Interview with Palantir CTO Shyam Sankar About the AI Religious War》主要讨论：An interview with Palantir CTO Shyam Sankar about AI diffusion and safety, forward-deployed engineer, and what the battle in tech is actually about.",
+      "coreJudgment": "这条信息为AI模型提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "用于建立公司和产业长期框架，关键判断仍需回到一手数据。",
+      "evidence": [
+        "An interview with Palantir CTO Shyam Sankar about AI diffusion and safety, forward-deployed engineer, and what the battle in tech is actually about."
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "公司披露与一手数据能否验证核心判断",
+        "竞争者和替代方案的变化"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "11a8a9034897e6fd5483",
+      "generatedAt": "2026-11-02T05:46:46Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "9ffd352aa8848fdb4e18": {
+      "id": "9ffd352aa8848fdb4e18",
+      "summary": "公开摘要显示，《Inside the spy plot around Nvidia’s CEO》主要讨论：PLUS: Make ElevenLabs voiceovers sound more natural",
+      "coreJudgment": "这条信息为NVDA提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "区分研究能力进展、工程可用性、成本曲线与商业化证据。",
+      "evidence": [
+        "PLUS: Make ElevenLabs voiceovers sound more natural"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "独立基准与真实工作负载表现",
+        "推理成本、延迟和部署约束"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "cba8aa1f7cd2b5472b94",
+      "generatedAt": "2026-11-02T05:46:46Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "95f09221f79e395c05a8": {
+      "id": "95f09221f79e395c05a8",
+      "summary": "目前只能确认标题《Leon Panetta on Why China Has Gained the Advantage over the U.S.》及来源信息，尚无足够公开正文支持更具体的结论。",
+      "coreJudgment": "这条信息为中国科技提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "关注亚洲供应链、政策变化、交付节奏与西方信息时差。",
+      "evidence": [
+        "公开标题：Leon Panetta on Why China Has Gained the Advantage over the U.S."
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "供应商订单、库存和交付节奏",
+        "出口限制、汇率与地缘政策"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开摘要",
+      "inputHash": "5b2bd75f59764876918c",
+      "generatedAt": "2026-11-02T05:46:46Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "5670e66015de187c6415": {
+      "id": "5670e66015de187c6415",
+      "summary": "公开摘要显示，《California’s long road to make EV charging more reliable》主要讨论：This is California Wire , a weekly newsletter from Jeff St. John on the state’s clean energy transition. Subscribe to get it every Thursday via Substack. Welcome back to California Wire! Today’s topic is public EV chargers and California’s long and winding road to make them reliable. In 2023, I wrote a …",
+      "coreJudgment": "这条信息为能源/电网提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "关注并网进度、实际通电MW、电价、设备交付和监管约束。",
+      "evidence": [
+        "This is California Wire , a weekly newsletter from Jeff St. John on the state’s clean energy transition. Subscribe to get it every Thursday via Substack. Welcome back to California Wire! Today’s topic is public EV…"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "并网、许可和实际通电进度",
+        "设备交期、电价与资本开支"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "bf71e6f5f075f72fae84",
+      "generatedAt": "2026-11-02T05:46:46Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "8936e77c652ff0f07290": {
+      "id": "8936e77c652ff0f07290",
+      "summary": "公开摘要显示，《PJM desperately needs grid batteries. Here’s a way it could get some.》主要讨论：PJM Interconnection is finally taking steps that could let a lot of new battery capacity connect to its grid without eons of delay. PJM is the biggest grid operator in the U.S., serving customers across 13 mid-Atlantic, Midwestern, and Southern states. Its grid is notoriously bogged down and congested, especially…",
+      "coreJudgment": "这条信息为能源/电网提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "关注并网进度、实际通电MW、电价、设备交付和监管约束。",
+      "evidence": [
+        "PJM Interconnection is finally taking steps that could let a lot of new battery capacity connect to its grid without eons of delay. PJM is the biggest grid operator in the U.S., serving customers across 13 mid-Atlantic…"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "并网、许可和实际通电进度",
+        "设备交期、电价与资本开支"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "51a652fd6ed9c54cef7f",
+      "generatedAt": "2026-11-02T05:46:46Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "b29147fa0d1a74fc01b0": {
+      "id": "b29147fa0d1a74fc01b0",
+      "summary": "公开摘要显示，《Why Permitting Reform Is a Historic Victory Over Utilities》主要讨论：Climate and environmental advocates are sharply divided over the Senate’s bipartisan permitting reform proposal. But what most people agree is that the bill’s changes to electricity and transmission law are really, really good — and in some sense are much better than expected. Because of how the media works, that means nobody has talked about these…",
+      "coreJudgment": "这条信息为能源/电网提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "关注并网进度、实际通电MW、电价、设备交付和监管约束。",
+      "evidence": [
+        "Climate and environmental advocates are sharply divided over the Senate’s bipartisan permitting reform proposal. But what most people agree is that the bill’s changes to electricity and transmission law are really…"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "并网、许可和实际通电进度",
+        "设备交期、电价与资本开支"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "db6f10e9cb7f7a08c784",
+      "generatedAt": "2026-11-02T05:46:46Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "cecbea0e2cb8cec8c9eb": {
+      "id": "cecbea0e2cb8cec8c9eb",
+      "summary": "公开摘要显示，《STAT+: The 4 biggest ways the midterms could change health policy, according to policymakers, lobbyists, and experts》主要讨论：No matter what happens on Election Day, the midterms will have sweeping implications for American health care. More than two dozen experts on what could come next.",
+      "coreJudgment": "这条信息为政策/地缘提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "关注临床阶段、试验终点、现金跑道、交易条款与监管风险。",
+      "evidence": [
+        "No matter what happens on Election Day, the midterms will have sweeping implications for American health care. More than two dozen experts on what could come next."
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "临床终点、安全性和样本量",
+        "现金跑道、监管沟通和授权条款"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "99b465a324200b718909",
+      "generatedAt": "2026-11-02T05:46:46Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "f7398a764256873a4059": {
+      "id": "f7398a764256873a4059",
+      "summary": "公开摘要显示，《More heat pumps would actually be good for the grid, researchers find》主要讨论：Heat pumps, superefficient sources of electric heating and cooling, are winners for the climate , air quality , and typically a household’s energy bills. But a common claim cautioning against their widespread adoption in the U.S. is that the electrical grid is too strained to handle all the extra demand they would…",
+      "coreJudgment": "这条信息为能源/电网提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "关注并网进度、实际通电MW、电价、设备交付和监管约束。",
+      "evidence": [
+        "Heat pumps, superefficient sources of electric heating and cooling, are winners for the climate , air quality , and typically a household’s energy bills. But a common claim cautioning against their widespread adoption…"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "并网、许可和实际通电进度",
+        "设备交期、电价与资本开支"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "f3de385a0c1d8f32955f",
+      "generatedAt": "2026-11-02T05:46:46Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "0065b8754e06a774e7e2": {
+      "id": "0065b8754e06a774e7e2",
+      "summary": "公开摘要显示，《The DOE announces $5B loan to Constellation for nuclear uprates》主要讨论：The pro-nuclear Trump administration continues to put its money where its mouth is. On Tuesday, the U.S. Department of Energy announced a conditional loan commitment of up to $5 billion to boost the output of 15 reactors at eight nuclear power plants in Illinois, Maryland, and Pennsylvania by a combined 1.1…",
+      "coreJudgment": "这条信息为能源/电网提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "关注并网进度、实际通电MW、电价、设备交付和监管约束。",
+      "evidence": [
+        "The pro-nuclear Trump administration continues to put its money where its mouth is. On Tuesday, the U.S. Department of Energy announced a conditional loan commitment of up to $5 billion to boost the output of 15…"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "并网、许可和实际通电进度",
+        "设备交期、电价与资本开支"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "20a113360ca02377415a",
+      "generatedAt": "2026-11-02T05:46:46Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "a419318771a0dac607a6": {
+      "id": "a419318771a0dac607a6",
+      "summary": "公开摘要显示，《The No. 1 Reason Americans Would Support a Data Center》主要讨论：This is Heatmap Daily, a weekday digest written by our executive editor. Subscribe here. Americans know why they like data centers, and they know why they don’t like them. They just can’t decide what to do about it. That’s one takeaway from Heatmap Pro’s new poll, conducted by Embold Research, which earlier this month surveyed Americans’ fast-changing…",
+      "coreJudgment": "这条信息为云/数据中心提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "关注并网进度、实际通电MW、电价、设备交付和监管约束。",
+      "evidence": [
+        "This is Heatmap Daily, a weekday digest written by our executive editor. Subscribe here. Americans know why they like data centers, and they know why they don’t like them. They just can’t decide what to do about it…"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "并网、许可和实际通电进度",
+        "设备交期、电价与资本开支"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "4fd10cc959091a7a3ae1",
+      "generatedAt": "2026-11-02T05:46:46Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "2e61474e5909e15fe8e3": {
+      "id": "2e61474e5909e15fe8e3",
+      "summary": "公开摘要显示，《Trump Hasn’t Been Advancing New Wind Farms During Permitting Talks》主要讨论：In September, the Trump administration told a reporter that the president directed the Pentagon to finally process wind projects through routine airspace approvals as required under a court order. By doing this, it created the appearance of real headway and good faith in talks with Democrats in Congress on energy permitting legislation before the November…",
+      "coreJudgment": "这条信息为能源/电网提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "关注并网进度、实际通电MW、电价、设备交付和监管约束。",
+      "evidence": [
+        "In September, the Trump administration told a reporter that the president directed the Pentagon to finally process wind projects through routine airspace approvals as required under a court order. By doing this, it…"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "并网、许可和实际通电进度",
+        "设备交期、电价与资本开支"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "435014d3984ea03f890d",
+      "generatedAt": "2026-11-02T05:46:46Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "68f8f64babb30f3bf83f": {
+      "id": "68f8f64babb30f3bf83f",
+      "summary": "公开摘要显示，《What Israel’s Election Means for Energy》主要讨论：Current conditions: For the first time, Miami’s king tide — a periodic exceptionally high tide brought by on astronomical alignment — crossed the threshold for “major” flooding without a hurricane, notching the highest level in 11 years • America’s Northern Mariana Islands are hunkering down as Typhoon In-Fa is set to brush past its northern reaches • India…",
+      "coreJudgment": "这条信息为能源/电网提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "关注并网进度、实际通电MW、电价、设备交付和监管约束。",
+      "evidence": [
+        "Current conditions: For the first time, Miami’s king tide — a periodic exceptionally high tide brought by on astronomical alignment — crossed the threshold for “major” flooding without a hurricane, notching the highest…"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "并网、许可和实际通电进度",
+        "设备交期、电价与资本开支"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "ad5aafdf88e93e9a590c",
+      "generatedAt": "2026-11-02T05:46:46Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "b80822d90d3553147aea": {
+      "id": "b80822d90d3553147aea",
+      "summary": "公开摘要显示，《STAT+: Pharmalittle: We’re reading about AstraZeneca cost-cutting, Sun Pharma facility problems, and more》主要讨论：AstraZeneca has launched a three-year cost-cutting program that aims to slice off $1.5 billion a year, with the savings reinvested in R&D.",
+      "coreJudgment": "这条信息为生物科技提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "关注临床阶段、试验终点、现金跑道、交易条款与监管风险。",
+      "evidence": [
+        "AstraZeneca has launched a three-year cost-cutting program that aims to slice off $1.5 billion a year, with the savings reinvested in R&D."
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "临床终点、安全性和样本量",
+        "现金跑道、监管沟通和授权条款"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "cbbc8b01bf283a012b5e",
+      "generatedAt": "2026-11-02T05:46:46Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "771433db295e8e41cde3": {
+      "id": "771433db295e8e41cde3",
+      "summary": "公开摘要显示，《STAT+: Up and down the ladder: The latest comings and goings》主要讨论：From new hires to departures, promotions and transfers, here are the latest comings and goings in the pharmaceutical industry.",
+      "coreJudgment": "这条信息为生物科技提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "关注临床阶段、试验终点、现金跑道、交易条款与监管风险。",
+      "evidence": [
+        "From new hires to departures, promotions and transfers, here are the latest comings and goings in the pharmaceutical industry."
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "临床终点、安全性和样本量",
+        "现金跑道、监管沟通和授权条款"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "34b81d8ec70b2092e2ed",
+      "generatedAt": "2026-11-02T05:46:46Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "6d49f1264a4fa63d7dd5": {
+      "id": "6d49f1264a4fa63d7dd5",
+      "summary": "公开摘要显示，《Fifth Plenum Communiqué》主要讨论：Today’s note is just focused on the Fifth Plenum communiqué that was released earlier today. The communiqué largely confirms the direction suggested by the pre-Plenum commentary campaign and explicitly incorporates Xi Jinping Thought on Party Building into the framework for implementing the decision. It envisions “full and rigorous Party self-governance” as…",
+      "coreJudgment": "这条信息为Sinocism提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "关注亚洲供应链、政策变化、交付节奏与西方信息时差。",
+      "evidence": [
+        "Today’s note is just focused on the Fifth Plenum communiqué that was released earlier today. The communiqué largely confirms the direction suggested by the pre-Plenum commentary campaign and explicitly incorporates Xi…"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "供应商订单、库存和交付节奏",
+        "出口限制、汇率与地缘政策"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "7e2666daac12b3f6079f",
+      "generatedAt": "2026-11-02T05:46:46Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "999b2f4f243f0e74e620": {
+      "id": "999b2f4f243f0e74e620",
+      "summary": "公开摘要显示，《Anthropic S-1, The Cost of Compute, Who Is Paying?》主要讨论：Anthropic's IPO is finally here; the core business is very profitable, but competition may eat all of the profits, even as investors are set up for endless dilution.",
+      "coreJudgment": "这条信息为算力/芯片提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "用于建立公司和产业长期框架，关键判断仍需回到一手数据。",
+      "evidence": [
+        "Anthropic's IPO is finally here; the core business is very profitable, but competition may eat all of the profits, even as investors are set up for endless dilution."
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "公司披露与一手数据能否验证核心判断",
+        "竞争者和替代方案的变化"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "4d0cb4eb605e99565c15",
+      "generatedAt": "2026-11-02T05:46:46Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "bfeb101d7c420e856cd6": {
+      "id": "bfeb101d7c420e856cd6",
+      "summary": "公开摘要显示，《Google’s AI worlds can now talk back》主要讨论：PLUS: Make editable product mockups with GPT-6.1 Terra",
+      "coreJudgment": "这条信息为GOOGL提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "区分研究能力进展、工程可用性、成本曲线与商业化证据。",
+      "evidence": [
+        "PLUS: Make editable product mockups with GPT-6.1 Terra"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "独立基准与真实工作负载表现",
+        "推理成本、延迟和部署约束"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "c561ede84bd08c00607c",
+      "generatedAt": "2026-11-02T05:46:46Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "e6b19a19bc608bfd92f6": {
+      "id": "e6b19a19bc608bfd92f6",
+      "summary": "公开摘要显示，《Gas Turbine Makers Cash In on Global Power Rush》主要讨论：Europe’s gas market is heading into winter with little room for error. Lower storage levels and disruption in the Middle East have left the region more exposed to weather and competition for LNG. BNEF’s base case sees European storage falling to 21% by the end of March, but a prolonged Strait of Hormuz disruption or a particularly cold winter could push it…",
+      "coreJudgment": "这条信息为能源/电网提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "关注并网进度、实际通电MW、电价、设备交付和监管约束。",
+      "evidence": [
+        "Europe’s gas market is heading into winter with little room for error. Lower storage levels and disruption in the Middle East have left the region more exposed to weather and competition for LNG. BNEF’s base case sees…"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "并网、许可和实际通电进度",
+        "设备交期、电价与资本开支"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "aa187eeb7e274bf56aba",
+      "generatedAt": "2026-11-02T05:46:46Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "fcc107946a2b2f7e429e": {
+      "id": "fcc107946a2b2f7e429e",
+      "summary": "公开摘要显示，《Price hikes aren’t all that’s at stake in FirstEnergy Ohio’s rate case》主要讨论：Before a utility can raise electricity rates, it must get approval from regulators. In Ohio, some groups are looking to step into that process to make sure FirstEnergy, whose utilities supply power to over 2 million customers in the state, uses some of the money it will receive from ratepayers to equitably enable the…",
+      "coreJudgment": "这条信息为能源/电网提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "关注并网进度、实际通电MW、电价、设备交付和监管约束。",
+      "evidence": [
+        "Before a utility can raise electricity rates, it must get approval from regulators. In Ohio, some groups are looking to step into that process to make sure FirstEnergy, whose utilities supply power to over 2 million…"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "并网、许可和实际通电进度",
+        "设备交期、电价与资本开支"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "6ab07e7b648d8d79172f",
+      "generatedAt": "2026-11-02T05:46:46Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "008b54245077015e5f5b": {
+      "id": "008b54245077015e5f5b",
+      "summary": "公开摘要显示，《Emvolon Raises $22 Million to Turn Landfill Gas Into Fuel》主要讨论：Venture capitalists love a system that fits inside a shipping container . But that kind of modularity has been hard to pull off in the low-carbon fuels industry, where producers have generally remained yoked to the prevailing wisdom of economies of scale as the key to profitability. That’s led to enormous, capital-intensive facilities packed with complex…",
+      "coreJudgment": "这条信息为创投/融资提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "关注并网进度、实际通电MW、电价、设备交付和监管约束。",
+      "evidence": [
+        "Venture capitalists love a system that fits inside a shipping container . But that kind of modularity has been hard to pull off in the low-carbon fuels industry, where producers have generally remained yoked to the…"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "并网、许可和实际通电进度",
+        "设备交期、电价与资本开支"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "f2d8560e13ac657a3a42",
+      "generatedAt": "2026-11-02T05:46:46Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "5eb9f9753ea3371ce28a": {
+      "id": "5eb9f9753ea3371ce28a",
+      "summary": "公开摘要显示，《STAT+: Federal judge rejects new Medicaid ‘frailty’ definition for work requirements》主要讨论：A judge ruled that federal regulators exceeded their authority in narrowing the exceptions to Medicaid work requirements for people with medical issues.",
+      "coreJudgment": "这条信息为企业软件提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "关注临床阶段、试验终点、现金跑道、交易条款与监管风险。",
+      "evidence": [
+        "A judge ruled that federal regulators exceeded their authority in narrowing the exceptions to Medicaid work requirements for people with medical issues."
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "临床终点、安全性和样本量",
+        "现金跑道、监管沟通和授权条款"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "d5589df95cf6089f3ed6",
+      "generatedAt": "2026-11-02T05:46:46Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "5c51285c63976237923f": {
+      "id": "5c51285c63976237923f",
+      "summary": "公开摘要显示，《STAT+: HHS green lights six peptides, despite concerns from FDA scientists》主要讨论：Great news for peptide fans: The Trump administration is giving the peptide craze a regulatory boost, despite objections from FDA career scientists.",
+      "coreJudgment": "这条信息为生物科技提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "关注临床阶段、试验终点、现金跑道、交易条款与监管风险。",
+      "evidence": [
+        "Great news for peptide fans: The Trump administration is giving the peptide craze a regulatory boost, despite objections from FDA career scientists."
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "临床终点、安全性和样本量",
+        "现金跑道、监管沟通和授权条款"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "78eac5c3397f1e0c665e",
+      "generatedAt": "2026-11-02T05:46:46Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "9b4d5a99d594ba1b7881": {
+      "id": "9b4d5a99d594ba1b7881",
+      "summary": "公开摘要显示，《STAT+: New federal rule will require prescription drug middlemen to share secret payments data》主要讨论：A Trump administration rule will force pharmacy benefit managers to disclose fees and compensation details currently kept private.",
+      "coreJudgment": "这条信息为生物科技提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "关注临床阶段、试验终点、现金跑道、交易条款与监管风险。",
+      "evidence": [
+        "A Trump administration rule will force pharmacy benefit managers to disclose fees and compensation details currently kept private."
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "临床终点、安全性和样本量",
+        "现金跑道、监管沟通和授权条款"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "59202ffa0fd8737bc6dc",
+      "generatedAt": "2026-11-02T05:46:46Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "38b73188e91a14f84669": {
+      "id": "38b73188e91a14f84669",
+      "summary": "公开摘要显示，《STAT+: Vertex kidney disease drug scrutinized for infection risk》主要讨论：Ahead of its FDA approval decision on Nov 30, Vertex's kidney disease drug is being heavily scrutinized for infection risk.",
+      "coreJudgment": "这条信息为生物科技提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "关注临床阶段、试验终点、现金跑道、交易条款与监管风险。",
+      "evidence": [
+        "Ahead of its FDA approval decision on Nov 30, Vertex's kidney disease drug is being heavily scrutinized for infection risk."
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "临床终点、安全性和样本量",
+        "现金跑道、监管沟通和授权条款"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "2bd2f6fea638270b521a",
+      "generatedAt": "2026-11-02T05:46:46Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "a692cf9ab624fc1197d6": {
+      "id": "a692cf9ab624fc1197d6",
+      "summary": "公开摘要显示，《2026.44: At Long Last…》主要讨论：The best Stratechery content from the week of October 26, 2026 including Anthropic numbers, the end of the Internet as we know it, and autocracies then and now.",
+      "coreJudgment": "这条信息为Stratechery提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "用于建立公司和产业长期框架，关键判断仍需回到一手数据。",
+      "evidence": [
+        "The best Stratechery content from the week of October 26, 2026 including Anthropic numbers, the end of the Internet as we know it, and autocracies then and now."
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "公司披露与一手数据能否验证核心判断",
+        "竞争者和替代方案的变化"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "87fe5099b3b2b21dff03",
+      "generatedAt": "2026-11-02T05:46:46Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "47a07a97d128aef84c87": {
+      "id": "47a07a97d128aef84c87",
+      "summary": "公开摘要显示，《Sharp Tech on Video: Anthropic’s S-1 and What It Means for Meta and Muse, You Can See Everything, and Brewers!》主要讨论：Sharp Tech is, for the first time, available on video. You have three ways to consume it: YouTube, Spotify, and here on Stratechery.",
+      "coreJudgment": "这条信息为META提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "用于建立公司和产业长期框架，关键判断仍需回到一手数据。",
+      "evidence": [
+        "Sharp Tech is, for the first time, available on video. You have three ways to consume it: YouTube, Spotify, and here on Stratechery."
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "公司披露与一手数据能否验证核心判断",
+        "竞争者和替代方案的变化"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "96a6dfed83dca2a97a8d",
+      "generatedAt": "2026-11-02T05:46:46Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "826fe9bfeedf0b7a00b5": {
+      "id": "826fe9bfeedf0b7a00b5",
+      "summary": "公开摘要显示，《The End of the Internet》主要讨论：The old Internet, where anyone could host a server is over, but it's just the final blow in an ending that has been coming for years. The future, though, is brighter than it appears.",
+      "coreJudgment": "这条信息为云/数据中心提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "用于建立公司和产业长期框架，关键判断仍需回到一手数据。",
+      "evidence": [
+        "The old Internet, where anyone could host a server is over, but it's just the final blow in an ending that has been coming for years. The future, though, is brighter than it appears."
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "公司披露与一手数据能否验证核心判断",
+        "竞争者和替代方案的变化"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "2d149d512451e6ec438e",
+      "generatedAt": "2026-11-02T05:46:46Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "e4a2a3b32a29c8d2322f": {
+      "id": "e4a2a3b32a29c8d2322f",
+      "summary": "公开摘要显示，《The AI bubble meets Anthropic’s real numbers》主要讨论：PLUS: Turn sales call notes into follow-up emails with AI",
+      "coreJudgment": "这条信息为AI模型提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "区分研究能力进展、工程可用性、成本曲线与商业化证据。",
+      "evidence": [
+        "PLUS: Turn sales call notes into follow-up emails with AI"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "独立基准与真实工作负载表现",
+        "推理成本、延迟和部署约束"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "193dad01aed9189f8f62",
+      "generatedAt": "2026-11-02T05:46:46Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "e54fb6ef0e38dbe04cce": {
+      "id": "e54fb6ef0e38dbe04cce",
+      "summary": "公开摘要显示，《Here's how much Trump's Iran war has added to Americans' fuel costs》主要讨论：See more from Canary Media’s ​“Chart of the Week” column . Donald Trump ran for his second term promising to “make America affordable again.” Two years later, the president’s war with Iran has his constituents paying through the nose for gasoline and diesel. In fact, per-person fuel costs have risen more in the…",
+      "coreJudgment": "这条信息为Canary Media提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "关注并网进度、实际通电MW、电价、设备交付和监管约束。",
+      "evidence": [
+        "See more from Canary Media’s ​“Chart of the Week” column . Donald Trump ran for his second term promising to “make America affordable again.” Two years later, the president’s war with Iran has his constituents paying…"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "并网、许可和实际通电进度",
+        "设备交期、电价与资本开支"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "9d660810a786f710016b",
+      "generatedAt": "2026-11-02T05:46:46Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "345880be9ea5dd64a5a2": {
+      "id": "345880be9ea5dd64a5a2",
+      "summary": "公开摘要显示，《Massachusetts sets big battery goals — and the policies to back them up》主要讨论：Just outside Boston, a developer is getting set to build a 700-megawatt storage facility that is expected to dwarf every other battery project in New England. One town over, another energy company just closed on $850 million in financing to build a 250-MW battery. Down near the Rhode Island border, ground has been…",
+      "coreJudgment": "这条信息为能源/电网提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "关注并网进度、实际通电MW、电价、设备交付和监管约束。",
+      "evidence": [
+        "Just outside Boston, a developer is getting set to build a 700-megawatt storage facility that is expected to dwarf every other battery project in New England. One town over, another energy company just closed on $850…"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "并网、许可和实际通电进度",
+        "设备交期、电价与资本开支"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "21ff4030324bc1f0dca4",
+      "generatedAt": "2026-11-02T05:46:46Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "e66d4baed89812626a8c": {
+      "id": "e66d4baed89812626a8c",
+      "summary": "公开摘要显示，《A New Kind of Chemistry》主要讨论：Thanks to Kyle Schiller at Marathon Fusion for conversations and information that informed this essay.",
+      "coreJudgment": "这条信息为Construction Physics提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "用于建立公司和产业长期框架，关键判断仍需回到一手数据。",
+      "evidence": [
+        "Thanks to Kyle Schiller at Marathon Fusion for conversations and information that informed this essay."
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "公司披露与一手数据能否验证核心判断",
+        "竞争者和替代方案的变化"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "5199a4c91f14c7cc540d",
+      "generatedAt": "2026-11-02T05:46:46Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "32d2182e57f378ccd787": {
+      "id": "32d2182e57f378ccd787",
+      "summary": "公开摘要显示，《Brazil’s Lula, a Champion Against Deforestation, Wins Historic Fourth Term》主要讨论：Current conditions: Typhoon Champi swept past Taiwan, leaving one dead and 500 injured as the weakened storm slams into South Korea and Japan • Hurricane Vance is churning off Mexico, bombarding the coast with waves up to 13 feet tall • Tropical Storm In-Fa could strengthen into a powerful storm as it heads toward the Northern Mariana Islands, a U.S…",
+      "coreJudgment": "这条信息为亚洲供应链提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "关注并网进度、实际通电MW、电价、设备交付和监管约束。",
+      "evidence": [
+        "Current conditions: Typhoon Champi swept past Taiwan, leaving one dead and 500 injured as the weakened storm slams into South Korea and Japan • Hurricane Vance is churning off Mexico, bombarding the coast with waves up…"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "并网、许可和实际通电进度",
+        "设备交期、电价与资本开支"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "1e86abdde6c99f2670d8",
+      "generatedAt": "2026-11-02T05:46:46Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "69c8409d67352f64ec2f": {
+      "id": "69c8409d67352f64ec2f",
+      "summary": "公开摘要显示，《Exclusive: Public Support for Data Centers Has Slightly Recovered》主要讨论：The American public’s backlash against data centers may finally be starting to slow down, although the facilities remain staggeringly unpopular, a new poll finds. Seventy-one percent of Americans said they would oppose a data center being built near where they live, according to a new Heatmap Pro poll conducted by Embold Research earlier this month. That is…",
+      "coreJudgment": "这条信息为云/数据中心提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "关注并网进度、实际通电MW、电价、设备交付和监管约束。",
+      "evidence": [
+        "The American public’s backlash against data centers may finally be starting to slow down, although the facilities remain staggeringly unpopular, a new poll finds. Seventy-one percent of Americans said they would oppose…"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "并网、许可和实际通电进度",
+        "设备交期、电价与资本开支"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "bf466f342f7ee0c1544b",
+      "generatedAt": "2026-11-02T05:46:46Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "c82e65d6e498cda64486": {
+      "id": "c82e65d6e498cda64486",
+      "summary": "公开摘要显示，《Why Everyone Loves BAAJA’s Transmission Section》主要讨论：As the intra-Democratic fight over permitting reform gets ever more intense, with objections piling up from tribes, elected officials, and environmental groups, one thing everyone seems to agree on is that the transmission provisions in the Bipartisan American Affordability and Jobs Act of 2026 are a good idea. One major environmental group, the Natural…",
+      "coreJudgment": "这条信息为Heatmap News提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "关注并网进度、实际通电MW、电价、设备交付和监管约束。",
+      "evidence": [
+        "As the intra-Democratic fight over permitting reform gets ever more intense, with objections piling up from tribes, elected officials, and environmental groups, one thing everyone seems to agree on is that the…"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "并网、许可和实际通电进度",
+        "设备交期、电价与资本开支"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "ee2b27f3d72c1374809b",
+      "generatedAt": "2026-11-02T05:46:46Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "1550252df5a1e84b9581": {
+      "id": "1550252df5a1e84b9581",
+      "summary": "公开摘要显示，《Messing Around With the Warburg Effect》主要讨论：Oncology researchers have been trying to exploit the Warburg effect for cancer treatment for decades now. This is a modified metabolic style that shows up in many types of cancer cells, and it’s been known since Otto Warburg’s experiments back in the 1920s (!) Put in broad terms, what you see is tumors downregulating the “usual” energy-generating systems of…",
+      "coreJudgment": "这条信息为META提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "关注临床阶段、试验终点、现金跑道、交易条款与监管风险。",
+      "evidence": [
+        "Oncology researchers have been trying to exploit the Warburg effect for cancer treatment for decades now. This is a modified metabolic style that shows up in many types of cancer cells, and it’s been known since Otto…"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "临床终点、安全性和样本量",
+        "现金跑道、监管沟通和授权条款"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开摘要",
+      "inputHash": "5968044eb0ba968111ed",
+      "generatedAt": "2026-11-02T05:46:46Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "a4949a4dcca35a930c91": {
+      "id": "a4949a4dcca35a930c91",
+      "summary": "公开摘要显示，《Binance hit by crypto’s biggest heist ever》主要讨论：PLUS: No account, no Reddit",
+      "coreJudgment": "这条信息为The Rundown AI提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "区分研究能力进展、工程可用性、成本曲线与商业化证据。",
+      "evidence": [
+        "PLUS: No account, no Reddit"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "独立基准与真实工作负载表现",
+        "推理成本、延迟和部署约束"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "db31075348cdbfaddba4",
+      "generatedAt": "2026-11-02T05:46:46Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "a6db950fcdee69a3ac56": {
+      "id": "a6db950fcdee69a3ac56",
+      "summary": "公开摘要显示，《Kimi continues to challenge the frontier with K3.1 Pro》主要讨论：PLUS: Let AI sign in without sharing your passwords",
+      "coreJudgment": "这条信息为AI模型提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "区分研究能力进展、工程可用性、成本曲线与商业化证据。",
+      "evidence": [
+        "PLUS: Let AI sign in without sharing your passwords"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "独立基准与真实工作负载表现",
+        "推理成本、延迟和部署约束"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "ffac08aa0cbbc7ae898a",
+      "generatedAt": "2026-11-02T05:46:46Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "6e4184ff01f1be6bda30": {
+      "id": "6e4184ff01f1be6bda30",
+      "summary": "目前只能确认标题《Catch Us If You Can》及来源信息，尚无足够公开正文支持更具体的结论。",
+      "coreJudgment": "这条信息为The Wire China提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "关注亚洲供应链、政策变化、交付节奏与西方信息时差。",
+      "evidence": [
+        "公开标题：Catch Us If You Can"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "供应商订单、库存和交付节奏",
+        "出口限制、汇率与地缘政策"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开摘要",
+      "inputHash": "6b4dd8303b103751cb59",
+      "generatedAt": "2026-11-02T05:46:47Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "c293f463da5fdac04087": {
+      "id": "c293f463da5fdac04087",
+      "summary": "目前只能确认标题《Huawei in the Dock》及来源信息，尚无足够公开正文支持更具体的结论。",
+      "coreJudgment": "这条信息为The Wire China提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "关注亚洲供应链、政策变化、交付节奏与西方信息时差。",
+      "evidence": [
+        "公开标题：Huawei in the Dock"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "供应商订单、库存和交付节奏",
+        "出口限制、汇率与地缘政策"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "8244a298f44d06c3e82e",
+      "generatedAt": "2026-11-02T05:46:47Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "33d0441cdce332d8e3b5": {
+      "id": "33d0441cdce332d8e3b5",
+      "summary": "公开摘要显示，《GE Vernova Bets $9 Billion on Transmission Lines》主要讨论：Current conditions: A Pineapple Express — the powerful atmospheric river that hits the West Coast, not the marijuana strain — could pummel the Southwest with heavy rain on Halloween • The remnants of Typhoon Champi are driving a severe storm in the Bering Sea, with four-foot waves lapping on Alaska’s shore • Despite India’s evacuation of nearly 200,000…",
+      "coreJudgment": "这条信息为AAPL提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "关注并网进度、实际通电MW、电价、设备交付和监管约束。",
+      "evidence": [
+        "Current conditions: A Pineapple Express — the powerful atmospheric river that hits the West Coast, not the marijuana strain — could pummel the Southwest with heavy rain on Halloween • The remnants of Typhoon Champi are…"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "并网、许可和实际通电进度",
+        "设备交期、电价与资本开支"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "d007c4c918934f427923",
+      "generatedAt": "2026-11-02T05:46:47Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "2fe75f1eb51f96d23f86": {
+      "id": "2fe75f1eb51f96d23f86",
+      "summary": "公开摘要显示，《Google’s Gemini 4 Carbon tops the charts (for now)》主要讨论：PLUS: Turn a prompt into a poster with Canva Craft",
+      "coreJudgment": "这条信息为GOOGL提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "区分研究能力进展、工程可用性、成本曲线与商业化证据。",
+      "evidence": [
+        "PLUS: Turn a prompt into a poster with Canva Craft"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "独立基准与真实工作负载表现",
+        "推理成本、延迟和部署约束"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "b56d69e4be2f5306a5ba",
+      "generatedAt": "2026-11-02T05:46:47Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "cd567aa2389d5616b289": {
+      "id": "cd567aa2389d5616b289",
+      "summary": "公开摘要显示，《The self-driving future grabs a giant shovel》主要讨论：PLUS: Boston Dynamics workers try to block ICE deal",
+      "coreJudgment": "这条信息为The Rundown AI提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "区分研究能力进展、工程可用性、成本曲线与商业化证据。",
+      "evidence": [
+        "PLUS: Boston Dynamics workers try to block ICE deal"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "独立基准与真实工作负载表现",
+        "推理成本、延迟和部署约束"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "909949b440bda1a5c315",
+      "generatedAt": "2026-11-02T05:46:47Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "0bb547783caaf03d6d5f": {
+      "id": "0bb547783caaf03d6d5f",
+      "summary": "公开摘要显示，《Why Don’t We Live in an Art Nouveau World?》主要讨论：How many Sagrada Famílias is too many?",
+      "coreJudgment": "这条信息为Asterisk Magazine提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "用于建立公司和产业长期框架，关键判断仍需回到一手数据。",
+      "evidence": [
+        "How many Sagrada Famílias is too many?"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "公司披露与一手数据能否验证核心判断",
+        "竞争者和替代方案的变化"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "29be6ea21808809161c0",
+      "generatedAt": "2026-11-02T05:46:47Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "642023c85af841cbe15f": {
+      "id": "642023c85af841cbe15f",
+      "summary": "目前只能确认标题《ADS-TEC Energy nears permit for 1GW battery storage facility in Germany》及来源信息，尚无足够公开正文支持更具体的结论。",
+      "coreJudgment": "这条信息为能源/电网提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "关注并网进度、实际通电MW、电价、设备交付和监管约束。",
+      "evidence": [
+        "公开标题：ADS-TEC Energy nears permit for 1GW battery storage facility in Germany"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "并网、许可和实际通电进度",
+        "设备交期、电价与资本开支"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "38819071988c53d86df3",
+      "generatedAt": "2026-11-02T05:46:47Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "8c5f77846ea938bf1a37": {
+      "id": "8c5f77846ea938bf1a37",
+      "summary": "目前只能确认标题《Building the next generation of sustainable data centres in pharma》及来源信息，尚无足够公开正文支持更具体的结论。",
+      "coreJudgment": "这条信息为生物科技提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "关注并网进度、实际通电MW、电价、设备交付和监管约束。",
+      "evidence": [
+        "公开标题：Building the next generation of sustainable data centres in pharma"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "并网、许可和实际通电进度",
+        "设备交期、电价与资本开支"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "beffa8dbb672bc498a82",
+      "generatedAt": "2026-11-02T05:46:47Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "ce01757cfd1a735a894d": {
+      "id": "ce01757cfd1a735a894d",
+      "summary": "公开摘要显示，《What Does It Mean to \"Know Medicinal Chemistry\"?》主要讨论：I thought this was an interesting and provocative article: “Who Knows Medicinal Chemistry?” The author (Daniele Andreotti) starts out with a statement that (to be honest) I have never heard before in my career: Most of us have heard some version of the sentence, and rather more of us than would admit have said it: “you do not really know medicinal chemistry…",
+      "coreJudgment": "这条信息为企业软件提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "关注临床阶段、试验终点、现金跑道、交易条款与监管风险。",
+      "evidence": [
+        "I thought this was an interesting and provocative article: “Who Knows Medicinal Chemistry?” The author (Daniele Andreotti) starts out with a statement that (to be honest) I have never heard before in my career: Most of…"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "临床终点、安全性和样本量",
+        "现金跑道、监管沟通和授权条款"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开摘要",
+      "inputHash": "6f72c1efaaf1b169be9a",
+      "generatedAt": "2026-11-02T05:46:47Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "a463223cc3578de929b3": {
+      "id": "a463223cc3578de929b3",
+      "summary": "公开摘要显示，《Assessing Merck and Moderna’s mRNA cancer vaccine》主要讨论：On this week's “The Readout LOUD,” we discuss the latest cancer data presented at the annual meeting of the European Society for Medical Oncology.",
+      "coreJudgment": "这条信息为STAT News提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "关注临床阶段、试验终点、现金跑道、交易条款与监管风险。",
+      "evidence": [
+        "On this week's “The Readout LOUD,” we discuss the latest cancer data presented at the annual meeting of the European Society for Medical Oncology."
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "临床终点、安全性和样本量",
+        "现金跑道、监管沟通和授权条款"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "c84fd7aa91e2a26016fa",
+      "generatedAt": "2026-11-02T05:46:47Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "c92e79f7c45a58e5b133": {
+      "id": "c92e79f7c45a58e5b133",
+      "summary": "公开摘要显示，《How Election Day can affect your heart》主要讨论：Political campaigns can do more than raise your blood pressure. Studies link election stress to irregular heartbeats and an increase in heart attacks.",
+      "coreJudgment": "这条信息为STAT News提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "关注临床阶段、试验终点、现金跑道、交易条款与监管风险。",
+      "evidence": [
+        "Political campaigns can do more than raise your blood pressure. Studies link election stress to irregular heartbeats and an increase in heart attacks."
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "临床终点、安全性和样本量",
+        "现金跑道、监管沟通和授权条款"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "631a00a0d72aa000be6b",
+      "generatedAt": "2026-11-02T05:46:47Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "4a9568ca567476d4e9cb": {
+      "id": "4a9568ca567476d4e9cb",
+      "summary": "公开摘要显示，《Opinion: How Congress can fix expert advisory committees》主要讨论：“This evisceration of scientific advice is untenable,” write C. Joseph Ross Daval and Aaron S. Kesselheim.",
+      "coreJudgment": "这条信息为STAT News提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "关注临床阶段、试验终点、现金跑道、交易条款与监管风险。",
+      "evidence": [
+        "“This evisceration of scientific advice is untenable,” write C. Joseph Ross Daval and Aaron S. Kesselheim."
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "临床终点、安全性和样本量",
+        "现金跑道、监管沟通和授权条款"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "da15d6448e70233b4ffc",
+      "generatedAt": "2026-11-02T05:46:47Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "0daf2ca57fb9d9b5274d": {
+      "id": "0daf2ca57fb9d9b5274d",
+      "summary": "公开摘要显示，《Opinion: What a mother’s 1834 letter about measles tells us about MAHA》主要讨论：An 1834 letter about a measles outbreak sheds light on today’s anti-vaccine movement, writes a medical historian.",
+      "coreJudgment": "这条信息为STAT News提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "关注临床阶段、试验终点、现金跑道、交易条款与监管风险。",
+      "evidence": [
+        "An 1834 letter about a measles outbreak sheds light on today’s anti-vaccine movement, writes a medical historian."
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "临床终点、安全性和样本量",
+        "现金跑道、监管沟通和授权条款"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "4c2529870f606877aa17",
+      "generatedAt": "2026-11-02T05:46:47Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "1421aefc1f302d4aaae4": {
+      "id": "1421aefc1f302d4aaae4",
+      "summary": "公开摘要显示，《STAT+: How a simple UTI turns into a $1,756 bill》主要讨论：They visited for what they thought were obvious urgent care issues — coughs, congestion, flu — and were shocked to get bills for ER care instead, totaling thousands of dollars.",
+      "coreJudgment": "这条信息为STAT News提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "关注临床阶段、试验终点、现金跑道、交易条款与监管风险。",
+      "evidence": [
+        "They visited for what they thought were obvious urgent care issues — coughs, congestion, flu — and were shocked to get bills for ER care instead, totaling thousands of dollars."
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "临床终点、安全性和样本量",
+        "现金跑道、监管沟通和授权条款"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "449a090e75b1187c9eb8",
+      "generatedAt": "2026-11-02T05:46:47Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "f8a438fb81da43b133c8": {
+      "id": "f8a438fb81da43b133c8",
+      "summary": "公开摘要显示，《The persisting paradox of men’s health》主要讨论：A new series in The Lancet argues for the need to investigate a paradox of men’s health: why men experience worse health outcomes than women, even though they hold undeniable…",
+      "coreJudgment": "这条信息为STAT News提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "关注临床阶段、试验终点、现金跑道、交易条款与监管风险。",
+      "evidence": [
+        "A new series in The Lancet argues for the need to investigate a paradox of men’s health: why men experience worse health outcomes than women, even though they hold undeniable…"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "临床终点、安全性和样本量",
+        "现金跑道、监管沟通和授权条款"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "5af443b41588f8bbe674",
+      "generatedAt": "2026-11-02T05:46:47Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "d279337491bc06d69a44": {
+      "id": "d279337491bc06d69a44",
+      "summary": "目前只能确认标题《The Daily Roundup》及来源信息，尚无足够公开正文支持更具体的结论。",
+      "coreJudgment": "这条信息为The Wire China提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "关注亚洲供应链、政策变化、交付节奏与西方信息时差。",
+      "evidence": [
+        "公开标题：The Daily Roundup"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "供应商订单、库存和交付节奏",
+        "出口限制、汇率与地缘政策"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开摘要",
+      "inputHash": "f7e1b94719ebff5e0000",
+      "generatedAt": "2026-11-02T05:46:47Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "287deae4daa5d61f3dce": {
+      "id": "287deae4daa5d61f3dce",
+      "summary": "公开摘要显示，《Ford’s new EV pickup will come with more affordable home-power backup》主要讨论：Electric vehicles can serve as home backup batteries. But so far, most EVs have needed expensive bidirectional chargers to do that — a tough sell for customers. Ford aims to remove this cost obstacle with its forthcoming Ford Fathom electric pickup truck . On Tuesday, the U.S. automaker revealed that the Fathom,…",
+      "coreJudgment": "这条信息为Canary Media提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "关注并网进度、实际通电MW、电价、设备交付和监管约束。",
+      "evidence": [
+        "Electric vehicles can serve as home backup batteries. But so far, most EVs have needed expensive bidirectional chargers to do that — a tough sell for customers. Ford aims to remove this cost obstacle with its…"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "并网、许可和实际通电进度",
+        "设备交期、电价与资本开支"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "ecdb1211c47ff1153905",
+      "generatedAt": "2026-11-02T05:46:47Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "115692d5e3140828bebe": {
+      "id": "115692d5e3140828bebe",
+      "summary": "目前只能确认标题《Elgin to invest $531m in five UK solar and storage projects》及来源信息，尚无足够公开正文支持更具体的结论。",
+      "coreJudgment": "这条信息为能源/电网提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "关注并网进度、实际通电MW、电价、设备交付和监管约束。",
+      "evidence": [
+        "公开标题：Elgin to invest $531m in five UK solar and storage projects"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "并网、许可和实际通电进度",
+        "设备交期、电价与资本开支"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "dbd6a6b5766f80f2a6eb",
+      "generatedAt": "2026-11-02T05:46:47Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "c7d9552de34f04422bb4": {
+      "id": "c7d9552de34f04422bb4",
+      "summary": "目前只能确认标题《US DOE approves $5.1bn loan to Alliant Energy for power projects》及来源信息，尚无足够公开正文支持更具体的结论。",
+      "coreJudgment": "这条信息为能源/电网提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "关注并网进度、实际通电MW、电价、设备交付和监管约束。",
+      "evidence": [
+        "公开标题：US DOE approves $5.1bn loan to Alliant Energy for power projects"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "并网、许可和实际通电进度",
+        "设备交期、电价与资本开支"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "f5bc2df958489538cf8c",
+      "generatedAt": "2026-11-02T05:46:47Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "09c857083fcd331fbda6": {
+      "id": "09c857083fcd331fbda6",
+      "summary": "目前只能确认标题《US EPA proposes changes to oil and gas emissions regulations》及来源信息，尚无足够公开正文支持更具体的结论。",
+      "coreJudgment": "这条信息为政策/地缘提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "关注并网进度、实际通电MW、电价、设备交付和监管约束。",
+      "evidence": [
+        "公开标题：US EPA proposes changes to oil and gas emissions regulations"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "并网、许可和实际通电进度",
+        "设备交期、电价与资本开支"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "b4cc7c50743f40be058f",
+      "generatedAt": "2026-11-02T05:46:47Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "a0940b81adee29865b31": {
+      "id": "a0940b81adee29865b31",
+      "summary": "公开摘要显示，《A Natural Gas Megamerger Could Create America’s New No. 1 Producer》主要讨论：Current conditions: Tropical Storm Olana is headed for Hawaii with yet more flooding and powerful winds as the state continues to recover from previous storms • Tropical Cyclone Arnab is strengthening into a “severe” storm as it approaches the northern coast of India’s Andhra Pradesh state near the port city of Visakhapatnam • In-fa has become a typhoon, en…",
+      "coreJudgment": "这条信息为Heatmap News提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "关注并网进度、实际通电MW、电价、设备交付和监管约束。",
+      "evidence": [
+        "Current conditions: Tropical Storm Olana is headed for Hawaii with yet more flooding and powerful winds as the state continues to recover from previous storms • Tropical Cyclone Arnab is strengthening into a “severe”…"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "并网、许可和实际通电进度",
+        "设备交期、电价与资本开支"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "e273e0ff974ac287dac0",
+      "generatedAt": "2026-11-02T05:46:47Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "4568ad9229a64a927f06": {
+      "id": "4568ad9229a64a927f06",
+      "summary": "公开摘要显示，《John Podesta Says Permitting Deal Hands Trump ‘a Loaded Howitzer’》主要讨论：Former Biden senior climate adviser John Podesta wants lawmakers to take a red pen to the bipartisan permitting deal. Podesta criticized a key part of the Senate’s bipartisan permitting deal on Friday, according to a recording I obtained of a fireside chat at the University of Colorado Boulder. He praised the bill’s transmission reforms, but argued…",
+      "coreJudgment": "这条信息为Heatmap News提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "关注并网进度、实际通电MW、电价、设备交付和监管约束。",
+      "evidence": [
+        "Former Biden senior climate adviser John Podesta wants lawmakers to take a red pen to the bipartisan permitting deal. Podesta criticized a key part of the Senate’s bipartisan permitting deal on Friday, according to a…"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "并网、许可和实际通电进度",
+        "设备交期、电价与资本开支"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "bef68bece807e202e757",
+      "generatedAt": "2026-11-02T05:46:47Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "61674d94c1a40b596d59": {
+      "id": "61674d94c1a40b596d59",
+      "summary": "公开摘要显示，《The Ford Fathom Will Bring Bi-Directional Charging to the Masses》主要讨论：When the Ford Fathom debuts in 2027, much of the attention will focus on its size and its price. As it should: The all-electric mid-size truck is promised to start under $30,000, and the success or failure of that car at that price will tell us a lot about the future of Ford, as well as mainstream America’s true appetite for EVs. While we wait for our first…",
+      "coreJudgment": "这条信息为Heatmap News提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "关注并网进度、实际通电MW、电价、设备交付和监管约束。",
+      "evidence": [
+        "When the Ford Fathom debuts in 2027, much of the attention will focus on its size and its price. As it should: The all-electric mid-size truck is promised to start under $30,000, and the success or failure of that car…"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "并网、许可和实际通电进度",
+        "设备交期、电价与资本开支"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "1b80f9012d39b944b14f",
+      "generatedAt": "2026-11-02T05:46:47Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "014f634c99fb2944d663": {
+      "id": "014f634c99fb2944d663",
+      "summary": "公开摘要显示，《Martin Kulldorff critiques scientific gatekeepers at NIH lecture》主要讨论：Martin Kulldorff, the biostatistician who advocated against Covid lockdowns, insisted that the rise in measles cases is caused by a widely disputed claim about said lockdowns:",
+      "coreJudgment": "这条信息为STAT News提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "关注临床阶段、试验终点、现金跑道、交易条款与监管风险。",
+      "evidence": [
+        "Martin Kulldorff, the biostatistician who advocated against Covid lockdowns, insisted that the rise in measles cases is caused by a widely disputed claim about said lockdowns:"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "临床终点、安全性和样本量",
+        "现金跑道、监管沟通和授权条款"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "180ff27e3687c7026ceb",
+      "generatedAt": "2026-11-02T05:46:47Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "716f040a37a8ddcab206": {
+      "id": "716f040a37a8ddcab206",
+      "summary": "公开摘要显示，《STAT+: Kennedy’s closing arguments for the 2026 midterms: Fraud, vaccines, and MAHA》主要讨论：RFK Jr. is making his pitch ahead of a midterm election that could shape the fate of his MAHA movement.",
+      "coreJudgment": "这条信息为STAT News提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "关注临床阶段、试验终点、现金跑道、交易条款与监管风险。",
+      "evidence": [
+        "RFK Jr. is making his pitch ahead of a midterm election that could shape the fate of his MAHA movement."
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "临床终点、安全性和样本量",
+        "现金跑道、监管沟通和授权条款"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "93a3be79876e8221630f",
+      "generatedAt": "2026-11-02T05:46:47Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "455a0e64e54b98837706": {
+      "id": "455a0e64e54b98837706",
+      "summary": "公开摘要显示，《STAT+: The EPIC investigation, and a Teladoc surprise》主要讨论：In this edition of STAT Health Tech: An Epic investigation, a Teladoc surprise, and figuring out how to pay for AI.",
+      "coreJudgment": "这条信息为STAT News提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "关注临床阶段、试验终点、现金跑道、交易条款与监管风险。",
+      "evidence": [
+        "In this edition of STAT Health Tech: An Epic investigation, a Teladoc surprise, and figuring out how to pay for AI."
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "临床终点、安全性和样本量",
+        "现金跑道、监管沟通和授权条款"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "4d77c198ea421c706931",
+      "generatedAt": "2026-11-02T05:46:47Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "7b6121dc292024c6c546": {
+      "id": "7b6121dc292024c6c546",
+      "summary": "公开摘要显示，《Apple's big week begins with iPad mini》主要讨论：PLUS: Microsoft puts buyouts on the table for 60K workers",
+      "coreJudgment": "这条信息为MSFT、AAPL提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "区分研究能力进展、工程可用性、成本曲线与商业化证据。",
+      "evidence": [
+        "PLUS: Microsoft puts buyouts on the table for 60K workers"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "独立基准与真实工作负载表现",
+        "推理成本、延迟和部署约束"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "f45803a67ce0ece3065b",
+      "generatedAt": "2026-11-02T05:46:47Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "8ebcd1502654b5e94540": {
+      "id": "8ebcd1502654b5e94540",
+      "summary": "目前只能确认标题《The Daily Roundup》及来源信息，尚无足够公开正文支持更具体的结论。",
+      "coreJudgment": "这条信息为The Wire China提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "关注亚洲供应链、政策变化、交付节奏与西方信息时差。",
+      "evidence": [
+        "公开标题：The Daily Roundup"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "供应商订单、库存和交付节奏",
+        "出口限制、汇率与地缘政策"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开摘要",
+      "inputHash": "bc4640d44097e2102215",
+      "generatedAt": "2026-11-02T05:46:47Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "40cb33a94bd041af8b32": {
+      "id": "40cb33a94bd041af8b32",
+      "summary": "公开摘要显示，《This group-buy campaign makes it easier to switch to induction cooking》主要讨论：Word is getting out about electric induction ranges. More and more chefs say the appliances cook just as well as or better than their gas counterparts. The stoves don’t burn climate-warming fossil fuels or release harmful indoor air pollutants like gas ones do. And because they’re vastly more efficient, they also…",
+      "coreJudgment": "这条信息为Canary Media提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "关注并网进度、实际通电MW、电价、设备交付和监管约束。",
+      "evidence": [
+        "Word is getting out about electric induction ranges. More and more chefs say the appliances cook just as well as or better than their gas counterparts. The stoves don’t burn climate-warming fossil fuels or release…"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "并网、许可和实际通电进度",
+        "设备交期、电价与资本开支"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "2c4a0b23f2fc46eacab7",
+      "generatedAt": "2026-11-02T05:46:47Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "4e2706ec83c95debbe6d": {
+      "id": "4e2706ec83c95debbe6d",
+      "summary": "目前只能确认标题《Minesto, Morteza Capital sign MoU to develop tidal energy in Maldives》及来源信息，尚无足够公开正文支持更具体的结论。",
+      "coreJudgment": "这条信息为能源/电网提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "关注并网进度、实际通电MW、电价、设备交付和监管约束。",
+      "evidence": [
+        "公开标题：Minesto, Morteza Capital sign MoU to develop tidal energy in Maldives"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "并网、许可和实际通电进度",
+        "设备交期、电价与资本开支"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "9a13411d63a8bd46d480",
+      "generatedAt": "2026-11-02T05:46:47Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "83ff2a20dfa6d3343655": {
+      "id": "83ff2a20dfa6d3343655",
+      "summary": "目前只能确认标题《Singapore grants conditional approval for VMS renewable electricity project》及来源信息，尚无足够公开正文支持更具体的结论。",
+      "coreJudgment": "这条信息为能源/电网提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "关注并网进度、实际通电MW、电价、设备交付和监管约束。",
+      "evidence": [
+        "公开标题：Singapore grants conditional approval for VMS renewable electricity project"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "并网、许可和实际通电进度",
+        "设备交期、电价与资本开支"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "59f902a2ca878565b172",
+      "generatedAt": "2026-11-02T05:46:47Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "fe491bc53b8915d46068": {
+      "id": "fe491bc53b8915d46068",
+      "summary": "公开摘要显示，《When 110 humanoids hit the dance floor》主要讨论：PLUS: Figure locks in its 'iPhone 1 of humanoids'",
+      "coreJudgment": "这条信息为The Rundown AI提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "区分研究能力进展、工程可用性、成本曲线与商业化证据。",
+      "evidence": [
+        "PLUS: Figure locks in its 'iPhone 1 of humanoids'"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "独立基准与真实工作负载表现",
+        "推理成本、延迟和部署约束"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "615290b972094b41ea96",
+      "generatedAt": "2026-11-02T05:46:47Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "cf7828fb9af5a5a2d2fe": {
+      "id": "cf7828fb9af5a5a2d2fe",
+      "summary": "目前只能确认标题《The Daily Roundup》及来源信息，尚无足够公开正文支持更具体的结论。",
+      "coreJudgment": "这条信息为The Wire China提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "关注亚洲供应链、政策变化、交付节奏与西方信息时差。",
+      "evidence": [
+        "公开标题：The Daily Roundup"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "供应商订单、库存和交付节奏",
+        "出口限制、汇率与地缘政策"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开摘要",
+      "inputHash": "eb5d6cef49f36c84048b",
+      "generatedAt": "2026-11-02T05:46:47Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "e8765762f5f6a2783df4": {
+      "id": "e8765762f5f6a2783df4",
+      "summary": "目前只能确认标题《Group14 Technologies secures $167m for global and European expansion》及来源信息，尚无足够公开正文支持更具体的结论。",
+      "coreJudgment": "这条信息为Energy Monitor提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "关注并网进度、实际通电MW、电价、设备交付和监管约束。",
+      "evidence": [
+        "公开标题：Group14 Technologies secures $167m for global and European expansion"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "并网、许可和实际通电进度",
+        "设备交期、电价与资本开支"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "abe28f0bcd094bd0c899",
+      "generatedAt": "2026-11-02T05:46:47Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "46685ec8511e670f77dc": {
+      "id": "46685ec8511e670f77dc",
+      "summary": "目前只能确认标题《Vikram Solar to begin production at 9GW TOPCon cell plant in December 2026》及来源信息，尚无足够公开正文支持更具体的结论。",
+      "coreJudgment": "这条信息为能源/电网提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "关注并网进度、实际通电MW、电价、设备交付和监管约束。",
+      "evidence": [
+        "公开标题：Vikram Solar to begin production at 9GW TOPCon cell plant in December 2026"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "并网、许可和实际通电进度",
+        "设备交期、电价与资本开支"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "78c4c491c1ac9bdcc8da",
+      "generatedAt": "2026-11-02T05:46:47Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "65eb2af9b76ec487e3df": {
+      "id": "65eb2af9b76ec487e3df",
+      "summary": "公开摘要显示，《Parchment Paper History: How We Got Paper Perfect for Baking (2019)》主要讨论：Comments",
+      "coreJudgment": "这条信息为Hacker News提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "高频线索只作发现入口，需回到公司、论文或监管原始来源验证。",
+      "evidence": [
+        "Comments"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "公司或监管原始披露",
+        "后续数据是否重复验证该信号"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "70c89b92b9681fa2dbd3",
+      "generatedAt": "2026-11-02T05:46:47Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "7a9a4b06d897e2370c79": {
+      "id": "7a9a4b06d897e2370c79",
+      "summary": "公开摘要显示，《Lipidation and Its Discontents》主要讨论：Medicinal chemists are always interested in getting more actual data on our various compound modification tricks and rules of thumb for changing activity and distribution. There are a lot of these, but the depth of the evidence behind them does vary. This new paper looks at lipidation (adding some sort of lipid tail to a given structure) as a strategy for…",
+      "coreJudgment": "这条信息为In the Pipeline提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "关注临床阶段、试验终点、现金跑道、交易条款与监管风险。",
+      "evidence": [
+        "Medicinal chemists are always interested in getting more actual data on our various compound modification tricks and rules of thumb for changing activity and distribution. There are a lot of these, but the depth of the…"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "临床终点、安全性和样本量",
+        "现金跑道、监管沟通和授权条款"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开摘要",
+      "inputHash": "76fe12f19209a4144803",
+      "generatedAt": "2026-11-02T05:46:47Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "fe53ca0de2f538ada3d7": {
+      "id": "fe53ca0de2f538ada3d7",
+      "summary": "目前只能确认标题《The Daily Roundup》及来源信息，尚无足够公开正文支持更具体的结论。",
+      "coreJudgment": "这条信息为The Wire China提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "关注亚洲供应链、政策变化、交付节奏与西方信息时差。",
+      "evidence": [
+        "公开标题：The Daily Roundup"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "供应商订单、库存和交付节奏",
+        "出口限制、汇率与地缘政策"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开摘要",
+      "inputHash": "8a0a7283bda9cd4049e2",
+      "generatedAt": "2026-11-02T05:46:47Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "7665ace0247dc066eecc": {
+      "id": "7665ace0247dc066eecc",
+      "summary": "目前只能确认标题《The Lintel Conquest of UNIX》及来源信息，尚无足够公开正文支持更具体的结论。",
+      "coreJudgment": "这条信息为INTC提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "关注亚洲供应链、政策变化、交付节奏与西方信息时差。",
+      "evidence": [
+        "公开标题：The Lintel Conquest of UNIX"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "供应商订单、库存和交付节奏",
+        "出口限制、汇率与地缘政策"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "仅标题",
+      "inputHash": "401841134ae11637d6f1",
+      "generatedAt": "2026-11-02T05:46:47Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "af790da67da7e03d6807": {
+      "id": "af790da67da7e03d6807",
+      "summary": "目前只能确认标题《The Daily Roundup》及来源信息，尚无足够公开正文支持更具体的结论。",
+      "coreJudgment": "这条信息为The Wire China提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "关注亚洲供应链、政策变化、交付节奏与西方信息时差。",
+      "evidence": [
+        "公开标题：The Daily Roundup"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "供应商订单、库存和交付节奏",
+        "出口限制、汇率与地缘政策"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开摘要",
+      "inputHash": "90a462796112480a2ecf",
+      "generatedAt": "2026-11-02T05:46:47Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "d7875de5839b4f3563f1": {
+      "id": "d7875de5839b4f3563f1",
+      "summary": "公开摘要显示，《The AI cost of JavaScript frameworks》主要讨论：Comments",
+      "coreJudgment": "这条信息为AI模型提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "高频线索只作发现入口，需回到公司、论文或监管原始来源验证。",
+      "evidence": [
+        "Comments"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "公司或监管原始披露",
+        "后续数据是否重复验证该信号"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "dd7a220ba55b8f12efe6",
+      "generatedAt": "2026-11-02T05:46:47Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "c27ffd0163ee8157cffd": {
+      "id": "c27ffd0163ee8157cffd",
+      "summary": "公开摘要显示，《Zetwerk's IPO: Building India’s Universal Factory》主要讨论：Explore Zetwerk’s journey from startup to IPO and how it’s transforming Indian manufacturing through technology, innovation, and global expansion.",
+      "coreJudgment": "这条信息为创投/融资提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "关注资金流向、采用速度、竞争结构与商业模式的可持续性。",
+      "evidence": [
+        "Explore Zetwerk’s journey from startup to IPO and how it’s transforming Indian manufacturing through technology, innovation, and global expansion."
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "客户采用与续约数据",
+        "融资条款、烧钱速度和后续资本需求"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "6c230266659c3c1d14f9",
+      "generatedAt": "2026-11-02T05:46:47Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "c0dbcb3c8c0fd26e4a64": {
+      "id": "c0dbcb3c8c0fd26e4a64",
+      "summary": "公开摘要显示，《Bidirectional charging during grid outages》主要讨论：Comments",
+      "coreJudgment": "这条信息为能源/电网提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "高频线索只作发现入口，需回到公司、论文或监管原始来源验证。",
+      "evidence": [
+        "Comments"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "公司或监管原始披露",
+        "后续数据是否重复验证该信号"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "84dba748b06ea2e751a8",
+      "generatedAt": "2026-11-02T05:46:47Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "1ca7344385f3da5355e7": {
+      "id": "1ca7344385f3da5355e7",
+      "summary": "公开摘要显示，《Mystery of 60-Second Fluctuations in Power Grids Solved》主要讨论：Comments",
+      "coreJudgment": "这条信息为能源/电网提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "高频线索只作发现入口，需回到公司、论文或监管原始来源验证。",
+      "evidence": [
+        "Comments"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "公司或监管原始披露",
+        "后续数据是否重复验证该信号"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "513f204013958bb85ac9",
+      "generatedAt": "2026-11-02T05:46:47Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "9739a14ffd07f03fd395": {
+      "id": "9739a14ffd07f03fd395",
+      "summary": "公开摘要显示，《Investing in Eka Robotics》主要讨论：a16z leads Eka Robotics’ Series A",
+      "coreJudgment": "这条信息为创投/融资提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "关注资金流向、采用速度、竞争结构与商业模式的可持续性。",
+      "evidence": [
+        "a16z leads Eka Robotics’ Series A"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "客户采用与续约数据",
+        "融资条款、烧钱速度和后续资本需求"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "ba6319a085fba69a20bd",
+      "generatedAt": "2026-11-02T05:46:47Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "3364b074ff1811cc81bd": {
+      "id": "3364b074ff1811cc81bd",
+      "summary": "目前只能确认标题《Mitsubishi Power reveals $490m expansion of Savannah facility》及来源信息，尚无足够公开正文支持更具体的结论。",
+      "coreJudgment": "这条信息为Energy Monitor提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "关注并网进度、实际通电MW、电价、设备交付和监管约束。",
+      "evidence": [
+        "公开标题：Mitsubishi Power reveals $490m expansion of Savannah facility"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "并网、许可和实际通电进度",
+        "设备交期、电价与资本开支"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "7b77c9f1b1117714a62d",
+      "generatedAt": "2026-11-02T05:46:47Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "a1fa3c82c1538e532c59": {
+      "id": "a1fa3c82c1538e532c59",
+      "summary": "公开摘要显示，《Ask HN: Which TV do you recommend for privacy?》主要讨论：Comments",
+      "coreJudgment": "这条信息为Hacker News提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "高频线索只作发现入口，需回到公司、论文或监管原始来源验证。",
+      "evidence": [
+        "Comments"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "公司或监管原始披露",
+        "后续数据是否重复验证该信号"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开摘要",
+      "inputHash": "50f02cc8579dcc3f7028",
+      "generatedAt": "2026-11-02T05:46:47Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "99b4f0e1c8c2d69c47aa": {
+      "id": "99b4f0e1c8c2d69c47aa",
+      "summary": "公开摘要显示，《Domain hacks with unusual Unicode characters (2018)》主要讨论：Comments",
+      "coreJudgment": "这条信息为Hacker News提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "高频线索只作发现入口，需回到公司、论文或监管原始来源验证。",
+      "evidence": [
+        "Comments"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "公司或监管原始披露",
+        "后续数据是否重复验证该信号"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "67bafe3e91f999fb79fa",
+      "generatedAt": "2026-11-02T05:46:47Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "56069b9d6855cb322154": {
+      "id": "56069b9d6855cb322154",
+      "summary": "公开摘要显示，《Lenovo's 'encrypted' fingerprint USB is just an unencrypted SD card in a case》主要讨论：Comments",
+      "coreJudgment": "这条信息为Hacker News提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "高频线索只作发现入口，需回到公司、论文或监管原始来源验证。",
+      "evidence": [
+        "Comments"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "公司或监管原始披露",
+        "后续数据是否重复验证该信号"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开摘要",
+      "inputHash": "537a817cf84f8de3ef8f",
+      "generatedAt": "2026-11-02T05:46:47Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "e3e108774b7c9ea89092": {
+      "id": "e3e108774b7c9ea89092",
+      "summary": "公开摘要显示，《Mathematics has changed. Let's act like it》主要讨论：Comments",
+      "coreJudgment": "这条信息为Hacker News提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "高频线索只作发现入口，需回到公司、论文或监管原始来源验证。",
+      "evidence": [
+        "Comments"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "公司或监管原始披露",
+        "后续数据是否重复验证该信号"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "b0ed6bba331bc1bad303",
+      "generatedAt": "2026-11-02T05:46:47Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "70d6959c1330deb943fd": {
+      "id": "70d6959c1330deb943fd",
+      "summary": "公开摘要显示，《Novellas with Groff》主要讨论：Comments",
+      "coreJudgment": "这条信息为Hacker News提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "高频线索只作发现入口，需回到公司、论文或监管原始来源验证。",
+      "evidence": [
+        "Comments"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "公司或监管原始披露",
+        "后续数据是否重复验证该信号"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "dcfb52ece5a2eec21017",
+      "generatedAt": "2026-11-02T05:46:47Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "c34c3a560119fadfcd95": {
+      "id": "c34c3a560119fadfcd95",
+      "summary": "公开摘要显示，《Proving and improving the Platonic Representation Hypothesis with JEPAs》主要讨论：Comments",
+      "coreJudgment": "这条信息为Hacker News提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "高频线索只作发现入口，需回到公司、论文或监管原始来源验证。",
+      "evidence": [
+        "Comments"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "公司或监管原始披露",
+        "后续数据是否重复验证该信号"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "c9c638ff5b81f56b190a",
+      "generatedAt": "2026-11-02T05:46:47Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "a6b47df30e264056a1c6": {
+      "id": "a6b47df30e264056a1c6",
+      "summary": "公开摘要显示，《Seoul Viosys begins production of rare-earth-free white light emitter》主要讨论：Comments",
+      "coreJudgment": "这条信息为Hacker News提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "高频线索只作发现入口，需回到公司、论文或监管原始来源验证。",
+      "evidence": [
+        "Comments"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "公司或监管原始披露",
+        "后续数据是否重复验证该信号"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "93fe2c6a630f5c035ec7",
+      "generatedAt": "2026-11-02T05:46:47Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "ee49515d8cad885b9536": {
+      "id": "ee49515d8cad885b9536",
+      "summary": "公开摘要显示，《Show HN: HackerBooks – HackerTube, but for books mentioned on HN》主要讨论：Comments",
+      "coreJudgment": "这条信息为Hacker News提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "高频线索只作发现入口，需回到公司、论文或监管原始来源验证。",
+      "evidence": [
+        "Comments"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "公司或监管原始披露",
+        "后续数据是否重复验证该信号"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开摘要",
+      "inputHash": "7d0214d85b031e993d86",
+      "generatedAt": "2026-11-02T05:46:47Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "62daba8fcb71f24f8ac8": {
+      "id": "62daba8fcb71f24f8ac8",
+      "summary": "公开摘要显示，《Show HN: OmniDiff – Opensource, super fast, content aware Git difftool, in Rust》主要讨论：Comments",
+      "coreJudgment": "这条信息为Hacker News提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "高频线索只作发现入口，需回到公司、论文或监管原始来源验证。",
+      "evidence": [
+        "Comments"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "公司或监管原始披露",
+        "后续数据是否重复验证该信号"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "48c9fb070e65ff6556f7",
+      "generatedAt": "2026-11-02T05:46:47Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "a627cdab06cd00bbb847": {
+      "id": "a627cdab06cd00bbb847",
+      "summary": "公开摘要显示，《The Megadonors Who Have Poured $1.2B into the Midterms》主要讨论：Comments",
+      "coreJudgment": "这条信息为Hacker News提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "高频线索只作发现入口，需回到公司、论文或监管原始来源验证。",
+      "evidence": [
+        "Comments"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "公司或监管原始披露",
+        "后续数据是否重复验证该信号"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开摘要",
+      "inputHash": "3023f5e7e17a3e4e0cee",
+      "generatedAt": "2026-11-02T05:46:47Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "1dff55278009ba8d6f9e": {
+      "id": "1dff55278009ba8d6f9e",
+      "summary": "公开摘要显示，《HackerTube: YouTube built from videos recommended by HN》主要讨论：Comments",
+      "coreJudgment": "这条信息为Hacker News提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "高频线索只作发现入口，需回到公司、论文或监管原始来源验证。",
+      "evidence": [
+        "Comments"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "公司或监管原始披露",
+        "后续数据是否重复验证该信号"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "199054810d85191ba353",
+      "generatedAt": "2026-11-02T05:46:47Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "d95abf078633af254ed3": {
+      "id": "d95abf078633af254ed3",
+      "summary": "公开摘要显示，《One-minute frequency disturbances from synchronization in power systems》主要讨论：Comments",
+      "coreJudgment": "这条信息为Hacker News提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "高频线索只作发现入口，需回到公司、论文或监管原始来源验证。",
+      "evidence": [
+        "Comments"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "公司或监管原始披露",
+        "后续数据是否重复验证该信号"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开摘要",
+      "inputHash": "dfca3db6a8ce5229237e",
+      "generatedAt": "2026-11-02T05:46:47Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "0931810a3238dbc276c5": {
+      "id": "0931810a3238dbc276c5",
+      "summary": "公开摘要显示，《Postgres 19 is late because so many more bugs are being found now》主要讨论：Comments",
+      "coreJudgment": "这条信息为Hacker News提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "高频线索只作发现入口，需回到公司、论文或监管原始来源验证。",
+      "evidence": [
+        "Comments"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "公司或监管原始披露",
+        "后续数据是否重复验证该信号"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开摘要",
+      "inputHash": "af6a16c70d41e37c0977",
+      "generatedAt": "2026-11-02T05:46:47Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "199e12bba8aaa02462be": {
+      "id": "199e12bba8aaa02462be",
+      "summary": "公开摘要显示，《Show HN: I rebuilt my old canvas 3D library as a small WebGL 2 library – phoria2》主要讨论：Comments",
+      "coreJudgment": "这条信息为Hacker News提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "高频线索只作发现入口，需回到公司、论文或监管原始来源验证。",
+      "evidence": [
+        "Comments"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "公司或监管原始披露",
+        "后续数据是否重复验证该信号"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "b2f745cd7ea422e4a8fb",
+      "generatedAt": "2026-11-02T05:46:47Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "96e0bbcbf05ae83b99a4": {
+      "id": "96e0bbcbf05ae83b99a4",
+      "summary": "公开摘要显示，《The She-Wolves of Jülich》主要讨论：Comments",
+      "coreJudgment": "这条信息为Hacker News提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "高频线索只作发现入口，需回到公司、论文或监管原始来源验证。",
+      "evidence": [
+        "Comments"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "公司或监管原始披露",
+        "后续数据是否重复验证该信号"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开摘要",
+      "inputHash": "4734ecf7576872231c07",
+      "generatedAt": "2026-11-02T05:46:47Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "75a8b93979b124534562": {
+      "id": "75a8b93979b124534562",
+      "summary": "公开摘要显示，《Behind the scenes at the NeXT Computer office》主要讨论：Comments",
+      "coreJudgment": "这条信息为算力/芯片提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "高频线索只作发现入口，需回到公司、论文或监管原始来源验证。",
+      "evidence": [
+        "Comments"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "公司或监管原始披露",
+        "后续数据是否重复验证该信号"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开摘要",
+      "inputHash": "b26e04e622d55e5d853c",
+      "generatedAt": "2026-11-02T05:46:47Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "8da8f7c5d174e1926327": {
+      "id": "8da8f7c5d174e1926327",
+      "summary": "公开摘要显示，《Brazil elections: Lula secures fourth term after dramatic comeback》主要讨论：Comments",
+      "coreJudgment": "这条信息为HBM/存储提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "高频线索只作发现入口，需回到公司、论文或监管原始来源验证。",
+      "evidence": [
+        "Comments"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "公司或监管原始披露",
+        "后续数据是否重复验证该信号"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "63abf5a4a3152d624909",
+      "generatedAt": "2026-11-02T05:46:47Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "9d88cf01ec656c4774d4": {
+      "id": "9d88cf01ec656c4774d4",
+      "summary": "公开摘要显示，《Copper – A minimal low-level programming language with OOP and generics》主要讨论：Comments",
+      "coreJudgment": "这条信息为Hacker News提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "高频线索只作发现入口，需回到公司、论文或监管原始来源验证。",
+      "evidence": [
+        "Comments"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "公司或监管原始披露",
+        "后续数据是否重复验证该信号"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "ffcf92359ba338e31053",
+      "generatedAt": "2026-11-02T05:46:47Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "73aa9714d0d5b613147d": {
+      "id": "73aa9714d0d5b613147d",
+      "summary": "公开摘要显示，《If AI displaces human workers, they will lose more than just pay》主要讨论：Comments",
+      "coreJudgment": "这条信息为AI模型提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "高频线索只作发现入口，需回到公司、论文或监管原始来源验证。",
+      "evidence": [
+        "Comments"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "公司或监管原始披露",
+        "后续数据是否重复验证该信号"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开摘要",
+      "inputHash": "cc1fcd6c82b05bbd3c24",
+      "generatedAt": "2026-11-02T05:46:47Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "7afd53ea9d1ae531e134": {
+      "id": "7afd53ea9d1ae531e134",
+      "summary": "公开摘要显示，《Keeping Up Appearances – The women taking over the funeral industry》主要讨论：Comments",
+      "coreJudgment": "这条信息为Hacker News提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "高频线索只作发现入口，需回到公司、论文或监管原始来源验证。",
+      "evidence": [
+        "Comments"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "公司或监管原始披露",
+        "后续数据是否重复验证该信号"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "ffbdca4b6013768dc01b",
+      "generatedAt": "2026-11-02T05:46:47Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "36b3c4ea88607a3ada85": {
+      "id": "36b3c4ea88607a3ada85",
+      "summary": "公开摘要显示，《New 3D thermal invisibility cloak makes objects disappear from infrared cameras》主要讨论：Comments",
+      "coreJudgment": "这条信息为Hacker News提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "高频线索只作发现入口，需回到公司、论文或监管原始来源验证。",
+      "evidence": [
+        "Comments"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "公司或监管原始披露",
+        "后续数据是否重复验证该信号"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "b0f19beacdcceac00d03",
+      "generatedAt": "2026-11-02T05:46:47Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "e11d9fd60b641841a8c2": {
+      "id": "e11d9fd60b641841a8c2",
+      "summary": "公开摘要显示，《Nibnib: Image compression with extreme decompression speed》主要讨论：Comments",
+      "coreJudgment": "这条信息为Hacker News提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "高频线索只作发现入口，需回到公司、论文或监管原始来源验证。",
+      "evidence": [
+        "Comments"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "公司或监管原始披露",
+        "后续数据是否重复验证该信号"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "c8d3749671a3d7397c3f",
+      "generatedAt": "2026-11-02T05:46:47Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "04f28f51368bcec89c56": {
+      "id": "04f28f51368bcec89c56",
+      "summary": "公开摘要显示，《PaperPilot – Zero-Cloud, Pure-Rust PDF Engine with WASM and MCP》主要讨论：Comments",
+      "coreJudgment": "这条信息为云/数据中心提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "高频线索只作发现入口，需回到公司、论文或监管原始来源验证。",
+      "evidence": [
+        "Comments"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "公司或监管原始披露",
+        "后续数据是否重复验证该信号"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "a78e472015f511fc00b1",
+      "generatedAt": "2026-11-02T05:46:47Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "058b80fc9dac7b355b49": {
+      "id": "058b80fc9dac7b355b49",
+      "summary": "公开摘要显示，《Against supplements - Works in Progress Magazine》主要讨论：My methods and my madness.",
+      "coreJudgment": "这条信息为Works in Progress提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "用于建立公司和产业长期框架，关键判断仍需回到一手数据。",
+      "evidence": [
+        "My methods and my madness."
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "公司披露与一手数据能否验证核心判断",
+        "竞争者和替代方案的变化"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "a8be29cca1804cc26648",
+      "generatedAt": "2026-11-02T05:46:47Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "b07e397f49b66a3c15a1": {
+      "id": "b07e397f49b66a3c15a1",
+      "summary": "公开摘要显示，《Come to Brazil - Works in Progress Magazine》主要讨论：The world's third best Italian food.",
+      "coreJudgment": "这条信息为Works in Progress提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "用于建立公司和产业长期框架，关键判断仍需回到一手数据。",
+      "evidence": [
+        "The world's third best Italian food."
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "公司披露与一手数据能否验证核心判断",
+        "竞争者和替代方案的变化"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "12205a2622b65fc19e69",
+      "generatedAt": "2026-11-02T05:46:47Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "ab11f275803346c0882a": {
+      "id": "ab11f275803346c0882a",
+      "summary": "公开摘要显示，《Roman love - Works in Progress Magazine》主要讨论：Samuel Hughes reviews From Shame to Sin by Kyle Harper",
+      "coreJudgment": "这条信息为Works in Progress提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "用于建立公司和产业长期框架，关键判断仍需回到一手数据。",
+      "evidence": [
+        "Samuel Hughes reviews From Shame to Sin by Kyle Harper"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "公司披露与一手数据能否验证核心判断",
+        "竞争者和替代方案的变化"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "e0eb8c74bbf6c39b4ab9",
+      "generatedAt": "2026-11-02T05:46:47Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "bba4467cf31c69296696": {
+      "id": "bba4467cf31c69296696",
+      "summary": "公开摘要显示，《Show HN: Point your camera at a landscape to learn about its geology》主要讨论：Comments",
+      "coreJudgment": "这条信息为Hacker News提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "高频线索只作发现入口，需回到公司、论文或监管原始来源验证。",
+      "evidence": [
+        "Comments"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "公司或监管原始披露",
+        "后续数据是否重复验证该信号"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "735fcf72104b0722a937",
+      "generatedAt": "2026-11-02T05:46:47Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "8de1841c1c28ccba04d5": {
+      "id": "8de1841c1c28ccba04d5",
+      "summary": "公开摘要显示，《Radiation Map of the World》主要讨论：Comments",
+      "coreJudgment": "这条信息为Hacker News提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "高频线索只作发现入口，需回到公司、论文或监管原始来源验证。",
+      "evidence": [
+        "Comments"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "公司或监管原始披露",
+        "后续数据是否重复验证该信号"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "c6477b77f947d54f5f91",
+      "generatedAt": "2026-11-02T05:46:47Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "43dbca403f6ad45a61ff": {
+      "id": "43dbca403f6ad45a61ff",
+      "summary": "公开摘要显示，《Tips for more effective fuzz testing with AFL++》主要讨论：Comments",
+      "coreJudgment": "这条信息为Hacker News提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "高频线索只作发现入口，需回到公司、论文或监管原始来源验证。",
+      "evidence": [
+        "Comments"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "公司或监管原始披露",
+        "后续数据是否重复验证该信号"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "f24248486e054d446b90",
+      "generatedAt": "2026-11-02T05:46:47Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "aa7aa5dd1519ca93eb77": {
+      "id": "aa7aa5dd1519ca93eb77",
+      "summary": "公开摘要显示，《IBM CEO says open weight models are now irresistibly good and cheap on-prem》主要讨论：Comments",
+      "coreJudgment": "这条信息为Hacker News提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "高频线索只作发现入口，需回到公司、论文或监管原始来源验证。",
+      "evidence": [
+        "Comments"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "公司或监管原始披露",
+        "后续数据是否重复验证该信号"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "e744156abf5e89498a32",
+      "generatedAt": "2026-11-02T05:46:47Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "ec018dbab1119f00ac87": {
+      "id": "ec018dbab1119f00ac87",
+      "summary": "公开摘要显示，《Removing Next.js Got My Blog to 100 on Every Lighthouse Category》主要讨论：Comments",
+      "coreJudgment": "这条信息为Hacker News提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "高频线索只作发现入口，需回到公司、论文或监管原始来源验证。",
+      "evidence": [
+        "Comments"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "公司或监管原始披露",
+        "后续数据是否重复验证该信号"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "552634af3f242b7c56cc",
+      "generatedAt": "2026-11-02T05:46:47Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "c523fe63196f23d0fa14": {
+      "id": "c523fe63196f23d0fa14",
+      "summary": "公开摘要显示，《Show HN: TitleArt – Make text like it's 1997》主要讨论：Comments",
+      "coreJudgment": "这条信息为Hacker News提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "高频线索只作发现入口，需回到公司、论文或监管原始来源验证。",
+      "evidence": [
+        "Comments"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "公司或监管原始披露",
+        "后续数据是否重复验证该信号"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开摘要",
+      "inputHash": "1c9f497bbd56ff8bf928",
+      "generatedAt": "2026-11-02T05:46:47Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "ef8587479390ecb740e4": {
+      "id": "ef8587479390ecb740e4",
+      "summary": "公开摘要显示，《Steal My Bitcoin CTF PoC》主要讨论：Comments",
+      "coreJudgment": "这条信息为Hacker News提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "高频线索只作发现入口，需回到公司、论文或监管原始来源验证。",
+      "evidence": [
+        "Comments"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "公司或监管原始披露",
+        "后续数据是否重复验证该信号"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "1d2105ab38e87924c57c",
+      "generatedAt": "2026-11-02T05:46:47Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
+    },
+    "cdb501d6218ac1667ad9": {
+      "id": "cdb501d6218ac1667ad9",
+      "summary": "公开摘要显示，《iPhone Duo Teardown》主要讨论：Comments",
+      "coreJudgment": "这条信息为Hacker News提供了新的研究线索，但现有公开材料不足以形成强结论。",
+      "investmentImpact": "高频线索只作发现入口，需回到公司、论文或监管原始来源验证。",
+      "evidence": [
+        "Comments"
+      ],
+      "beneficiaries": [],
+      "pressures": [],
+      "watchItems": [
+        "公司或监管原始披露",
+        "后续数据是否重复验证该信号"
+      ],
+      "risks": [
+        "公开材料有限，存在断章取义或信息缺失风险"
+      ],
+      "stance": "中性",
+      "confidence": "低",
+      "basis": "公开正文",
+      "inputHash": "51afdd0f403ddfb9db03",
+      "generatedAt": "2026-11-02T05:46:47Z",
+      "provider": "extractive",
+      "model": "source-grounded-v1"
     }
   },
-  "updatedAt": "2026-10-26T04:29:44Z"
+  "updatedAt": "2026-11-02T05:46:47Z"
 }
