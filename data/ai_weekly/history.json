@@ -6681,6 +6681,451 @@
         "融资、估值与风险": 40.5,
         "综合": 76.2
       }
+    },
+    {
+      "date": "2026-11-23",
+      "week": "2026-W48",
+      "generated_at": "2026-11-23 11:41 +08",
+      "errors": [
+        "TSMC官网自动访问失败（HTTPError）；使用截至2026-07-31的官方已核验回退值"
+      ],
+      "carried_forward": [],
+      "gpu": {
+        "captured_at": "2026-11-22",
+        "provider_count": 8,
+        "plan_count": 133,
+        "relevant_rows": [
+          {
+            "provider": "DigitalOcean",
+            "model": "H100",
+            "gpu_count": 1,
+            "per_gpu_hour": 4.41
+          },
+          {
+            "provider": "DigitalOcean",
+            "model": "H100",
+            "gpu_count": 8,
+            "per_gpu_hour": 4.41
+          },
+          {
+            "provider": "Atlantic.Net",
+            "model": "H100NVL",
+            "gpu_count": 1,
+            "per_gpu_hour": 3.941
+          },
+          {
+            "provider": "DigitalOcean",
+            "model": "H200",
+            "gpu_count": 1,
+            "per_gpu_hour": 4.47
+          },
+          {
+            "provider": "DigitalOcean",
+            "model": "H200",
+            "gpu_count": 8,
+            "per_gpu_hour": 4.47
+          },
+          {
+            "provider": "DigitalOcean",
+            "model": "MI300X",
+            "gpu_count": 1,
+            "per_gpu_hour": 2.59
+          },
+          {
+            "provider": "DigitalOcean",
+            "model": "MI300X",
+            "gpu_count": 8,
+            "per_gpu_hour": 2.59
+          },
+          {
+            "provider": "Latitude",
+            "model": "NVIDIA H100 80GB",
+            "gpu_count": 1,
+            "per_gpu_hour": 3.37
+          },
+          {
+            "provider": "Latitude",
+            "model": "NVIDIA HGX B300",
+            "gpu_count": 8,
+            "per_gpu_hour": 16.0
+          }
+        ],
+        "h100_median": 4.1754999999999995,
+        "h100_min": 3.37,
+        "h100_max": 4.41,
+        "window_start": "2026-05-11",
+        "window_end": "2026-11-22",
+        "all_plan_median": 3.47,
+        "all_plan_window_change": 25.497287522603983
+      },
+      "tsmc": {
+        "latest": {
+          "as_of": "2026-07-31",
+          "month": "Jul.",
+          "month_no": 7,
+          "revenue_twd_m": 467580,
+          "yoy": 44.7,
+          "source_url": "https://investor.tsmc.com/schinese/monthly-revenue/2026"
+        },
+        "series": [],
+        "status": "official_dated_fallback",
+        "source_url": "https://investor.tsmc.com/schinese/monthly-revenue/2026",
+        "warning": "TSMC官网自动访问失败（HTTPError）；使用截至2026-07-31的官方已核验回退值"
+      },
+      "openrouter": {
+        "model_count": 477,
+        "provider_count": 61,
+        "million_context_count": 227,
+        "free_model_count": 15,
+        "median_input_per_million": 0.55,
+        "median_output_per_million": 2.225
+      },
+      "huggingface": {
+        "sample_count": 100,
+        "top100_downloads": 1207248915.0,
+        "median_downloads": 6157885.0,
+        "top100_likes": 186394.0,
+        "top": [
+          {
+            "id": "sentence-transformers/all-MiniLM-L6-v2",
+            "downloads": 165698383,
+            "likes": 6161
+          },
+          {
+            "id": "argmaxinc/whisperkit-coreml",
+            "downloads": 95140913,
+            "likes": 277
+          },
+          {
+            "id": "cross-encoder/ms-marco-MiniLM-L6-v2",
+            "downloads": 55350487,
+            "likes": 455
+          },
+          {
+            "id": "BAAI/bge-small-en-v1.5",
+            "downloads": 43139469,
+            "likes": 684
+          },
+          {
+            "id": "autogluon/chronos-2",
+            "downloads": 41548376,
+            "likes": 97
+          }
+        ]
+      },
+      "github": [
+        {
+          "repo": "huggingface/transformers",
+          "stars": 169410,
+          "forks": 35271,
+          "open_issues": 1124,
+          "pushed_at": "2026-11-23T01:41:10Z",
+          "source": "api"
+        },
+        {
+          "repo": "ollama/ollama",
+          "stars": 187902,
+          "forks": 19145,
+          "open_issues": 4732,
+          "pushed_at": "2026-11-22T10:10:02Z",
+          "source": "api"
+        },
+        {
+          "repo": "vllm-project/vllm",
+          "stars": 97373,
+          "forks": 25158,
+          "open_issues": 10940,
+          "pushed_at": "2026-11-23T03:13:16Z",
+          "source": "api"
+        },
+        {
+          "repo": "ggml-org/llama.cpp",
+          "stars": 136152,
+          "forks": 25938,
+          "open_issues": 2645,
+          "pushed_at": "2026-11-23T03:37:24Z",
+          "source": "api"
+        },
+        {
+          "repo": "langchain-ai/langchain",
+          "stars": 149997,
+          "forks": 25156,
+          "open_issues": 783,
+          "pushed_at": "2026-11-23T03:25:11Z",
+          "source": "api"
+        },
+        {
+          "repo": "open-webui/open-webui",
+          "stars": 159295,
+          "forks": 23109,
+          "open_issues": 286,
+          "pushed_at": "2026-11-22T23:30:00Z",
+          "source": "api"
+        },
+        {
+          "repo": "NVIDIA/TensorRT-LLM",
+          "stars": 15118,
+          "forks": 2952,
+          "open_issues": 2062,
+          "pushed_at": "2026-11-23T03:37:03Z",
+          "source": "api"
+        },
+        {
+          "repo": "modelcontextprotocol/servers",
+          "stars": 92171,
+          "forks": 11976,
+          "open_issues": 18,
+          "pushed_at": "2026-11-19T16:41:29Z",
+          "source": "api"
+        }
+      ],
+      "market": [
+        {
+          "symbol": "SMH",
+          "close": 400.05999755859375,
+          "week_change": -17.809964548825118,
+          "month_change": -28.137239305499527,
+          "currency": "USD"
+        },
+        {
+          "symbol": "SOXX",
+          "close": 123.4000015258789,
+          "week_change": -17.347622904535477,
+          "month_change": -27.462964338275132,
+          "currency": "USD"
+        },
+        {
+          "symbol": "CHAT",
+          "close": 60.779998779296875,
+          "week_change": -14.730639982908789,
+          "month_change": -25.166217845606308,
+          "currency": "USD"
+        },
+        {
+          "symbol": "BOTZ",
+          "close": 27.34000015258789,
+          "week_change": -12.455970050167608,
+          "month_change": -18.60672810839055,
+          "currency": "USD"
+        },
+        {
+          "symbol": "NVDA",
+          "close": 125.52999877929688,
+          "week_change": -22.916798234871592,
+          "month_change": -43.44731356086117,
+          "currency": "USD"
+        },
+        {
+          "symbol": "MSFT",
+          "close": 484.5199890136719,
+          "week_change": -7.513173914309846,
+          "month_change": -9.08716053740254,
+          "currency": "USD"
+        },
+        {
+          "symbol": "AMZN",
+          "close": 246.82000732421875,
+          "week_change": -7.440184529146832,
+          "month_change": -5.926740131249897,
+          "currency": "USD"
+        },
+        {
+          "symbol": "GOOGL",
+          "close": 265.2900085449219,
+          "week_change": -10.305298576909061,
+          "month_change": -20.752180426013567,
+          "currency": "USD"
+        },
+        {
+          "symbol": "META",
+          "close": 560.8400268554688,
+          "week_change": -12.599537982254915,
+          "month_change": -19.595135458281675,
+          "currency": "USD"
+        },
+        {
+          "symbol": "TSM",
+          "close": 318.7099914550781,
+          "week_change": -20.068722525627436,
+          "month_change": -26.205751315063154,
+          "currency": "USD"
+        },
+        {
+          "symbol": "MU",
+          "close": 594.510009765625,
+          "week_change": -23.61526748590065,
+          "month_change": -34.931646996650336,
+          "currency": "USD"
+        },
+        {
+          "symbol": "VRT",
+          "close": 166.24000549316406,
+          "week_change": -17.731479453833987,
+          "month_change": -21.64034396612873,
+          "currency": "USD"
+        },
+        {
+          "symbol": "MRVL",
+          "close": 122.27999877929688,
+          "week_change": -21.99540503686065,
+          "month_change": -50.04085572657516,
+          "currency": "USD"
+        },
+        {
+          "symbol": "CEG",
+          "close": 237.41000366210938,
+          "week_change": -15.27123721654432,
+          "month_change": -12.310699480860743,
+          "currency": "USD"
+        }
+      ],
+      "sec": [
+        {
+          "ticker": "MSFT",
+          "name": "Microsoft",
+          "cik": "0000789019",
+          "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000789019.json",
+          "revenue": 92279000000,
+          "revenue_end": "2026-09-30",
+          "revenue_days": 91,
+          "revenue_yoy": 18.804475171552525,
+          "capex": 39367000000,
+          "capex_end": "2026-09-30",
+          "capex_days": 91,
+          "capex_yoy": 102.98545942043931,
+          "inventory": 1835000000,
+          "inventory_end": "2026-09-30",
+          "inventory_change": 31.352899069434503
+        },
+        {
+          "ticker": "GOOGL",
+          "name": "Alphabet",
+          "cik": "0001652044",
+          "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001652044.json",
+          "revenue": 127577000000,
+          "revenue_end": "2026-09-30",
+          "revenue_days": 91,
+          "revenue_yoy": 24.652648857796102,
+          "capex": 131953000000,
+          "capex_end": "2026-09-30",
+          "capex_days": 272,
+          "capex_yoy": 107.486319894333,
+          "inventory": 13308000000,
+          "inventory_end": "2026-09-30",
+          "inventory_change": 33.19987989190272
+        },
+        {
+          "ticker": "AMZN",
+          "name": "Amazon",
+          "cik": "0001018724",
+          "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001018724.json",
+          "revenue": 201944000000,
+          "revenue_end": "2026-09-30",
+          "revenue_days": 91,
+          "revenue_yoy": 12.085874928539319,
+          "capex": null,
+          "capex_end": null,
+          "capex_days": null,
+          "capex_yoy": null,
+          "inventory": 42632000000,
+          "inventory_end": "2026-09-30",
+          "inventory_change": 11.648858160486064
+        },
+        {
+          "ticker": "META",
+          "name": "Meta",
+          "cik": "0001326801",
+          "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001326801.json",
+          "revenue": 64601000000,
+          "revenue_end": "2026-09-30",
+          "revenue_days": 91,
+          "revenue_yoy": 26.07041099098395,
+          "capex": 83055000000,
+          "capex_end": "2026-09-30",
+          "capex_days": 272,
+          "capex_yoy": 71.92804504429908,
+          "inventory": null,
+          "inventory_end": null,
+          "inventory_change": null
+        },
+        {
+          "ticker": "NVDA",
+          "name": "NVIDIA",
+          "cik": "0001045810",
+          "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001045810.json",
+          "revenue": 96221000000,
+          "revenue_end": "2026-07-26",
+          "revenue_days": 90,
+          "revenue_yoy": 105.85114348672526,
+          "capex": null,
+          "capex_end": null,
+          "capex_days": null,
+          "capex_yoy": null,
+          "inventory": 31575000000,
+          "inventory_end": "2026-07-26",
+          "inventory_change": 22.397953250377945
+        },
+        {
+          "ticker": "MU",
+          "name": "Micron",
+          "cik": "0000723125",
+          "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000723125.json",
+          "revenue": 133188000000,
+          "revenue_end": "2026-09-03",
+          "revenue_days": 370,
+          "revenue_yoy": 256.3272513243084,
+          "capex": 30712000000,
+          "capex_end": "2026-09-03",
+          "capex_days": 370,
+          "capex_yoy": 93.68102415337076,
+          "inventory": 10372000000,
+          "inventory_end": "2026-09-03",
+          "inventory_change": 21.06921909653321
+        },
+        {
+          "ticker": "VRT",
+          "name": "Vertiv",
+          "cik": "0001674101",
+          "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001674101.json",
+          "revenue": 4312800000,
+          "revenue_end": "2026-09-30",
+          "revenue_days": 91,
+          "revenue_yoy": 61.17796546827117,
+          "capex": 425000000,
+          "capex_end": "2026-09-30",
+          "capex_days": 272,
+          "capex_yoy": 235.43804262036306,
+          "inventory": 3288400000,
+          "inventory_end": "2026-09-30",
+          "inventory_change": 30.35240020612835
+        },
+        {
+          "ticker": "MRVL",
+          "name": "Marvell",
+          "cik": "0001835632",
+          "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001835632.json",
+          "revenue": 2739300000,
+          "revenue_end": "2026-08-01",
+          "revenue_days": 90,
+          "revenue_yoy": 36.54852699267235,
+          "capex": 282400000,
+          "capex_end": "2026-08-01",
+          "capex_days": 181,
+          "capex_yoy": 69.8135898977751,
+          "inventory": 1360600000,
+          "inventory_end": "2026-08-01",
+          "inventory_change": -2.8767221072167892
+        }
+      ],
+      "scores": {
+        "算力供需": 68.0,
+        "云CapEx与订单": 82.2,
+        "硬件与基础设施": 89.1,
+        "应用与变现": 83.5,
+        "模型与开发生态": 78.8,
+        "融资、估值与风险": 34.6,
+        "综合": 75.6
+      }
     }
   ]
 }
