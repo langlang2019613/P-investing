@@ -16,13 +16,13 @@
      能由 index.html + app.js 正确渲染。 */
 <<<<<<< HEAD
 <<<<<<< HEAD
-const CACHE = 'pi-20261123071917';
+const CACHE = 'pi-20261127213235';
 =======
-const CACHE = 'pi-20261123071917';
+const CACHE = 'pi-20261127213235';
 =======
-const CACHE = 'pi-20261123071917';
+const CACHE = 'pi-20261127213235';
 =======
-const CACHE = 'pi-20261123071917';
+const CACHE = 'pi-20261127213235';
 >>>>>>> d51b49b3f8858a37690937f861a5cacbe1a4430d
 >>>>>>> 81af1c59a7fdf92b322b6bcad95eb67c2cc78fb6
 const SHELL = [
