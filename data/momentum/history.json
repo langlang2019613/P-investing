@@ -1042442,7 +1042442,7 @@
     },
     {
       "date": "2026-11-25",
-      "generatedAt": "2026-11-26T05:20:24+00:00",
+      "generatedAt": "2026-11-27T05:15:57+00:00",
       "topMomentum": [
         {
           "symbol": "KYMR",
@@ -1042537,7 +1042537,7 @@
         {
           "symbol": "BILL",
           "rank": 19,
-          "score": 93.5
+          "score": 93.4
         },
         {
           "symbol": "ETON",
@@ -1042866,8 +1042866,8 @@
         },
         {
           "symbol": "OLLI",
-          "rank": 348,
-          "score": 75.2,
+          "rank": 352,
+          "score": 75.1,
           "signal": "偏强"
         },
         {
@@ -1042938,7 +1042938,7 @@
         },
         {
           "symbol": "GEN",
-          "rank": 249,
+          "rank": 250,
           "score": 79.0,
           "signal": "偏强"
         },
@@ -1042968,8 +1042968,8 @@
         },
         {
           "symbol": "AAPL",
-          "rank": 349,
-          "score": 75.2,
+          "rank": 353,
+          "score": 75.1,
           "signal": "偏强"
         },
         {
@@ -1042997,15 +1042997,15 @@
           "signal": "偏强"
         },
         {
-          "symbol": "TME",
-          "rank": 501,
-          "score": 69.9,
+          "symbol": "ITT",
+          "rank": 232,
+          "score": 79.6,
           "signal": "偏强"
         },
         {
-          "symbol": "ITT",
-          "rank": 250,
-          "score": 79.0,
+          "symbol": "TME",
+          "rank": 501,
+          "score": 69.9,
           "signal": "偏强"
         },
         {
@@ -1043046,7 +1043046,7 @@
         },
         {
           "symbol": "ATMU",
-          "rank": 239,
+          "rank": 240,
           "score": 79.4,
           "signal": "偏强"
         },
@@ -1043130,7 +1043130,7 @@
         },
         {
           "symbol": "GMAB",
-          "rank": 248,
+          "rank": 249,
           "score": 79.1,
           "signal": "偏强"
         },
@@ -1043172,7 +1043172,7 @@
         },
         {
           "symbol": "GEO",
-          "rank": 240,
+          "rank": 241,
           "score": 79.4,
           "signal": "偏强"
         },
@@ -1043286,7 +1043286,7 @@
         },
         {
           "symbol": "FA",
-          "rank": 350,
+          "rank": 348,
           "score": 75.2,
           "signal": "偏强"
         },
@@ -1043340,7 +1043340,7 @@
         },
         {
           "symbol": "RPRX",
-          "rank": 73,
+          "rank": 72,
           "score": 87.4,
           "signal": "强势"
         },
@@ -1043460,7 +1043460,7 @@
         },
         {
           "symbol": "CRVL",
-          "rank": 75,
+          "rank": 74,
           "score": 87.3,
           "signal": "强势"
         },
@@ -1043514,7 +1043514,7 @@
         },
         {
           "symbol": "WTS",
-          "rank": 610,
+          "rank": 611,
           "score": 66.8,
           "signal": "偏强"
         },
@@ -1043538,7 +1043538,7 @@
         },
         {
           "symbol": "RACE",
-          "rank": 608,
+          "rank": 609,
           "score": 66.9,
           "signal": "偏强"
         },
@@ -1043598,7 +1043598,7 @@
         },
         {
           "symbol": "GFF",
-          "rank": 166,
+          "rank": 165,
           "score": 82.2,
           "signal": "强势"
         },
@@ -1043646,7 +1043646,7 @@
         },
         {
           "symbol": "CCEP",
-          "rank": 236,
+          "rank": 237,
           "score": 79.5,
           "signal": "偏强"
         },
@@ -1043711,16 +1043711,16 @@
           "signal": "强势"
         },
         {
+          "symbol": "RMD",
+          "rank": 714,
+          "score": 63.7,
+          "signal": "中性"
+        },
+        {
           "symbol": "THG",
           "rank": 277,
           "score": 78.5,
           "signal": "偏强"
-        },
-        {
-          "symbol": "RMD",
-          "rank": 714,
-          "score": 63.6,
-          "signal": "中性"
         },
         {
           "symbol": "MU",
@@ -1044048,7 +1044048,7 @@
         },
         {
           "symbol": "NUTX",
-          "rank": 1397,
+          "rank": 1398,
           "score": 43.4,
           "signal": "转弱"
         },
@@ -1044143,12 +1044143,6 @@
           "signal": "强势"
         },
         {
-          "symbol": "PG",
-          "rank": 165,
-          "score": 82.2,
-          "signal": "强势"
-        },
-        {
           "symbol": "ANET",
           "rank": 1382,
           "score": 44.0,
@@ -1044159,6 +1044153,12 @@
           "rank": 376,
           "score": 74.1,
           "signal": "偏强"
+        },
+        {
+          "symbol": "PG",
+          "rank": 167,
+          "score": 82.1,
+          "signal": "强势"
         },
         {
           "symbol": "FHI",
@@ -1044234,14 +1044234,8 @@
         },
         {
           "symbol": "PRG",
-          "rank": 181,
-          "score": 81.4,
-          "signal": "强势"
-        },
-        {
-          "symbol": "JKHY",
           "rank": 180,
-          "score": 81.5,
+          "score": 81.4,
           "signal": "强势"
         },
         {
@@ -1044255,6 +1044249,12 @@
           "rank": 510,
           "score": 69.8,
           "signal": "偏强"
+        },
+        {
+          "symbol": "JKHY",
+          "rank": 181,
+          "score": 81.4,
+          "signal": "强势"
         },
         {
           "symbol": "CPA",
@@ -1044318,7 +1044318,7 @@
         },
         {
           "symbol": "MDLZ",
-          "rank": 235,
+          "rank": 236,
           "score": 79.5,
           "signal": "偏强"
         },
@@ -1044613,7 +1044613,7 @@
         {
           "symbol": "BILL",
           "rank": 19,
-          "score": 93.5,
+          "score": 93.4,
           "signal": "强势"
         },
         {
@@ -1044894,13 +1044894,13 @@
         },
         {
           "symbol": "CRDO",
-          "rank": 2191,
-          "score": 9.1,
+          "rank": 2190,
+          "score": 9.2,
           "signal": "弱势"
         },
         {
           "symbol": "SEIC",
-          "rank": 773,
+          "rank": 772,
           "score": 61.2,
           "signal": "中性"
         },
@@ -1045205,16 +1045205,16 @@
           "signal": "偏强"
         },
         {
-          "symbol": "PSIX",
-          "rank": 1958,
-          "score": 21.2,
-          "signal": "弱势"
-        },
-        {
           "symbol": "JOE",
           "rank": 1114,
           "score": 52.0,
           "signal": "中性"
+        },
+        {
+          "symbol": "PSIX",
+          "rank": 1961,
+          "score": 21.1,
+          "signal": "弱势"
         },
         {
           "symbol": "UMBF",
@@ -1045332,13 +1045332,13 @@
         },
         {
           "symbol": "SII",
-          "rank": 1659,
+          "rank": 1658,
           "score": 34.0,
           "signal": "转弱"
         },
         {
           "symbol": "TAL",
-          "rank": 1437,
+          "rank": 1436,
           "score": 41.9,
           "signal": "转弱"
         },
@@ -1045386,7 +1045386,7 @@
         },
         {
           "symbol": "COKE",
-          "rank": 237,
+          "rank": 238,
           "score": 79.5,
           "signal": "偏强"
         },
@@ -1045446,7 +1045446,7 @@
         },
         {
           "symbol": "HESM",
-          "rank": 1742,
+          "rank": 1740,
           "score": 30.6,
           "signal": "转弱"
         },
@@ -1045536,7 +1045536,7 @@
         },
         {
           "symbol": "AIZ",
-          "rank": 74,
+          "rank": 73,
           "score": 87.3,
           "signal": "强势"
         },
@@ -1045632,7 +1045632,7 @@
         },
         {
           "symbol": "PEN",
-          "rank": 937,
+          "rank": 936,
           "score": 56.6,
           "signal": "中性"
         },
@@ -1045656,7 +1045656,7 @@
         },
         {
           "symbol": "ALAB",
-          "rank": 1922,
+          "rank": 1923,
           "score": 23.0,
           "signal": "弱势"
         },
@@ -1045740,7 +1045740,7 @@
         },
         {
           "symbol": "AVGO",
-          "rank": 1879,
+          "rank": 1880,
           "score": 24.7,
           "signal": "弱势"
         },
@@ -1045758,7 +1045758,7 @@
         },
         {
           "symbol": "MORN",
-          "rank": 234,
+          "rank": 235,
           "score": 79.5,
           "signal": "偏强"
         },
@@ -1045788,7 +1045788,7 @@
         },
         {
           "symbol": "IRMD",
-          "rank": 1268,
+          "rank": 1267,
           "score": 47.5,
           "signal": "中性"
         },
@@ -1045841,15 +1045841,15 @@
           "signal": "偏强"
         },
         {
-          "symbol": "DCOM",
-          "rank": 864,
-          "score": 58.6,
-          "signal": "中性"
-        },
-        {
           "symbol": "BMY",
           "rank": 761,
           "score": 61.5,
+          "signal": "中性"
+        },
+        {
+          "symbol": "DCOM",
+          "rank": 867,
+          "score": 58.5,
           "signal": "中性"
         },
         {
@@ -1045967,16 +1045967,16 @@
           "signal": "偏强"
         },
         {
-          "symbol": "BCPC",
-          "rank": 961,
-          "score": 55.8,
-          "signal": "中性"
-        },
-        {
           "symbol": "OSW",
           "rank": 90,
           "score": 86.2,
           "signal": "强势"
+        },
+        {
+          "symbol": "BCPC",
+          "rank": 967,
+          "score": 55.7,
+          "signal": "中性"
         },
         {
           "symbol": "ES",
@@ -1046094,7 +1046094,7 @@
         },
         {
           "symbol": "EPAC",
-          "rank": 607,
+          "rank": 608,
           "score": 66.9,
           "signal": "偏强"
         },
@@ -1046106,7 +1046106,7 @@
         },
         {
           "symbol": "MD",
-          "rank": 245,
+          "rank": 246,
           "score": 79.2,
           "signal": "偏强"
         },
@@ -1046250,7 +1046250,7 @@
         },
         {
           "symbol": "DHR",
-          "rank": 774,
+          "rank": 773,
           "score": 61.2,
           "signal": "中性"
         },
@@ -1046304,7 +1046304,7 @@
         },
         {
           "symbol": "BCO",
-          "rank": 238,
+          "rank": 239,
           "score": 79.4,
           "signal": "偏强"
         },
@@ -1046389,7 +1046389,7 @@
         {
           "symbol": "KLIC",
           "rank": 1895,
-          "score": 24.3,
+          "score": 24.2,
           "signal": "弱势"
         },
         {
@@ -1046424,7 +1046424,7 @@
         },
         {
           "symbol": "FULT",
-          "rank": 844,
+          "rank": 843,
           "score": 59.2,
           "signal": "中性"
         },
@@ -1046502,8 +1046502,8 @@
         },
         {
           "symbol": "NEM",
-          "rank": 1461,
-          "score": 41.1,
+          "rank": 1459,
+          "score": 41.2,
           "signal": "转弱"
         },
         {
@@ -1046532,7 +1046532,7 @@
         },
         {
           "symbol": "ADSK",
-          "rank": 845,
+          "rank": 844,
           "score": 59.1,
           "signal": "中性"
         },
@@ -1046622,7 +1046622,7 @@
         },
         {
           "symbol": "YELP",
-          "rank": 1436,
+          "rank": 1435,
           "score": 41.9,
           "signal": "转弱"
         },
@@ -1046645,6 +1046645,12 @@
           "signal": "偏强"
         },
         {
+          "symbol": "KGC",
+          "rank": 2061,
+          "score": 16.4,
+          "signal": "弱势"
+        },
+        {
           "symbol": "SPSC",
           "rank": 1115,
           "score": 52.0,
@@ -1046655,12 +1046661,6 @@
           "rank": 1084,
           "score": 52.7,
           "signal": "中性"
-        },
-        {
-          "symbol": "KGC",
-          "rank": 2062,
-          "score": 16.3,
-          "signal": "弱势"
         },
         {
           "symbol": "INSP",
@@ -1046724,7 +1046724,7 @@
         },
         {
           "symbol": "MC",
-          "rank": 1799,
+          "rank": 1798,
           "score": 28.3,
           "signal": "弱势"
         },
@@ -1046765,15 +1046765,15 @@
           "signal": "偏强"
         },
         {
-          "symbol": "PR",
-          "rank": 1266,
-          "score": 47.6,
-          "signal": "中性"
-        },
-        {
           "symbol": "RTX",
           "rank": 926,
           "score": 56.8,
+          "signal": "中性"
+        },
+        {
+          "symbol": "PR",
+          "rank": 1269,
+          "score": 47.5,
           "signal": "中性"
         },
         {
@@ -1046808,7 +1046808,7 @@
         },
         {
           "symbol": "OGS",
-          "rank": 609,
+          "rank": 610,
           "score": 66.8,
           "signal": "偏强"
         },
@@ -1046934,7 +1046934,7 @@
         },
         {
           "symbol": "DOC",
-          "rank": 352,
+          "rank": 350,
           "score": 75.1,
           "signal": "偏强"
         },
@@ -1046982,13 +1046982,13 @@
         },
         {
           "symbol": "VNOM",
-          "rank": 1601,
+          "rank": 1600,
           "score": 36.2,
           "signal": "转弱"
         },
         {
           "symbol": "LULU",
-          "rank": 1375,
+          "rank": 1374,
           "score": 44.1,
           "signal": "转弱"
         },
@@ -1047042,7 +1047042,7 @@
         },
         {
           "symbol": "PRGS",
-          "rank": 934,
+          "rank": 933,
           "score": 56.7,
           "signal": "中性"
         },
@@ -1047084,7 +1047084,7 @@
         },
         {
           "symbol": "FFIV",
-          "rank": 1687,
+          "rank": 1688,
           "score": 32.4,
           "signal": "转弱"
         },
@@ -1047192,7 +1047192,7 @@
         },
         {
           "symbol": "WTFC",
-          "rank": 962,
+          "rank": 961,
           "score": 55.8,
           "signal": "中性"
         },
@@ -1047300,7 +1047300,7 @@
         },
         {
           "symbol": "SMFG",
-          "rank": 1297,
+          "rank": 1296,
           "score": 46.8,
           "signal": "中性"
         },
@@ -1047402,7 +1047402,7 @@
         },
         {
           "symbol": "TFPM",
-          "rank": 1396,
+          "rank": 1397,
           "score": 43.4,
           "signal": "转弱"
         },
@@ -1047432,7 +1047432,7 @@
         },
         {
           "symbol": "SW",
-          "rank": 965,
+          "rank": 964,
           "score": 55.7,
           "signal": "中性"
         },
@@ -1047462,7 +1047462,7 @@
         },
         {
           "symbol": "NSSC",
-          "rank": 1965,
+          "rank": 1964,
           "score": 20.8,
           "signal": "弱势"
         },
@@ -1047498,7 +1047498,7 @@
         },
         {
           "symbol": "SPXC",
-          "rank": 1966,
+          "rank": 1967,
           "score": 20.7,
           "signal": "弱势"
         },
@@ -1047516,13 +1047516,13 @@
         },
         {
           "symbol": "ADEA",
-          "rank": 2061,
+          "rank": 2062,
           "score": 16.4,
           "signal": "弱势"
         },
         {
           "symbol": "ENSG",
-          "rank": 930,
+          "rank": 929,
           "score": 56.7,
           "signal": "中性"
         },
@@ -1047576,7 +1047576,7 @@
         },
         {
           "symbol": "HGV",
-          "rank": 605,
+          "rank": 606,
           "score": 66.9,
           "signal": "偏强"
         },
@@ -1047630,7 +1047630,7 @@
         },
         {
           "symbol": "VCYT",
-          "rank": 2232,
+          "rank": 2233,
           "score": 6.4,
           "signal": "弱势"
         },
@@ -1047660,13 +1047660,13 @@
         },
         {
           "symbol": "FOUR",
-          "rank": 606,
+          "rank": 607,
           "score": 66.9,
           "signal": "偏强"
         },
         {
           "symbol": "PEGA",
-          "rank": 1885,
+          "rank": 1886,
           "score": 24.5,
           "signal": "弱势"
         },
@@ -1047708,7 +1047708,7 @@
         },
         {
           "symbol": "TRP",
-          "rank": 929,
+          "rank": 928,
           "score": 56.7,
           "signal": "中性"
         },
@@ -1047876,7 +1047876,7 @@
         },
         {
           "symbol": "VOYA",
-          "rank": 611,
+          "rank": 612,
           "score": 66.8,
           "signal": "偏强"
         },
@@ -1047906,7 +1047906,7 @@
         },
         {
           "symbol": "FSM",
-          "rank": 1897,
+          "rank": 1898,
           "score": 24.1,
           "signal": "弱势"
         },
@@ -1048008,7 +1048008,7 @@
         },
         {
           "symbol": "AIT",
-          "rank": 1450,
+          "rank": 1449,
           "score": 41.6,
           "signal": "转弱"
         },
@@ -1048044,7 +1048044,7 @@
         },
         {
           "symbol": "CRUS",
-          "rank": 966,
+          "rank": 965,
           "score": 55.7,
           "signal": "中性"
         },
@@ -1048068,7 +1048068,7 @@
         },
         {
           "symbol": "NXT",
-          "rank": 1886,
+          "rank": 1887,
           "score": 24.5,
           "signal": "弱势"
         },
@@ -1048176,7 +1048176,7 @@
         },
         {
           "symbol": "SFD",
-          "rank": 1374,
+          "rank": 1373,
           "score": 44.1,
           "signal": "转弱"
         },
@@ -1048212,7 +1048212,7 @@
         },
         {
           "symbol": "MNDY",
-          "rank": 1964,
+          "rank": 1963,
           "score": 20.8,
           "signal": "弱势"
         },
@@ -1048290,7 +1048290,7 @@
         },
         {
           "symbol": "CIEN",
-          "rank": 2006,
+          "rank": 2005,
           "score": 19.0,
           "signal": "弱势"
         },
@@ -1048332,7 +1048332,7 @@
         },
         {
           "symbol": "WMT",
-          "rank": 244,
+          "rank": 245,
           "score": 79.2,
           "signal": "偏强"
         },
@@ -1048350,8 +1048350,8 @@
         },
         {
           "symbol": "CAI",
-          "rank": 1948,
-          "score": 21.7,
+          "rank": 1949,
+          "score": 21.6,
           "signal": "弱势"
         },
         {
@@ -1048374,7 +1048374,7 @@
         },
         {
           "symbol": "AEG",
-          "rank": 867,
+          "rank": 866,
           "score": 58.5,
           "signal": "中性"
         },
@@ -1048434,8 +1048434,8 @@
         },
         {
           "symbol": "FPS",
-          "rank": 2217,
-          "score": 7.9,
+          "rank": 2216,
+          "score": 8.0,
           "signal": "弱势"
         },
         {
@@ -1048812,7 +1048812,7 @@
         },
         {
           "symbol": "FBIN",
-          "rank": 246,
+          "rank": 247,
           "score": 79.1,
           "signal": "偏强"
         },
@@ -1048860,8 +1048860,8 @@
         },
         {
           "symbol": "GOOG",
-          "rank": 1923,
-          "score": 22.9,
+          "rank": 1920,
+          "score": 23.0,
           "signal": "弱势"
         },
         {
@@ -1048872,7 +1048872,7 @@
         },
         {
           "symbol": "TSCO",
-          "rank": 242,
+          "rank": 243,
           "score": 79.3,
           "signal": "偏强"
         },
@@ -1049027,12 +1049027,6 @@
           "signal": "转弱"
         },
         {
-          "symbol": "DVN",
-          "rank": 1600,
-          "score": 36.3,
-          "signal": "转弱"
-        },
-        {
           "symbol": "TENB",
           "rank": 384,
           "score": 73.7,
@@ -1049043,6 +1049037,12 @@
           "rank": 584,
           "score": 67.8,
           "signal": "偏强"
+        },
+        {
+          "symbol": "DVN",
+          "rank": 1601,
+          "score": 36.2,
+          "signal": "转弱"
         },
         {
           "symbol": "AIN",
@@ -1049112,7 +1049112,7 @@
         },
         {
           "symbol": "COF",
-          "rank": 1661,
+          "rank": 1660,
           "score": 34.0,
           "signal": "转弱"
         },
@@ -1049136,7 +1049136,7 @@
         },
         {
           "symbol": "REAL",
-          "rank": 932,
+          "rank": 931,
           "score": 56.7,
           "signal": "中性"
         },
@@ -1049172,13 +1049172,13 @@
         },
         {
           "symbol": "EG",
-          "rank": 72,
-          "score": 87.4,
+          "rank": 75,
+          "score": 87.3,
           "signal": "强势"
         },
         {
           "symbol": "NET",
-          "rank": 1129,
+          "rank": 1130,
           "score": 51.6,
           "signal": "中性"
         },
@@ -1049376,13 +1049376,13 @@
         },
         {
           "symbol": "BOH",
-          "rank": 1438,
+          "rank": 1437,
           "score": 41.9,
           "signal": "转弱"
         },
         {
           "symbol": "ROOT",
-          "rank": 2128,
+          "rank": 2129,
           "score": 13.0,
           "signal": "弱势"
         },
@@ -1049484,7 +1049484,7 @@
         },
         {
           "symbol": "FCF",
-          "rank": 933,
+          "rank": 932,
           "score": 56.7,
           "signal": "中性"
         },
@@ -1049538,7 +1049538,7 @@
         },
         {
           "symbol": "BPOP",
-          "rank": 1377,
+          "rank": 1376,
           "score": 44.1,
           "signal": "转弱"
         },
@@ -1049579,16 +1049579,16 @@
           "signal": "中性"
         },
         {
+          "symbol": "DXYZ",
+          "rank": 1879,
+          "score": 24.7,
+          "signal": "弱势"
+        },
+        {
           "symbol": "BMO",
           "rank": 1197,
           "score": 49.5,
           "signal": "中性"
-        },
-        {
-          "symbol": "DXYZ",
-          "rank": 1881,
-          "score": 24.6,
-          "signal": "弱势"
         },
         {
           "symbol": "CVBF",
@@ -1049712,7 +1049712,7 @@
         },
         {
           "symbol": "DY",
-          "rank": 2125,
+          "rank": 2126,
           "score": 13.1,
           "signal": "弱势"
         },
@@ -1049742,7 +1049742,7 @@
         },
         {
           "symbol": "CAVA",
-          "rank": 1296,
+          "rank": 1295,
           "score": 46.8,
           "signal": "中性"
         },
@@ -1049850,7 +1049850,7 @@
         },
         {
           "symbol": "AMRZ",
-          "rank": 935,
+          "rank": 934,
           "score": 56.6,
           "signal": "中性"
         },
@@ -1049885,16 +1049885,16 @@
           "signal": "偏强"
         },
         {
-          "symbol": "LMND",
-          "rank": 2004,
-          "score": 19.0,
-          "signal": "弱势"
-        },
-        {
           "symbol": "POST",
-          "rank": 936,
+          "rank": 935,
           "score": 56.6,
           "signal": "中性"
+        },
+        {
+          "symbol": "LMND",
+          "rank": 2006,
+          "score": 18.9,
+          "signal": "弱势"
         },
         {
           "symbol": "ZBRA",
@@ -1049928,8 +1049928,8 @@
         },
         {
           "symbol": "KT",
-          "rank": 1295,
-          "score": 46.8,
+          "rank": 1298,
+          "score": 46.7,
           "signal": "中性"
         },
         {
@@ -1050012,7 +1050012,7 @@
         },
         {
           "symbol": "PEB",
-          "rank": 351,
+          "rank": 349,
           "score": 75.2,
           "signal": "偏强"
         },
@@ -1050030,7 +1050030,7 @@
         },
         {
           "symbol": "CORT",
-          "rank": 2005,
+          "rank": 2004,
           "score": 19.0,
           "signal": "弱势"
         },
@@ -1050108,7 +1050108,7 @@
         },
         {
           "symbol": "BFAM",
-          "rank": 2094,
+          "rank": 2093,
           "score": 14.8,
           "signal": "弱势"
         },
@@ -1050120,8 +1050120,8 @@
         },
         {
           "symbol": "SMCI",
-          "rank": 2126,
-          "score": 13.1,
+          "rank": 2125,
+          "score": 13.2,
           "signal": "弱势"
         },
         {
@@ -1050150,8 +1050150,8 @@
         },
         {
           "symbol": "EQX",
-          "rank": 1901,
-          "score": 24.0,
+          "rank": 1897,
+          "score": 24.1,
           "signal": "弱势"
         },
         {
@@ -1050420,7 +1050420,7 @@
         },
         {
           "symbol": "SNPS",
-          "rank": 1573,
+          "rank": 1572,
           "score": 37.0,
           "signal": "转弱"
         },
@@ -1050528,7 +1050528,7 @@
         },
         {
           "symbol": "ALHC",
-          "rank": 2188,
+          "rank": 2189,
           "score": 9.2,
           "signal": "弱势"
         },
@@ -1050540,7 +1050540,7 @@
         },
         {
           "symbol": "AMRX",
-          "rank": 241,
+          "rank": 242,
           "score": 79.4,
           "signal": "偏强"
         },
@@ -1050600,7 +1050600,7 @@
         },
         {
           "symbol": "GDDY",
-          "rank": 931,
+          "rank": 930,
           "score": 56.7,
           "signal": "中性"
         },
@@ -1050624,7 +1050624,7 @@
         },
         {
           "symbol": "CAT",
-          "rank": 2042,
+          "rank": 2043,
           "score": 17.3,
           "signal": "弱势"
         },
@@ -1050666,7 +1050666,7 @@
         },
         {
           "symbol": "BBD",
-          "rank": 1880,
+          "rank": 1881,
           "score": 24.6,
           "signal": "弱势"
         },
@@ -1050678,7 +1050678,7 @@
         },
         {
           "symbol": "JBL",
-          "rank": 1899,
+          "rank": 1900,
           "score": 24.1,
           "signal": "弱势"
         },
@@ -1050743,6 +1050743,12 @@
           "signal": "中性"
         },
         {
+          "symbol": "JD",
+          "rank": 1127,
+          "score": 51.6,
+          "signal": "中性"
+        },
+        {
           "symbol": "BANC",
           "rank": 1567,
           "score": 37.2,
@@ -1050761,12 +1050767,6 @@
           "signal": "弱势"
         },
         {
-          "symbol": "JD",
-          "rank": 1132,
-          "score": 51.5,
-          "signal": "中性"
-        },
-        {
           "symbol": "AXTA",
           "rank": 429,
           "score": 72.2,
@@ -1050774,7 +1050774,7 @@
         },
         {
           "symbol": "JBS",
-          "rank": 1127,
+          "rank": 1128,
           "score": 51.6,
           "signal": "中性"
         },
@@ -1050882,7 +1050882,7 @@
         },
         {
           "symbol": "ALNT",
-          "rank": 1690,
+          "rank": 1691,
           "score": 32.4,
           "signal": "转弱"
         },
@@ -1051104,7 +1051104,7 @@
         },
         {
           "symbol": "INVH",
-          "rank": 967,
+          "rank": 966,
           "score": 55.7,
           "signal": "中性"
         },
@@ -1051134,19 +1051134,19 @@
         },
         {
           "symbol": "UNH",
-          "rank": 1662,
+          "rank": 1661,
           "score": 34.0,
           "signal": "转弱"
         },
         {
           "symbol": "SPB",
-          "rank": 928,
-          "score": 56.7,
+          "rank": 937,
+          "score": 56.6,
           "signal": "中性"
         },
         {
           "symbol": "BBNX",
-          "rank": 1574,
+          "rank": 1573,
           "score": 36.9,
           "signal": "转弱"
         },
@@ -1051230,7 +1051230,7 @@
         },
         {
           "symbol": "SYF",
-          "rank": 1660,
+          "rank": 1659,
           "score": 34.0,
           "signal": "转弱"
         },
@@ -1051338,7 +1051338,7 @@
         },
         {
           "symbol": "SRPT",
-          "rank": 1921,
+          "rank": 1922,
           "score": 23.0,
           "signal": "弱势"
         },
@@ -1051356,7 +1051356,7 @@
         },
         {
           "symbol": "TAP",
-          "rank": 866,
+          "rank": 865,
           "score": 58.5,
           "signal": "中性"
         },
@@ -1051380,7 +1051380,7 @@
         },
         {
           "symbol": "BKR",
-          "rank": 1960,
+          "rank": 1959,
           "score": 21.1,
           "signal": "弱势"
         },
@@ -1051398,7 +1051398,7 @@
         },
         {
           "symbol": "TEN",
-          "rank": 771,
+          "rank": 770,
           "score": 61.3,
           "signal": "中性"
         },
@@ -1051452,7 +1051452,7 @@
         },
         {
           "symbol": "HIMS",
-          "rank": 2247,
+          "rank": 2248,
           "score": 5.3,
           "signal": "弱势"
         },
@@ -1051548,7 +1051548,7 @@
         },
         {
           "symbol": "IDYA",
-          "rank": 1688,
+          "rank": 1689,
           "score": 32.4,
           "signal": "转弱"
         },
@@ -1051596,7 +1051596,7 @@
         },
         {
           "symbol": "NBR",
-          "rank": 1801,
+          "rank": 1800,
           "score": 28.3,
           "signal": "弱势"
         },
@@ -1051740,8 +1051740,8 @@
         },
         {
           "symbol": "NWSA",
-          "rank": 1616,
-          "score": 35.4,
+          "rank": 1617,
+          "score": 35.3,
           "signal": "转弱"
         },
         {
@@ -1051758,7 +1051758,7 @@
         },
         {
           "symbol": "P",
-          "rank": 1324,
+          "rank": 1323,
           "score": 46.0,
           "signal": "中性"
         },
@@ -1051782,7 +1051782,7 @@
         },
         {
           "symbol": "NWS",
-          "rank": 1617,
+          "rank": 1616,
           "score": 35.3,
           "signal": "转弱"
         },
@@ -1051848,7 +1051848,7 @@
         },
         {
           "symbol": "CMPR",
-          "rank": 2093,
+          "rank": 2092,
           "score": 14.8,
           "signal": "弱势"
         },
@@ -1051866,7 +1051866,7 @@
         },
         {
           "symbol": "AGIO",
-          "rank": 1435,
+          "rank": 1434,
           "score": 42.0,
           "signal": "转弱"
         },
@@ -1051890,7 +1051890,7 @@
         },
         {
           "symbol": "LEGN",
-          "rank": 2014,
+          "rank": 2015,
           "score": 18.7,
           "signal": "弱势"
         },
@@ -1051926,7 +1051926,7 @@
         },
         {
           "symbol": "YPF",
-          "rank": 2105,
+          "rank": 2106,
           "score": 14.2,
           "signal": "弱势"
         },
@@ -1051938,7 +1051938,7 @@
         },
         {
           "symbol": "WFC",
-          "rank": 1326,
+          "rank": 1325,
           "score": 45.9,
           "signal": "中性"
         },
@@ -1051950,7 +1051950,7 @@
         },
         {
           "symbol": "SMTC",
-          "rank": 1882,
+          "rank": 1883,
           "score": 24.6,
           "signal": "弱势"
         },
@@ -1051986,7 +1051986,7 @@
         },
         {
           "symbol": "PSN",
-          "rank": 964,
+          "rank": 963,
           "score": 55.7,
           "signal": "中性"
         },
@@ -1052124,7 +1052124,7 @@
         },
         {
           "symbol": "TDOC",
-          "rank": 353,
+          "rank": 351,
           "score": 75.1,
           "signal": "偏强"
         },
@@ -1052244,7 +1052244,7 @@
         },
         {
           "symbol": "MDB",
-          "rank": 1898,
+          "rank": 1899,
           "score": 24.1,
           "signal": "弱势"
         },
@@ -1052316,7 +1052316,7 @@
         },
         {
           "symbol": "CFG",
-          "rank": 1376,
+          "rank": 1375,
           "score": 44.1,
           "signal": "转弱"
         },
@@ -1052352,7 +1052352,7 @@
         },
         {
           "symbol": "LZB",
-          "rank": 1267,
+          "rank": 1266,
           "score": 47.5,
           "signal": "中性"
         },
@@ -1052360,6 +1052360,12 @@
           "symbol": "TWST",
           "rank": 1443,
           "score": 41.8,
+          "signal": "转弱"
+        },
+        {
+          "symbol": "NKE",
+          "rank": 1396,
+          "score": 43.4,
           "signal": "转弱"
         },
         {
@@ -1052372,12 +1052378,6 @@
           "symbol": "HPE",
           "rank": 1668,
           "score": 33.7,
-          "signal": "转弱"
-        },
-        {
-          "symbol": "NKE",
-          "rank": 1399,
-          "score": 43.3,
           "signal": "转弱"
         },
         {
@@ -1052418,7 +1052418,7 @@
         },
         {
           "symbol": "UBS",
-          "rank": 1269,
+          "rank": 1268,
           "score": 47.5,
           "signal": "中性"
         },
@@ -1052490,8 +1052490,8 @@
         },
         {
           "symbol": "ET",
-          "rank": 1373,
-          "score": 44.2,
+          "rank": 1377,
+          "score": 44.1,
           "signal": "转弱"
         },
         {
@@ -1052568,7 +1052568,7 @@
         },
         {
           "symbol": "MGA",
-          "rank": 963,
+          "rank": 962,
           "score": 55.8,
           "signal": "中性"
         },
@@ -1052604,7 +1052604,7 @@
         },
         {
           "symbol": "DBD",
-          "rank": 1884,
+          "rank": 1885,
           "score": 24.5,
           "signal": "弱势"
         },
@@ -1052670,8 +1052670,8 @@
         },
         {
           "symbol": "SEB",
-          "rank": 1658,
-          "score": 34.0,
+          "rank": 1663,
+          "score": 33.9,
           "signal": "转弱"
         },
         {
@@ -1052718,7 +1052718,7 @@
         },
         {
           "symbol": "EQIX",
-          "rank": 1212,
+          "rank": 1211,
           "score": 49.2,
           "signal": "中性"
         },
@@ -1052778,7 +1052778,7 @@
         },
         {
           "symbol": "KWR",
-          "rank": 843,
+          "rank": 842,
           "score": 59.2,
           "signal": "中性"
         },
@@ -1052850,7 +1052850,7 @@
         },
         {
           "symbol": "SNDR",
-          "rank": 1460,
+          "rank": 1461,
           "score": 41.1,
           "signal": "转弱"
         },
@@ -1052910,8 +1052910,8 @@
         },
         {
           "symbol": "PLXS",
-          "rank": 1798,
-          "score": 28.4,
+          "rank": 1801,
+          "score": 28.3,
           "signal": "弱势"
         },
         {
@@ -1053048,8 +1053048,8 @@
         },
         {
           "symbol": "RKLB",
-          "rank": 1945,
-          "score": 21.8,
+          "rank": 1941,
+          "score": 21.9,
           "signal": "弱势"
         },
         {
@@ -1053084,8 +1053084,8 @@
         },
         {
           "symbol": "NMAX",
-          "rank": 1941,
-          "score": 21.9,
+          "rank": 1945,
+          "score": 21.8,
           "signal": "弱势"
         },
         {
@@ -1053143,16 +1053143,16 @@
           "signal": "弱势"
         },
         {
+          "symbol": "AMPX",
+          "rank": 2203,
+          "score": 8.6,
+          "signal": "弱势"
+        },
+        {
           "symbol": "GIII",
           "rank": 835,
           "score": 59.4,
           "signal": "中性"
-        },
-        {
-          "symbol": "AMPX",
-          "rank": 2204,
-          "score": 8.5,
-          "signal": "弱势"
         },
         {
           "symbol": "COHU",
@@ -1053180,7 +1053180,7 @@
         },
         {
           "symbol": "PRAX",
-          "rank": 243,
+          "rank": 244,
           "score": 79.3,
           "signal": "偏强"
         },
@@ -1053210,8 +1053210,8 @@
         },
         {
           "symbol": "CARR",
-          "rank": 1434,
-          "score": 42.0,
+          "rank": 1438,
+          "score": 41.9,
           "signal": "转弱"
         },
         {
@@ -1053324,7 +1053324,7 @@
         },
         {
           "symbol": "SBSW",
-          "rank": 1961,
+          "rank": 1960,
           "score": 21.1,
           "signal": "弱势"
         },
@@ -1053348,8 +1053348,8 @@
         },
         {
           "symbol": "COHR",
-          "rank": 1887,
-          "score": 24.5,
+          "rank": 1882,
+          "score": 24.6,
           "signal": "弱势"
         },
         {
@@ -1053383,15 +1053383,15 @@
           "signal": "转弱"
         },
         {
-          "symbol": "TFSL",
-          "rank": 1323,
-          "score": 46.0,
-          "signal": "中性"
-        },
-        {
           "symbol": "NGG",
           "rank": 793,
           "score": 60.7,
+          "signal": "中性"
+        },
+        {
+          "symbol": "TFSL",
+          "rank": 1326,
+          "score": 45.9,
           "signal": "中性"
         },
         {
@@ -1053449,6 +1053449,12 @@
           "signal": "中性"
         },
         {
+          "symbol": "HMC",
+          "rank": 605,
+          "score": 67.0,
+          "signal": "偏强"
+        },
+        {
           "symbol": "RAL",
           "rank": 955,
           "score": 56.1,
@@ -1053459,12 +1053465,6 @@
           "rank": 1809,
           "score": 28.0,
           "signal": "弱势"
-        },
-        {
-          "symbol": "HMC",
-          "rank": 612,
-          "score": 66.8,
-          "signal": "偏强"
         },
         {
           "symbol": "KC",
@@ -1053486,7 +1053486,7 @@
         },
         {
           "symbol": "AMBA",
-          "rank": 2190,
+          "rank": 2191,
           "score": 9.2,
           "signal": "弱势"
         },
@@ -1053750,7 +1053750,7 @@
         },
         {
           "symbol": "SIMO",
-          "rank": 1959,
+          "rank": 1958,
           "score": 21.2,
           "signal": "弱势"
         },
@@ -1053786,8 +1053786,8 @@
         },
         {
           "symbol": "LITE",
-          "rank": 2015,
-          "score": 18.7,
+          "rank": 2014,
+          "score": 18.8,
           "signal": "弱势"
         },
         {
@@ -1053810,13 +1053810,13 @@
         },
         {
           "symbol": "AES",
-          "rank": 772,
+          "rank": 771,
           "score": 61.2,
           "signal": "中性"
         },
         {
           "symbol": "GIS",
-          "rank": 865,
+          "rank": 864,
           "score": 58.5,
           "signal": "中性"
         },
@@ -1054092,13 +1054092,13 @@
         },
         {
           "symbol": "BNS",
-          "rank": 1210,
+          "rank": 1209,
           "score": 49.3,
           "signal": "中性"
         },
         {
           "symbol": "SDRL",
-          "rank": 1689,
+          "rank": 1690,
           "score": 32.4,
           "signal": "转弱"
         },
@@ -1054121,34 +1054121,34 @@
           "signal": "弱势"
         },
         {
+          "symbol": "POET",
+          "rank": 2217,
+          "score": 8.0,
+          "signal": "弱势"
+        },
+        {
           "symbol": "FUBO",
           "rank": 2181,
           "score": 10.0,
           "signal": "弱势"
         },
         {
-          "symbol": "POET",
-          "rank": 2218,
-          "score": 7.9,
-          "signal": "弱势"
-        },
-        {
           "symbol": "KMPR",
-          "rank": 233,
+          "rank": 234,
           "score": 79.5,
           "signal": "偏强"
-        },
-        {
-          "symbol": "DKNG",
-          "rank": 1963,
-          "score": 20.8,
-          "signal": "弱势"
         },
         {
           "symbol": "MDU",
           "rank": 1313,
           "score": 46.2,
           "signal": "中性"
+        },
+        {
+          "symbol": "DKNG",
+          "rank": 1966,
+          "score": 20.7,
+          "signal": "弱势"
         },
         {
           "symbol": "ESTA",
@@ -1054230,8 +1054230,8 @@
         },
         {
           "symbol": "RIVN",
-          "rank": 1691,
-          "score": 32.3,
+          "rank": 1687,
+          "score": 32.4,
           "signal": "转弱"
         },
         {
@@ -1054260,7 +1054260,7 @@
         },
         {
           "symbol": "ALK",
-          "rank": 1459,
+          "rank": 1460,
           "score": 41.1,
           "signal": "转弱"
         },
@@ -1054349,16 +1054349,16 @@
           "signal": "转弱"
         },
         {
+          "symbol": "RDW",
+          "rank": 2105,
+          "score": 14.2,
+          "signal": "弱势"
+        },
+        {
           "symbol": "OTTR",
           "rank": 1677,
           "score": 33.0,
           "signal": "转弱"
-        },
-        {
-          "symbol": "RDW",
-          "rank": 2106,
-          "score": 14.1,
-          "signal": "弱势"
         },
         {
           "symbol": "BG",
@@ -1054500,8 +1054500,8 @@
         },
         {
           "symbol": "MS",
-          "rank": 1741,
-          "score": 30.7,
+          "rank": 1742,
+          "score": 30.6,
           "signal": "转弱"
         },
         {
@@ -1054548,7 +1054548,7 @@
         },
         {
           "symbol": "KD",
-          "rank": 232,
+          "rank": 233,
           "score": 79.5,
           "signal": "偏强"
         },
@@ -1054560,7 +1054560,7 @@
         },
         {
           "symbol": "MT",
-          "rank": 1449,
+          "rank": 1448,
           "score": 41.6,
           "signal": "转弱"
         },
@@ -1054710,7 +1054710,7 @@
         },
         {
           "symbol": "VALE",
-          "rank": 1949,
+          "rank": 1948,
           "score": 21.6,
           "signal": "弱势"
         },
@@ -1054722,13 +1054722,13 @@
         },
         {
           "symbol": "TNDM",
-          "rank": 1325,
+          "rank": 1324,
           "score": 45.9,
           "signal": "中性"
         },
         {
           "symbol": "EPC",
-          "rank": 247,
+          "rank": 248,
           "score": 79.1,
           "signal": "偏强"
         },
@@ -1054752,7 +1054752,7 @@
         },
         {
           "symbol": "SEDG",
-          "rank": 2167,
+          "rank": 2168,
           "score": 10.8,
           "signal": "弱势"
         },
@@ -1054765,13 +1054765,13 @@
         {
           "symbol": "WTI",
           "rank": 1834,
-          "score": 27.1,
+          "score": 27.0,
           "signal": "弱势"
         },
         {
           "symbol": "IREN",
           "rank": 2257,
-          "score": 4.6,
+          "score": 4.7,
           "signal": "弱势"
         },
         {
@@ -1054824,7 +1054824,7 @@
         },
         {
           "symbol": "MBC",
-          "rank": 1398,
+          "rank": 1399,
           "score": 43.3,
           "signal": "转弱"
         },
@@ -1055034,20 +1055034,20 @@
         },
         {
           "symbol": "TXNM",
-          "rank": 842,
-          "score": 59.2,
+          "rank": 845,
+          "score": 59.1,
           "signal": "中性"
         },
         {
           "symbol": "XP",
-          "rank": 1740,
-          "score": 30.7,
+          "rank": 1741,
+          "score": 30.6,
           "signal": "转弱"
         },
         {
           "symbol": "AMRC",
-          "rank": 1448,
-          "score": 41.6,
+          "rank": 1450,
+          "score": 41.5,
           "signal": "转弱"
         },
         {
@@ -1055100,25 +1055100,25 @@
         },
         {
           "symbol": "PI",
-          "rank": 1298,
+          "rank": 1297,
           "score": 46.8,
           "signal": "中性"
         },
         {
           "symbol": "LI",
-          "rank": 1131,
+          "rank": 1132,
           "score": 51.5,
           "signal": "中性"
         },
         {
           "symbol": "BCC",
-          "rank": 1572,
-          "score": 37.0,
+          "rank": 1574,
+          "score": 36.9,
           "signal": "转弱"
         },
         {
           "symbol": "GPRE",
-          "rank": 1920,
+          "rank": 1921,
           "score": 23.0,
           "signal": "弱势"
         },
@@ -1055130,8 +1055130,8 @@
         },
         {
           "symbol": "CE",
-          "rank": 1209,
-          "score": 49.3,
+          "rank": 1212,
+          "score": 49.2,
           "signal": "中性"
         },
         {
@@ -1055148,14 +1055148,14 @@
         },
         {
           "symbol": "HUN",
-          "rank": 1128,
+          "rank": 1129,
           "score": 51.6,
           "signal": "中性"
         },
         {
           "symbol": "AMKR",
-          "rank": 2043,
-          "score": 17.3,
+          "rank": 2042,
+          "score": 17.4,
           "signal": "弱势"
         },
         {
@@ -1055184,8 +1055184,8 @@
         },
         {
           "symbol": "NIO",
-          "rank": 2091,
-          "score": 14.8,
+          "rank": 2094,
+          "score": 14.7,
           "signal": "弱势"
         },
         {
@@ -1055202,7 +1055202,7 @@
         },
         {
           "symbol": "MXL",
-          "rank": 1883,
+          "rank": 1884,
           "score": 24.6,
           "signal": "弱势"
         },
@@ -1055220,7 +1055220,7 @@
         },
         {
           "symbol": "MAZE",
-          "rank": 167,
+          "rank": 166,
           "score": 82.1,
           "signal": "强势"
         },
@@ -1055256,7 +1055256,7 @@
         },
         {
           "symbol": "INBX",
-          "rank": 1211,
+          "rank": 1210,
           "score": 49.2,
           "signal": "中性"
         },
@@ -1055322,7 +1055322,7 @@
         },
         {
           "symbol": "PONY",
-          "rank": 2216,
+          "rank": 2218,
           "score": 7.9,
           "signal": "弱势"
         },
@@ -1055334,7 +1055334,7 @@
         },
         {
           "symbol": "AESI",
-          "rank": 2264,
+          "rank": 2265,
           "score": 3.6,
           "signal": "弱势"
         },
@@ -1055598,8 +1055598,8 @@
         },
         {
           "symbol": "WULF",
-          "rank": 2129,
-          "score": 13.0,
+          "rank": 2127,
+          "score": 13.1,
           "signal": "弱势"
         },
         {
@@ -1055676,8 +1055676,8 @@
         },
         {
           "symbol": "NSP",
-          "rank": 770,
-          "score": 61.3,
+          "rank": 774,
+          "score": 61.2,
           "signal": "中性"
         },
         {
@@ -1055730,7 +1055730,7 @@
         },
         {
           "symbol": "GT",
-          "rank": 2127,
+          "rank": 2128,
           "score": 13.0,
           "signal": "弱势"
         },
@@ -1055778,7 +1055778,7 @@
         },
         {
           "symbol": "VNET",
-          "rank": 2259,
+          "rank": 2260,
           "score": 4.2,
           "signal": "弱势"
         },
@@ -1055874,7 +1055874,7 @@
         },
         {
           "symbol": "IMSR",
-          "rank": 2203,
+          "rank": 2204,
           "score": 8.5,
           "signal": "弱势"
         },
@@ -1055910,8 +1055910,8 @@
         },
         {
           "symbol": "SMR",
-          "rank": 2265,
-          "score": 3.5,
+          "rank": 2264,
+          "score": 3.6,
           "signal": "弱势"
         },
         {
@@ -1055952,14 +1055952,14 @@
         },
         {
           "symbol": "BLDR",
-          "rank": 1130,
+          "rank": 1131,
           "score": 51.5,
           "signal": "中性"
         },
         {
           "symbol": "UUUU",
-          "rank": 2233,
-          "score": 6.3,
+          "rank": 2232,
+          "score": 6.4,
           "signal": "弱势"
         },
         {
@@ -1056000,8 +1056000,8 @@
         },
         {
           "symbol": "SLDP",
-          "rank": 2189,
-          "score": 9.2,
+          "rank": 2188,
+          "score": 9.3,
           "signal": "弱势"
         },
         {
@@ -1056012,7 +1056012,7 @@
         },
         {
           "symbol": "VPG",
-          "rank": 1900,
+          "rank": 1901,
           "score": 24.1,
           "signal": "弱势"
         },
@@ -1056048,7 +1056048,7 @@
         },
         {
           "symbol": "STLA",
-          "rank": 2092,
+          "rank": 2091,
           "score": 14.8,
           "signal": "弱势"
         },
@@ -1056066,8 +1056066,8 @@
         },
         {
           "symbol": "ACHR",
-          "rank": 2168,
-          "score": 10.7,
+          "rank": 2167,
+          "score": 10.8,
           "signal": "弱势"
         },
         {
@@ -1056084,8 +1056084,8 @@
         },
         {
           "symbol": "AEHR",
-          "rank": 1967,
-          "score": 20.7,
+          "rank": 1965,
+          "score": 20.8,
           "signal": "弱势"
         },
         {
@@ -1056095,15 +1056095,15 @@
           "signal": "弱势"
         },
         {
-          "symbol": "CCOI",
-          "rank": 2267,
-          "score": 3.2,
-          "signal": "弱势"
-        },
-        {
           "symbol": "DNN",
           "rank": 2118,
           "score": 13.6,
+          "signal": "弱势"
+        },
+        {
+          "symbol": "CCOI",
+          "rank": 2267,
+          "score": 3.1,
           "signal": "弱势"
         },
         {
@@ -1056126,7 +1056126,7 @@
         },
         {
           "symbol": "BETA",
-          "rank": 1800,
+          "rank": 1799,
           "score": 28.3,
           "signal": "弱势"
         },
@@ -1056138,7 +1056138,7 @@
         },
         {
           "symbol": "AI",
-          "rank": 1663,
+          "rank": 1662,
           "score": 34.0,
           "signal": "转弱"
         },
@@ -1056252,8 +1056252,8 @@
         },
         {
           "symbol": "USAR",
-          "rank": 2248,
-          "score": 5.2,
+          "rank": 2247,
+          "score": 5.3,
           "signal": "弱势"
         },
         {
@@ -1056324,8 +1056324,8 @@
         },
         {
           "symbol": "DJT",
-          "rank": 2260,
-          "score": 4.1,
+          "rank": 2259,
+          "score": 4.2,
           "signal": "弱势"
         },
         {
@@ -1056343,7 +1056343,7 @@
         {
           "symbol": "CRML",
           "rank": 2231,
-          "score": 6.5,
+          "score": 6.6,
           "signal": "弱势"
         },
         {
@@ -1056385,7 +1056385,7 @@
         {
           "symbol": "HTZ",
           "rank": 2268,
-          "score": 2.7,
+          "score": 2.8,
           "signal": "弱势"
         },
         {
@@ -1056449,13 +1056449,19 @@
           "signal": "数据不足"
         },
         {
+          "symbol": "EHAB",
+          "rank": null,
+          "score": null,
+          "signal": "数据不足"
+        },
+        {
           "symbol": "WSR",
           "rank": null,
           "score": null,
           "signal": "数据不足"
         },
         {
-          "symbol": "EHAB",
+          "symbol": "NSA",
           "rank": null,
           "score": null,
           "signal": "数据不足"
@@ -1056468,12 +1056474,6 @@
         },
         {
           "symbol": "CWAN",
-          "rank": null,
-          "score": null,
-          "signal": "数据不足"
-        },
-        {
-          "symbol": "NSA",
           "rank": null,
           "score": null,
           "signal": "数据不足"
@@ -1056515,13 +1056515,13 @@
           "signal": "数据不足"
         },
         {
-          "symbol": "CSGS",
+          "symbol": "STEL",
           "rank": null,
           "score": null,
           "signal": "数据不足"
         },
         {
-          "symbol": "STEL",
+          "symbol": "CSGS",
           "rank": null,
           "score": null,
           "signal": "数据不足"
@@ -1056539,13 +1056539,13 @@
           "signal": "数据不足"
         },
         {
-          "symbol": "THR",
+          "symbol": "CNTA",
           "rank": null,
           "score": null,
           "signal": "数据不足"
         },
         {
-          "symbol": "CNTA",
+          "symbol": "THR",
           "rank": null,
           "score": null,
           "signal": "数据不足"
